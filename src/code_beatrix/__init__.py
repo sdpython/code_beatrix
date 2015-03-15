@@ -1,0 +1,27 @@
+#-*- coding: utf-8 -*-
+"""
+@file
+@brief Main file
+"""
+
+import sys
+if sys.version_info[0] < 3:
+    raise ImportError("pyensae only works with Python 3")
+
+__version__ = "0.1"
+__author__ = "Xavier Dupré"
+__github__ = "https://github.com/sdpython/code_beatrix"
+__url__ = "http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/index.html"
+__downloadUrl__ = "http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix"
+__license__ = "BSD License"
+
+
+def check(log=False):
+    """
+    Checks the library is working.
+    It raises an exception.
+
+    @param      log     if True, display information, otherwise
+    @return             0 or exception
+    """
+    return True
