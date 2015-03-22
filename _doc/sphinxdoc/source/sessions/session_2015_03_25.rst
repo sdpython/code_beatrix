@@ -1,0 +1,64 @@
+﻿
+.. issue.
+
+.. _l-session_2015_03_25:
+
+
+Presque sans ordinateur - 25 mars 2015
+======================================
+
+Chez `Coding and Bricks <http://www.codingandbricks.com/>`_.
+
+Préambule
+---------
+
+.. include:: preambule.rst
+
+
+Les exercices qui suivent peuvent être réalisés seuls ou en groupe.
+Voici quelques ingrédients pour la mise en scène :
+pelote de laine (4, couleurs différentes), 
+paire de ciseaux (pour couper la laine),
+calque pour le démineur, 
+carton épais pour le sac-à-dos,
+un échiquier,
+des bouteilles d'eau (pleines ou à remplir),
+un tableau blanc ou noir, un projecteur.
+
+
+Sujets
+------
+
+Quelques algorithmes :
+
+* le tri
+* le problème du voyageur de commerce
+* les oranges
+* le démineur
+* le sac-à-dos
+
+Découverte des données :
+
+* le menu de la cantine
+
+Découverte de la programmation :
+
+* l'échiquier
+
+
+
+Solutions
+---------
+
+
+Pour aller plus loin
+--------------------
+
+
+Bibliographie
+-------------
+
+* :ref:`l-biblio_algo` à propos des algorithmes
+* :ref:`l-biblio_prog` à propos de la programmation
+* :ref:`l-biblio_donnes` à propos des données
+

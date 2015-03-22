@@ -2,8 +2,8 @@
 
 .. issue.
 
-Getting started
-===============
+Démarrage
+=========
 
 .. index:: R, Julia, WinPython, Anaconda, pyminstall, scratch
 

@@ -1,7 +1,17 @@
+
+.. _l-glossary:
+
+
 Glossaire
 =========
 
-.. glossary::
+    Coût
+        Le coût d'un algorithme est le nombre d'opérations
+        élémentaires nécessaires pour qu'il se termine (une opération numérique,
+        la consultation d'une variable, un test...) On le calcule rarement
+        précisément mais on veur toujours avoir un ordre de grandeur :
+        si mon problème est dix fois plus grand, l'algorithme
+        sera combien sera combien de fois plus lent ?    
 
     Python
         Voir `Python <http://www.python.org/>`_.

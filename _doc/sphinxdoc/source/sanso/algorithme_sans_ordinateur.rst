@@ -19,18 +19,10 @@ Quelques règles :
 
 On pense souvent que les mathématiques sont difficiles sans doute parce 
 qu'on se résume souvent à dire *j'ai compris* ou *je n'ai pas compris*.
-On oublie tout le chemin qu'il faut parcourir pour imaginer une solution
-à un problème.
+On oublie tout le chemin qu'il faut parcourir pour **imaginer** une solution
+à un problème. J'emploie le terme *imaginer* car, la plupart du temps,
+il existe plein de solutions et déterminer la meilleure n'est pas toujours évident.
 
-Les exercices qui suivent peuvent être réalisés seuls ou en groupe.
-Voici quelques ingrédients pour la mise en scène :
-pelote de laine (4, couleurs différentes), 
-paire de ciseaux (pour couper la laine),
-calque pour le démineur, 
-carton épais pour le sac-à-dos,
-un échiquier,
-des bouteilles d'eau (pleines ou à remplir),
-un tableau blanc ou noir, un projecteur.
 
 
 Sujets
@@ -43,13 +35,14 @@ Indices et solutions
 --------------------
 
 .. toctree::
-    :maxdepth:
+    :maxdepth: 1
     
     notions
 
 
 
 
+.. _l-biblio_algo:
 
 Bibliographie
 -------------
@@ -59,7 +52,6 @@ Bibliographie
 * `Pixees, Ressources <https://pixees.fr/?page_id=36>`_
 * `Les algorithmes, Déconstruire l'informatique pour mieux la comprendre <https://cloud.github.com/downloads/jcb/CSIRL/SMN_v1.0.pdf>`_ (INRIA)
 * `Initiation à la notion d'algorithme <http://www.inria.fr/recherches/mediation-scientifique/actions-de-mediation-scientifique/ressources/initiation-a-la-notion-d-algorithme>`_ (INRIA)
-* `Wiki Débrouillard <http://www.wikidebrouillard.org/index.php/Accueil>`_
 * `L'informatique est un jeu d'enfant ! <http://magicmakers.fr/blog/linformatique-est-un-jeu-denfant>`_ (`MagicMakers <http://magicmakers.fr/>`_)
 
 **anglais**

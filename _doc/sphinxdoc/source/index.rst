@@ -9,20 +9,41 @@
 `wheel <http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix>`_
 
 
-    
 
+Patchworks
+----------
 
-Contenu
--------
-
-en construction
-
+Ces patchwork sont des découvertes organisées pour des groupes d'enfants.
+Les sujets abordées sont choisis dans la partie :ref:`l-contenu-range`.
 
 
 .. toctree::
+    :maxdepth: 1
+
+    sessions/session_2015_03_25
+
+.. _l-contenu-range:
+
+
+Contenu rangé
+-------------
+
+.. toctree::
+    :maxdepth: 1
 
     sanso/algorithme_sans_ordinateur
+    donnees/index_donnees
+    programmation/index_programmation
     arduino/index_arduino
+    
+    
+Annexes
+-------
+    
+.. toctree::
+    :maxdepth: 1
+
+
     getting_started
     glossary
     FAQ
