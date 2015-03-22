@@ -58,7 +58,7 @@ Indices et solutions
 Bibliographie
 -------------
 
-* `Apprentissage de la programmation avec Python 3<http://inforef.be/swi/python.htm>`_ Gérard Swinnen.
+* `Apprentissage de la programmation avec Python 3 <http://inforef.be/swi/python.htm>`_ Gérard Swinnen.
   C'est un livre qu'un adolescent pourra lire tout seul afin d'apprendre aussi tout seul la programmation
   avec le langage Python. Le livre est gratuit en ligne.
 
