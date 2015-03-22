@@ -84,7 +84,7 @@ L'informatique évolue vite, le meilleur choix est souvent celui qui est le plus
 A partir de 14 ans, il n'est pas vraiment sérieux de les apprendre.
 Il faut passer à Python.
 
-* `Scratch <https://scratch.mit.edu/>`_
+* `Scratch <https://scratch.mit.edu/>`_ (pour le télécharger `Scratch 2 Offline Editor <http://scratch.mit.edu/scratch2download/>`_)
 * `Linotte <http://langagelinotte.free.fr/wordpress/>`_
 * `AlgoBox <http://www.xm1math.net/algobox/>`_, 
   voir `Algorithmique en classe de première avec AlgoBox <http://www.xm1math.net/algobox/algobook/algoboxbook1.pdf>`_
