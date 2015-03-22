@@ -9,7 +9,6 @@ import sys
 import os
 import datetime
 import re
-import hachibee_sphinx_theme
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.split(__file__)[0])))
 sys.path.insert(
@@ -30,7 +29,10 @@ sys.path.insert(
             "pyquickhelper",
             "src")))
 
+import my_hachibee_sphinx_theme as hachibee_sphinx_theme
+
 from pyquickhelper.helpgen.default_conf import set_sphinx_variables
+
 
 set_sphinx_variables(__file__,
                      "Les enfants codaient",
