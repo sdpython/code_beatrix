@@ -41,6 +41,10 @@ Sujets
 ------
 
 
+.. toctree::
+    :maxdepth: 1
+    
+    parcours_echiquier
 
 
 Indices et solutions
@@ -48,6 +52,8 @@ Indices et solutions
 
 .. toctree::
     :maxdepth: 1
+    
+    parcours_echiquier_correction
     
     
 
