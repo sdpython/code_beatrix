@@ -22,6 +22,7 @@ en construction
 .. toctree::
 
     sanso/algorithme_sans_ordinateur
+    arduino/index_arduino
     getting_started
     glossary
     FAQ

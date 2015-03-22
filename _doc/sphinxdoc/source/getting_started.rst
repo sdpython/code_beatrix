@@ -5,7 +5,7 @@
 Getting started
 ===============
 
-.. index:: R, Julia, WinPython, Anaconda, pyminstall
+.. index:: R, Julia, WinPython, Anaconda, pyminstall, scratch
 
 
 
