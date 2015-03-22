@@ -69,7 +69,7 @@ Bibliographie
   avec le langage Python. Le livre est gratuit en ligne.
 
 
-Lorsqu'on programme, il ne faut hésiter à chercher les réponses
+Lorsqu'on programme, il ne faut pas hésiter à chercher les réponses
 sur Internet avec un moteur de recherche. On tombe sur des sites,
 des forums où on trouve le plus souvent 
 pas mal de réponses à pas mal de questions.

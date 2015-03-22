@@ -43,12 +43,14 @@ Découverte des données :
 
 Découverte de la programmation :
 
-* l'échiquier
+* :ref:`l-prog_parcours_echiquier`
 
 
 
 Solutions
 ---------
+
+* :ref:`l-prog_parcours_echiquier_sol`
 
 
 Pour aller plus loin
