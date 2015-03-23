@@ -1,0 +1,3 @@
+"""
+shortcuts for scratch
+"""
