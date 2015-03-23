@@ -42,6 +42,7 @@ Questions
     * avancer d'une case dans une direction (droite, gauche, haut, bas),
     * sauter à une case précise ?
 #. Peut-on choisir un parcours et donner la liste ordonnées des cases parcourues ?
+#. Quelle votre description de parcours préférée ?
 
 
 Exercice 1

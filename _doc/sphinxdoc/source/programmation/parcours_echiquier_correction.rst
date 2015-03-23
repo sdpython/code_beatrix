@@ -41,6 +41,17 @@ Questions
         0,1  1,1  2,1  3,1  4,1  5,1  6,1  7,1
         ...
         0,7  1,7  2,7  3,7  4,7  5,7  6,7  7,7
+        
+#. Donner la liste des cases dans l'ordre de parcours est assez long et surtout 
+   difficile à retenir car il n'y a pas de logique. Le fait d'avoir une règle qui dit
+   comment parcourir les cases permet de retenir plus facilement et c'est beaucoup plus court.
+   La description à l'aide des termes *répéter*, *avancer*, *sauter* n'est pas toujours évidente non plus.
+   Si ces termes n'apparaissent pas trop souvent, ce n'est pas trop difficile mais si le parcours
+   est complexe, on a souvent besoin de regrouper certains blocs. Par exemple, que préférez-vous ?
+        * avancer 8 fois vers la droite,
+        * ou parcourir la ligne de gauche à droite.
+   **Conclusion :** on ne sait pas retenir facilement une liste de d'actions trop longue. Il faut faire
+   apparaître des blocs logiques.
 
 
 Exercice 1
