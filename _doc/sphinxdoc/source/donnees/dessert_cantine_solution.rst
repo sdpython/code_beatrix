@@ -3,8 +3,8 @@
 
 .. _l-donnes_cantine_sol:
 
-Le dessert de la cantine
-========================
+Le dessert de la cantine (solution)
+===================================
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 

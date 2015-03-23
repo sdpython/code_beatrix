@@ -76,5 +76,5 @@ Personne ne sait pourquoi. Mais il est souvent fatigué.
 Solution
 --------
 
-Voir :ref:`l-donnes_cantine`.
+Voir :ref:`l-donnes_cantine_sol`.
 

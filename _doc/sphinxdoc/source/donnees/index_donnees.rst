@@ -13,7 +13,10 @@ A partir de 7-8 ans (mais ce n'est qu'une indication).
 Sujets
 ------
 
-
+.. toctree::
+    :maxdepth: 1
+    
+    dessert_cantine
 
 
 Indices et solutions
@@ -22,6 +25,8 @@ Indices et solutions
 .. toctree::
     :maxdepth: 1
     
+    dessert_cantine_solution
+
     
 
 
