@@ -46,7 +46,7 @@ Questions
 Exercice 1
 ----------
 
-Le programme scratch :download:`parcours 1 <../../../../src/code_beatrix/scratch/example_echiquier/echiquier.sb2>`
+Le programme scratch :download:`parcours 1 <../../../../src/code_beatrix/scratchs/example_echiquier/echiquier.sb2>`
 reproduit un parcours de l'échiquier
 toujours de gauche à droite en partant des lignes du bas pour 
 remonter jusqu'à la première ligne.

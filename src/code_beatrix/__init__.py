@@ -15,6 +15,8 @@ __url__ = "http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/index.html"
 __downloadUrl__ = "http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix"
 __license__ = "BSD License"
 
+from .scratchs import check
+
 
 def check(log=False):
     """
@@ -24,4 +26,5 @@ def check(log=False):
     @param      log     if True, display information, otherwise
     @return             0 or exception
     """
+    check()
     return True

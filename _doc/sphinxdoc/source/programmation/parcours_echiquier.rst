@@ -27,7 +27,7 @@ Mise en scène
    de ce qu'on lui a expliqué.
 
 
-.. image:: ../../../../src/code_beatrix/scratch/example_echiquier/echiquier.png
+.. image:: ../../../../src/code_beatrix/scratchs/example_echiquier/echiquier.png
     :width: 300 px
     
 On recommence avec d'autres façons de parcourir l'échiquier.
@@ -50,7 +50,7 @@ Exercice 1
 Il faut programmer un des parcours de l'échiquier 
 avec `Scratch <https://scratch.mit.edu/>`_. 
 On pourra compléter ce projet 
-:download:`echiquier0.sb2 <../../../../src/code_beatrix/scratch/example_echiquier/echiquier0.sb2>`.
+:download:`echiquier0.sb2 <../../../../src/code_beatrix/scratchs/example_echiquier/echiquier0.sb2>`.
 
 
 Exercice 2
