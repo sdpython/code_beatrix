@@ -105,10 +105,21 @@ A quoi ça sert ?
 A résoudre l'énigme que Hermionne résoud dans le premier tome d'Harry Potter et que je reproduis ici 
 (source : `L'encyclopédie Harry Potter <http://www.encyclopedie-hp.org/forums/viewtopic.php?t=2430>`_) :
 
-    #. Il y a trois fioles de poison, deux fioles de vin d’ortie, une fiole permettant d'avancer et une
+    #. Il y a trois fioles de poison, deux fioles de vin d'ortie, une fiole permettant d'avancer et une
        fiole permettant de reculer.
     #. Immédiatement à gauche de chacune des deux fioles de vin se trouve une fiole de poison.
     #. Les fioles 1 et 7 ont des contenus différents ; ni l'une ni l'autre n'est la fiole qui permet d'avance.
     #. Ni la fiole la plus grande (fiole 6) ni la plus petite (fiole 3) ne contient du poison.
     #. Les contenus des fioles 2 et 6 sont identiques.
+
+
+Lorsqu'on cherche à résoudre une énigme, chaque indice élimine des possibilités.
+Lorsqu'il n'en reste plus qu'une, on a trouvé. La vitesse à laquelle on trouve dépend
+des indices qu'on considère en premier. On cherche toujours à éliminer un grand nombre de possibilités
+le plus tôt possible.
+Pour finir, je citerai *Arthur Conan Doyle* (l'auteur des Sherlock Holmes) :
+
+    Lorsque vous avez éliminé l'impossible, ce qui reste, si improbable soit-il, est nécessairement la vérité.
+    
+    
 

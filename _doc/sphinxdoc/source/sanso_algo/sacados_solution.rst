@@ -35,17 +35,11 @@ Voici la liste d'instructions proposées :
 #. S'il tient, on le garde.
 #. Qu'il tienne ou pas, on passe à l'objet suivant et on retourne à l'étape 3.
 
-C'est l'algorithme `glouton <http://fr.wikipedia.org/wiki/Probl%C3%A8me_du_sac_%C3%A0_dos#Algorithme_glouton>`_.
+C'est l'algorithme `glouton <http://fr.wikipedia.org/wiki/Probl%C3%A8me_du_sac_%C3%A0_dos#Algorithme_glouton>`_
+qui est décrit ici. Il en existe plein d'autres pour trouver une solution approchée
+à ce problème mais celui-ci est très court, on l'essaye toujours en premier. 
 
-Solution
---------
-
-Voir :ref:`l-algo_sacados_sol`.
-
-
-A quoi ça sert ?
-----------------
-
-Comment rentrez-vous les valises quand vous partez en vacances ou quand vous
-déménagez ? Par quelle valise commencez-vous ?
+Ensuite, il est vrai, quand on veut vraiment emmener quelque chose en vacances,
+on fait tout pour que ça rentre dans le coffre. On fait, on défait mais on enlève rarement
+les plus gros sacs du fond du coffre.
 
