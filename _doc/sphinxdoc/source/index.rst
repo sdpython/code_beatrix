@@ -42,7 +42,7 @@ Contenu rangé
 .. toctree::
     :maxdepth: 1
 
-    sanso/algorithme_sans_ordinateur
+    sanso_algo/algorithme_sans_ordinateur
     donnees/index_donnees
     programmation/index_programmation
     arduino/index_arduino
