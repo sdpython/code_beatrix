@@ -84,7 +84,10 @@ Sur ces exemples, il faut trouver toutes les bombes et toutes les cases vides po
 
 **Q11 :**  Peut-on conclure ?
 
-.. image:: demineur_q10.png
+.. image:: demineur_q11.png
+
+
+**Q12:** S'il restait 4 bombes à placer, pourrait-on placer les bombes du coin supérieur gauche ?
 
 
 

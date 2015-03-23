@@ -34,7 +34,7 @@ Quelques algorithmes :
 * le tri
 * le problème du voyageur de commerce
 * les oranges
-* le démineur
+* :ref:`l-algo_demineur`
 * le sac-à-dos
 
 Découverte des données :
@@ -50,6 +50,8 @@ Découverte de la programmation :
 Solutions
 ---------
 
+* :ref:`l-algo_demineur_sol`
+* :ref:`l-donnes_cantine_sol`
 * :ref:`l-prog_parcours_echiquier_sol`
 
 

@@ -1,11 +1,11 @@
 <div class="relative">
     {%- if prev %}
-      <h4>{{ _('Previous topic') }}</h4>
+      <h4>{{ _('Précédent') }}</h4>
       <p class="topless"><a href="{{ prev.link|e }}"
                             title="{{ _('previous chapter') }}">{{ prev.title }}</a></p>
     {%- endif %}
     {%- if next %}
-      <h4>{{ _('Next topic') }}</h4>
+      <h4>{{ _('Suivant') }}</h4>
       <p class="topless"><a href="{{ next.link|e }}"
                             title="{{ _('next chapter') }}">{{ next.title }}</a></p>
     {%- endif %}
