@@ -39,7 +39,7 @@ Quelques algorithmes :
 
 Découverte des données :
 
-* le menu de la cantine
+* :ref:`l-donnes_cantine`
 
 Découverte de la programmation :
 

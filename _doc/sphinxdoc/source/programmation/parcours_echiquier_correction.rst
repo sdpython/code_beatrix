@@ -88,7 +88,7 @@ Cela donne ::
        0   1   2   3   4   5   6   7
 
 
-Ce parcourt correspond à celui décrit lors de la question 2.
+Ce parcourt correspond à celui décrit lors de la question 2 ::
 
 
   105   98   91   84   77   70   63   56
