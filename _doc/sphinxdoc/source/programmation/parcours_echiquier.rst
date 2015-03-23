@@ -69,7 +69,7 @@ Pour chaque case, on calcule ::
 #. Donner une formule qui correspond au parcourt suivant ?
    Les numéros ne doivent pas forcément être contigüs.
 
-    .. image:: parcours_diag.png
+.. image:: parcours_diag.png
 
 
 
@@ -79,3 +79,12 @@ Solution
 --------
 
 Voir :ref:`l-prog_parcours_echiquier_sol`.
+
+
+A quoi ça sert ?
+----------------
+
+Avez-vous jamais perdu quelque chose dans votre maison, votre téléphone, vos clés... que sais-je encore ?
+Comment cherchez-vous ce que vous avez perdu ? Mentalement, on effectue un parcours de sa propre maison
+pour ne pas chercher deux fois au même endroit.
+
