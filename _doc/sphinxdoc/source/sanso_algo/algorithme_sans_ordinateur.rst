@@ -28,6 +28,12 @@ il existe plein de solutions et déterminer la meilleure n'est pas toujours évi
 Sujets
 ------
 
+.. toctree::
+    :maxdepth: 1
+    
+    demineur
+    sacados
+
 
 
 
@@ -36,7 +42,9 @@ Indices et solutions
 
 .. toctree::
     :maxdepth: 1
-    
+
+    demineur_solution
+    sacados_solution
     notions
 
 

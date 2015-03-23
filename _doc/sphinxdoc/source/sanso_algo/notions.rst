@@ -23,9 +23,13 @@ trier les éléments, procéder par
 (ajouter de nouveaux éléments un par un en adaptant la meilleure solution).
 
 On a utilise parfois un langage guerrier quand on parle d'un problème.
-Comment l'attaquer ? Il faut stratégie pour le résoudre, 
+Comment l'attaquer ? Il faut une stratégie pour le résoudre, 
 un plan de bataille. Il faut le couper en petits bouts
 et chercher une solution pour chacun de ses bouts.
+
+Les informaticiens aiment aussi beaucoup le terme 
+`heuristique <http://fr.wikipedia.org/wiki/Heuristique_%28math%C3%A9matiques%29>`_.
+C'est une sorte de règle dont on sait qu'elle marche bien pour un problème donné.
 
 
 **Propriété locale - globale**
