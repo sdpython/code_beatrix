@@ -29,8 +29,7 @@ sys.path.insert(
             "pyquickhelper",
             "src")))
 
-#import my_hachibee_sphinx_theme as hachibee_sphinx_theme
-import hachibee_sphinx_theme as hachibee_sphinx_theme
+import my_hachibee_sphinx_theme as hachibee_sphinx_theme
 
 from pyquickhelper.helpgen.default_conf import set_sphinx_variables
 
