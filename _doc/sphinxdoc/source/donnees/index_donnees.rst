@@ -17,6 +17,7 @@ Sujets
     :maxdepth: 1
     
     dessert_cantine
+    correcteur_orthographe
 
 
 Indices et solutions
@@ -26,7 +27,7 @@ Indices et solutions
     :maxdepth: 1
     
     dessert_cantine_solution
-
+    correcteur_orthographe_solution
     
 
 

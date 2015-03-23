@@ -40,6 +40,7 @@ Quelques algorithmes :
 Découverte des données :
 
 * :ref:`l-donnes_cantine`
+* :ref:`l-donnes_orthographe`
 
 Découverte de la programmation :
 
@@ -52,6 +53,7 @@ Solutions
 
 * :ref:`l-algo_demineur_sol`
 * :ref:`l-donnes_cantine_sol`
+* :ref:`l-donnes_orthographe_sol`
 * :ref:`l-prog_parcours_echiquier_sol`
 
 
