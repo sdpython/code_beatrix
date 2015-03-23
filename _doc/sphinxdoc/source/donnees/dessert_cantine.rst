@@ -70,7 +70,7 @@ Personne ne sait pourquoi. Mais il est souvent fatigué.
 
 **Q6 :** Auriez-vous une petite histoire à raconter à ce sujet ?
 
-
+**Q7 :** A votre le directeur de l'école a-t-il le droit de faire tout ça ?
 
 
 Solution
