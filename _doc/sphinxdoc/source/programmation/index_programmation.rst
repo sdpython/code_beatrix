@@ -11,8 +11,10 @@ Ce n'est qu'une indication, pour ma part, j'ai commencé à 11 ans
 sur un `Amstrad CPC 464 <http://fr.wikipedia.org/wiki/Amstrad_CPC_464>`_.
 J'installais des jeux depuis des `cassettes <http://fr.wikipedia.org/wiki/Cassette_audio>`_.
 
-Préambule
----------
+.. _l-choix_langage:
+
+Quel langage de programmation pour commencer ?
+----------------------------------------------
 
 Comment commencer ? Comment apprendre lorsqu'on est tout seul et qu'on ne connaît
 personne qui puisse aider ?

@@ -23,6 +23,9 @@ On oublie tout le chemin qu'il faut parcourir pour **imaginer** une solution
 à un problème. J'emploie le terme *imaginer* car, la plupart du temps,
 il existe plein de solutions et déterminer la meilleure n'est pas toujours évident.
 
+Il faut plein d'idées pour en avoir une bonne. On avance plus vite à deux,
+les idées de l'un complètent celles de l'autre.
+
 
 
 Sujets

@@ -1,12 +1,8 @@
 ﻿Les enfants codaient
 ====================
 
-On dira bientôt cela.
+*On dira bientôt cela.*
 
-**Liens :** `pypi <https://pypi.python.org/pypi/code_beatrix/>`_, 
-`github <https://github.com/sdpython/code_beatrix/>`_,
-`documentation <http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/index.html>`_,
-`wheel <http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix>`_
 
 On programme pour faire des jeux, des sites internets, des recherches scientifiques,
 pour automatiser une tâche qu'on ne souhaite plus faire à la main.
@@ -16,15 +12,18 @@ cultiver son imagination. Lire, lire
 n'importe quel livre, pratiquer mais ne pas faire que ça.
 
 Les exercices qui suivent ont pour objectif de faire découvrir la programmation
-aux enfants principalement.
+aux enfants principalement. Le début des exercices, dès qu'il 
+s'agit de manipuler, est accessible dès 6 ans (voir :ref:`l-difficulte`).
 
 
+*L'intégralité de ce contenu est accessible via *
+`github <https://github.com/sdpython/code_beatrix/>`_.
 
 
 Patchworks
 ----------
 
-Ces patchwork sont des découvertes organisées pour des groupes d'enfants.
+Ces patchwork sont des parcours de découverte prévus pour un groupe d'enfants.
 Les sujets abordées sont choisis dans la partie :ref:`l-contenu-range`.
 
 
@@ -36,8 +35,8 @@ Les sujets abordées sont choisis dans la partie :ref:`l-contenu-range`.
 .. _l-contenu-range:
 
 
-Contenu rangé
--------------
+Contenu rangé par thèmes
+------------------------
 
 .. toctree::
     :maxdepth: 1
@@ -47,6 +46,63 @@ Contenu rangé
     programmation/index_programmation
     arduino/index_arduino
     
+
+.. _l-difficulte:
+    
+    
+Niveaux de difficulté
+---------------------
+
+Apprendre la programmation ne nécessite pas nécessairement un écran
+(lire `26 recommandations pour un usage raisonné des écrans par les enfants et adolescents (Académie des Sciences) <http://www.netpublic.fr/2013/01/recommandations-enfants-ecrans/>`_).
+Il n'y a pas de manière idéale d'apprendre, chacun à sa manière de comprendre.
+Pour moi, l'objectif n'est pas de tout comprendre mais de donner
+à l'enfant l'envie d'apprendre seul, d'avoir envie de résoudre
+un problème de la vie quotidienne par un programme. 
+A partir de là, c'est gagné.
+Au gré de mes lectures, je distinguerais les niveaux suivants :
+
+#. **Mémoriser, ordonner** : l'enfant sait ordonner des éléments : un grand objet est plus grand qu'un petit. 
+   Il sait jouer au `memory <http://fr.wikipedia.org/wiki/Memory_%28jeu%29>`_.
+#. **Compter, lire** : l'enfant sait lire et compter jusqu'à 100 et faire des additions et des multiplications
+   par des entiers.
+#. **Métaphore** (ou *pseudonyme*) : ce terme est volontairement flou, il signifie que l'enfant est 
+   capable de désigner les choses par un autre nom que celui qu'il connaît,
+   d'utiliser un pseudonyme,
+   de raconter une histoire avec ce nouveau nom,
+   de comprendre un niveau d'abstraction.
+   Par exemple, en mathématique, lorsqu'on résoud une équation, on désigne par *x*
+   la solution de l'équation. Elle est inconnue au moment où on commence 
+   la résolution, elle est connue lorsque l'équation est résolue mais on 
+   la manipule tout au long du calcul sans pour autant savoir ce qu'elle est.
+   A partir du moment où on écrit un programme informatique,
+   il faut assimiler le concept similaire de 
+   `variable informatique <http://fr.wikipedia.org/wiki/Variable_%28informatique%29>`_.
+   
+
+Dès qu'on sait mémoriser et ordonner, on peut faire la plupart des débuts d'exercices,
+surtout s'ils sont manuels. Il est préférable de savoir lire et compter pour commencer
+à bâtir un raisonnement, décrire une méthode, expliquer une méthode. 
+Enfin, il faut assimiler ce qu'est une variable pour finalement rédiger cette méthode
+avec un langage de programmation (voir également :ref:`l-variable_combien`).
+
+
+**langages de programmation**
+
+Pour apprendre à programmer, il faut programmer avec un langage de programmation.
+Il faut savoir lire et compter. `Scratch <https://scratch.mit.edu/>`_
+est très bien et bénéficie d'une communauté très active. Autrement dit,
+si vous ne connaissez pas la solution, Internet le saura (via un moteur de recherche).
+
+Lorsqu'on sait manipuler les variables, un langage plus écrit s'impose.
+Je recommande `Python <https://www.python.org/>`_ qui est présent dans la plupart
+des universités (pas seulement en France) 
+(voir également :ref:`l-choix_langage`). 
+Un bon langage de programmation est nécessairement de syntaxe anglaise.
+    
+    
+    
+    
     
 Annexes
 -------
@@ -54,11 +110,16 @@ Annexes
 .. toctree::
     :maxdepth: 1
 
-
+    remerciements
     getting_started
     glossary
     FAQ
     index_et_autre
+    
+Pour les plus chevronnés, certains bouts de codes en python 
+pourront être réutilisés via 
+`pypi <https://pypi.python.org/pypi/code_beatrix/>`_
+(ou `wheel <http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix>`_).
 
 
 

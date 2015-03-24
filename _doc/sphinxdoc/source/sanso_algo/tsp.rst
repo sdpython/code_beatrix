@@ -44,7 +44,7 @@ sur le reste du chemin ?
 Solution
 --------
 
-Voir :ref:`l-tsp_sol`.
+Voir :ref:`l-algo_tsp_sol`.
 
 
 A quoi ça sert ?

@@ -118,3 +118,21 @@ Et le programme python ::
         
 Pour obtenir le parcours, il suffit de trier les cases de l'échiquier en les classant
 selon les valeurs croissantes de la formule.
+
+.. _l-variable_combien:
+
+Combien vaut une variable ?
+---------------------------
+
+Lorsqu'on se sert de Scratch, on voit d'un côté un dessin qui représente un programme,
+de l'autre une animation. D'un côté, le scénario, de l'autre, le film. 
+Quand on pose la question : combien vaut la variable *x* ?
+Il est impossible de répondre si on n'arrête pas le film, il faut le mettre en pause.
+A ce moment, on peut regarder combien vaut la variable *x*. Mais à l'instant d'après,
+dès que le film se remet en marche, sa valeur change.
+
+On ne se pose pas la question quand on voit le compte à rebours d'une bombe.
+Que vaut-il ? Il reste cinq secondes, quatre, trois, ... Une variable,
+même si on ne la voit pas, fonctionne de la même manière : ça bouge
+tout le temps mais ça donne une information précise au moment où on la consulte.
+
