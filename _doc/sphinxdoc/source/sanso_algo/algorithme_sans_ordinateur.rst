@@ -14,7 +14,7 @@ Préambule
 Quelques règles :
 
 #. Il faut poser des questions dès qu'on ne comprend pas.
-#. On comprend mieux avec un dessin.
+#. On comprend mieux avec un dessin ou des grands gestes.
 #. Il faut savoir être patient.
 
 On pense souvent que les mathématiques sont difficiles sans doute parce 
@@ -31,6 +31,7 @@ Sujets
 .. toctree::
     :maxdepth: 1
     
+    tsp
     demineur
     sacados
 
@@ -43,6 +44,7 @@ Indices et solutions
 .. toctree::
     :maxdepth: 1
 
+    tsp_solution
     demineur_solution
     sacados_solution
     notions

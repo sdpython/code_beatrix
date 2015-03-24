@@ -32,7 +32,7 @@ Où sont les bombes et où elles ne sont pas
 ------------------------------------------
 
 
-Sur ces exemples, il faut trouver toutes les bombes et toutes les cases vides possibles.
+Sur ces exemples, il faut trouver le plus de bombes et le plus de cases vides possibles.
 
 
 **Q1 :** 

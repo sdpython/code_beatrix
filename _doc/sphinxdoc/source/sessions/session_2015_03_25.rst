@@ -32,7 +32,7 @@ Sujets
 Quelques algorithmes :
 
 * le tri
-* le problème du voyageur de commerce
+* :ref:`l-algo_tsp`
 * les oranges
 * :ref:`l-algo_demineur`
 * :ref:`l-algo_sacados`
@@ -51,6 +51,7 @@ Découverte de la programmation :
 Solutions
 ---------
 
+* :ref:`l-algo_tsp_sol`
 * :ref:`l-algo_demineur_sol`
 * :ref:`l-algo_sacados_sol`
 * :ref:`l-donnes_cantine_sol`
