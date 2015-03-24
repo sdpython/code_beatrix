@@ -1,9 +1,9 @@
 ﻿
 .. issue.
 
-.. _l-prog_parcours_echiquier:
-
 .. index:: énoncé, échiquier, parcours, variable
+
+.. _l-prog_parcours_echiquier:
 
 Parcours d'un échiquier
 =======================

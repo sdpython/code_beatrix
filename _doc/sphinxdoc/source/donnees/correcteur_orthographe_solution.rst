@@ -1,12 +1,12 @@
 ﻿
 .. issue.
 
+.. index:: correcteur orthographique, orthographe, solution, sondage, vote
+
 .. _l-donnes_orthographe_sol:
 
 Le correcteur orthographique moyen (solution)
 =============================================
-
-.. index:: correcteur orthographique, orthographe, solution, sondage, vote
 
 **Q1 :**
 

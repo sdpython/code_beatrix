@@ -1,12 +1,12 @@
 ﻿
 .. issue.
 
-.. _l-algo_sans_ordinateur_notions:
-
-
 
 
 .. index:: notion, concept
+
+.. _l-algo_sans_ordinateur_notions:
+
 
 Notions, Concepts
 =================

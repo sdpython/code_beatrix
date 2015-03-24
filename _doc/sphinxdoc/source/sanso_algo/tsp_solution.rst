@@ -1,9 +1,9 @@
 ﻿
 .. issue.
 
-.. _l-algo_tsp_sol:
+.. index:: voyageur de commerce, solution, distance, algorithme, parcours, circuit, tsp
 
-.. index:: voyageur de commerce, solution, distance, algorithme, parcours, circuit
+.. _l-algo_tsp_sol:
 
 
 Le voyageur de commerce (solution)
@@ -15,12 +15,16 @@ Le voyageur de commerce (solution)
 Le bouteille de départ n'est pas importante puisqu'il s'agit de faire le tour.
 On peut donc démarrer de n'importe quelle bouteille, ce sera toujours le même tour.
 
+.. image:: tsp_tour.png
+    :width: 600 px
+
 
 **Q2 :** 
 
 Regardons sur la figure suivante :
 
 .. image:: tsp_croix.png
+    :width: 600 px
 
 Avec le chemin rouge qui se croise, on parcourt : Lyon, Paris, Strasbourg, Nantes.
 Avec le chemin bleu qui ne se croise pas, on parcourt : Lyon, Strasbourg, Paris, Nantes.
@@ -35,12 +39,17 @@ Sauf que aller de Lyon à Strasbourg en passant **C** est plus long que d'y alle
 directement : c'est un détour. Donc, il suffit de ne pas passer par C. C'est plus court.
 
 
+.. image:: tsp_tour1.png
+    :width: 600 px
+
+
 **Q3 :** 
 
 Quel est le chemin de plus court, le rouge ou le bleu ? Vaut-il mieux
 faire ``ABC`` ou ``BAC`` ?
 
 .. image:: tsp_croix2.png
+    :width: 600 px
 
 La différence entre les deux parcours ? On a permuté les villes ``A`` et ``B``. 
 Peut-on faire pareil avec les points ``IJK`` ? La réponse est oui.
@@ -51,6 +60,16 @@ quelle autre. On peut imaginer à peu près n'importe quelle transformation à
 partir de là.
 
 
+.. image:: tsp_tour2.png
+    :width: 600 px
+
+
+.. image:: tsp_tour3.png
+    :width: 600 px
+
+
+Le notebook :ref:`voyageurdecommercerst` permet d'avoir un cadre dans lequel
+ses propres algorithmes.
 
 
 Pour aller plus loin

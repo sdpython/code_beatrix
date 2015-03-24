@@ -1,9 +1,9 @@
 ﻿
 .. issue.
 
-.. _l-algo_sacados_sol:
-
 .. index:: sac-à-dos, solution, poids, algorithme, glouton
+
+.. _l-algo_sacados_sol:
 
 Sac-à-dos (solution)
 ====================

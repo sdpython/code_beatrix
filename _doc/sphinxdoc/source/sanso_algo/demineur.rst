@@ -1,9 +1,9 @@
 ﻿
 .. issue.
 
-.. _l-algo_demineur:
-
 .. index:: démineur, énoncé, énigme
+
+.. _l-algo_demineur:
 
 Le démineur
 ===========

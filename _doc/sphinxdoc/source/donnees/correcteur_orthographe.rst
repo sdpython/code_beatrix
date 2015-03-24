@@ -1,12 +1,12 @@
 ﻿
 .. issue.
 
+.. index:: correcteur orthographique, orthographe, énoncé, sondage, vote
+
 .. _l-donnes_orthographe:
 
 Le correcteur orthographique moyen
 ==================================
-
-.. index:: correcteur orthographique, orthographe, énoncé, sondage, vote
 
 A partir de 9 ans (mais ce n'est qu'une indication).
 

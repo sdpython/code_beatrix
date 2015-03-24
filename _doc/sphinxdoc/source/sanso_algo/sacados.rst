@@ -1,9 +1,9 @@
 ﻿
 .. issue.
 
-.. _l-algo_sacados:
-
 .. index:: sac-à-dos, énoncé, poids, algorithme
+
+.. _l-algo_sacados:
 
 Sac-à-dos
 =========

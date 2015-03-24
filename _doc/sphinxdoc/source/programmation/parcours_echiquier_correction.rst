@@ -1,9 +1,9 @@
 ﻿
 .. issue.
 
-.. _l-prog_parcours_echiquier_sol:
-
 .. index:: solution, échiquier, parcours, variable
+
+.. _l-prog_parcours_echiquier_sol:
 
 Parcours d'un échiquier (solution)
 ==================================

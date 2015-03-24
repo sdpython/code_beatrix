@@ -1,9 +1,9 @@
 ﻿
 .. issue.
 
-.. _l-algo_tsp:
+.. index:: voyageur de commerce, énoncé, distance, algorithme, parcours, circuit, tsp
 
-.. index:: voyageur de commerce, énoncé, distance, algorithme, parcours, circuit
+.. _l-algo_tsp:
 
 Le voyageur de commerce
 =======================

@@ -115,7 +115,8 @@ Annexes
     glossary
     FAQ
     index_et_autre
-    
+    all_notebooks
+
 Pour les plus chevronnés, certains bouts de codes en python 
 pourront être réutilisés via 
 `pypi <https://pypi.python.org/pypi/code_beatrix/>`_

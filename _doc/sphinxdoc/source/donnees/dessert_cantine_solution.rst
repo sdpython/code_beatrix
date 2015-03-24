@@ -1,12 +1,12 @@
 ﻿
 .. issue.
 
+.. index:: cantine, like, facebook, smartphone, sondage, droit, solution
+
 .. _l-donnes_cantine_sol:
 
 Le dessert de la cantine (solution)
 ===================================
-
-.. index:: cantine, like, facebook, smartphone, sondage, droit, solution
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 

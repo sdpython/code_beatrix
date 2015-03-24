@@ -1,10 +1,10 @@
 ﻿
 .. issue.
 
-.. _l-algo_demineur_sol:
-
 .. index:: démineur, solution, énigme
 
+
+.. _l-algo_demineur_sol:
 
 Le démineur (solution)
 ======================

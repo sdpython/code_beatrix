@@ -1,12 +1,12 @@
 ﻿
 .. issue.
 
+.. index:: cantine, like, facebook, smartphone, sondage, droit, énoncé
+
 .. _l-donnes_cantine:
 
 Le dessert de la cantine
 ========================
-
-.. index:: cantine, like, facebook, smartphone, sondage, droit, énoncé
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 
