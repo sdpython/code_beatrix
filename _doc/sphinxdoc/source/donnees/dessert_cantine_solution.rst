@@ -76,8 +76,13 @@ dans un immense tableau de données. A partir de ce tableau, on peut calculer :
 * le taux de chômage dans votre pâté de maison
 
 Ce sont toujours des données agrégées mais on finit par savoir beaucoup de choses.
-Utiles et dangereux à la fois.
-A ce sujet :
+Donner accès à vos données devrait s'appuyer sur une relation de confiance.
+L'inconvénient aujourd'hui est qu'il est très difficile aujourd'hui
+de récupérer ses données : faire en sorte que la personne ou la société 
+qui les détient vous les rende et les efface.
+La science fiction s'est depuis longtemps emparée de ce sujet.
+Les scénarios ne sont pas tous des scénarios catastrophe mais invitent
+à la réflexion.
 
 * `1984 <http://fr.wikipedia.org/wiki/1984_%28roman%29>`_, George Orwell (livre)
 * `Brazil <http://fr.wikipedia.org/wiki/Brazil_%28film,_1985%29>`_, Terry Gilliam (film, adaptation de 1984)
