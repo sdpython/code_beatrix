@@ -33,7 +33,7 @@ Sujets
 
 Quelques algorithmes :
 
-* le tri
+* :ref:`l-algo_tri`
 * :ref:`l-algo_tsp`
 * les oranges
 * :ref:`l-algo_demineur`
@@ -53,6 +53,7 @@ Découverte de la programmation :
 Solutions
 ---------
 
+* :ref:`l-algo_tri_sol`
 * :ref:`l-algo_tsp_sol`
 * :ref:`l-algo_demineur_sol`
 * :ref:`l-algo_sacados_sol`
@@ -67,10 +68,40 @@ Pour aller plus loin
 Vous pouvez par exemple réfléchir au problème suivant : 
 :ref:`le plus court circuit et le moins de poids à transporter <l-algo_tsp_plus_loin>`.
 
-Bibliographie
--------------
+
+.. _l-lecture_2503:
+
+Livres, Bibliographie
+---------------------
+
+**10 ans**
+
+* `Virus L.I.V.3. <http://fr.wikipedia.org/wiki/Virus_L.I.V._3>`_, Christian Grenier
+* `La Souris Grise <http://www.souris-grise.fr/>`_, guide sur les meilleures applications pour smartphine ou tablette
+* `Muscles tes maths <http://www.nathan.fr/catalogue/fiche-produit.asp?ean13=9782092545676>`_, voir notamment la
+  page sur le graphisme de données et une autre sur les femmes et les maths.
+  Le premier programme informatique a été écrit par une femme : 
+  `Augusta Ada King <http://fr.wikipedia.org/wiki/Ada_Lovelace>`_.
+* `Scratch pour les Kids <http://www.ludovia.com/2015/03/scratch-pour-les-kids/>`_
+* 
+
+**12 ans**
+
+* `Sword Art Online <http://fr.wikipedia.org/wiki/Sword_Art_Online>`_, manga japonais, des joueurs se retrouvent prisonniers
+  d'un jeu vidéo, ils ne peuvent plus se déconnecter et revenir à la réalité. Leur esprit voyagent dans des univers
+  imaginaire, leur corps est prisonnier du monde réel
+* `Le château dans le ciel <http://fr.wikipedia.org/wiki/Le_Ch%C3%A2teau_dans_le_ciel>`_, Hayao Miyazaki (dessin animé)
+
+**14 ans**
+
+* `Le théorème du Perroquet <http://fr.wikipedia.org/wiki/Le_Th%C3%A9or%C3%A8me_du_Perroquet>`_, Denis Guedj
+* `Histoire des codes secrets <http://fr.wikipedia.org/wiki/Histoire_des_codes_secrets._De_l%27%C3%89gypte_des_pharaons_%C3%A0_l%27ordinateur_quantique>`_, Simon Singh, 
+  le livre vous fera découvrir comment les codes secrets ont aidé à écourter la seconde guerre mondiale.
+  Lire également :ref:`l-lecture_codes_secret`.
+* `L'ordinateur <http://livre.fnac.com/a1520298/Christian-Grenier-L-ordinatueur>`_, Christian Grenier
+
+**Autres pistes**
 
 * :ref:`l-biblio_algo` à propos des algorithmes
 * :ref:`l-biblio_prog` à propos de la programmation
 * :ref:`l-biblio_donnes` à propos des données
-

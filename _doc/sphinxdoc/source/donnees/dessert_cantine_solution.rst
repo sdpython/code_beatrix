@@ -25,12 +25,16 @@ de l'école et compter les *like* ?
 
 Les parents likent aussi ! Il suffit de ne pas les compter.
 
+Je suis pas sûr que le verbe *liker* soit accepté par l'Académie Française.
+Le dictionnaire `Larousse <http://www.larousse.fr/dictionnaires/francais/like/47137?q=like#47067>`_
+semble accepter le mot *like*.
+
 
 **Q3 :** 
 
 Le cuisinier a remarqué que les parents votent plus tard que les enfants
 car ils votent en cachette. Les élèves votent plus souvent à l'heure de la récréation
-quand le cuisinier leur rappelle de voter car c'est le dernier jour.
+quand le cuisinier leur rappelle de voter car c'est le dernier jour, c'est-à-dire jeudi.
 
 **Q4 :** 
 

@@ -100,7 +100,14 @@ des universités (pas seulement en France)
 (voir également :ref:`l-choix_langage`). 
 Un bon langage de programmation est nécessairement de syntaxe anglaise.
     
-    
+**imagination**
+
+Lorsqu'on parle de choses abstraites, il n'existe jamais une seule façon
+d'en parler. Chacun à sa façon de les comprendre et de se les représenter.
+Tout dépend de l'imagination de chacun. Et bien souvent,
+plus on lit, plus on voit ce que d'autres ont imaginé, plus on a d'imagination
+
+:ref:`quelques idées <l-lecture_2503>`
     
     
     

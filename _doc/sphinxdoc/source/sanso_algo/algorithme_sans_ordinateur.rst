@@ -34,6 +34,7 @@ Sujets
 .. toctree::
     :maxdepth: 1
     
+    tri
     tsp
     demineur
     sacados
@@ -47,6 +48,7 @@ Indices et solutions
 .. toctree::
     :maxdepth: 1
 
+    tri_solution
     tsp_solution
     demineur_solution
     sacados_solution

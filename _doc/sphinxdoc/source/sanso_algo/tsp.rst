@@ -23,13 +23,13 @@ Mise en scène
 -------------
 
 On remplit des bouteilles d'eau qu'on dispose un peu n'importe comment dans une salle.
-Avec une pelote de laine, on cherche à faire un grand tour pour toutes les relier
-puis revenir à celle de départ. 
+Avec une pelote de laine, on cherche à faire un grand tour pour toutes les relier [#ftsp1]_
+puis revenir à celle de départ [#ftsp2]_.
 Le gagnant est celui qui a réussi à relier toutes les bouteilles avec le moins de laine possible.
 
 Par la suite, on pourra simplement numéroter les bouteilles dans le sens
 où on doit les parcourir. Le fil servira à mesurer des petits bouts de chemins
-et peut-être changer les numéros.
+et peut-être changer les numéros. 
 
 Quelques indices :
 
@@ -67,3 +67,10 @@ du vin (2 kg) et de la viande (1 kg).
 Il faut donc aller à la boulangerie, chez le marchant de légumes, le fromager, le marchand de vin
 et le boucher. On suppose que ce sont les commerçants de votre ville.
 Dans quel sens faut-il faire les courses pour porter le moins possible ?
+
+
+.. [#ftsp1] Si les bouteilles tombent trop souvent, il faudra les placer à côté de chaises ou de 
+            tables dont on reliera les pieds. La bouteille sert juste à marquer l'emplacement.
+            
+.. [#ftsp2] Pour les adeptes du `croquet <http://fr.wikipedia.org/wiki/Croquet>`_, 
+            cette mise en scène peut paraître bien inutile.
