@@ -62,6 +62,8 @@ Solutions
 Pour aller plus loin
 --------------------
 
+Vous pouvez par exemple réfléchir au problème suivant : 
+:ref:`le plus court circuit et le moins de cours à transporter <l-algo_tsp_plus_loin>`.
 
 Bibliographie
 -------------

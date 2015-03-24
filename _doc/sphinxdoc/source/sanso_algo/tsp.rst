@@ -53,5 +53,14 @@ A quoi ça sert ?
 On ne fait pas souvent le tour de France mais on va souvent au supermarché. 
 Quel est le chemin le plus court entre les rayons pour aller acheter tout ce dont on a besoin ?
 
+.. _l-algo_tsp_plus_loin:
 
+Pour aller plus loin
+--------------------
 
+On considère un problème un petit peu différent. Pour recevoir des amis, il faut faire les courses en ville 
+et à pied. Il faut du pain (500 grammes), des pommes de terre (3 kg), du fromage (2 kg), 
+du vin (2 kg) et de la viande (1 kg). 
+Il faut donc aller à la boulangerie, chez le marchant de légumes, le fromager, le marchand de vin
+et le boucher. On suppose que ce sont les commerçants de votre ville.
+Dans quel sens faut-il faire les courses pour porter le moins possible ?
