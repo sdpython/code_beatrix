@@ -3,6 +3,9 @@
 
 .. _l-algo_tsp_sol:
 
+.. index:: voyageur de commerce, solution, distance, algorithme, parcours, circuit
+
+
 Le voyageur de commerce (solution)
 ==================================
 

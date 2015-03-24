@@ -6,6 +6,8 @@
 Le correcteur orthographique moyen (solution)
 =============================================
 
+.. index:: correcteur orthographique, orthographe, solution, sondage, vote
+
 **Q1 :**
 
 Une solution simple est le vote, pour chaque mot dont il faut décider de l'orthographe,

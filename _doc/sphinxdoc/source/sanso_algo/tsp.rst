@@ -3,8 +3,11 @@
 
 .. _l-algo_tsp:
 
+.. index:: voyageur de commerce, énoncé, distance, algorithme, parcours, circuit
+
 Le voyageur de commerce
 =======================
+
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 

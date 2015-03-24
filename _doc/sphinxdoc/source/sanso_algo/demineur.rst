@@ -3,8 +3,11 @@
 
 .. _l-algo_demineur:
 
+.. index:: démineur, énoncé, énigme
+
 Le démineur
 ===========
+
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 

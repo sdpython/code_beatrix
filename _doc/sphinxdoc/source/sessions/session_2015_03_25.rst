@@ -7,6 +7,8 @@
 Presque sans ordinateur - 25 mars 2015
 ======================================
 
+.. index:: patchwork
+
 Chez `Coding and Bricks <http://www.codingandbricks.com/>`_.
 
 Préambule

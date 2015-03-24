@@ -6,10 +6,10 @@
 
 
 
+.. index:: notion, concept
 
 Notions, Concepts
 =================
-
 
 
 **Stratégies**

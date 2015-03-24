@@ -6,8 +6,9 @@
 Le dessert de la cantine (solution)
 ===================================
 
-A partir de 7-8 ans (mais ce n'est qu'une indication).
+.. index:: cantine, like, facebook, smartphone, sondage, droit, solution
 
+A partir de 7-8 ans (mais ce n'est qu'une indication).
 
 
 Mise en scène

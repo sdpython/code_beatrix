@@ -3,8 +3,12 @@
 
 .. _l-algo_sacados_sol:
 
+.. index:: sac-à-dos, solution, poids, algorithme, glouton
+
 Sac-à-dos (solution)
 ====================
+
+
 
 Il n'existe pas d'algorithme rapide qui permette de trouver la solution optimale 
 - la meilleure solution. Mais on peut essayer de trouver une façon rapide

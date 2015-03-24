@@ -3,8 +3,11 @@
 
 .. _l-prog_parcours_echiquier:
 
+.. index:: énoncé, échiquier, parcours, variable
+
 Parcours d'un échiquier
 =======================
+
 
 A partir de 7 ans. 
 

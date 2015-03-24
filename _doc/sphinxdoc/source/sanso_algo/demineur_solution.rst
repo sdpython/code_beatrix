@@ -3,8 +3,12 @@
 
 .. _l-algo_demineur_sol:
 
+.. index:: démineur, solution, énigme
+
+
 Le démineur (solution)
 ======================
+
 
 Pour trouver les solutions, il faut essayer !
 Quand on hésite entre deux cases, on pose un drapeau et on regarde

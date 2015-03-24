@@ -3,8 +3,11 @@
 
 .. _l-algo_sacados:
 
+.. index:: sac-à-dos, énoncé, poids, algorithme
+
 Sac-à-dos
 =========
+
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 

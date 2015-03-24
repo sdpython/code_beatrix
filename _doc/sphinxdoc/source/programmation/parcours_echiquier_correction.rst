@@ -3,8 +3,12 @@
 
 .. _l-prog_parcours_echiquier_sol:
 
+.. index:: solution, échiquier, parcours, variable
+
 Parcours d'un échiquier (solution)
 ==================================
+
+
 
 Solution de :ref:`l-prog_parcours_echiquier`.
 

@@ -6,6 +6,8 @@
 Le correcteur orthographique moyen
 ==================================
 
+.. index:: correcteur orthographique, orthographe, énoncé, sondage, vote
+
 A partir de 9 ans (mais ce n'est qu'une indication).
 
 Le texte est tiré des `dictées de Pivot <http://lecercledor.jimdo.com/dict%C3%A9es/france/les-dict%C3%A9es-de-bernard-pivot/>`_.
