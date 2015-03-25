@@ -36,6 +36,7 @@ Sujets
     
     tri
     tsp
+    orange
     demineur
     sacados
 
@@ -50,6 +51,7 @@ Indices et solutions
 
     tri_solution
     tsp_solution
+    orange_solution
     demineur_solution
     sacados_solution
     notions

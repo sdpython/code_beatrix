@@ -69,11 +69,18 @@ On remet à tous les enfants sauf un  une carte et deux fils de laine : un rouge
 
 .. image:: tri2.png
 
+**Q1 :**
 
 Il existe une façon pour le dernier enfant de ramasser simplement
 toutes les cartes dans le bon ordre. Saurez-vous la trouver ?
 
 Il s'agit dans ce dernier cas du `tri par arbre <http://rmdiscala.developpez.com/cours/LesChapitres.html/Cours4/TArbrechap4.6.htm>`_.
+
+
+**Q2 :**
+
+Comment cherche-t-on un mot dans un dictionnaire ? Combien ouvre-t-on de pages avant
+de trouver son mot ?
 
 Solution
 --------
@@ -83,4 +90,11 @@ Voir :ref:`l-algo_tri_sol`.
 
 A quoi ça sert ?
 ----------------
+
+On se sert souvent du tri, surtout que tout est trié.
+A la bibliothèque, tout semble bien ordonné. 
+Les papiers administratif sont rangés par date, les devoirs 
+sont triés par notes, les mots du dictionnaire sont triés
+sinon il serait quasiment impossible de les retrouver.
+Le tri sert à retrouver facilement les choses triées.
 

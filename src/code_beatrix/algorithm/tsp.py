@@ -40,11 +40,29 @@ def permutation(points, i, j):
 
     @param      points      circuit
     @param      i           first index
-    @param      j           second index
+    @param      j           second index (< len(points))
     @return                 new circuit
     """
     points = points.copy()
     points[i], points[j] = points[j], points[i]
+    return points
+
+
+def reverse(points, i, j):
+    """
+    reverse a sub part of circuit
+
+    @param      points      circuit
+    @param      i           first index
+    @param      j           second index (<= len(points))
+    @return                 new circuit
+    """
+    points = points.copy()
+    if i > j:
+        i, j = j, i
+    c = points[i:j]
+    c.reverse()
+    points[i:j] = c
     return points
 
 
@@ -62,7 +80,9 @@ def voyageur_commerce_simple(points):
     while dnew < d0 or first:
         first = False
         d0 = dnew
-        for i in range(len(points) * 2):
+
+        # first pass : random
+        for i in range(len(points)):
             h1 = random.randint(0, n)
             h2 = random.randint(0, n)
             p = permutation(points, h1, h2)
@@ -71,11 +91,22 @@ def voyageur_commerce_simple(points):
                 dnew = d
                 points = p
 
-        p = permutation(points, len(points) - 1, 0)
-        d = distance_circuit(p)
-        if d < dnew:
-            dnew = d
-            points = p
+            h1 = random.randint(0, n)
+            h2 = random.randint(h1 + 1, n + 1)
+            p = reverse(points, h1, h2)
+            d = distance_circuit(p)
+            if d < dnew:
+                dnew = d
+                points = p
+
+        # second pass : no reverse
+        for i in range(len(points)):
+            for j in range(i + 1, len(points) + 1):
+                p = reverse(points, i, j)
+                d = distance_circuit(p)
+                if d < dnew:
+                    dnew = d
+                    points = p
 
     return points
 
