@@ -131,6 +131,13 @@ pourront être réutilisés via
 
 
 
+.. image:: https://badge.fury.io/py/code_beatrix.svg
+    :target: http://badge.fury.io/py/code_beatrix
+      
+.. image:: http://img.shields.io/pypi/dm/code_beatrix.png
+    :alt: PYPI Package
+    :target: https://pypi.python.org/pypi/code_beatrix 
+    
 
 
 

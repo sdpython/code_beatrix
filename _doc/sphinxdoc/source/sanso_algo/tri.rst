@@ -37,9 +37,29 @@ ou ça :
 **trier**
 
 Même exercice mais on trie d'abord le jeu de cartes. On enlève ensuite trois cartes.
-Il faut de nouveau deviner les cartes qui manquent.
+Il faut de nouveau deviner les cartes qui manquent. S'il y a deux groupes d'enfants,
+l'un peut recevoir un jeu trié, l'autre non.
 
 **Comment trier ?**
+
+Dans un premier temps, on va chercher à trier le plus rapidement possible sans indication.
+
+**Et si on est plusieurs ?**
+
+Un jeu de cartes comprend généralement des couleurs et des numéros. 
+Est-ce cela peut aider à aller plus vite ?
+
+
+Méthode systématique de tri
+---------------------------
+
+Et si maintenant, il faut trier cinquante mille cartes ?
+Comment faudrait-il faire ?
+Les exercices suivant peuvent être fait à plusieurs ou seul en
+plaçant les cartes à plat sur une table.
+
+
+**remettre de l'ordre**
 
 On distribue aux enfants une ou deux cartes (selon le nombre d'enfants ou et de cartes).
 On suppose qu'on sait dire si deux cartes sont dans le bon ordre ou pas si on 
@@ -55,7 +75,9 @@ cartes avec ses voisins si elles ne sont pas dans le bon ordre.
 Ce tri correspond au `tri à bulles <http://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles>`_.
 
 
-**Autre façon de trier**
+
+
+**construire un arbre pour trier**
 
 On remet à tous les enfants sauf un  une carte et deux fils de laine : un rouge, un bleu.
 
@@ -69,7 +91,6 @@ On remet à tous les enfants sauf un  une carte et deux fils de laine : un rouge
 
 .. image:: tri2.png
 
-**Q1 :**
 
 Il existe une façon pour le dernier enfant de ramasser simplement
 toutes les cartes dans le bon ordre. Saurez-vous la trouver ?
@@ -77,10 +98,27 @@ toutes les cartes dans le bon ordre. Saurez-vous la trouver ?
 Il s'agit dans ce dernier cas du `tri par arbre <http://rmdiscala.developpez.com/cours/LesChapitres.html/Cours4/TArbrechap4.6.htm>`_.
 
 
-**Q2 :**
+**couper, trier, fusionner**
 
-Comment cherche-t-on un mot dans un dictionnaire ? Combien ouvre-t-on de pages avant
-de trouver son mot ?
+Lorsqu'on est plusieurs ou qu'on doit trier un grand nombre de carte,
+il est plus simple de trier des petits bouts puis de les assembler.
+
+Comment regrouper deux jeux de cartes triés pour ne former qu'un seul
+paquet qui soit trié également ? Il faut trouver la méthode la plus efficace.
+
+
+Ordre alphabétique
+------------------
+
+Connaissez-vous l'ordre alphabétique ?
+
+Comment cherche-t-on un mot dans un dictionnaire ? 
+
+Est-ce que cela serait plus simple si les mots n'étaient pas triés ?
+
+Combien ouvre-t-on de pages avant de trouver son mot ?
+
+
 
 Solution
 --------
@@ -97,4 +135,18 @@ Les papiers administratif sont rangés par date, les devoirs
 sont triés par notes, les mots du dictionnaire sont triés
 sinon il serait quasiment impossible de les retrouver.
 Le tri sert à retrouver facilement les choses triées.
+
+Citez autour de vous des *choses* qui sont triées. On a vu le dictionnaire. Y en a-t-il d'autres ?
+
+Dans une gare ?
+
+Dans des livres ? 
+
+Dans votre téléphone ?
+
+Dans votre cuisine ?
+
+Et le linge ?
+
+Connaissez-vous le tableau de Mendeleïev ?
 

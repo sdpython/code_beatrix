@@ -5,8 +5,8 @@
 
 .. _l-algo_orange:
 
-Le jeu des oranages
-===================
+Le jeu des oranges
+==================
 
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
@@ -14,6 +14,7 @@ A partir de 7-8 ans (mais ce n'est qu'une indication).
 
 C'est un petit jeu où il faut être inventif
 pour construire la méthode qui aboutit à la solution.
+Il est préférable d'avoir compris ce qu'est un :ref:`tri <l-algo_tri>` au préalable.
 
 
 Mise en scène
@@ -45,7 +46,12 @@ comme deux cercles d'oranges dont l'un est incomplet.
 
 .. image:: orange1.png
 
+Comment faire tourner un cercle ?
 
+Comment faire tourner l'autre cercle ?
+
+La première étape serait de faire tourner un cercle pour avoir 
+le plus de numéros qui correspondent.
 
 
 Solution

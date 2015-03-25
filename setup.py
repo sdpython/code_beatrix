@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#  Copyright (C) 2013 ---------------
+#  Copyright (C) 201% ---------------
 #  All rights reserved.
 #
 #  Redistribution and use in source and binary forms, with or without
@@ -60,7 +60,7 @@ KEYWORDS = \
     project_var_name + ', coding goûter'
 
 DESCRIPTION = \
-    """Helpers for teaching purposes (includes sqllite helpers)"""
+    """Exercices pour apprendre la programmation, les algorithmes, et faire des coding goûters."""
 
 CLASSIFIERS = \
     [
@@ -199,7 +199,7 @@ else:
                                                                                                                                                                                               subversion),
         author='Xavier Dupré',
         author_email='',
-        url="http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/index.html",
+        url="http://lesenfantscodaient.fr/",
         download_url="https://github.com/sdpython/code_beatrix/",
         description=DESCRIPTION,
         long_description=long_description,
