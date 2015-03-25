@@ -1,9 +1,10 @@
 ﻿
 .. issue.
 
-.. index:: voyageur de commerce, énoncé, distance, algorithme, parcours, circuit, tsp
+.. index:: voyageur de commerce, énoncé, distance, algorithme, parcours, circuit, tsp, Dunkerque 2015-03-25
 
 .. _l-algo_tsp:
+
 
 Le voyageur de commerce
 =======================
@@ -34,6 +35,13 @@ et peut-être changer les numéros.
 Quelques indices :
 
 **Q1 :** Le bouteille de départ est-elle importante ?
+
+
+A vous.
+
+
+Autres options à programmer
+---------------------------
 
 **Q2 :** J'ai relié toutes les bouteilles entre elles et je m'aperçois que les fils se croisent.
 Que puis-je faire pour raccourcir le trajet ?

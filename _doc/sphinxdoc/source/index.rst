@@ -119,6 +119,7 @@ Annexes
 
     remerciements
     getting_started
+    histoires/index_histoires
     glossary
     FAQ
     index_et_autre

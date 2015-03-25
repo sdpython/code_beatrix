@@ -19,6 +19,56 @@ On peut donc démarrer de n'importe quelle bouteille, ce sera toujours le même 
     :width: 600 px
 
 
+Le premier réflexe est de relier les bouteilles en allant d'une bouteille à
+l'autre en prenant la plus proche. Mais c'est un peu trop compter sur la chance
+et la méthode est un peu trop aléatoire. Une meilleure méthode est
+d'entourée les points à visiter par une corde :
+
+.. image:: tsp_fil_tour1.png
+
+
+Puis on se rapproche le plus possible en tirant sur le fil :
+
+.. image:: tsp_fil_tour2.png
+
+.. index:: enveloppe convexe
+
+On obtient l'`enveloppe convexe <http://fr.wikipedia.org/wiki/Enveloppe_convexe>`_.
+Ensuite, pour chaque point à l'intérieur, on tire un peu plus le fil là
+où cela paraît le plus court :
+
+.. image:: tsp_fil_tour3.png
+
+
+On fait pareil avec les autres points intérieurs :
+
+
+.. image:: tsp_fil_tour4.png
+
+
+Comment écrire l'algorithme ?
+
+#. Constuire l'enveloppe convexe de l'ensemble des points. 
+   Ce sera le chemin initial.
+#. Pour chaque point à l'intérieur, considérer le point le plus 
+   proche d'un des segments.
+#. Ajouter ce point à ce segment.
+#. Retourner à l'étape 2.
+
+Le problème est que construire l'enveloppe convexe d'un ensemble 
+de points n'est pas aussi simple que ça en a l'air.
+Ce fera l'objet d'un algorithme particulier.
+C'est d'ailleurs pourquoi on regarde les d'autres algorithmes
+permettant de construire le chemin le plus court passant par toutes 
+les villes. Pour le savoir, il vous suffit de lire ce qui suit.
+   
+
+
+Autres options à programmer
+---------------------------
+
+
+
 **Q2 :** 
 
 Regardons sur la figure suivante :

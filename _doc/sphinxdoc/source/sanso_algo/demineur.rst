@@ -1,7 +1,7 @@
 ﻿
 .. issue.
 
-.. index:: démineur, énoncé, énigme
+.. index:: démineur, énoncé, énigme, Dunkerque 2015-03-25
 
 .. _l-algo_demineur:
 

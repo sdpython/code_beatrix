@@ -1,7 +1,7 @@
 ﻿
 .. issue.
 
-.. index:: énoncé, échiquier, parcours, variable
+.. index:: énoncé, échiquier, parcours, variable, Dunkerque 2015-03-25, scratch, python
 
 .. _l-prog_parcours_echiquier:
 
@@ -32,6 +32,12 @@ Mise en scène
 
 .. image:: ../../../../src/code_beatrix/scratchs/example_echiquier/echiquier.png
     :width: 300 px
+    
+Il faut aussi des lunettes magiques :
+
+.. image:: lunettes.jpg
+    :width: 300 px
+
     
 On recommence avec d'autres façons de parcourir l'échiquier.
 

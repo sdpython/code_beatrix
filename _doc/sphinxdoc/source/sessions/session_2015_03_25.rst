@@ -25,7 +25,8 @@ calque pour le démineur,
 carton épais pour le sac-à-dos,
 un échiquier,
 des bouteilles d'eau (pleines ou à remplir),
-un tableau blanc ou noir, un projecteur.
+un tableau blanc ou noir, un projecteur,
+une paire de lunettes qui rendent aveugles ou un bandeau.
 
 
 Sujets
@@ -35,14 +36,12 @@ Quelques algorithmes :
 
 * :ref:`l-algo_tri`
 * :ref:`l-algo_tsp`
-* :ref:`l-algo_orange`
 * :ref:`l-algo_demineur`
 * :ref:`l-algo_sacados`
 
 Découverte des données :
 
 * :ref:`l-donnes_cantine`
-* :ref:`l-donnes_orthographe`
 
 Découverte de la programmation :
 
@@ -55,11 +54,9 @@ Solutions
 
 * :ref:`l-algo_tri_sol`
 * :ref:`l-algo_tsp_sol`
-* :ref:`l-algo_orange_sol`
 * :ref:`l-algo_demineur_sol`
 * :ref:`l-algo_sacados_sol`
 * :ref:`l-donnes_cantine_sol`
-* :ref:`l-donnes_orthographe_sol`
 * :ref:`l-prog_parcours_echiquier_sol`
 
 
@@ -75,6 +72,30 @@ Vous pouvez par exemple réfléchir au problème suivant :
 Livres, Bibliographie
 ---------------------
 
+**4 ans**
+
+* `Araignée sur un fil <http://www.perefouettard.fr/editions/livre.php?book=1>`_, Laurent Cardon, et si le premier
+  algorithme était celui de la toile d'araignée
+* `Histoire sans parole <http://recherche.fnac.com/c90687/Histoire-Sans-Parole>`_, collection Autrement Jeunesse, 
+  il faut recoller les bouts pour comprendre l'histoire
+  
+**6 ans**
+
+* Le cirque de Calder `partie 1 <https://www.youtube.com/watch?v=C8To4mp9HVw>`_, 
+  `partie 2 <https://www.youtube.com/watch?v=5pVqZZYJpFs>`_,
+  `partie 3 <https://www.youtube.com/watch?v=WaEnLhtpUV0>`_, absolument magique, Calder parle en anglais
+  mais les images suffisent amplement. Calder est très connu pour ces structure en forme de 
+  `fractale <http://www.calder.org/work/by-category/hanging-mobile>`_.
+  
+**8 ans**
+
+* `Pee Wee The Big Adventure <http://fr.wikipedia.org/wiki/Pee-Wee_Big_Adventure>`_, le premier film de Tim Burton,
+  Pee Wee est un garçon pas si grand que ça qui vit dans une maison truffée de gadgets, il y a un peu de Zadig,
+  un peu de Don Quichotte.
+* `L'histoire d'Hellen Keller <http://www.pocketjeunesse.fr/site/lhistoire_dhelen_keller_&100&9782266086622.html>`_, Lorena A. Hickok,
+  Hellen est muète, aveugle et sourde et pourtant elle a réussi à communiquer, à inventer un langage
+  basé sur le toucher.
+
 **10 ans**
 
 * `Virus L.I.V.3. <http://fr.wikipedia.org/wiki/Virus_L.I.V._3>`_, Christian Grenier
@@ -84,14 +105,18 @@ Livres, Bibliographie
   Le premier programme informatique a été écrit par une femme : 
   `Augusta Ada King <http://fr.wikipedia.org/wiki/Ada_Lovelace>`_.
 * `Scratch pour les Kids <http://www.ludovia.com/2015/03/scratch-pour-les-kids/>`_
-* 
+* `Georges et le Big Bang <http://livre.fnac.com/a3678862/Stephen-Hawking-Georges-et-le-Big-Bang>`_, Lucy et Stephen Hawking
+
 
 **12 ans**
 
 * `Sword Art Online <http://fr.wikipedia.org/wiki/Sword_Art_Online>`_, manga japonais, des joueurs se retrouvent prisonniers
   d'un jeu vidéo, ils ne peuvent plus se déconnecter et revenir à la réalité. Leur esprit voyagent dans des univers
   imaginaire, leur corps est prisonnier du monde réel
-* `Le château dans le ciel <http://fr.wikipedia.org/wiki/Le_Ch%C3%A2teau_dans_le_ciel>`_, Hayao Miyazaki (dessin animé)
+* `Le château dans le ciel <http://fr.wikipedia.org/wiki/Le_Ch%C3%A2teau_dans_le_ciel>`_, Hayao Miyazaki (dessin animé),
+  que feriez-vous si vous déteniez une puissance capable de détruire le monde ?
+* `Pourquoi j'ai mangé mon père <http://fr.wikipedia.org/wiki/Pourquoi_j%27ai_mang%C3%A9_mon_p%C3%A8re>`_, Row Lewis,
+  quand le progrès bouleverse l'ordre des choses, que fait-on ?
 
 **14 ans**
 

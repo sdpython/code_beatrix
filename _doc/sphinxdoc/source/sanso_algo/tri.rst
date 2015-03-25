@@ -1,7 +1,7 @@
 ﻿
 .. issue.
 
-.. index:: énoncé, algorithme, tri
+.. index:: énoncé, algorithme, tri, Dunkerque 2015-03-25
 
 .. _l-algo_tri:
 
