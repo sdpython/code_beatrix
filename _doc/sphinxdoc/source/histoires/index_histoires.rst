@@ -3,8 +3,8 @@
 
 .. _l-histoires:
 
-Quelques histoirs pour réfléchir
-================================
+Quelques histoires pour réfléchir
+=================================
 
 
 .. toctree::

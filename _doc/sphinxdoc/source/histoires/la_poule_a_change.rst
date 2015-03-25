@@ -84,5 +84,5 @@ Elles étaient plus propres mais, sans leur manteau, il fallait les réchauffer.
 
 Sur le chemin du retour, ma grand-mère me dit qu'il ne fallait plus que 
 je l'appelle pour mes oeufs. Dorénavant, il faudrait que je me débrouille tout seul. 
-Tout va trop vite. Quel est ce monde où la durée de cuisson des oeufs change aussi vite. 
+Tout va trop vite. Quel est ce monde où la durée de cuisson des oeufs change aussi vite ? 
 Pour ma grand-mère, j'étais aussi un peu responsable. J'étais un scientifique.

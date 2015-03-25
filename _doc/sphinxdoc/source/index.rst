@@ -16,7 +16,7 @@ aux enfants principalement. Le début des exercices, dès qu'il
 s'agit de manipuler, est accessible dès 6 ans (voir :ref:`l-difficulte`).
 
 
-*L'intégralité de ce contenu est accessible via *
+_L'intégralité de ce contenu est accessible via_
 `github <https://github.com/sdpython/code_beatrix/>`_.
 
 
