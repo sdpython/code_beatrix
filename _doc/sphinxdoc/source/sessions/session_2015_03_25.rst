@@ -126,6 +126,12 @@ Livres, Bibliographie
   Lire également :ref:`l-lecture_codes_secret`.
 * `L'ordinateur <http://livre.fnac.com/a1520298/Christian-Grenier-L-ordinatueur>`_, Christian Grenier
 
+Dans un autre registre, tout simplement pour dire que la frontière entre l'art et les sciences 
+est plutôt ténue :
+
+* `Mathématiques et architecture <http://www.eyrolles.com/BTP/Livre/mathematiques-et-architecture-9782742792863>`_,
+  Jane Burry, Mark Burry. Après sa lecture, on ne regarde les bulles de mousses dans son bain de la même façon.
+
 **Autres pistes**
 
 * :ref:`l-biblio_algo` à propos des algorithmes

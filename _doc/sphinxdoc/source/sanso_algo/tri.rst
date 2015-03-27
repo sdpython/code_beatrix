@@ -73,6 +73,7 @@ cartes avec ses voisins si elles ne sont pas dans le bon ordre.
 .. image:: tri1.png
 
 Ce tri correspond au `tri à bulles <http://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles>`_.
+Pourquoi à votre avis ?
 
 
 
@@ -100,7 +101,7 @@ Il s'agit dans ce dernier cas du `tri par arbre <http://rmdiscala.developpez.com
 
 **couper, trier, fusionner**
 
-Lorsqu'on est plusieurs ou qu'on doit trier un grand nombre de carte,
+Lorsqu'on est plusieurs ou qu'on doit trier un grand nombre de cartes,
 il est plus simple de trier des petits bouts puis de les assembler.
 
 Comment regrouper deux jeux de cartes triés pour ne former qu'un seul

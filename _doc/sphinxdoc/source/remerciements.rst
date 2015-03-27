@@ -19,6 +19,9 @@ Enfin, mes amis, ma famille ont écouté patiemment toutes mes idées les plus f
 les châteaux de riz dans la baignoire, des pavages sur le carrelage de la salle de bain...
 Ils ont participé à la sélection des meilleures idées. 
 
+Les idées voyagent beaucoup. Un jour, elles se concrétisent, tissées par tout plein
+de fils conducteurs. Pierre Cordier fut l'un de ses nombreux fils, très certainement le plus long
+avec 300 kilomètres.
 
 
 Contenu et apparence

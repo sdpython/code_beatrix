@@ -1,7 +1,7 @@
 ﻿Les enfants codaient
 ====================
 
-*On dira bientôt cela.*
+*à la découverte de la programmation et des algorithmes*
 
 
 On programme pour faire des jeux, des sites internets, des recherches scientifiques,
@@ -24,7 +24,7 @@ Patchworks
 ----------
 
 Ces patchwork sont des parcours de découverte prévus pour un groupe d'enfants.
-Les sujets abordées sont choisis dans la partie :ref:`l-contenu-range`.
+Les sujets abordés sont choisis dans la partie :ref:`l-contenu-range`.
 
 
 .. toctree::
@@ -58,7 +58,7 @@ Apprendre la programmation ne nécessite pas nécessairement un écran
 Il n'y a pas de manière idéale d'apprendre, chacun à sa manière de comprendre.
 Pour moi, l'objectif n'est pas de tout comprendre mais de donner
 à l'enfant l'envie d'apprendre seul, d'avoir envie de résoudre
-un problème de la vie quotidienne par un programme. 
+un problème de la vie quotidienne d'une façon méthodique. 
 A partir de là, c'est gagné.
 Au gré de mes lectures, je distinguerais les niveaux suivants :
 
@@ -82,7 +82,7 @@ Au gré de mes lectures, je distinguerais les niveaux suivants :
 
 Dès qu'on sait mémoriser et ordonner, on peut faire la plupart des débuts d'exercices,
 surtout s'ils sont manuels. Il est préférable de savoir lire et compter pour commencer
-à bâtir un raisonnement, décrire une méthode, expliquer une méthode. 
+à bâtir un raisonnement, décrire une méthode, expliquer une façon de faire. 
 Enfin, il faut assimiler ce qu'est une variable pour finalement rédiger cette méthode
 avec un langage de programmation (voir également :ref:`l-variable_combien`).
 
@@ -96,18 +96,18 @@ si vous ne connaissez pas la solution, Internet le saura (via un moteur de reche
 
 Lorsqu'on sait manipuler les variables, un langage plus écrit s'impose.
 Je recommande `Python <https://www.python.org/>`_ qui est présent dans la plupart
-des universités (pas seulement en France) 
-(voir également :ref:`l-choix_langage`). 
-Un bon langage de programmation est nécessairement de syntaxe anglaise.
+des universités (pas seulement en France, voir également :ref:`l-choix_langage`). 
+Un langage de programmation utile professionnellement est nécessairement de syntaxe anglaise.
     
 **imagination**
 
 Lorsqu'on parle de choses abstraites, il n'existe jamais une seule façon
 d'en parler. Chacun à sa façon de les comprendre et de se les représenter.
 Tout dépend de l'imagination de chacun. Et bien souvent,
-plus on lit, plus on voit ce que d'autres ont imaginé, plus on a d'imagination
+plus on lit, plus on voit ce que d'autres ont imaginé, plus on a d'imagination.
+Il faut être curieux.
 
-:ref:`quelques idées <l-lecture_2503>`
+:ref:`quelques idées de lectures et autres <l-lecture_2503>`
     
     
     

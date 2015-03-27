@@ -2,8 +2,8 @@
 
 .. issue.
 
-Démarrage
-=========
+Démarrage, Installation
+=======================
 
 .. index:: R, Julia, WinPython, Anaconda, pyminstall, scratch
 
@@ -29,28 +29,28 @@ s'installe avec ``pip install <module>``. Deux distrubutions possibles :
   depuis le répertoire ``Anaconda3/Scripts`` (``conda install pandas`` par exemple).
   Pour suivre ces cours il faut ajouter :
 
-    * `cvxopt <http://cvxopt.org/>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/#cvxopt>`_)
-    * `goslate <http://pythonhosted.org/goslate/>`_
-    * `dbfread <http://dbfread.readthedocs.org/en/latest/>`_
-    * `rpy2 <http://rpy.sourceforge.net/>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2>`_)
-    * `mpld3 <http://mpld3.github.io/>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_)
-    * `folium <https://github.com/python-visualization/folium>`_
-    * `graphviz <https://github.com/xflr6/graphviz>`_
-    * `numexpr <https://github.com/pydata/numexpr>`_
+  * `cvxopt <http://cvxopt.org/>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/#cvxopt>`_)
+  * `goslate <http://pythonhosted.org/goslate/>`_
+  * `dbfread <http://dbfread.readthedocs.org/en/latest/>`_
+  * `rpy2 <http://rpy.sourceforge.net/>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/#rpy2>`_)
+  * `mpld3 <http://mpld3.github.io/>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/>`_)
+  * `folium <https://github.com/python-visualization/folium>`_
+  * `graphviz <https://github.com/xflr6/graphviz>`_
+  * `numexpr <https://github.com/pydata/numexpr>`_
     
-   Il existe une version différente : `miniconda <http://conda.pydata.org/miniconda.html>`_.
-   La liste des packages manquant sera probablement différente.
+  Il existe une version différente : `miniconda <http://conda.pydata.org/miniconda.html>`_.
+  La liste des packages manquant sera probablement différente.
 
 * `WinPython <https://winpython.github.io/>`_ (Windows). Sous Windows, elle a l'avantage d'inclure
   `R <http://www.r-project.org/>`_ ou `Julia <http://julialang.org/>`_. On passe alors
   facilement de python à R ou Julia depuis le même notebooks. Pour suivre ces cours il faut ajouter :
 
-    * `goslate <http://pythonhosted.org/goslate/>`_
-    * `dbfread <http://dbfread.readthedocs.org/en/latest/>`_
-    * `bokeh <http://bokeh.pydata.org/en/latest/>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/#bokeh>`_)
-    * `pywin32 <https://pypi.python.org/pypi/pywin32>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/#pywin32>`_)
-    * `folium <https://github.com/python-visualization/folium>`_
-    * `graphviz <https://github.com/xflr6/graphviz>`_    
+  * `goslate <http://pythonhosted.org/goslate/>`_
+  * `dbfread <http://dbfread.readthedocs.org/en/latest/>`_
+  * `bokeh <http://bokeh.pydata.org/en/latest/>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/#bokeh>`_)
+  * `pywin32 <https://pypi.python.org/pypi/pywin32>`_ (`Windows <http://www.lfd.uci.edu/~gohlke/pythonlibs/#pywin32>`_)
+  * `folium <https://github.com/python-visualization/folium>`_
+  * `graphviz <https://github.com/xflr6/graphviz>`_    
     
 Sous Linux, l'installation ne pose pas de problèmes. Sous Windows, il faut installer
 les packages `wheel <http://wheel.readthedocs.org/en/latest/>`_. Ces modules
@@ -78,6 +78,6 @@ avec le code suivant ::
         
 Certains notebooks requièrent des outils supplémentaires :
 
-    * `graphviz <http://www.graphviz.org/>`_
+* `graphviz <http://www.graphviz.org/>`_
     
     

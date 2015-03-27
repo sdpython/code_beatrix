@@ -47,3 +47,9 @@ Ensuite, il est vrai, quand on veut vraiment emmener quelque chose en vacances,
 on fait tout pour que ça rentre dans le coffre. On fait, on défait mais on enlève rarement
 les plus gros sacs du fond du coffre.
 
+Liens
+-----
+
+* `Le problème du sac à dos <https://interstices.info/jcms/c_19213/le-probleme-du-sac-a-dos>`_ (interstices.info)
+
+

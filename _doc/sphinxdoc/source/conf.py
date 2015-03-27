@@ -38,3 +38,4 @@ set_sphinx_variables(__file__,
                      add_extensions=['hachibee_sphinx_theme'])
 
 html_show_copyright = False
+html_title = "lesenfantcodaient.fr"

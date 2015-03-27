@@ -142,3 +142,7 @@ de questions :
 #. Comment comparer deux chemins ? 
     
     
+Liens
+-----
+
+* `Le problème du voyageur de commerce <https://interstices.info/jcms/c_37686/le-probleme-du-voyageur-de-commerce>`_ (interstices.info)

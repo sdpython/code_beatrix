@@ -1,9 +1,11 @@
-
+﻿
 .. _l-glossary:
 
 
 Glossaire
 =========
+
+.. glossary::
 
     Coût
         Le coût d'un algorithme est le nombre d'opérations
@@ -32,7 +34,7 @@ Glossaire
         pêle-mêle.
         Un algorithme qui fonctionne avec un élément quelconque
         fonctionne avec tous les éléments.
-    
+
     Récurrence
         Voir `récurrence <http://fr.wikipedia.org/wiki/D%C3%A9finition_par_r%C3%A9currence>`_.
         Quand on doit résoudre un problème et qu'on ne sait pas comment l'aborder,
