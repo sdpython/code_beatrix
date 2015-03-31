@@ -7,6 +7,7 @@ shortcuts for scratch
 from .example_echiquier import check_echiquier
 from .example_tri import check_tri
 
+
 def check():
     """
     run checking functions

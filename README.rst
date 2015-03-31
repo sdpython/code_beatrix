@@ -1,4 +1,4 @@
-
+﻿
 
 .. _l-README:
 
@@ -23,6 +23,9 @@ README / Changes
 Description        
 -----------
 
+Exercices pour découvrir la programmation et les algorithmes. 
+Ceux-ci peuvent servir de base pour organiser un 
+`coding goûter <http://www.frenchtechtoulouse.com/coding-gouter-toulouse-apprendre-coder-en-samusant/>`_
 Exercises to learn programming, algorithms for Coding Snacks.
 
 Language: French.
@@ -39,5 +42,7 @@ Started in 2015/03.
 Versions
 --------
 
+* **0.5 - 2015/??/??**
+    * **ajout:** ajout d'un code illustrant le tri à bulles sous Scratch (avec personnage animé)
 * **0.1 - 2015/03/25**
-    * **new:** first version
+    * **nouveau:** première version

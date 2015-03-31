@@ -50,7 +50,7 @@ else:
     subversion = 1
 
 project_var_name = "code_beatrix"
-sversion = "0.1"
+sversion = "0.5"
 versionPython = "%s.%s" % (sys.version_info.major, sys.version_info.minor)
 path = "Lib/site-packages/" + project_var_name
 readme = 'README.rst'
@@ -86,6 +86,7 @@ else:
 packages = find_packages('src', exclude='src')
 package_dir = {k: "src/" + k.replace(".", "/") for k in packages}
 package_data = {project_var_name + ".scratch.example_echiquier": ["*.sc2"],
+                project_var_name + ".scratch.example_tri": ["*.sc2"],
                 }
 
 if os.path.exists(readme):

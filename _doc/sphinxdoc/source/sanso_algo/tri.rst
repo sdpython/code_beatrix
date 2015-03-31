@@ -58,6 +58,8 @@ Comment faudrait-il faire ?
 Les exercices suivant peuvent être fait à plusieurs ou seul en
 plaçant les cartes à plat sur une table.
 
+.. _s-tribulle:
+
 
 **remettre de l'ordre**
 
@@ -74,6 +76,9 @@ cartes avec ses voisins si elles ne sont pas dans le bon ordre.
 
 Ce tri correspond au `tri à bulles <http://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles>`_.
 Pourquoi à votre avis ?
+
+Une illustration de ce tri sous Scratch est 
+décrite au paragraphe :ref:`l-prog_tri`.
 
 
 

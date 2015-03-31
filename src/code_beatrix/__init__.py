@@ -8,10 +8,10 @@ import sys
 if sys.version_info[0] < 3:
     raise ImportError("pyensae only works with Python 3")
 
-__version__ = "0.1"
+__version__ = "0.5"
 __author__ = "Xavier Dupré"
 __github__ = "https://github.com/sdpython/code_beatrix"
-__url__ = "http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/index.html"
+__url__ = "http://lesenfantscodaient/"
 __downloadUrl__ = "http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix"
 __license__ = "BSD License"
 

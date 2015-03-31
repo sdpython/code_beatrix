@@ -2,6 +2,7 @@
 basic checking
 """
 
+
 def check_tri():
     """
     basic checkings
@@ -10,3 +11,6 @@ def check_tri():
     f1 = os.path.exists(dirname, "bubble_sort.sb2")
     if not os.path.exists(f1):
         raise FileNotFoundError(f1)
+    f2 = os.path.exists(dirname, "bubble_sort0.sb2")
+    if not os.path.exists(f2):
+        raise FileNotFoundError(f2)

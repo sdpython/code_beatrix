@@ -47,6 +47,7 @@ Sujets
     :maxdepth: 1
     
     parcours_echiquier
+    tri_scratch
 
 
 Indices et solutions
@@ -56,6 +57,7 @@ Indices et solutions
     :maxdepth: 1
     
     parcours_echiquier_correction
+    tri_scratch_correction
     
     
 

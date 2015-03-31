@@ -2,6 +2,7 @@
 basic checking
 """
 
+
 def check_echiquier():
     """
     basic checkings

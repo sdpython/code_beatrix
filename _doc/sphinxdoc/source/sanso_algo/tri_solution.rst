@@ -29,6 +29,8 @@ sont vite repérées.
 Méthode systématique de tri
 ---------------------------
 
+.. _s-tri_bulle_sole:
+
 Avec mille carte, c'est plus difficile. Le premier tri proposé correspond aux tri à bulles.
 Pour comprendre, il faut s'intéresser à la carte la plus haute.
 
@@ -37,7 +39,9 @@ Pour comprendre, il faut s'intéresser à la carte la plus haute.
 Les cartes jouent à saute-mouton. Les petites passent en dessous, les plus grandes au-dessus.
 Au final, tout le monde finit par trouver sa place.
 
-
+Une illustration de ce tri sous Scratch est 
+décrite au paragraphe :ref:`l-prog_tri`
+et sa solution :ref:`l-prog_tri_sol`.
 
 
 
