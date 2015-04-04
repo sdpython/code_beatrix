@@ -9,7 +9,8 @@ Presque sans ordinateur - 25 mars 2015
 
 .. index:: patchwork
 
-Chez `Coding and Bricks <http://www.codingandbricks.com/>`_.
+Chez `Coding and Bricks <http://www.codingandbricks.com/>`_, et c'est toujours mieux
+en images : `Algorithmes à la mer ! <http://www.codingandbricks.com/project/algorithmes-a-la-mer/>`_
 
 Préambule
 ---------
