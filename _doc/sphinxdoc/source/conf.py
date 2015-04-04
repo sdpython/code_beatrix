@@ -39,3 +39,4 @@ set_sphinx_variables(__file__,
 
 html_show_copyright = False
 html_title = "lesenfantcodaient.fr"
+language = "fr"
