@@ -1,4 +1,4 @@
-﻿.. blogpost::
+.. blogpost::
     :title: Expériences manuelles avec les enfants (Tinkerlab, Artful Parent)
     :keywords: expérience, tinkerlab
     :date: 2015-04-04

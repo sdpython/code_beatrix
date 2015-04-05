@@ -18,6 +18,8 @@ s'agit de manipuler, est accessible dès 6 ans (voir :ref:`l-difficulte`).
 
 L'intégralité de ce contenu est accessible via
 `github <https://github.com/sdpython/code_beatrix/>`_.
+D'autres informations sont disponibles via le
+:ref:`blog <ap-main-0>`.
 
 
 Patchworks
@@ -124,6 +126,7 @@ Annexes
     FAQ
     index_et_autre
     all_notebooks
+    blog/blogindex
 
 Pour les plus chevronnés, certains bouts de codes en python 
 pourront être réutilisés via 

@@ -85,8 +85,9 @@ else:
 
 packages = find_packages('src', exclude='src')
 package_dir = {k: "src/" + k.replace(".", "/") for k in packages}
-package_data = {project_var_name + ".scratch.example_echiquier": ["*.sc2"],
-                project_var_name + ".scratch.example_tri": ["*.sc2"],
+package_data = {project_var_name + ".scratch.example_echiquier": ["*.sb2"],
+                project_var_name + ".scratch.example_tri": ["*.sb2"],
+                project_var_name + ".scratch.example_pyramide": ["*.sb2"],
                 }
 
 if os.path.exists(readme):

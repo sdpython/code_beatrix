@@ -1,5 +1,5 @@
 ﻿
-.. issue.
+
 
 .. _l-programmation:
 
@@ -47,6 +47,7 @@ Sujets
     :maxdepth: 1
     
     parcours_echiquier
+    dessin_pyramide
     tri_scratch
 
 
@@ -57,8 +58,8 @@ Indices et solutions
     :maxdepth: 1
     
     parcours_echiquier_correction
+    dessin_pyramide_correction
     tri_scratch_correction
-    
     
 
 
