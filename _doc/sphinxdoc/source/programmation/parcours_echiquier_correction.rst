@@ -1,4 +1,4 @@
-﻿
+
 .. issue.
 
 .. index:: solution, échiquier, parcours, variable
@@ -52,8 +52,10 @@ Questions
    La description à l'aide des termes *répéter*, *avancer*, *sauter* n'est pas toujours évidente non plus.
    Si ces termes n'apparaissent pas trop souvent, ce n'est pas trop difficile mais si le parcours
    est complexe, on a souvent besoin de regrouper certains blocs. Par exemple, que préférez-vous ?
-        * avancer 8 fois vers la droite,
-        * ou parcourir la ligne de gauche à droite.
+   
+   * avancer 8 fois vers la droite,
+   * ou parcourir la ligne de gauche à droite.
+
    **Conclusion :** on ne sait pas retenir facilement une liste de d'actions trop longue. Il faut faire
    apparaître des blocs logiques.
 

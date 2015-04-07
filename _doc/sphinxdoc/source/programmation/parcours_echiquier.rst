@@ -1,4 +1,4 @@
-﻿
+
 .. issue.
 
 .. index:: énoncé, échiquier, parcours, variable, Dunkerque 2015-03-25, scratch, python
@@ -47,9 +47,11 @@ Questions
 #. Lors des différentes description de parcours proposées, y a-t-il des répétitions ?
 #. Est-il possible de prendre n'importe quelle parcours 
    et de reformuler sa description avec les trois instructions :
-    * répéter *n* fois,
-    * avancer d'une case dans une direction (droite, gauche, haut, bas),
-    * sauter à une case précise ?
+   
+   * répéter *n* fois,
+   * avancer d'une case dans une direction (droite, gauche, haut, bas),
+   * sauter à une case précise ?
+   
 #. Peut-on choisir un parcours et donner la liste ordonnées des cases parcourues ?
 #. Quelle votre description de parcours préférée ?
 

@@ -91,7 +91,8 @@ considère les nombres 1, 2, 3, 4, 5, 6, ... et on s'intéresse au reste de la d
 de chaque nombre par trois : reste de 1/3 = 1, reste de 2/3 = 2, reste de 3/3 = 0, 
 reste de 4/3 = 1, reste de 5/3 = 2, reste de 6/3 = 0... 
 
-On s'appelle cette opération le `modulo <http://fr.wikipedia.org/wiki/Modulo_%28op%C3%A9ration%29>`_
+On appelle cette opération le 
+`modulo <http://fr.wikipedia.org/wiki/Modulo_%28op%C3%A9ration%29>`_
 et cette opération existe en Scratch :
 
 .. image:: pyramide_couleur.png

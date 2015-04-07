@@ -25,7 +25,7 @@ Bien sûr, on ne veut pas le faire à la main.
 Comme on n'est pas magicien, on n'a pas le pouvoir de les faire 
 apparaître tout en même temps mais une par une.
 
-**Q1 ::** Est-il plus facile de commencer par en haut (la pointe)
+**Q1 :** Est-il plus facile de commencer par en haut (la pointe)
 ou par en bas (la base ?)
 
 
@@ -83,7 +83,7 @@ Et si maintenant, on essayait de faire ceci :
 
 Il faudra bien évidemment que la balle clonée change de costume.
 *Petite astuce :* parmi les opérations proposées par Scratch, 
-n'y en auraient-il pas qui vous sont peut-être inconnues mais 
+n'y en aurait-il pas qui vous sont peut-être inconnues mais 
 qui vous seraient très utiles dans ce cas précis ?
     
 
@@ -101,6 +101,8 @@ Cet exercice est assez semblable à celui proposé dans
 le parcours d'une pyramide. 
 Ces façons de faire nous paraissent plutôt évidente. 
 Pourtant, leur traduction en un programme informatique
-l'est un peu moins. A quoi pensait `Descartes <http://fr.wikipedia.org/wiki/Ren%C3%A9_Descartes>`_ 
-quand il a  inventé le `système cartésien <http://fr.wikipedia.org/wiki/Coordonn%C3%A9es_cart%C3%A9siennes>`_ ?
+l'est un peu moins. A quoi pensait 
+`Descartes <http://fr.wikipedia.org/wiki/Ren%C3%A9_Descartes>`_ 
+quand il a inventé le 
+`système cartésien <http://fr.wikipedia.org/wiki/Coordonn%C3%A9es_cart%C3%A9siennes>`_ ?
 Programmer, c'est un peu penser en cartésien et un peu moins en géométrique.

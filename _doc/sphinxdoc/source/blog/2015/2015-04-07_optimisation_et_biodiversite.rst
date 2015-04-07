@@ -37,7 +37,7 @@
     l'abandon d'une certaine forme
     de diversité aurait causé l'effrondement de la civilisation maorie
     sur l'`Ile de Pâques <http://fr.wikipedia.org/wiki/%C3%8Ele_de_P%C3%A2ques#Th.C3.A8ses_r.C3.A9futant_la_th.C3.A9orie_de_l.E2.80.99effondrement>`_.
-    La surpopulation auraient poussé
+    La surpopulation aurait poussé
     les maoris à abandonner le mode de culture traditionnel qui consistait à 
     pratiquer des semis sur une terre sans la débarrasser de ses pierres,
     une sorte d'alternance pierres, culture.

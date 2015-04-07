@@ -1,4 +1,5 @@
-﻿Les enfants codaient
+
+Les enfants codaient
 ====================
 
 *à la découverte de la programmation et des algorithmes*
