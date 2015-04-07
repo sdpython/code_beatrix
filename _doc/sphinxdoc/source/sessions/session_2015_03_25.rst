@@ -1,4 +1,4 @@
-﻿
+
 .. issue.
 
 .. _l-session_2015_03_25:
@@ -11,6 +11,11 @@ Presque sans ordinateur - 25 mars 2015
 
 Chez `Coding and Bricks <http://www.codingandbricks.com/>`_, et c'est toujours mieux
 en images : `Algorithmes à la mer ! <http://www.codingandbricks.com/project/algorithmes-a-la-mer/>`_
+
+.. image:: http://www.codingandbricks.com/wp-content/uploads/2015/03/IMG_0128.jpg
+    :target: http://www.codingandbricks.com/wp-content/uploads/2015/03/IMG_0128.jpg
+    :width: 500 px
+    :alt: Le voyageur de commerce
 
 Préambule
 ---------

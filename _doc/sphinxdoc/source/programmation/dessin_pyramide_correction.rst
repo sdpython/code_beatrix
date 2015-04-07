@@ -70,6 +70,32 @@ La solution est illustrée par :
 .. image:: pyramide_solution.png
 
 Et le programme à exécuter est le suivant :
-:download:`echiquier.sb2 <../../../../src/code_beatrix/scratchs/example_echiquier/echiquier.sb2>`.
+:download:`pyramide.sb2 <../../../../src/code_beatrix/scratchs/example_pyramide/pyramide.sb2>`.
     
+
+Exercice 2
+----------
+
+L'article :ref:`b-biodiversite`fait référence à cet exercice.
+Il utilise le programme Scratch suivant pour dessiner des balles
+de couleurs différentes selon un motif précis.
+
+L'astuce consiste à changer de costume tous les trois arbres au fur et à mesure qu'on les pose :
+on commence par le costume *a*, puis *b*, puis *c*. Ensuite, on recommence à *a*, *b* et 
+ainsi de suite.
+
+.. index:: modulo
+
+C'est un petit tour de passe passe qu'on utilise souvent en mathématique : on 
+considère les nombres 1, 2, 3, 4, 5, 6, ... et on s'intéresse au reste de la division
+de chaque nombre par trois : reste de 1/3 = 1, reste de 2/3 = 2, reste de 3/3 = 0, 
+reste de 4/3 = 1, reste de 5/3 = 2, reste de 6/3 = 0... 
+
+On s'appelle cette opération le `modulo <http://fr.wikipedia.org/wiki/Modulo_%28op%C3%A9ration%29>`_
+et cette opération existe en Scratch :
+
+.. image:: pyramide_couleur.png
+
+Pour voir la correction en entier, il suffit de télécharger le fichier :
+:download:`pyramide_bio.sb2 <../../../../src/code_beatrix/scratchs/example_pyramide/pyramide_bio.sb2>`.
 

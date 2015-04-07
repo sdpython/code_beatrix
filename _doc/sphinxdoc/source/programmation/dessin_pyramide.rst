@@ -73,6 +73,18 @@ Exercice 1
 Il ne reste plus qu'à terminer le programme avec Scratch. On pourra compléter
 le projet suivant :    
 :download:`echiquier0.sb2 <../../../../src/code_beatrix/scratchs/example_echiquier/echiquier0.sb2>`. 
+
+Exercice 2
+----------
+
+Et si maintenant, on essayait de faire ceci :
+
+.. image:: ../blog/2015/biodiversite_tri.png
+
+Il faudra bien évidemment que la balle clonée change de costume.
+*Petite astuce :* parmi les opérations proposées par Scratch, 
+n'y en auraient-il pas qui vous sont peut-être inconnues mais 
+qui vous seraient très utiles dans ce cas précis ?
     
 
 Solution
