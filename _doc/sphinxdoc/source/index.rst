@@ -96,6 +96,7 @@ Pour apprendre à programmer, il faut programmer avec un langage de programmatio
 Il faut savoir lire et compter. `Scratch <https://scratch.mit.edu/>`_
 est très bien et bénéficie d'une communauté très active. Autrement dit,
 si vous ne connaissez pas la solution, Internet le saura (via un moteur de recherche).
+On peut commencer avec Scratch vers 4, 5 ans.
 
 Lorsqu'on sait manipuler les variables, un langage plus écrit s'impose.
 Je recommande `Python <https://www.python.org/>`_ qui est présent dans la plupart

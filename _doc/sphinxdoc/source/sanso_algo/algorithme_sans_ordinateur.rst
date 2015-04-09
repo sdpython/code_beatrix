@@ -1,4 +1,4 @@
-﻿
+
 .. issue.
 
 .. _l-algo_sans_ordinateur:
@@ -70,6 +70,10 @@ Bibliographie
 * `Les algorithmes, Déconstruire l'informatique pour mieux la comprendre <https://cloud.github.com/downloads/jcb/CSIRL/SMN_v1.0.pdf>`_ (INRIA)
 * `Initiation à la notion d'algorithme <http://www.inria.fr/recherches/mediation-scientifique/actions-de-mediation-scientifique/ressources/initiation-a-la-notion-d-algorithme>`_ (INRIA)
 * `L'informatique est un jeu d'enfant ! <http://magicmakers.fr/blog/linformatique-est-un-jeu-denfant>`_ (`MagicMakers <http://magicmakers.fr/>`_)
+* `La révolution informatique dans les sciences <http://www.college-de-france.fr/site/gerard-berry/course-2015-01-28-16h00.htm#>`_,
+  leçon inaugurale au collège de France de Gérard Berry, les algorithmes sont de plus en plus présents !
+* `Façonner l'imaginaire : de la création numérique 3D aux mondes virtuels animés <http://www.college-de-france.fr/site/marie-paule-cani/inaugural-lecture-2015-02-12-18h00.htm>`_,
+  leçon inaugurale de Marie-Paule Cani, on ne dessinera plus seulement pas avec un crayon.
 
 **anglais**
 
