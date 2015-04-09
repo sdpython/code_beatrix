@@ -1,5 +1,7 @@
 ﻿
 
+.. _l-remerciements:
+
 Remerciements
 =============
 

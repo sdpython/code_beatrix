@@ -1,9 +1,11 @@
-﻿
+
 
 .. issue.
 
-Démarrage, Installation
-=======================
+.. _l-getting_started:
+
+Démarrage et installation
+=========================
 
 .. index:: R, Julia, WinPython, Anaconda, pyminstall, scratch
 

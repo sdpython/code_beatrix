@@ -28,13 +28,15 @@ Patchworks
 
 Ces patchwork sont des parcours de découverte prévus pour un groupe d'enfants.
 Les sujets abordés sont choisis dans la partie :ref:`l-contenu-range`.
+La première a eu lieu à Dunkerque le `25 mars 2015 <l-session_2015_03_25>`.
 
 
 .. toctree::
     :maxdepth: 1
 
-    sessions/session_2015_03_25
-
+    blog <blog/index_blog.rst>
+    sessions/sessions
+    
 .. _l-contenu-range:
 
 
@@ -48,7 +50,6 @@ Contenu rangé par thèmes
     donnees/index_donnees
     programmation/index_programmation
     arduino/index_arduino
-    
 
 .. _l-difficulte:
     
@@ -117,18 +118,29 @@ Il faut être curieux.
     
 Annexes
 -------
+
+* :ref:`l-remerciements`
+* :ref:`l-histoires`
+* :ref:`l-getting_started`
+* :ref:`l-glossary`
+* :ref:`l-notebooks`
+* :ref:`l-FAQ`
+
     
 .. toctree::
+    :hidden:
     :maxdepth: 1
 
     remerciements
     getting_started
     histoires/index_histoires
     glossary
-    FAQ
+    all_FAQ
     index_et_autre
     all_notebooks
     blog/blogindex
+    all_indexes
+    all_report
 
 Pour les plus chevronnés, certains bouts de codes en python 
 pourront être réutilisés via 
@@ -144,6 +156,6 @@ pourront être réutilisés via
     :alt: PYPI Package
     :target: https://pypi.python.org/pypi/code_beatrix 
     
-
+Et plus encore :  :ref:`l-changes`, :ref:`l-license`
 
 
