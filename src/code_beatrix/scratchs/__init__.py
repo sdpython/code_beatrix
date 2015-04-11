@@ -7,6 +7,7 @@ shortcuts for scratch
 from .example_echiquier import check_echiquier
 from .example_tri import check_tri
 from .example_pyramide import check_pyramide
+from .example_chute import check_chute
 
 
 def check():
@@ -16,3 +17,4 @@ def check():
     check_echiquier()
     check_tri()
     check_pyramide()
+    check_chute()
