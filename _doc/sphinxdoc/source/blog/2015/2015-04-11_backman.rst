@@ -14,3 +14,17 @@
     à construire ce site alors que je cherchais des façons différentes
     d'aborder la programmation :
     `Ingénieur citoyen <http://www.xavierdupre.fr/blog/2015-03-14_nojs.html>`_.
+    
+    Cette année, la conférence 
+    `PyCon <http://us.pycon.org/2015/>`_  
+    propose des ateliers 
+    `The Young Coder: Let's Learn Python <http://us.pycon.org/2015/events/letslearnpython/>`_
+    pour initier les jeunes 
+    à la programmation avec Python.
+    A noter, parmi les 
+    `keynote speakers <http://us.pycon.org/2015/events/keynotes/>`_,
+    Catherine Bracy qui a fondé 
+    `Code for All <http://codeforall.org/about>`_.
+    
+    Pour finir, un lien vers une voiture en Lego :
+    `A Lego Car That Runs on Air <http://www.citylab.com/commute/2015/04/a-lego-car-that-runs-on-air/390234/>`_.
