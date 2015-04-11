@@ -1,0 +1,15 @@
+
+
+.. blogpost::
+    :title: Kartable, les programmes depuis la sixième à la terminale
+    :keywords: programme scolaire, école, pédagogie, Kartable
+    :date: 2015-03-08
+    :categories: scolaire
+    
+    J'ai découvert le site très réussi 
+    `Kartable <http://www.kartable.fr/>`_ à partir 
+    duquel on peut aisément découvrir les programmes scolaires 
+    de la sixième à la terminale. Je n'y vois pas encore 
+    l'informatique ou une quelconque allusion au numérique. 
+    C'est peut-être pour bientôt.     
+    

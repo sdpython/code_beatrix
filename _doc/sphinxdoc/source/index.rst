@@ -23,19 +23,19 @@ D'autres informations sont disponibles via le
 :ref:`blog <ap-main-0>`.
 
 
-Patchworks
-----------
+Patchworks et blog
+------------------
 
 Ces patchwork sont des parcours de découverte prévus pour un groupe d'enfants.
 Les sujets abordés sont choisis dans la partie :ref:`l-contenu-range`.
-La première a eu lieu à Dunkerque le `25 mars 2015 <l-session_2015_03_25>`.
+La première a eu lieu à Dunkerque le :ref:`25 mars 2015 <l-session_2015_03_25>`.
 
 
 .. toctree::
     :maxdepth: 1
 
     blog <blog/index_blog.rst>
-    sessions/sessions
+    Parcours d'attraction dès 7 ans <sessions/sessions>
     
 .. _l-contenu-range:
 

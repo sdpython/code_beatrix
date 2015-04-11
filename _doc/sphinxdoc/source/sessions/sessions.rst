@@ -7,6 +7,8 @@
 Parcours d'attraction
 =====================
 
+Dès 7 ans.
+
 .. toctree::
     :maxdepth: 1
     

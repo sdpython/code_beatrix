@@ -1,0 +1,16 @@
+
+
+.. blogpost::
+    :title: Aventure humaine et programmation
+    :keywords: programmation, CodeForAmerica, 
+    :date: 2015-04-11
+    :categories: société, meetup
+    
+    Programmer ne veut pas nécessairement dire 
+    rester seul devant son ordinateur, cela peut être
+    l'occasion de se retrouver, d'apporter sa petite
+    pierre à la société.
+    C'est un article que j'ai écrit au moment où j'ai commencé 
+    à construire ce site alors que je cherchais des façons différentes
+    d'aborder la programmation :
+    `Ingénieur citoyen <http://www.xavierdupre.fr/blog/2015-03-14_nojs.html>`_.
