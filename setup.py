@@ -174,6 +174,10 @@ elif "build_sphinx" in sys.argv:
                 "you must get the source from GitHub to build the documentation")
 
         from pyquickhelper import fLOG, generate_help_sphinx
+        from pyquickhelper.helpgen import sphinx_add_scripts
+
+        sphinx_add_scripts(os.path.join("src", project_var_name, "jsscripts", "snap"),
+                           os.path.join("_doc", "sphinxdoc", "source", "phdoc_static", "snap"))
 
         fLOG(OutputPrint=True)
         project_name = os.path.split(

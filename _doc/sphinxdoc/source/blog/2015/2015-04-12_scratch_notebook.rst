@@ -26,6 +26,8 @@
     Scratch utilise pour sauver ses projets mais j'ai bon
     espoir d'y arriver avec 
     `Snapin8r <https://github.com/Hardmath123/Snapin8r>`_.
+    Et ensuite, pourquoi ne pas créer une directive Sphinx
+    pour intégrer directive les projets dans la documentation.
     
     A quoi ça sert... à pouvoir jouer avec les solutions
     sans même avoir à installer quoi que ce soit et automatiser
