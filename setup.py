@@ -88,6 +88,8 @@ package_dir = {k: "src/" + k.replace(".", "/") for k in packages}
 package_data = {project_var_name + ".scratch.example_echiquier": ["*.sb2"],
                 project_var_name + ".scratch.example_tri": ["*.sb2"],
                 project_var_name + ".scratch.example_pyramide": ["*.sb2"],
+                project_var_name + ".scratch.example_chute": ["*.sb2"],
+                project_var_name + ".jsscripts.snap": ["*.*"],
                 }
 
 if os.path.exists(readme):
