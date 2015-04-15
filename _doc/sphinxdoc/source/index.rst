@@ -4,6 +4,8 @@ Les enfants codaient
 
 *à la découverte de la programmation et des algorithmes*
 
+:ref:`l-README`, :ref:`blog <ap-main-0>`
+
 
 On programme pour faire des jeux, des sites internets, des recherches scientifiques,
 pour automatiser une tâche qu'on ne souhaite plus faire à la main.
