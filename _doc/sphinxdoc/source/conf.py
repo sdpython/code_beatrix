@@ -33,3 +33,5 @@ set_sphinx_variables(__file__,
 html_show_copyright = False
 html_title = "lesenfantcodaient.fr"
 language = "fr"
+
+blog_root = "http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/"
