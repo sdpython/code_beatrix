@@ -103,7 +103,9 @@ def clean_function_notebook(code):
     return code
 
 
-def execute_notebooks(folder, notebooks, filter,
+def execute_notebooks(folder,
+                      notebooks,
+                      filter,
                       clean_function=None,
                       fLOG=noLOG,
                       deepfLOG=noLOG):
