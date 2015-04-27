@@ -28,3 +28,15 @@ def check(log=False):
     """
     check()
     return True
+
+try:
+    from IPython import get_ipython
+    from .ipython_helper.magic_scratch import register_scratch_magics
+
+    ip = get_ipython()
+    if ip is not None:
+        # the program is not run from a notebook
+        register_scratch_magics()
+except ImportError as e:
+    # IPython is not installed
+    pass

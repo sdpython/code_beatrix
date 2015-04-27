@@ -4,7 +4,6 @@
 @brief Notebooks uses javacript which is not run when using automation, this file contains some constant to be used
 when running a notebook.
 """
-import os
 
 
 def voyageur_de_commerce_points():
