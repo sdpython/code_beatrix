@@ -18,6 +18,7 @@ README / Changes
     * `GitHub/code_beatrix <https://github.com/sdpython/code_beatrix/>`_
     * `site <http://lesenfantscodaient.fr/>`_
     * `wheel <http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix>`_
+    * `Blog <http://lesenfantscodaient.fr/blog/main_0000.html#ap-main-0>`_
 
 
 Description        
