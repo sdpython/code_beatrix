@@ -66,3 +66,4 @@ pyflakes
 mccabe
 pep8
 feedparser
+setuptools
