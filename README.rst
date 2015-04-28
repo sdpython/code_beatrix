@@ -1,10 +1,13 @@
-﻿
+
 
 .. _l-README:
 
 README / Changes
 ================
 
+.. image:: https://travis-ci.org/sdpython/code_beatrix.svg?branch=master
+    :target: https://travis-ci.org/sdpython/code_beatrix
+    :alt: Build status
 
 .. image:: https://badge.fury.io/py/code_beatrix.svg
     :target: http://badge.fury.io/py/code_beatrix

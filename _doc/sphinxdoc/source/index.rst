@@ -148,8 +148,12 @@ Pour les plus chevronnés, certains bouts de codes en python
 pourront être réutilisés via 
 `pypi <https://pypi.python.org/pypi/code_beatrix/>`_
 (ou `wheel <http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix>`_).
+Et plus encore :  :ref:`l-changes`, :ref:`l-license`.
 
 
+.. image:: https://travis-ci.org/sdpython/code_beatrix.svg?branch=master
+    :target: https://travis-ci.org/sdpython/code_beatrix
+    :alt: Build status
 
 .. image:: https://badge.fury.io/py/code_beatrix.svg
     :target: http://badge.fury.io/py/code_beatrix
@@ -158,6 +162,5 @@ pourront être réutilisés via
     :alt: PYPI Package
     :target: https://pypi.python.org/pypi/code_beatrix 
     
-Et plus encore :  :ref:`l-changes`, :ref:`l-license`
 
 
