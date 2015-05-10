@@ -75,6 +75,7 @@ package_data = {project_var_name + ".scratch.example_echiquier": ["*.sb2"],
                 project_var_name + ".scratch.example_pyramide": ["*.sb2"],
                 project_var_name + ".scratch.example_chute": ["*.sb2"],
                 project_var_name + ".jsscripts.snap": ["*.*"],
+                project_var_name: ["rss_blog_list.xml"],
                 }
 
 ############
@@ -184,7 +185,8 @@ if is_local():
     r = pyquickhelper.process_standard_options_for_setup(
         sys.argv, __file__, project_var_name,
         unittest_modules=["pyquickhelper"],
-        requirements=["pyquickhelper"])
+        requirements=["pyquickhelper"],
+        blog_list=os.path.abspath(os.path.join("src", project_var_name, package_data[project_var_name][0])))
 else:
     r = False
 
