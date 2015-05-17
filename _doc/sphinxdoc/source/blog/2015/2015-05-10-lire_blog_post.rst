@@ -27,7 +27,7 @@
         from code_beatrix import __blog__
         write_module_scripts(".", blog_list=__blog__)
     
-    Cette fonction créé quelques fichiers commençant par ``auto_rss*.py``.
+    Cette fonction crée quelques fichiers commençant par ``auto_rss*.py``.
     Si vous êtes sous Windows, il suffit d'exécuter ``auto_run_blog.bat``
     pour lancer le navigator par défaut avec et découvrir les derniers articles
     publiés. Il est facile d'ajouter d'autres blog mais je vous laisse découvrir
