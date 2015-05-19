@@ -162,5 +162,11 @@ Et plus encore :  :ref:`l-changes`, :ref:`l-license`.
     :alt: PYPI Package
     :target: https://pypi.python.org/pypi/code_beatrix 
     
-
+.. image:: http://img.shields.io/github/issues/sdpython/code_beatrix.png
+    :alt: GitHub Issues
+    :target: https://github.com/sdpython/code_beatrix/issues
+    
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :alt: MIT License
+    :target: http://opensource.org/licenses/MIT
 
