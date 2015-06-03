@@ -1,4 +1,4 @@
-﻿
+
 .. issue.
 
 .. index:: cantine, like, facebook, smartphone, sondage, droit, énoncé, Dunkerque 2015-03-25

@@ -1,4 +1,4 @@
-﻿
+
 .. issue.
 
 .. index:: correcteur orthographique, orthographe, énoncé, sondage, vote
