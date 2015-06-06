@@ -10,7 +10,7 @@ __author__ = "Xavier Dupré"
 __github__ = "https://github.com/sdpython/code_beatrix"
 __url__ = "http://lesenfantscodaient/"
 __downloadUrl__ = "http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix"
-__license__ = "BSD License"
+__license__ = "MIT License"
 __blog__ = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "rss_blog_list.xml"))
 
