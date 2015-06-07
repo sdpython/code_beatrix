@@ -36,7 +36,7 @@ La première a eu lieu à Dunkerque le :ref:`25 mars 2015 <l-session_2015_03_25>
 .. toctree::
     :maxdepth: 1
 
-    blog <blog/index_blog.rst>
+    blog <blog/main_0000.rst>
     Parcours d'attraction dès 7 ans <sessions/sessions>
     
 .. _l-contenu-range:
@@ -121,12 +121,15 @@ Il faut être curieux.
 Annexes
 -------
 
+* :ref:`genindex`
 * :ref:`l-remerciements`
 * :ref:`l-histoires`
 * :ref:`l-getting_started`
 * :ref:`l-glossary`
 * :ref:`l-notebooks`
+* :ref:`modindex` (voir aussi :ref:`l-modules`, :ref:`l-classes`, :ref:`l-functions`)
 * :ref:`l-FAQ`
+
 
     
 .. toctree::
@@ -143,6 +146,8 @@ Annexes
     blog/blogindex
     all_indexes
     all_report
+    blog/index_blog
+    
 
 Pour les plus chevronnés, certains bouts de codes en python 
 pourront être réutilisés via 

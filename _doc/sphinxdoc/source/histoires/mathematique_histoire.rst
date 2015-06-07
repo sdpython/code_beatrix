@@ -88,5 +88,15 @@ incapables de répéter la même chose sans faire d'erreur. Rien de plus facile 
 que de créer un mot, d'écrire une fonction qui fera dorénavant partie du vocabulaire, ou de créer
 un langage dédié à un usage spécifique pour alléger encore la pensée.
 
+Les langages sont aussi visuels comme le plan de métro qui semble si naturel aujourd'hui.
+Pourtant, il n'était pas évident d'aboutir à cette représentation épurée qui apparut au début du siècle :
+`La représentation cartographique du métro <http://le-cartographe.net/blog/archives/107-la-representation-cartographique-du-metro>`_.
+Le langage de la visualisation des données est un domaine qui cogite beaucoup en ce moment,
+que ce soit pour l'`Analyse des réseaux sociaux <http://fr.wikipedia.org/wiki/Analyse_des_r%C3%A9seaux_sociaux>`_
+ou l'animation de graphes (voir l'outil `d3.js <http://d3js.org/>`_).
+
+.. image:: http://upload.wikimedia.org/wikipedia/commons/9/9b/Social_Network_Analysis_Visualization.png
+    :width: 500
 
 
+*Source des images : wikipedia*

@@ -56,5 +56,6 @@ Versions
 
 * **0.5 - 2015/??/??**
     * **ajout:** ajout d'un code illustrant le tri à bulles sous Scratch (avec personnage animé)
+    * **ajout:** ajout d'une petite histoire sur les langages
 * **0.1 - 2015/03/25**
     * **nouveau:** première version
