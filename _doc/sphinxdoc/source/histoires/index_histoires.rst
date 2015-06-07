@@ -9,4 +9,6 @@ Quelques histoires pour réfléchir
 .. toctree::
 
     la_poule_a_change
+    codes_secrets
+    mathematique_histoire
     

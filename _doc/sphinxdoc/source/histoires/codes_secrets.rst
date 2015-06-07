@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. _l-lecture_codes_secret:
 
