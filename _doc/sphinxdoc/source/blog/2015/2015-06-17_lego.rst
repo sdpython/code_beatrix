@@ -1,0 +1,32 @@
+
+
+.. blogpost::
+    :title: Puzzle, Légo et méta-données
+    :keywords: légo, méta-données, puzzle
+    :date: 2015-06-17
+    :categories: presse
+    
+    Une petite vidéo est parue dans Le Monde pour expliquer l'usage qu'on peut faire
+    avec les méta données :
+    `Comment les métadonnées permettent de vous surveiller (expliqué en patates) <http://www.lemonde.fr/pixels/video/2015/06/15/comment-les-metadonnees-permettent-de-vous-surveiller-explique-en-patates_4654461_4408996.html>`_.
+    Sans être Sherlock Holmes, on peut deviner beaucoup de choses de la vie d'une personne.
+    Cela fait écho à l'histoire interactive :ref:`l-donnes_cantine` que j'avais imaginé
+    pour expliquer comment une école pouvait récupérer des informations à propos de ses élèves.
+    
+    Chaque donnée en elle-même ne révèle pas grand-chose de celui à qui elle se rapporte.
+    C'est une pièce d'un puzzle. Mais plus on a de pièces, plus l'image du puzzle se fait claire.
+    Il est utile de garder cela à l'esprit lorsqu'on débat des données personnelles.
+    
+    Un peu comme les légos : imaginons que vos parents souhaitent vous faire un cadeau
+    sans que vous le sachiez. Ils décident de se faire livrer des pièces de celui-ci
+    à intervalles réguliers. Chaque pièce prise séparément ne révèle pas l'ensemble.
+    Mais pour celui regarde la forme des paquets, qui utilise un logiciel pour 
+    énumérer toutes les possibilités d'assemblage, il aura peut-être une façon
+    d'éventer la surprise.
+    
+    C'est peut-être pour ça que que Légo a décidé d'investir l'université :
+    `Les Legos vont faire leur entrée à l’Université de Cambridge <http://www.lemonde.fr/vie-etudiante/article/2015/06/16/un-cours-de-lego-bientot-au-programme-a-l-universite-de-cambridge_4654959_4468406.html>`_.
+    Les données sont des pièces de puzzle qui ne s'emboîtent pas tellement.
+    Mais il y en a tellement que cela finit par donner un tout cohérent.
+    
+    

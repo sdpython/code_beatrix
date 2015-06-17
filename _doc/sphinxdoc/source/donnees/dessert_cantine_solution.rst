@@ -89,13 +89,14 @@ La science fiction s'est depuis longtemps emparée de ce sujet.
 Les scénarios ne sont pas tous des scénarios catastrophe mais invitent
 à la réflexion.
 
+* `Comment les métadonnées permettent de vous surveiller (expliqué en patates) <http://www.lemonde.fr/pixels/video/2015/06/15/comment-les-metadonnees-permettent-de-vous-surveiller-explique-en-patates_4654461_4408996.html>`_,
+  courte animation proposée par le journal Le Monde pour expliquer ce qu'on peut faire avec les méta données (et sans être Sherlock Holmes)
 * `1984 <http://fr.wikipedia.org/wiki/1984_%28roman%29>`_, George Orwell (livre)
 * `Brazil <http://fr.wikipedia.org/wiki/Brazil_%28film,_1985%29>`_, Terry Gilliam (film, adaptation de 1984)
 * `Psycho Pass <http://fr.wikipedia.org/wiki/Psycho-Pass>`_, 
   diffusé sur `France 4 <http://www.france4.fr/emissions/psycho-pass>`_ (manga japonais, parfois violent)
 * `Bienvenue à Gattaca <http://fr.wikipedia.org/wiki/Bienvenue_%C3%A0_Gattaca>`_, Andrew Niccol (film)
 * `The Trueman Show <http://fr.wikipedia.org/wiki/The_Truman_Show>`_, Peter Weir (film)
-
 
 
 
