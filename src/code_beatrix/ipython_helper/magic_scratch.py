@@ -8,7 +8,7 @@ import glob
 from IPython.core.magic import magics_class, line_magic
 from IPython.core.display import HTML, display_html, Javascript
 
-from pyquickhelper import MagicCommandParser, MagicClassWithHelpers
+from pyquickhelper.ipythonhelper import MagicCommandParser, MagicClassWithHelpers
 from ..jsscripts.snap import __file__ as location_js_snap
 
 
