@@ -67,3 +67,4 @@ mccabe
 pep8
 feedparser
 setuptools
+tutormagic
