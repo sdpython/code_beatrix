@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: solution, algorithme, tri, Dunkerque 2015-03-25
 
@@ -131,6 +130,16 @@ on trouve quand même très vite les mots.
 Et vous pourrez compter... d'après l'algorithme, si le dictionnaire a deux milles pages, il vous 
 faudra au plus ouvrir 11 pages pour trouver la bonne (car 2000 divisé par 2 et encore par 2
 et encore par 2 ... comme ça 11 fois de suite, ça finit par faire plus petit que 1).
+
+Autres tris
+-----------
+
+Il existe de nombreuses autres façons de trier. L'article
+`A small video on sorting algorithm <http://www.xavierdupre.fr/blog/2014-04-04_nojs.html>`_
+montre une vidéo illustrant ces différentes façons. Même si on connaît le coût de l'algorithme
+optimal, c'est vrai dans le cas général. Dans un cas particulier, il existe parfois
+des astuces qui permettent de trier plus rapidement car on en sait un peu plus sur les 
+éléments à trier. C'est ce qu'on fait quand on trie les cartes : d'abord par couleur puis par numéro.
 
 
 
