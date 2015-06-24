@@ -96,16 +96,19 @@ avec un langage de programmation (voir également :ref:`l-variable_combien`).
 **langages de programmation**
 
 Pour apprendre à programmer, il faut programmer avec un langage de programmation.
-Il faut savoir lire et compter. `Scratch <https://scratch.mit.edu/>`_
-est très bien et bénéficie d'une communauté très active. Autrement dit,
-si vous ne connaissez pas la solution, Internet le saura (via un moteur de recherche).
-On peut commencer avec Scratch vers 4, 5 ans.
+Pas besoin de lire ou de compter pour des langages visuels tels que `Scratch <https://scratch.mit.edu/>`_.
+On peut commencer vers 4, 5 ans.
+Mais il faut savoir lire et compter dès que les langages sont écrits.
 
 Lorsqu'on sait manipuler les variables, un langage plus écrit s'impose.
 Je recommande `Python <https://www.python.org/>`_ qui est présent dans la plupart
 des universités (pas seulement en France, voir également :ref:`l-choix_langage`). 
-Un langage de programmation utile professionnellement est nécessairement de syntaxe anglaise.
-    
+L'anglais est la langue très majoritaire.
+
+`Scratch <https://scratch.mit.edu/>`_, `Python <https://www.python.org/>`_, bénéficient de communauté très active.
+Si vous ne connaissez pas la solution, Internet le saura (via un moteur de recherche).
+
+
 **imagination**
 
 Lorsqu'on parle de choses abstraites, il n'existe jamais une seule façon
