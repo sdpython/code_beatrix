@@ -101,6 +101,7 @@ Livres, Bibliographie
 * `L'histoire d'Hellen Keller <http://www.pocketjeunesse.fr/site/lhistoire_dhelen_keller_&100&9782266086622.html>`_, Lorena A. Hickok,
   Hellen est muète, aveugle et sourde et pourtant elle a réussi à communiquer, à inventer un langage
   basé sur le toucher.
+* `Scratch pour les Kids <http://www.ludovia.com/2015/03/scratch-pour-les-kids/>`_
 
 **10 ans**
 
@@ -110,7 +111,6 @@ Livres, Bibliographie
   page sur le graphisme de données et une autre sur les femmes et les maths.
   Le premier programme informatique a été écrit par une femme : 
   `Augusta Ada King <http://fr.wikipedia.org/wiki/Ada_Lovelace>`_.
-* `Scratch pour les Kids <http://www.ludovia.com/2015/03/scratch-pour-les-kids/>`_
 * `Georges et le Big Bang <http://livre.fnac.com/a3678862/Stephen-Hawking-Georges-et-le-Big-Bang>`_, Lucy et Stephen Hawking
 
 
