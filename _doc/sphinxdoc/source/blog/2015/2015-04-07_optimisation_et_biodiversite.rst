@@ -30,6 +30,16 @@
     Mais cet exercice est très proche de celui-ci :
     :ref:`l-prog_dessin_pyramide`.
     
+    Cette disposition en quinconce alterne différentes espèces afin de ralentir 
+    la progression de parasites. 
+    L'émission Interception 
+    `Canal du midi, les platanes qu'on abat <http://www.franceinter.fr/emission-interception-canal-du-midi-les-platanes-quon-abat-0>`_
+    aborde ce problème et les solutions envisagées
+    enrayer la progression du `chancre coloré <http://www.fredonra.com/collectivites/le-chancre-colore-du-platane/>`_
+    qui affecte les platanes du canal du midi. L'alternance de différentes espèces
+    d'arbres aurait certainement ralenti la contagion, 
+    une hypothèse émise par un des chercheurs interrogés.
+    
     
     Pour les plus grands, le livre de Jared Diarmond,
     `L'Effondrement <http://fr.wikipedia.org/wiki/Effondrement_%28livre%29>`_
