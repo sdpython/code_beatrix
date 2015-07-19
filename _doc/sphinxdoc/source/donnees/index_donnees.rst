@@ -1,5 +1,3 @@
-﻿
-.. issue.
 
 .. _l-donnes_exemple:
 

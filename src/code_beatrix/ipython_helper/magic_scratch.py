@@ -7,8 +7,7 @@ import os
 import glob
 import random
 from IPython.core.magic import magics_class, line_magic
-from IPython.core.display import HTML, display_html, Javascript
-
+from IPython.core.display import HTML, display_html, Javascript, display_javascript
 from pyquickhelper.ipythonhelper import MagicCommandParser, MagicClassWithHelpers
 from ..jsscripts.snap import __file__ as location_js_snap
 
@@ -28,7 +27,7 @@ class MagicScratch(MagicClassWithHelpers):
         defines the way to parse the magic command ``%snap``
         """
         parser = MagicCommandParser(prog="snap",
-            description='insert a snap window inside a notebook')
+                                    description='insert a snap window inside a notebook')
         parser.add_argument(
             '-f',
             '--file',
@@ -39,7 +38,7 @@ class MagicScratch(MagicClassWithHelpers):
             '-d',
             '--div',
             type=str,
-            default="scratch-div-id",
+            default="scratch_div_id",
             help='id for the HTML div')
         return parser
 
@@ -60,11 +59,11 @@ class MagicScratch(MagicClassWithHelpers):
                 raise NotImplementedError()
 
             iddiv = args.div
-            if iddiv == "scratch-div-id":
-                # we should use a static counter but it 
-                # is very unlikely more than one snap will be added to 
+            if iddiv == "scratch_div_id":
+                # we should use a static counter but it
+                # is very unlikely more than one snap will be added to
                 # a notebook
-                iddiv += "-%d" % random.randint(0,100000)
+                iddiv += "_%d" % random.randint(0, 100000)
 
             js_path = os.path.dirname(location_js_snap)
             files = [os.path.split(_)[-1]
@@ -73,22 +72,34 @@ class MagicScratch(MagicClassWithHelpers):
             js_libs = [path + _ for _ in files]
 
             html_src = """
-                <div id="{0}"> </div>
-                """.format(iddiv)
-            test_js = """
-                         var world;
-                         window.onload = function () {
-                            world = new WorldMorph(document.getElementById('__DIV__'));
-                            world.worldCanvas.focus();
-                            new IDE_Morph().openIn(world);
-                            setInterval(loop, 1);
-                         };
-                         function loop() {
-                            world.doOneCycle();
+                <div id="__DIV__div">
+                Snap showing up soon...
+                <!--<iframe width="1000" height="600" scrolling="auto">-->
+                <canvas id="__DIV__" width="1000" height="600" />
+                <!-- </iframe>-->
+                </div>
+                """.replace("__DIV__", iddiv)
+            test_js = """<script>
+                         var world__DIV__;
+                         function loop__DIV__() {
+                            world__DIV__.doOneCycle();
                          }
+                         function start_snap__DIV__() {
+                            var sec = document.getElementsByClassName("__DIV__div");
+                            sec.innerHTML = "loading...";
+                            world__DIV__ = new WorldMorph(document.getElementById('__DIV__'));
+                            world__DIV__.worldCanvas.focus();
+                            new IDE_Morph().openIn(world__DIV__);
+                            setInterval(loop__DIV__, 1);
+                            sec.innerHTML = "";
+                         }
+                         window.setTimeout(start_snap__DIV__,500);
+                         </script>
                          """.replace("__DIV__", iddiv)
-            display_html(HTML(data=html_src))
-            return Javascript(data=test_js, lib=js_libs)
+            libs = [
+                '<script type="text/javascript" src="{0}"></script>'.format(l) for l in js_libs]
+            libs = "\n".join(libs)
+            return HTML(html_src + "\n" + libs + "\n" + test_js)
 
 
 def register_scratch_magics():
