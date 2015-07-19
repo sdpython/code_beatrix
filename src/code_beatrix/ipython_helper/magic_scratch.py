@@ -5,6 +5,7 @@
 """
 import os
 import glob
+import random
 from IPython.core.magic import magics_class, line_magic
 from IPython.core.display import HTML, display_html, Javascript
 
@@ -26,7 +27,7 @@ class MagicScratch(MagicClassWithHelpers):
         """
         defines the way to parse the magic command ``%snap``
         """
-        parser = MagicCommandParser(
+        parser = MagicCommandParser(prog="snap",
             description='insert a snap window inside a notebook')
         parser.add_argument(
             '-f',
@@ -52,13 +53,18 @@ class MagicScratch(MagicClassWithHelpers):
         args = self.get_args(line, parser)
 
         if args is not None:
-            if args.f in [None, ""]:
+            if args.file in [None, ""]:
                 #filename = None
                 pass
             else:
                 raise NotImplementedError()
 
             iddiv = args.div
+            if iddiv == "scratch-div-id":
+                # we should use a static counter but it 
+                # is very unlikely more than one snap will be added to 
+                # a notebook
+                iddiv += "-%d" % random.randint(0,100000)
 
             js_path = os.path.dirname(location_js_snap)
             files = [os.path.split(_)[-1]
@@ -72,7 +78,7 @@ class MagicScratch(MagicClassWithHelpers):
             test_js = """
                          var world;
                          window.onload = function () {
-                            world = new WorldMorph(document.getElementById('{0}'));
+                            world = new WorldMorph(document.getElementById('__DIV__'));
                             world.worldCanvas.focus();
                             new IDE_Morph().openIn(world);
                             setInterval(loop, 1);
@@ -80,7 +86,7 @@ class MagicScratch(MagicClassWithHelpers):
                          function loop() {
                             world.doOneCycle();
                          }
-                         """.format(iddiv)
+                         """.replace("__DIV__", iddiv)
             display_html(HTML(data=html_src))
             return Javascript(data=test_js, lib=js_libs)
 
