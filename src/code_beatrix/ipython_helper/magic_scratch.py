@@ -40,6 +40,18 @@ class MagicScratch(MagicClassWithHelpers):
             type=str,
             default="scratch_div_id",
             help='id for the HTML div')
+        parser.add_argument(
+            '-W',
+            '--width',
+            type=int,
+            default=1000,
+            help='window width')
+        parser.add_argument(
+            '-H',
+            '--height',
+            type=int,
+            default=600,
+            help='window height')
         return parser
 
     @line_magic
@@ -59,6 +71,8 @@ class MagicScratch(MagicClassWithHelpers):
                 raise NotImplementedError()
 
             iddiv = args.div
+            h = str(args.height)
+            w = str(args.width)
             if iddiv == "scratch_div_id":
                 # we should use a static counter but it
                 # is very unlikely more than one snap will be added to
@@ -72,13 +86,11 @@ class MagicScratch(MagicClassWithHelpers):
             js_libs = [path + _ for _ in files]
 
             html_src = """
-                <div id="__DIV__div">
+                <div id="__DIV__div" style="position:relative; width:__WIDTH__px; height:__HEIGHT__px;">
                 Snap showing up soon...
-                <!--<iframe width="1000" height="600" scrolling="auto">-->
-                <canvas id="__DIV__" width="1000" height="600" />
-                <!-- </iframe>-->
+                <canvas id="__DIV__" style="width:__WIDTH__px; height:__HEIGHT__px; position:relative; " />
                 </div>
-                """.replace("__DIV__", iddiv)
+                """.replace("__DIV__", iddiv).replace("__WIDTH__", w).replace("__HEIGHT__", h)
             test_js = """<script>
                          var world__DIV__;
                          function loop__DIV__() {

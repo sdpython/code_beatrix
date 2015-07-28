@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: démineur, énoncé, énigme, Dunkerque 2015-03-25
 
@@ -100,6 +99,8 @@ Solution
 --------
 
 Voir :ref:`l-algo_demineur_sol`.
+
+.. index:: Hermionne, Harry Potter, Harry, Potter, énigme, potion, fiole
 
 
 A quoi ça sert ?

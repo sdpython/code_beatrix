@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: démineur, solution, énigme
 
