@@ -111,7 +111,7 @@ class MagicScratch(MagicClassWithHelpers):
             libs = [
                 '<script type="text/javascript" src="{0}"></script>'.format(l) for l in js_libs]
             libs = "\n".join(libs)
-            return HTML(html_src + "\n" + libs + "\n" + test_js)
+            return HTML(libs + "\n" + test_js + "\n" + html_src + "\n")
 
 
 def register_scratch_magics():
