@@ -15,6 +15,8 @@ def local_d3js(default=default_d3js):
 
     @param      default     use this value otherwise
     @return                 location of d3.min.js
+
+    @todo Check about local d3.js
     """
     return default
     # return "/static/d3js/d3.v3.min.js"

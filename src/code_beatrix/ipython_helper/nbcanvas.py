@@ -17,6 +17,8 @@ def display_canvas_point(html_id, width=800, heigth=400, var_name="points"):
     @param      width       width
     @param      html_id     the function adds a div section, it should be different for every canevas
     @param      var_name    the function adds this variable to the kernel workspace
+
+    @return                 the list of points
     """
     js_libs = local_d3js()
 
