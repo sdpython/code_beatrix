@@ -6,6 +6,7 @@ import sys
 import os
 import unittest
 import re
+import warnings
 
 
 try:
@@ -52,6 +53,7 @@ class TestCopyTools(unittest.TestCase):
             OutputPrint=__name__ == "__main__")
 
         if "travis" in sys.executable:
+            warnings.warn("travis, unable to test TestCopyTools.test_copy_tools")
             return
 
         res = copy_jstool2ipython("snap")
