@@ -345,6 +345,12 @@ autres lectures
   En 379, `Théodose Ier <https://fr.wikipedia.org/wiki/Th%C3%A9odose_Ier>`_ instaure le christianisme comme 
   religion d'état. Une grave maladie suivie d'une rémission affermiront ses positions.
   
+* `Effondrement <http://www.gallimard.fr/Catalogue/GALLIMARD/Folio/Folio-essais/Effondrement>`_
+  de Jared Diarmond, le livre étudie le déclin de populations confinées dans des petits espaces,
+  l'Islande déboisée par ces habitants et qui ne peut plus les faire vivre, l'Ile de Pâques aussi déboisée
+  qui ne permit plus à ses habitants de construire des bateaux, l'auteur met en lumière l'incapacité de ses
+  populations de gérer une ressource limitée sur le long terme.
+  
 * `Louis XIV <http://www.editions-perrin.fr/ouvrage/louis-xiv/9782262028237>`_ 
   de Jean-Christian Petitfils, ce n'est pas seulement le roi Soleil dont 
   il est question dans ce livre mais aussi des ministres qui l'ont entouré 
