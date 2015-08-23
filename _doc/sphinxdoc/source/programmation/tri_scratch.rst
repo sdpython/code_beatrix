@@ -23,7 +23,7 @@ La mise en scène est très réduite car c'est un exercice plutôt solitaire
 Trier un tableau sous scratch
 +++++++++++++++++++++++++++++
 
-.. s-tri_bulle_wiki:
+.. _s-tri_bulle_wiki:
 
 L'algorithme à implémenter est le `tri à bulle <http://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles>`_
 qui est abordé d'un point de vue algorithmique par cet :ref:`énoncé <s-tribulle>`
