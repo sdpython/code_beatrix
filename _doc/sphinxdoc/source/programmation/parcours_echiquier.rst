@@ -80,7 +80,7 @@ Pour chaque case, on calcule ::
 #. Donner une formule qui correspond au parcourt suivant ?
    Les numéros ne doivent pas forcément être contigüs.
 
-.. image:: parcours_diag.png
+.. image:: echiquier_diag.png
 
 
 

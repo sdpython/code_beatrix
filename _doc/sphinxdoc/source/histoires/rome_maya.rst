@@ -314,12 +314,14 @@ Bibliographie
 
 cités dans le texte
 
-* `Les Mayas <http://www.tallandier.com/auteur-218.htm>`_ * d'Arthur Desmaret et 
+* `Les Mayas <http://www.tallandier.com/auteur-218.htm>`_ d'Arthur Desmaret
 * `L'Empire Romain, économie, société, culture <http://www.editionsladecouverte.fr/catalogue/index-L_Empire_romain-9782707135957.html>`_ de Peter Garnsey et Richard Saller.
 * `Les idéntités meurtrières <http://www.livredepoche.com/les-identites-meurtrieres-amin-maalouf-9782253150053>`_ d'Amin Maalouf
 * `Une vérité qui dérange <https://fr.wikipedia.org/wiki/Une_v%C3%A9rit%C3%A9_qui_d%C3%A9range>`_, 
   documentaire à partir d'une présentation d'Al Gore
 * `Une histoire populaire des États-Unis <http://agone.org/memoiressociales/unehistoirepopulairedesetatsunis/index.html>`_ de Howard Zinn
+
+.. index:: Tempus
 
 autres lectures
 
@@ -331,8 +333,8 @@ autres lectures
   et de l'empire Romain, armée imposante et entretenue, 
   la certitude que tout ira bien tant que l'empire avance (croissance positive, ...), 
   la recherche d'un paradis fondé sur un équilibre parfait chez les Romains 
-  (la peur qu'il s'écroule aurait suffit pour qu'il s'écroule)
-  **Je recommande la collection Tempus, leurs livres sont très réussis.**
+  (la peur qu'il s'écroule aurait suffit pour qu'il s'écroule);
+  Je recommande la collection Tempus, leurs livres sont très réussis.
   
 * `La fin de l'Empire Romain d'Occident (375-476) <http://www.gregoiredetours.fr/antiquite/monde-romain-antique/george-andre-morin-la-fin-de-l-empire-romain-d-occident/>`_ 
   de Georges-André Morin, un brin d'histoire dans la digne lignée des manuels 
@@ -361,13 +363,13 @@ autres lectures
   atteint de bigotterie. 
   
 * `Tour du monde d'un sceptique <http://www.payot-rivages.net/livre_Tour-du-monde-d-un-sceptique-Aldous-Huxley_ean13_9782228899680.html>`_
-   de Aldous Huxley, les carnets de voyage de celui qui écrivit 
-   `Le meilleur des mondes <>`_, 
-   d'un regard presque détaché, Huxley a transcrit ses réflexions depuis 
-   l'Inde jusqu'en Angleterre. Même si le livre semble éloigné, 
-   c'est néanmoins un voyage dans les années 1920, au travers de pays 
-   qui ne sont pas tous aussi avancés dans leur développement économique. 
-   Quelques détours dont je vous laisse découvrir lequel est en rapport avec cet exposé :
+  de Aldous Huxley, les carnets de voyage de celui qui écrivit 
+  `Le meilleur des mondes <https://fr.wikipedia.org/wiki/Le_Meilleur_des_mondes>`_, 
+  d'un regard presque détaché, Huxley a transcrit ses réflexions depuis 
+  l'Inde jusqu'en Angleterre. Même si le livre semble éloigné, 
+  c'est néanmoins un voyage dans les années 1920, au travers de pays 
+  qui ne sont pas tous aussi avancés dans leur développement économique. 
+  Quelques détours dont je vous laisse découvrir lequel est en rapport avec cet exposé :
 
     Voyager, c'est découvrir que le monde a tort.
 
@@ -459,34 +461,34 @@ autres lectures
     anti-trade sentiment as a way to explain their frustrations.
 
 * `La Controverse de Valladolid <https://fr.wikipedia.org/wiki/La_Controverse_de_Valladolid_%28t%C3%A9l%C3%A9film%29>`_, 
-   téléfilm réalisé par Jean-Daniel Verhaeghe, 
-   scénario de Jean-Claude Carrière, Les indiens sont-ils des Hommes ?
-   C'est à cette question que tente de répondre une assemblée chapeautée 
-   par l'Eglise en 1550. Loin de tout fanatisme, 
-   cette oeuvre est une véritable discussion sur l'esclavage, 
-   la recherche de l'exactitude dans l'interprétation des textes religieux. 
-   Verra-t-on la même controverse avec les robots ?
+  téléfilm réalisé par Jean-Daniel Verhaeghe, 
+  scénario de Jean-Claude Carrière, Les indiens sont-ils des Hommes ?
+  C'est à cette question que tente de répondre une assemblée chapeautée 
+  par l'Eglise en 1550. Loin de tout fanatisme, 
+  cette oeuvre est une véritable discussion sur l'esclavage, 
+  la recherche de l'exactitude dans l'interprétation des textes religieux. 
+  Verra-t-on la même controverse avec les robots ?
    
-** le pouvoir**
+**le pouvoir**
 
 * `Les mémoires d'Hadrien <https://fr.wikipedia.org/wiki/M%C3%A9moires_d'Hadrien>`_ 
-   de Marguerite Yourcenar, c'est un livre pour ceux qui aiment tout autant la langue 
-   française que l'Histoire, Yourcenar met ses mots dans la bouche 
-   d'Hadrien qui conte sa vie au successeur qu'il a choisi, qui présente 
-   aussi les idées qui ont guidé ses décisions tout au long de son règne. 
-   On y apprend beaucoup sur la pratique du pouvoir, sur sa pérennité.
+  de Marguerite Yourcenar, c'est un livre pour ceux qui aiment tout autant la langue 
+  française que l'Histoire, Yourcenar met ses mots dans la bouche 
+  d'Hadrien qui conte sa vie au successeur qu'il a choisi, qui présente 
+  aussi les idées qui ont guidé ses décisions tout au long de son règne. 
+  On y apprend beaucoup sur la pratique du pouvoir, sur sa pérennité.
 
-* `Le Prince` <https://fr.wikipedia.org/wiki/Le_Prince>`_, 
-   de Machiavel, l'exercice et la conservation du pouvoir dans tout ce 
-   qu'il a de plus cinique. Que serait ce livre s'il était écrit 
-   aujourd'hui en tenant compte des moyens de communication d'aujourd'hui...
+* `Le Prince <https://fr.wikipedia.org/wiki/Le_Prince>`_, 
+  de Machiavel, l'exercice et la conservation du pouvoir dans tout ce 
+  qu'il a de plus cinique. Que serait ce livre s'il était écrit 
+  aujourd'hui en tenant compte des moyens de communication d'aujourd'hui...
    
 * `Du pouvoir <http://livre.fnac.com/a1759748/Bertrand-de-Jouvenel-Du-pouvoir>`_ 
-   de Bertrand Jouvenel, ce livre analyse le pouvoir, il s'ouvre notamment 
-   sur un paradoxe : bien que le pouvoir soit peu à peu passé des 
-   mains de rois héréditaires aux peuples grâce aux démocraties d'aujourd'hui, 
-   cette évolution s'est accompagnée d'un accroissement des moyens d'exercer 
-   le pouvoir. Le brigandisme était chose courante dans les campagnes romaines.
+  de Bertrand Jouvenel, ce livre analyse le pouvoir, il s'ouvre notamment 
+  sur un paradoxe : bien que le pouvoir soit peu à peu passé des 
+  mains de rois héréditaires aux peuples grâce aux démocraties d'aujourd'hui, 
+  cette évolution s'est accompagnée d'un accroissement des moyens d'exercer 
+  le pouvoir. Le brigandisme était chose courante dans les campagnes romaines.
    
 
 **science fiction (déclin d'un empire)**
@@ -534,24 +536,25 @@ autres lectures
   ville qui grandit dans tous les sens du terme.
 
 * `Battlestar Galactica <http://www.scifistream.com/battlestar-galactica/>`_, 
-   une autre série télévisée diffusée sur la chaîne SciFi, 
-   le lien avec Rome ne semble pas évident. Sans revenir sur l'intrigue 
-   de cette série, elle est avant-tout un huis-clos dans l'espace. 
-   Elle montre comment la préservation du pouvoir, parfois synonyme de 
-   la survie d'une espèce, ne tient souvent qu'à un fil. 
-   Faire les bons choix en un instant, un peu l'apanage 
-   d'Axel Munshine ou le 
-   `Vagabond des Limbes <https://fr.wikipedia.org/wiki/Le_Vagabond_des_Limbes>`_ 
-   de Ribera et Godard, 
-   mais cette dernière citation est sans doute trop éloignée cette fois. 
-   L'avantage d'une série sur l'histoire est de pouvoir faire 
-   ressusciter les personnages important pour l'histoire.
-   * Le 17 novembre 375, l'empereur 
-     `Valentinien Ier <https://fr.wikipedia.org/wiki/Valentinien_Ier>`_
-     meurt d'une crise d'apoplexie sans avoir préalablement réglé sa succession, 
-     annonçant les préludes d'une lutte intense pour le pouvoir. 
-   * Le commandant Adama ressuscite au quatrième épisode de la seconde saison, 
-     ayant survécu à deux balles tirées à bout portant en pleine poitrine, 
-     coups portés par un cylon (robot à apparence humaine) ayant 
-     raté sa tentative de suicide. L'histoire est capricieuse parfois.
+  une autre série télévisée diffusée sur la chaîne SciFi, 
+  le lien avec Rome ne semble pas évident. Sans revenir sur l'intrigue 
+  de cette série, elle est avant-tout un huis-clos dans l'espace. 
+  Elle montre comment la préservation du pouvoir, parfois synonyme de 
+  la survie d'une espèce, ne tient souvent qu'à un fil. 
+  Faire les bons choix en un instant, un peu l'apanage 
+  d'Axel Munshine ou le 
+  `Vagabond des Limbes <https://fr.wikipedia.org/wiki/Le_Vagabond_des_Limbes>`_ 
+  de Ribera et Godard, 
+  mais cette dernière citation est sans doute trop éloignée cette fois. 
+  L'avantage d'une série sur l'histoire est de pouvoir faire 
+  ressusciter les personnages important pour l'histoire.
+  
+  * Le 17 novembre 375, l'empereur 
+    `Valentinien Ier <https://fr.wikipedia.org/wiki/Valentinien_Ier>`_
+    meurt d'une crise d'apoplexie sans avoir préalablement réglé sa succession, 
+    annonçant les préludes d'une lutte intense pour le pouvoir. 
+  * Le commandant Adama ressuscite au quatrième épisode de la seconde saison, 
+    ayant survécu à deux balles tirées à bout portant en pleine poitrine, 
+    coups portés par un cylon (robot à apparence humaine) ayant 
+    raté sa tentative de suicide. L'histoire est capricieuse parfois.
 

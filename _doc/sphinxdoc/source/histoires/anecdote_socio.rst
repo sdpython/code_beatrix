@@ -181,7 +181,7 @@ groupes d'enfants. Ceux qui avaient profité des jouets avaient retenu
 autant d'informations que les autres, distribuant leur attention 
 entre la télévision et les jouets de façon étonnament efficace.
 
-Cette expérience servit d'inspiration au `Distractor <http://en.wikipedia.org/wiki/Sesame\_Street>`_ 
+Cette expérience servit d'inspiration au `Distractor <http://en.wikipedia.org/wiki/Sesame_Street>`_ 
 et pour une émission en particulier *Sesame Street*. 
 Deux enfants devaient regarder la télévision, juste à côté, un autre 
 écran diffusait des images. Un adulte observait la scène et 

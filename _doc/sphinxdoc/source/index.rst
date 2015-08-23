@@ -52,6 +52,7 @@ Contenu rangé par thèmes
     donnees/index_donnees
     programmation/index_programmation
     arduino/index_arduino
+    histoires/index_histoires
 
 .. _l-difficulte:
     
@@ -126,7 +127,6 @@ Annexes
 
 * :ref:`genindex`
 * :ref:`l-remerciements`
-* :ref:`l-histoires`
 * :ref:`l-getting_started`
 * :ref:`l-glossary`
 * :ref:`l-notebooks`
@@ -141,7 +141,6 @@ Annexes
 
     remerciements
     getting_started
-    histoires/index_histoires
     glossary
     all_FAQ
     index_et_autre

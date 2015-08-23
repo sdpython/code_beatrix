@@ -76,7 +76,7 @@ Et le programme à exécuter est le suivant :
 Exercice 2
 ----------
 
-L'article :ref:`b-biodiversite`fait référence à cet exercice.
+L'article :ref:`b-biodiversite` fait référence à cet exercice.
 Il utilise le programme Scratch suivant pour dessiner des balles
 de couleurs différentes selon un motif précis.
 

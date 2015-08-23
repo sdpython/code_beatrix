@@ -2,12 +2,13 @@
 
 .. _l-histoires:
 
-Quelques histoires pour réfléchir
+Histoires pour réfléchir et rêver
 =================================
 
 **pour les petits**
 
 .. toctree::
+    :maxdepth: 1
 
     la_poule_a_change
     
@@ -20,6 +21,7 @@ importante :
 **pour les plus grands**
 
 .. toctree::
+    :maxdepth: 1
 
     codes_secrets
     mathematique_histoire
