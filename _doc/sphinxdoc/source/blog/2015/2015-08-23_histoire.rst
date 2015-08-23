@@ -1,0 +1,20 @@
+
+
+.. blogpost::
+    :title: Nouvelles histoires
+    :keywords: histoire
+    :date: 2015-08-23
+    :categories: histoire
+    
+    Lorsque je donnais encore des cours magistraux à l'ENSAE,
+    j'aimais agrémenter le cours d'anecdotes afin de ne pas 
+    parler que d'informatique ou peut-être donner envie aux élèves
+    de revenir au cours suivant pas seulement pour l'informatique
+    mais pour ces petites histoires. J'ai ajouté ces vieilles notes
+    plutôt connotées économiques :
+    
+    * :ref:`l-anecdotes-economique`
+    * :ref:`l-anecdotes-sociologiques`    
+    * :ref:`l-rome-maya`
+    
+    A lire à partir du collège.

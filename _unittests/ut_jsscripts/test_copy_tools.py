@@ -53,7 +53,8 @@ class TestCopyTools(unittest.TestCase):
             OutputPrint=__name__ == "__main__")
 
         if "travis" in sys.executable:
-            warnings.warn("travis, unable to test TestCopyTools.test_copy_tools")
+            warnings.warn(
+                "travis, unable to test TestCopyTools.test_copy_tools")
             return
 
         res = copy_jstool2ipython("snap")
