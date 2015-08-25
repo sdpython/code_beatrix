@@ -1,5 +1,5 @@
-﻿
-.. issue.
+
+
 
 .. index:: algorithme, orange, tri, solution
 

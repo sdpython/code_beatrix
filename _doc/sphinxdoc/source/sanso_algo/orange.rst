@@ -1,5 +1,5 @@
-﻿
-.. issue.
+
+
 
 .. index:: énoncé, algorithme, orange, tri
 
