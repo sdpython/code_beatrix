@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: énoncé, algorithme, tri, Dunkerque 2015-03-25
 
