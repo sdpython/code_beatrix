@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: voyageur de commerce, solution, distance, algorithme, parcours, circuit, tsp
 

@@ -155,7 +155,8 @@ if is_local():
     r = pyquickhelper.process_standard_options_for_setup(
         sys.argv, __file__, project_var_name,
         unittest_modules=["pyquickhelper"],
-        additional_notebook_path=["pyquickhelper", "pyensae", "pyrsslocal", "pymyinstall", "pymmails"],
+        additional_notebook_path=[
+            "pyquickhelper", "pyensae", "pyrsslocal", "pymyinstall", "pymmails"],
         requirements=["pyquickhelper"],
         blog_list=os.path.abspath(os.path.join("src", project_var_name, package_data[project_var_name][0])))
 else:

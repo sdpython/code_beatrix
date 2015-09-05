@@ -69,7 +69,27 @@ Il faut d'abord être conscient de comment les données peuvent être
 utilisées. Les données sont utiles mais elles contiennent un peu de votre 
 intimité.
 
-*Pourquoi on a l'impression que les données ne sont pas dangereuses ?*
+**Q8 :**
+
+Il n'y a pas plus de réponse précise qu'à la question précédente mais on
+peut apporter quelques nuances. Que pensez-vous des deux cas suivant :
+
+* Le directeur sait qu'un élève précis se connecte à 11h du soir régulièrment.
+* Le directeur sait que quelques élèves se connectent à 11h du soir régulièrement
+  mais il ne connaît pas leurs noms.
+  
+La première information permet s'adresser directement à la personne. 
+La seconde est plus incertaine : le directeur pourra s'adresser à l'ensemble
+de la classe en espérant que les personnes concernées saisissent le message.
+Ou alors, il pourrait aussi interdire l'accès aux devoirs après 23h,
+afficher un message *"allez au lit"* après 23h...
+Malgré tout, il reste un dernier cas qu'il faut envisager :
+
+* Le directeur sait qu'un élève précis se connecte à 11h du soir régulièrment
+  mais il fait croire à tous les élèves qu'il ne peut pas savoir qui.
+
+
+**Pourquoi on a l'impression que les données ne sont pas dangereuses ?**
 
 On fournit des résultats toujours agrégés.
 On ne se voit jamais dans un tableau de chiffres car

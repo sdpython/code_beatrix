@@ -84,6 +84,9 @@ Personne ne sait pourquoi mais il est souvent fatigué.
 
 **Q7 :** A votre le directeur de l'école a-t-il le droit de faire tout ça ?
 
+**Q8 :** A votre avis, la précédente question ne vous enjoint-elle pas à répondre
+de façon manichéenne ? Aurait-il le droit de faire autre chose ?
+
 
 Solution
 --------

@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: voyageur de commerce, énoncé, distance, algorithme, parcours, circuit, tsp, Dunkerque 2015-03-25
 

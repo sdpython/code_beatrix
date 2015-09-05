@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: sac-à-dos, énoncé, poids, algorithme, Dunkerque 2015-03-25
 

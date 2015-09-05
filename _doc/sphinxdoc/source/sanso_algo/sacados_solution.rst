@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: sac-à-dos, solution, poids, algorithme, glouton
 

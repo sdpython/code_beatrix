@@ -39,6 +39,7 @@ Sujets
     orange
     demineur
     sacados
+    parti
 
 
 
@@ -54,6 +55,7 @@ Indices et solutions
     orange_solution
     demineur_solution
     sacados_solution
+    parti_solution
     notions
 
 
