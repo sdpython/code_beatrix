@@ -1,5 +1,4 @@
 
-.. issue.
 
 .. index:: solution, échiquier, parcours, variable
 

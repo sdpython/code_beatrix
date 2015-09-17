@@ -1,5 +1,4 @@
 
-.. issue.
 
 .. index:: énoncé, échiquier, parcours, variable, Dunkerque 2015-03-25, scratch, python
 
@@ -40,6 +39,9 @@ Il faut aussi des lunettes magiques :
 
     
 On recommence avec d'autres façons de parcourir l'échiquier.
+Et pour ceux qui décidéraient d'un parcours totalement infaisable,
+on ajoute la contrainte de le faire au moins deux fois de façon identique.
+
 
 Questions
 ---------
