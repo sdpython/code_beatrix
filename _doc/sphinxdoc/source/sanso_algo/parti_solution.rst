@@ -1,7 +1,5 @@
-﻿
 
 
-.. index:: parti
 
 .. _l-algo_division_sol:
 
@@ -52,8 +50,6 @@ Lorsqu'on tire sur une bouteille, toutes celles qui y sont reliées la suivent.
 Il faudra tirer sur au moins trois bouteilles pour débarasser la place
 de toutes ses bouteilles.
 
-
-**Q5 :**
 
 .. image:: parti3.png
 

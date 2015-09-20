@@ -14,7 +14,7 @@ A partir de 7-8 ans (mais ce n'est qu'une indication).
 
 Dans un certain pays, il existe un parti politique pétri d'inimitiés tenaces. 
 Est-il possible de scinder le parti en deux pour que chaque paire d'ennemis 
-intangibles se retrouve de part et d'autre du fossé ?
+intangibles se retrouve de part et d'autre du fossé ? [#fdiv1]
 
 
 Mise en scène
@@ -53,7 +53,8 @@ Autres options à programmer
 .. index:: composante connexe, graphe
 
 Les aspects algorithmiques abordés ici sont très proches du concept
-de `composante connexe <https://fr.wikipedia.org/wiki/Graphe_connexe>`_ dans un graphe.
+de `composante connexe <https://fr.wikipedia.org/wiki/Graphe_connexe>`_ dans un graphe
+(voir :ref:`l-algo_connexe`).
 Le *graphe* est ici composé de l'ensemble des bouteilles et des arcs. Le graphe le plus connu
 est Facebook où les bouteilles sont les personnes et les ficelles sont des connexions.
 
@@ -73,19 +74,31 @@ Solution
 Voir :ref:`l-algo_division_sol`.
 
 
+.. index:: coloriage d'une carte, théorème des quatre couleurs, théorème des cinq couleurs
+
 A quoi ça sert ?
 ----------------
 
-.. index:: coloriage
+Dans ce problème, on se retrouve dans une situation ou on ne peut pas 
+colorier de la même couleur deux noeuds du graphe ou deux personnes reliées par un fil.
+On ne peut pas colorier deux voisins de la même couleur. Cette situation
+est plus fréquente qu'on ne le croit pas et particulièrement
+lorsqu'il faut colorier une carte 
+
+.. image:: https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/France_maximale.svg/220px-France_maximale.svg.png
+
+*source : `wikipedia <https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais>`_
+
+Il faut colorier deux départements voisins de couleurs différentes.
+Mais combien faut-il de couleurs au maximum ?
+Le `Théorème des quatre couleurs <https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_quatre_couleurs>`_
+démontre que quatre suffisent sous certaines hypothèses. La démonstration passe par une longue
+étude de cas. 
+Le `théorème des cinq couleurs <https://en.wikipedia.org/wiki/Five_color_theorem>`_ est plus simple
+à montrer.
 
 
-Sans le savoir, trouver les composantes connexes dans un graphe revient à colorier
-le graphe. On choisit une bouteille et on la colorie en rouge. On suit toutes les ficelles
-qui la relient à d'autres et on colorie ces autres de la même couleur. 
 
-.. image:: parti3.png
-
-**Q5 :** On fait quoi ensuite ?
 
 
 
