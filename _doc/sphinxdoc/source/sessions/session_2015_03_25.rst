@@ -1,5 +1,4 @@
 
-.. issue.
 
 .. _l-session_2015_03_25:
 
@@ -12,8 +11,8 @@ Presque sans ordinateur - 25 mars 2015
 Chez `Coding and Bricks <http://www.codingandbricks.com/>`_, et c'est toujours mieux
 en images : `Algorithmes à la mer ! <http://www.codingandbricks.com/project/algorithmes-a-la-mer/>`_
 
-.. image:: http://www.codingandbricks.com/wp-content/uploads/2015/03/IMG_0128.jpg
-    :target: http://www.codingandbricks.com/wp-content/uploads/2015/03/IMG_0128.jpg
+.. image:: http://www.codingandbricks.com/wp-content/uploads/2015/03/IMG_0127-e1427397063550.jpg
+    :target: http://www.codingandbricks.com/wp-content/uploads/2015/03/IMG_0127-e1427397063550.jpg
     :width: 500 px
     :alt: Le voyageur de commerce
 
@@ -136,7 +135,7 @@ Dans un autre registre, tout simplement pour dire que la frontière entre l'art 
 est plutôt ténue :
 
 * `Mathématiques et architecture <http://www.eyrolles.com/BTP/Livre/mathematiques-et-architecture-9782742792863>`_,
-  Jane Burry, Mark Burry. Après sa lecture, on ne regarde les bulles de mousses dans son bain de la même façon.
+  Jane Burry, Mark Burry. Après sa lecture, on ne regarde plus les bulles de mousses dans son bain de la même façon.
 
 **Autres pistes**
 
