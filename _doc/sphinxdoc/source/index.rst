@@ -10,7 +10,7 @@ L'école française passe au numérique et chaque enfant aura bientôt une table
 un ordinateur, bref, un écran, pour l'aider dans son apprentissage. 
 Ces outils captivent si facilement l'attention des enfants qu'on n'imagine 
 plus voyager sans. Et pourtant, saviez-vous que Steve Jobs interdisait 
-l'usage de la tablette à ses enfants ? 
+l'usage de la tablette à ses enfants ? [#asj1]_
 
 Qu'y a-t-il derrière l'écran ? Que veut dire programmer ? 
 Comment l'ordinateur corrige-t-il les fautes d'orthographes ? 

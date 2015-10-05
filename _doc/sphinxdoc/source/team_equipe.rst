@@ -1,5 +1,5 @@
 
-.. _l-team
+.. _l-team:
 
 Equipe
 ======
