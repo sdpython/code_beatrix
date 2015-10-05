@@ -29,14 +29,13 @@
             i = l[i]
             print (i)  # que vaut l[i] à la fin ?
             
-    J'ai donc repris les cartes bien que je disposai comme suit ::
-    
-    Il n'y avait pas de carte zéro dans mon jeu donc j'ai pris une image 
-    ronde qui la symbolise.
+    J'ai donc repris les cartes je disposai comme suit :
     
     .. image:: carte1.jpg
         :width: 600
         
+    Il n'y avait pas de carte zéro dans mon jeu donc j'ai pris une image 
+    ronde qui la symbolise.
     Les cartes sont disposées en ligne, de la position **0** à la position **4** car
     en Python, la première case est la position 0. Pour connaître
     la valeur de l'élément du tableau, on retourne la carte. 
@@ -49,7 +48,7 @@
     .. image:: carte2.jpg
         :width: 600
         
-    Puis on suit l'algorithme, *tant que la carte retournée
+    Puis on suit l'algorithme, tant que la carte retournée
     n'est pas zéro (ou le bus dans notre cas), on à la position indiquée par la 
     carte retournée donc 4 :
 

@@ -67,7 +67,7 @@ Huit facteurs qui n'ont pas d'importance :
 * La famille de l'enfant est unie.
 * Les parents de l'enfant ont récemment déménagé dans un quartier dont le voisinage est plus serein.
 * La mère de l'enfant n'a pas travaillé entre la naissance et l'école maternelle.
-* L'enfant est allé à `Head Start <http://en.wikipedia.org/wiki/Head\_Start\_Program>`_ (école publique de moindre niveau).
+* L'enfant est allé à `Head Start <https://fr.wikipedia.org/wiki/Head_Start>`_ (école publique de moindre niveau).
 * Les parents de l'enfant l'emmène régulièrement au musée.
 * L'enfant est régulièrement battu.
 * L'enfant regarde régulièrement la télévision.
