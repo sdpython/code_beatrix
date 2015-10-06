@@ -1,6 +1,3 @@
-﻿
-.. issue.
-
 
 
 .. index:: notion, concept
