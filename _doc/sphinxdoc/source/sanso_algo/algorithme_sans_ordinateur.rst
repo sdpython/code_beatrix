@@ -1,5 +1,4 @@
 
-.. issue.
 
 .. _l-algo_sans_ordinateur:
 
@@ -41,6 +40,7 @@ Sujets
     sacados
     connexe
     parti
+    puzzle_aveugle
 
 
 
@@ -58,6 +58,7 @@ Indices et solutions
     sacados_solution
     connexe_solution
     parti_solution
+    puzzle_aveugle_solution
     notions
 
 
