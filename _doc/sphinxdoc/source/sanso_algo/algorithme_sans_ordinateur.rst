@@ -33,6 +33,7 @@ Sujets
 .. toctree::
     :maxdepth: 1
     
+    confetti
     tri
     tsp
     orange
@@ -51,6 +52,7 @@ Indices et solutions
 .. toctree::
     :maxdepth: 1
 
+    confetti_solution
     tri_solution
     tsp_solution
     orange_solution
