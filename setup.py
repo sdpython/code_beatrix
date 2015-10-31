@@ -160,6 +160,9 @@ if is_local():
             "pyquickhelper", "pyensae", "pyrsslocal", "pymyinstall", "pymmails"],
         requirements=["pyquickhelper"],
         blog_list=os.path.abspath(os.path.join("src", project_var_name, package_data[project_var_name][0])))
+
+    if not r:
+        raise Exception("unable to interpret command line: " + str(sys.argv))
 else:
     r = False
 
