@@ -33,8 +33,7 @@ La première a eu lieu à Dunkerque le :ref:`25 mars 2015 <l-session_2015_03_25>
 .. toctree::
     :maxdepth: 1
 
-    blog <blog/main_0000.rst>
-    Parcours d'attraction dès 7 ans <sessions/sessions>
+    Parcours d'attraction <sessions/session_2015_03_25>
     
 .. _l-contenu-range:
 

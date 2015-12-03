@@ -5,20 +5,34 @@
 Histoires pour réfléchir et rêver
 =================================
 
-**pour les petits**
+pour les petits
++++++++++++++++
 
 .. toctree::
     :maxdepth: 1
 
     la_poule_a_change
     
-Quelques histoires interactives où le conteur a une place
-importante :
+histoires interactives
+++++++++++++++++++++++
+    
+Quelques histoires où le conteur a une place importante :
 
 * :ref:`l-donnes_cantine` (et ses réponses guidées : :ref:`l-donnes_cantine_sol`)
 
 
-**pour les plus grands**
+un peu plus de données
+++++++++++++++++++++++
+
+.. toctree::
+    :maxdepth: 1
+
+    big_data
+    donnees_isolees
+
+
+un peu plus d'Histoire
+++++++++++++++++++++++
 
 .. toctree::
     :maxdepth: 1
