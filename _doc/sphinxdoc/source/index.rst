@@ -4,8 +4,6 @@ Les enfants codaient
 
 *à la découverte de la programmation et des algorithmes*
 
-:ref:`l-README`, :ref:`blog <ap-main-0>`
-
 L'école française passe au numérique et chaque enfant aura bientôt une tablette, 
 un ordinateur, bref, un écran, pour l'aider dans son apprentissage. 
 Ces outils captivent si facilement l'attention des enfants qu'on n'imagine 
@@ -81,7 +79,7 @@ Annexes
 * :ref:`l-FAQ`
 
 
-    
+
 .. toctree::
     :hidden:
     :maxdepth: 1
@@ -96,6 +94,7 @@ Annexes
     all_indexes
     all_report
     blog/index_blog
+    README
     
 
 Pour les plus chevronnés, certains bouts de codes en python 
