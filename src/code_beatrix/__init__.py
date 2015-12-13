@@ -31,7 +31,7 @@ def check(log=False):
 
 try:
     from IPython import get_ipython
-    from .ipython_helper.magic_scratch import register_scratch_magics
+    from .ipythonhelper.magic_scratch import register_scratch_magics
 
     ip = get_ipython()
     if ip is not None:

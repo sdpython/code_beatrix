@@ -6,7 +6,7 @@
 import IPython
 from IPython.core.display import display_html, display_javascript, Javascript
 
-from ..ipython_helper.path_helper import local_d3js
+from ..ipythonhelper.path_helper import local_d3js
 
 
 def display_canvas_point(html_id, width=800, heigth=400, var_name="points"):

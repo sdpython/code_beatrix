@@ -38,7 +38,7 @@ except ImportError:
     import pyquickhelper
 
 from pyquickhelper import fLOG, get_temp_folder
-from src.code_beatrix.ipython_helper import local_d3js
+from src.code_beatrix.ipythonhelper import local_d3js
 
 
 class TestIpyPath(unittest.TestCase):
