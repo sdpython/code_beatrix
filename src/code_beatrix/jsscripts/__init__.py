@@ -14,8 +14,8 @@ def copy_jstool2ipython(tool):
     @param      tool        tool name (snap for example)
     @return                 list of copied files
     """
-    import IPython
-    dest = os.path.join(os.path.dirname(IPython.__file__), "html", "static")
+    import notebook
+    dest = os.path.join(os.path.dirname(notebook.__file__), "static")
     src = os.path.join(os.path.dirname(__file__), tool)
     if not os.path.exists(src):
         raise FileNotFoundError("unable to find tool: " + tool)
