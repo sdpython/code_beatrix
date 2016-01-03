@@ -23,6 +23,10 @@ README / Changes
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :alt: MIT License
     :target: http://opensource.org/licenses/MIT
+    
+.. image:: https://codecov.io/github/sdpython/code_beatrix/coverage.svg?branch=master
+    :target: https://codecov.io/github/sdpython/code_beatrix?branch=master
+        
    
 **Links:**
     * `pypi/code_beatrix <https://pypi.python.org/pypi/code_beatrix/>`_

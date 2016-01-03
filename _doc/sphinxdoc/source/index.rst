@@ -132,3 +132,5 @@ Contacts
     :alt: MIT License
     :target: http://opensource.org/licenses/MIT
 
+.. image:: https://codecov.io/github/sdpython/code_beatrix/coverage.svg?branch=master
+    :target: https://codecov.io/github/sdpython/code_beatrix?branch=master
