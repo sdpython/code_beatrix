@@ -42,6 +42,7 @@ Sujets
     connexe
     parti
     puzzle_aveugle
+    angle_droit
 
 
 
@@ -61,6 +62,7 @@ Indices et solutions
     connexe_solution
     parti_solution
     puzzle_aveugle_solution
+    angle_droit_solution
     notions
 
 
