@@ -33,11 +33,10 @@ README / Changes
         
    
 **Links:**
-    * `pypi/code_beatrix <https://pypi.python.org/pypi/code_beatrix/>`_
-    * `GitHub/code_beatrix <https://github.com/sdpython/code_beatrix/>`_
-    * `site <http://lesenfantscodaient.fr/>`_
-    * `wheel <http://www.xavierdupre.fr/site2013/index_code.html#code_beatrix>`_
-    * `Blog <http://lesenfantscodaient.fr/blog/main_0000.html#ap-main-0>`_
+
+* `GitHub/code_beatrix <https://github.com/sdpython/code_beatrix/>`_
+* `site <http://lesenfantscodaient.fr/>`_
+* `Blog <http://lesenfantscodaient.fr/blog/main_0000.html#ap-main-0>`_
 
 
 Description        
@@ -62,7 +61,7 @@ Started in 2015/03.
 Versions
 --------
 
-* **0.5 - 2015/??/??**
+* **0.5 - 2016/??/??**
     * **ajout:** ajout d'un code illustrant le tri à bulles sous Scratch (avec personnage animé)
     * **ajout:** ajout d'une petite histoire sur les langages
 * **0.1 - 2015/03/25**
