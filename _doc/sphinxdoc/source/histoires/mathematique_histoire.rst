@@ -6,6 +6,8 @@
 Mathématiques, Histoire et Langage
 ==================================
 
+:sharenet:`facebook-twitter-linkedin-20-body`
+
 **+10 ans**
 
 A en croire l'émission 

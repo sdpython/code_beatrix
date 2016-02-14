@@ -7,6 +7,8 @@
 Economie romaine, économie Maya
 ===============================
 
+:sharenet:`facebook-twitter-linkedin-20-body`
+
 **+14 ans**
 
 Les Mayas se sont éteints après plusieurs siècles de règne. 

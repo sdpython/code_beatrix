@@ -6,6 +6,8 @@
 C'est quoi les données, c'est quoi le Big Data ?
 ================================================
 
+:sharenet:`facebook-twitter-linkedin-20-body`
+
 **+10 ans**
 
 Dans le film 

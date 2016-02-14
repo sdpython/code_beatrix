@@ -8,6 +8,8 @@
 On m'a changé mes poules
 ========================
 
+:sharenet:`facebook-twitter-linkedin-20-body`
+
 **+4 ans**
 
 Depuis tout petit, j'appelle toujours ma grand-mère pour savoir combien de temps 

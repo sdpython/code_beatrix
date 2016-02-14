@@ -7,6 +7,8 @@
 Anecdotes Sociologiques
 =======================
 
+:sharenet:`facebook-twitter-linkedin-20-body`
+
 **+12 ans**
 
 Des histoires sociologiques, un peu de bon sens et quelques surprises.

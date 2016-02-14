@@ -6,6 +6,8 @@
 La donnée isolée et la moyenne
 ==============================
 
+:sharenet:`facebook-twitter-linkedin-20-body`
+
 **+10 ans**
 
 
