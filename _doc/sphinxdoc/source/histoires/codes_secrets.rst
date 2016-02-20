@@ -5,9 +5,9 @@
 Les codes secret entre les deux guerres
 =======================================
 
-:sharenet:`facebook-twitter-linkedin-20-body`
-
 **+12 ans**
+
+:sharenet:`facebook-twitter-linkedin-20-body`
 
 
 La cryptographie a occupé un rôle discret et important dans l'histoire, au vingtième siècle notamment, 

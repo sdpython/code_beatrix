@@ -6,10 +6,10 @@
 La donnée isolée et la moyenne
 ==============================
 
-:sharenet:`facebook-twitter-linkedin-20-body`
-
 **+10 ans**
 
+
+:sharenet:`facebook-twitter-linkedin-20-body`
 
 
 Les données sont légions et n'attendent que 

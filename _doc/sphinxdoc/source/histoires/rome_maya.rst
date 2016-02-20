@@ -7,9 +7,9 @@
 Economie romaine, économie Maya
 ===============================
 
-:sharenet:`facebook-twitter-linkedin-20-body`
-
 **+14 ans**
+
+:sharenet:`facebook-twitter-linkedin-20-body`
 
 Les Mayas se sont éteints après plusieurs siècles de règne. 
 Leur disparition fut sans doute aidée par l'arrivée des conquistadors Espagnols. 

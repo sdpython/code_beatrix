@@ -16,6 +16,7 @@ Sujets
     
     dessert_cantine
     correcteur_orthographe
+    abeilles_drone
 
 
 Indices et solutions
@@ -26,6 +27,7 @@ Indices et solutions
     
     dessert_cantine_solution
     correcteur_orthographe_solution
+    abeilles_drone_solution
     
 
 

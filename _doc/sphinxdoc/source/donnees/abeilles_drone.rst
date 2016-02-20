@@ -1,11 +1,68 @@
 
 
+.. index:: abeille, drone
+
+
 .. _l-abeilles_drones:
 
-Les petits drônes ailés
+Les petits drones ailés
 =======================
 
-**+12 ans**
+A partir de 7-8 ans (mais ce n'est qu'une indication).
+
+:sharenet:`facebook-twitter-linkedin-20-body`
+
+Ceci est un petit exercice d'anticipation qui consiste imaginer une histoire qui pourrait se produire dans un futur 
+proche inspirée d'articles de presse. 
+
+Mise en scène
+-------------
+
+La lecture des deux titres suivant devraient suffire :
+`Dans le Sichuan, des « hommes-abeilles » pollinisent à la main les vergers <http://www.lemonde.fr/planete/article/2014/04/23/dans-les-vergers-du-sichuan-les-hommes-font-le-travail-des-abeilles_4405686_3244.html>`_,
+`Amazon dévoile « Prime Air », un futur système de livraison par drones <http://www.lemonde.fr/technologies/article/2013/12/02/des-paquets-livres-par-drones-d-ici-cinq-ans_3523489_651865.html>`_.
+
+Pour compléter la réflexion :
+
+`Google a conçu des drones capables de livrer des colis <http://www.lemonde.fr/pixels/article/2014/08/29/google-travaille-depuis-deux-ans-sur-des-drones-de-livraison_4478687_4408996.html>`_,
+`Les logements connectés deviennent une réalité <http://www.lemonde.fr/immobilier/article/2016/02/13/les-logements-connectes-deviennent-une-realite_4864836_1306281.html>`_,
+`Apple conteste la demande d'accès du FBI à ses fichiers <http://www.lemonde.fr/pixels/article/2016/02/17/apple-conteste-la-demande-d-acces-du-fbi-a-ses-fichiers_4867009_4408996.html>`_,
+`Sevenhugs HugOne, une nouvelle solution pour veiller sur le sommeil de toute la famille <http://www.lefigaro.fr/secteur/high-tech/2015/01/05/32001-20150105ARTFIG00042-sevenhugs-veut-caliner-votre-sommeil.php>`_,
+`Livraison par drone : des promesses en l'air <http://www.liberation.fr/futurs/2015/10/28/livraison-par-drone-des-promesses-en-l-air_1409586>`_,
+`La France ne veut pas des drones de livraison d’Amazon ou de Google <http://www.nextinpact.com/news/90446-la-france-ne-veut-pas-drones-livraison-d-amazon-ou-google.htm>`_,
+`La Poste teste la livraison de colis par drones dans le Var <http://www.lemondeinformatique.fr/actualites/lire-la-poste-teste-la-livraison-de-colis-par-drones-dans-le-var-59710.html>`_,
+`Les pirates réclament une rançon de 3,4 millions de dollars pour débloquer les données du Centre médical basé en Californie. <http://www.lesechos.fr/tech-medias/hightech/021704417085-des-hackers-prennent-en-otage-le-systeme-informatique-dun-hopital-1200975.php>`_,
+`« Le numérique s'impose partout, mais la croissance ne décollera pas » <http://www.latribune.fr/opinions/tribunes/le-numerique-s-impose-partout-mais-la-croissance-ne-decollera-pas-510227.html>`_,
+`Retour sur le Google Hash Code 2016, optimisation d'un système de livraison à base de drones <http://blog.sodifrance.fr/google-hash-code-2016/>`_.
+
+
+Voici neuf questions pour démarrer :
+
+
+#. Pourquoi choisir de fabriquer un drone qui livre des colis ou un drone pollinisateur plutôt qu'un autre ?
+#. Pourquoi pas un drone chauve-souris ? Est-ce plus complexe techniquement ?
+#. Comment un drone apprend-il à se mouvoir ?
+#. Que fait l'article *Retour sur le Google Hash Code 2016* dans la liste ?
+#. Les abeilles pollinisent les fleurs. Avec un drone, on va savoir exactement combien. A quoi ça sert ?
+#. Un drone se déplace à l'aide de caméra qui filment. Que fait-on avec les images ?
+#. Un coup de vent a poussé un drone sur une voiture qui a eu un accident, qui est responsable ?
+#. Que deviendra le facteur ?
+#. Si vous deviez concevoir un drone qui se pilote lui-même, qui recruteriez-vous ?
+
+
+
+Solution
+--------
+
+Il n'y a pas de soluion à proprement partler.
+Des réponses sont apportées aux questions :ref:`l-abeilles_drones_sol`
+et vous pouvez lire la petite histoire qui suit.
+
+
+
+
+Histoire
+--------
 
 Mon ami Jean allait en commission toute la journée aujourd'hui.
 Comme d'habitude, il prendrait soin d'imprimer un journal avec une sélection
@@ -37,7 +94,7 @@ sans cesse. C'était quelle commision déjà ?
 
 - On a trouvé un moyen de remplacer les abeilles.
 - Ah...
-- Un industriel chinois a mis au point un mini-drône qui remplace les abeilles.
+- Un industriel chinois a mis au point un mini-drone qui remplace les abeilles.
 - Pour faire du miel ?
 - Mais non idiot, pour polliniser.
 - Ah... et alors ?
@@ -64,7 +121,7 @@ d'être un mouton face à son berger.
 Je laissais un silence s'installer histoire de voir s'il plaisantait ou pas.
 Puis j'essayais une question pour montrer que la discussion m'intéressait
 même si je ne voyais pas du tout le mal qu'il y avait à remplacer les abeilles
-par des mini-drônes. Peut-être qu'il faudra faire attention la prochaine 
+par des mini-drones. Peut-être qu'il faudra faire attention la prochaine 
 que j'userai de la tapette à mouche, je pourrais tuer une abeille à 300 euros
 ou un truc dans le genre. J'espère qu'ils ne vont pas faire les araignées.
 
@@ -88,7 +145,7 @@ pour le savoir. Il adore. Son visage entier est une grimace qui
 clignote. Et pendant ce temps, je me repasse toute la discussion
 pour voir ce que j'ai manqué.
 
-- Tu te souviens de cet article sur les drônes et la protection de la 
+- Tu te souviens de cet article sur les drones et la protection de la 
   vie privée ?
 - Vaguement.
 - Une caméra haut perchée qui peut t'espionner.
@@ -119,7 +176,7 @@ on. Mais quelqu'un le sait. Je sors mon téléphone et lui montre fièrement.
 - Tu peux l'éteindre celui-là.
 - Oui mais je ne le fais jamais.
 
-
+(à suivre).
 
 
   

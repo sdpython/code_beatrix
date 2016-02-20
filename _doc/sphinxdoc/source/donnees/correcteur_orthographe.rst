@@ -10,6 +10,8 @@ Le correcteur orthographique moyen
 
 A partir de 9 ans (mais ce n'est qu'une indication).
 
+:sharenet:`facebook-twitter-linkedin-20-body`
+
 Le texte est tiré des `dictées de Pivot <http://lecercledor.jimdo.com/dict%C3%A9es/france/les-dict%C3%A9es-de-bernard-pivot/>`_.
 et plus particulièrement de : 
 `Le football en toutes lettres <http://archives.lesoir.be/-le-soir-encouragela-roumanie-remporte-les-dicos-d-or-d_t-19980720-Z0FJEF.html>`_.

@@ -7,9 +7,10 @@
 Anecdotes Economiques
 =====================
 
+**+12 ans** 
+
 :sharenet:`facebook-twitter-linkedin-20-body`
 
-**+12 ans** 
 
 Des histoires économiques, un peu de bon sens et des surprises.
 

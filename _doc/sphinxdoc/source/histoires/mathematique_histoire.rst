@@ -6,9 +6,9 @@
 Mathématiques, Histoire et Langage
 ==================================
 
-:sharenet:`facebook-twitter-linkedin-20-body`
-
 **+10 ans**
+
+:sharenet:`facebook-twitter-linkedin-20-body`
 
 A en croire l'émission 
 `d3: Conserver Chauvet, patrimoine mondial <http://www.franceinter.fr/emission-3d-le-journal-conserver-chauvet-patrimoine-mondial>`_
