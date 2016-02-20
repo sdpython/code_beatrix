@@ -18,8 +18,8 @@ proche inspirée d'articles de presse.
 Mise en scène
 -------------
 
-La lecture des deux titres suivant devraient suffire :
-`Dans le Sichuan, des « hommes-abeilles » pollinisent à la main les vergers <http://www.lemonde.fr/planete/article/2014/04/23/dans-les-vergers-du-sichuan-les-hommes-font-le-travail-des-abeilles_4405686_3244.html>`_,
+La lecture des deux titres suivant devrait suffire :
+`Dans le Sichuan, des « hommes-abeilles » polinisent à la main les vergers <http://www.lemonde.fr/planete/article/2014/04/23/dans-les-vergers-du-sichuan-les-hommes-font-le-travail-des-abeilles_4405686_3244.html>`_,
 `Amazon dévoile « Prime Air », un futur système de livraison par drones <http://www.lemonde.fr/technologies/article/2013/12/02/des-paquets-livres-par-drones-d-ici-cinq-ans_3523489_651865.html>`_.
 
 Pour compléter la réflexion :
@@ -39,12 +39,12 @@ Pour compléter la réflexion :
 Voici neuf questions pour démarrer :
 
 
-#. Pourquoi choisir de fabriquer un drone qui livre des colis ou un drone pollinisateur plutôt qu'un autre ?
+#. Pourquoi choisir de fabriquer un drone qui livre des colis ou un drone polinisateur plutôt qu'un autre ?
 #. Pourquoi pas un drone chauve-souris ? Est-ce plus complexe techniquement ?
 #. Comment un drone apprend-il à se mouvoir ?
 #. Que fait l'article *Retour sur le Google Hash Code 2016* dans la liste ?
-#. Les abeilles pollinisent les fleurs. Avec un drone, on va savoir exactement combien. A quoi ça sert ?
-#. Un drone se déplace à l'aide de caméra qui filment. Que fait-on avec les images ?
+#. Les abeilles polinisent les fleurs. Avec un drone, on va savoir exactement combien. A quoi ça sert ?
+#. Un drone se déplace à l'aide de caméras qui filment. Que fait-on avec les images ?
 #. Un coup de vent a poussé un drone sur une voiture qui a eu un accident, qui est responsable ?
 #. Que deviendra le facteur ?
 #. Si vous deviez concevoir un drone qui se pilote lui-même, qui recruteriez-vous ?
@@ -54,7 +54,7 @@ Voici neuf questions pour démarrer :
 Solution
 --------
 
-Il n'y a pas de soluion à proprement partler.
+Il n'y a pas de solution à proprement parler.
 Des réponses sont apportées aux questions :ref:`l-abeilles_drones_sol`
 et vous pouvez lire la petite histoire qui suit.
 
@@ -70,13 +70,13 @@ d'articles issues des recommandations du Monde et l'annoterait toute la journée
 Quand il rentrerait, il poserait le journal sur son bureau tandis que son robot 
 assistant s'occuperait de parcourir toutes les pages afin de saisir la moindre
 note. Puis, après le dîner, il composerait son rapport qui ressemblerait
-à un drôle de sandwitch jaune et noir, jaune de ses petites notes,
+à un drôle de sandwich jaune et noir, jaune de ses petites notes,
 noir de son écriture illisible.
 Quelque chose était différent ce soir. 
 Il n'avait rien écrit, c'était surprenant.
 Il m'invita au restaurant.
 
-- Tu te souviens de cet article de 2014 sur ces chinois qui pollinise
+- Tu te souviens de cet article de 2014 sur ces chinois qui polinise
   manuellement leurs abeilles ?
 - Non, pas vraiment.
 - C'était dans le Sichuan mais ce n'est pas le problème. La commission
@@ -90,19 +90,19 @@ subtilités. J'étais simplement content qu'il fût là, dans cette commission, 
 d'un certain angle, puis d'un autre. Et j'étais souvent d'accord avec le premier,
 puis avec le second quand il m'expliquait pourquoi le premier n'allait pas,
 puis avec le troisième quand le second n'allait plus non plus. Tu es navrant me répétait-il
-sans cesse. C'était quelle commision déjà ?
+sans cesse. C'était quelle commission déjà ?
 
 - On a trouvé un moyen de remplacer les abeilles.
 - Ah...
 - Un industriel chinois a mis au point un mini-drone qui remplace les abeilles.
 - Pour faire du miel ?
-- Mais non idiot, pour polliniser.
+- Mais non idiot, pour poliniser.
 - Ah... et alors ?
 - Et alors ?
 
 Il avait dit cette dernière phrase sur un ton réprobateur.
 J'avais manqué l'évidence comme d'habitude.
-Si les abeilles meurent et qu'on arrivent à les remplacer, tant mieux non ?
+Si les abeilles meurent et qu'on arrive à les remplacer, tant mieux non ?
 Visiblement, ce n'était pas la bonne réponse.
 Mais je n'osais pas le dire tout haut sauf à vouloir affronter
 un haussement d'épaule, une moue réprobatrice et l'impression
@@ -116,7 +116,7 @@ d'être un mouton face à son berger.
 - Et bien, on parle du premier pas vers une nature électrique. 
   Il n'y aura plus de papillons, trop compliqués et pas assez utiles.
   Fini les guêpes qui piquent, les frelons qui nidifient.
-  Gros coup de pesticipe et on remplace la faune par du tout électronique.
+  Gros coup de pesticide et on remplace la faune par du tout électronique.
   
 Je laissais un silence s'installer histoire de voir s'il plaisantait ou pas.
 Puis j'essayais une question pour montrer que la discussion m'intéressait
@@ -126,13 +126,13 @@ que j'userai de la tapette à mouche, je pourrais tuer une abeille à 300 euros
 ou un truc dans le genre. J'espère qu'ils ne vont pas faire les araignées.
 
 - Mais alors on va remplacer toutes les espèces en voie de disparition ?
-  Les hyppopotames ?
+  Les hippopotames ?
 - C'est déjà prévu. Il existe un plan pour des pachydermes robotisés 
   pour draguer les rivières.
 - Ah...
 - Et des taupes pour creuser des canalisations.
 
-Je n'arrivais pas à me détacher de l'idée de voir un hyppopotame dans la Seine
+Je n'arrivais pas à me détacher de l'idée de voir un hippopotame dans la Seine
 en train de regarder les bateaux passer.
 Autant faire des animaux qui n'existent pas, un dragon, une licorne.
 J'osais finalement la question.
@@ -152,7 +152,7 @@ pour voir ce que j'ai manqué.
 - Oui, je me souviens.
 - Et les abeilles ?
 - Quoi les abeilles ?
-- Comment crois-tu qu'elles arrivent à polliniser les fleurs ?
+- Comment crois-tu qu'elles arrivent à poliniser les fleurs ?
 
 Je crois que je commençais à comprendre.
 
@@ -160,10 +160,10 @@ Je crois que je commençais à comprendre.
 - Et elles enregistrent tout car il a bien fallu enregistrer des images
   pour leur apprendre à voler sans se cogner partout.
 - Mais alors...
-- On va tout compter, le nombre de fleurs pollinisées, le nombre de personnes
+- On va tout compter, le nombre de fleurs polinisées, le nombre de personnes
   croisées dans la forêt. On sera éclairé par des vers luisants qui sauront 
   qui fait quoi dans la maison.
-- Ca va être très compliqué de jouer à cache cache.
+- Ca va être très compliqué de jouer à cache-cache.
 - Mais pas seulement, on saura qui est où et quand, tout le temps.
 - Tout le temps...
 

@@ -8,13 +8,13 @@ Les petits drones ailés (solution)
 ==================================
 
 
-**Pourquoi choisir de fabriquer un drone qui livre des colis ou un drone pollinisateur plutôt qu'un autre ?**
+**Pourquoi choisir de fabriquer un drone qui livre des colis ou un drone polinisateur plutôt qu'un autre ?**
 
 L'industrie investit dans le domaine de la livraison car la recherche mettra au point 
 cette technologie dans une avenir assez proche mais surtout parce que le service 
 sera probablement moins cher et plus pratique à utiliser. Les entreprises qui investissent
 font le pari que cela sera un avantage par rapport aux autres entreprises. 
-C'est sans doute un mauvais signe si une société décide de mettre au point une abeille pollinisatrice.
+C'est sans doute un mauvais signe si une société décide de mettre au point une abeille polinisatrice.
 Cela voudrait dire que les vraies abeilles ne remplissent plus ce rôle et que nous n'avons
 pas su empêcher leur disparition. Il n'est pas impossible que d'autres idées voient le jour 
 si la pollution décime une population d'animal très utile pour la nature et donc pour l'Homme.
@@ -42,7 +42,7 @@ des caméras, deux de préférence, et peut décider de changer sa vitesse ou sa
 reçoit des informations, dispose d'un nombre d'actions limitées avec l'objectif de ce rendre
 au point B en évitant les obstacles. Le drone passe la majeur partie de son temps à analyser des images
 et c'est de loin la tâche la plus complexe. Néanmoins, le drone n'apprend pas tout seul, c'est un chercheur
-qui écrit un programme informatique qui va apprendre. Une fois appris, on peut créer autant de drône
+qui écrit un programme informatique qui va apprendre. Une fois appris, on peut créer autant de drone
 qu'on veut, les répliquer à l'infini.
 Une fois que le programme informatique aura appris, il saura avoir une représentation
 de ce qu'il entoure en trois dimensions. Concrètement, l'apprentissage d'un drone consiste
@@ -54,7 +54,7 @@ leur vitesse et leur directions. Un petit aperçu de l'apprentissage :
 **Que fait l'article *Retour sur le Google Hash Code 2016* dans la liste ?**
 
 Les batteries des drones sont très limitées. Elles ne peuvent pas être trop lourdes sans
-quoi il dépense plus d'énergie pour porter. En 2016, il est apparamment possible de transporter
+quoi il dépense plus d'énergie pour porter. En 2016, il est apparemment possible de transporter
 2-3 kilos sur 20-30 kilomètres. Il paraît très pertinent d'essayer de faire des voyages avec plusieurs
 colis, de se débarrasser des plus lourds en premier quitte à faire un détour. On dit qu'on
 optimise le chemin suivi par les drones ou plus exactement leur tournée. Ce n'est pas
@@ -63,26 +63,26 @@ problème classique du :ref:`algo_tsp`. Les gagnants contribueront sans doute à
 l'algorithme final probablement embauchés par Google. Un drone n'est pas tout-à-fait autonome.
 Il est capable de prendre des décisions pour tout ce qui est urgent (les collisions, délivrer,
 aller dans une direction) mais il ne sait pas optimiser une trajectoire sur une grande distance.
-Les drones sont donc en permanence connectés et et échangent une mulitude d'information 
+Les drones sont donc en permanence connectés et échangent une multitude d'information 
 avec un centre de pilotage.
 
-**Les abeilles pollinisent les fleurs. Avec un drone, on va savoir exactement combien. A quoi ça sert ?**
+**Les abeilles polinisent les fleurs. Avec un drone, on va savoir exactement combien. A quoi ça sert ?**
 
-Dans la mesure où on conçoit des robots qui pollinise à notre place, on peut avoir une idée assez précise
+Dans la mesure où on conçoit des robots qui polinise à notre place, on peut avoir une idée assez précise
 du nombre de plante dans une région donnée. Suivre l'évolution de cette information sur une période de temps
-donne une idée de la santé de l'environnement. Le nombre de plante diminue-t-il, aumgnente-t-il ? 
+donne une idée de la santé de l'environnement. Le nombre de plante diminue-t-il, augmente-t-il ? 
 On peut également doter l'abeille d'autres capteurs pour mesurer la composition de l'air, la présence
 de pesticides, l'humidité, la présence d'un sac plastique, le départ d'un feu, la radioactivité.
 Cela permet d'établir une cartographie très précise d'un territoire et de suivre son évolution.
 On dispose alors de mesures complètes et en temps réels. Le prochain camion de pompiers sera peut-être
 un drone qui se déplace avec juste quelques litres d'eau pour éteindre un départ d'incendie.
 
-**Un drone se déplace à l'aide de caméra qui filment. Que fait-on avec les images ?**
+**Un drone se déplace à l'aide de caméras qui filment. Que fait-on avec les images ?**
 
 C'est une grande question. Les chercheurs ont besoin d'images pour construire ces drones.
-Il est tout naturelle de stocker des quantités d'images et continuer à les stocker
+Il est tout naturel de stocker des quantités d'images et continuer à les stocker
 pour améliorer les capacités de reconnaissance. Les caméras vont tout filmer sans distinctions 
-et enregistrer des visages. Ces machines pour de nombreuses objets électroniques sont les 
+et enregistrer des visages. Ces machines pour de nombreux objets électroniques sont les 
 témoins de votre vie. Ils sont infaillibles et tout le temps là. Il n'y a quasiment plus
 d'instants où personne ne sait ce que vous faites alors que le secret est une composante
 importante de notre société. Secret professionnel, secret médical, ces secrets ne s'accommodent
@@ -92,9 +92,9 @@ de nos interactions avec lui.
 
 **Un coup de vent a poussé un drone sur une voiture qui a eu un accident, qui est responsable ?**
 
-C'est une question épineuse. La personne qui a conçu le drone l'optmimise pour éviter à tout prix
+C'est une question épineuse. La personne qui a conçu le drone l'optimise pour éviter à tout prix
 cette situation. Elle n'est pas présente au moment de l'accident. Il existe des situations où l'auteur
-est éloigné, un court-circuit électrique, une machine défecteuse. Dans la plupart des cas, on peut relier
+est éloigné, un court-circuit électrique, une machine défectueuse. Dans la plupart des cas, on peut relier
 la faute à l'auteur. C'est soit une faute de négligence, soit un acte intentionnel.
 Dans les deux cas, cela repose sur le fait que l'utilisateur ou le concepteur sait anticiper ce que 
 la machine va faire dans telle ou telle situation et l'impact que cela aura sur lui-même ou d'autres personnes.
@@ -111,7 +111,7 @@ le taux d'accidents par colis délivrés seraient sans doute comparable voire in
 
 **Que deviendra le facteur ?**
 
-La première réponse est celle de la disparition du facteur. Et voilà une petite équipes de chercheurs
+La première réponse est celle de la disparition du facteur. Et voilà une petite équipe de chercheurs
 qui remplace un grand nombre de facteurs. On remplace un travail pas toujours très bien rémunéré,
 pas toujours très bien valorisé, pas toujours passionnant non plus par un travail hautement qualifié,
 souvent très intéressant, très créatif et beaucoup moins répétitif. Le métier de facteur est probablement
