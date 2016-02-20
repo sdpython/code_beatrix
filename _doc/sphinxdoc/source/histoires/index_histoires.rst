@@ -19,6 +19,8 @@ histoires interactives
 Quelques histoires où le conteur a une place importante :
 
 * :ref:`l-donnes_cantine` (et ses réponses guidées : :ref:`l-donnes_cantine_sol`)
+* :ref:`l-abeilles_drones` (et :ref:`l-abeilles_drones_sol`)
+* :ref:`l-donnes_orthographe` (et :ref:`l-donnes_orthographe_sol`)
 
 
 un peu plus de données
