@@ -13,7 +13,12 @@ Ensuite, on plie encore en superposant ce bord droit sur lui-même.
 Le second pli fait un angle droit avec le premier.
 
 
-**IMAGE**
+.. image:: angle_droit2.jpg
+    :width: 600
+    
+.. image:: angle_droit3.jpg
+    :width: 600
+        
 
 En suivant, le même procédé, on peut obtenir un angle de 45 degré.
 On plie selon la bissectrice de l'angle.

@@ -32,6 +32,7 @@ Sujets
 
 .. toctree::
     :maxdepth: 1
+    :numbered:
     
     confetti
     tri
@@ -52,6 +53,7 @@ Indices et solutions
 
 .. toctree::
     :maxdepth: 1
+    :numbered:
 
     confetti_solution
     tri_solution

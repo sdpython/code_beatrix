@@ -17,7 +17,8 @@ sur le tableau avec un tube de colle puis de lancer des confettis afin
 recouvrir la trace invisible. Quelques élèves sortent alors
 une feuille de papier et commencer à déchirer des petits morceaux.
 
-IMAGE
+.. image:: confetti1.jpg
+    :width: 600
 
 Mais nous sommes en cours de programmation et d'algorithmique.
 Je m'écris : pourriez-vous faire des *confettis log(n)* ?

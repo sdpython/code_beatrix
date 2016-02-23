@@ -1,5 +1,5 @@
 
-.. issue.
+
 
 .. _l-sessions:
 
@@ -13,4 +13,5 @@ Dès 7 ans.
     :maxdepth: 1
     
     session_2015_03_25
+    session_2016_02_22
 

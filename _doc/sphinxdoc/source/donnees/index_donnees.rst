@@ -13,6 +13,7 @@ Sujets
 
 .. toctree::
     :maxdepth: 1
+    :numbered:
     
     dessert_cantine
     correcteur_orthographe
@@ -24,6 +25,7 @@ Indices et solutions
 
 .. toctree::
     :maxdepth: 1
+    :numbered:
     
     dessert_cantine_solution
     correcteur_orthographe_solution

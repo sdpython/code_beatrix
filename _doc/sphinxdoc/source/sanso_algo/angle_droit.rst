@@ -22,7 +22,8 @@ On prend une feuille de papier à laquelle on enlève les quatre coins.
 Comment faire pour obtenir un angle droit avec ce bout de papier
 qui n'en a aucun ?
 
-**PHOTO**
+.. image:: angle_droit1.jpg
+    :width: 600
 
 
 **astuce**

@@ -16,7 +16,13 @@ Il n'est pas possible de plier indéfiniment,
 la feuille devient vite difficile à percer.
 Il y a un compromis à trouver.
 
-IMAGE
+.. image:: confetti2.jpg
+    :width: 300
+
+.. image:: confetti2.jpg
+    :width: 500
+
+
 
 Mais alors pourquoi *confettis log(n)* ?
 
