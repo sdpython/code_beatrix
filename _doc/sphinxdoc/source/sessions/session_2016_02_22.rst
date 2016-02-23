@@ -31,7 +31,7 @@ Solutions
 * :ref:`l-prog_parcours_echiquier_sol`
 * :ref:`l-algo_tri_sol`
 * :ref:`l-abeilles_drones_sol`
-* :ref:`l-algo_sol`
+* :ref:`l-algo_dichotomie_sol`
 
 Pour aller plus loin
 --------------------
