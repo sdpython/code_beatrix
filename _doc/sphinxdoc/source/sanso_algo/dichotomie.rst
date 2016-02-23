@@ -23,7 +23,7 @@ ordre croissant ou par couleurs s'il y a suffisamment de couleurs (6, 7). Et bie
 il faut aller le plus vite possible.
 
 .. image:: dicho1.jpg
-    :width:
+    :width: 600
 
 **astuce**
 
