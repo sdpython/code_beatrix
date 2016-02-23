@@ -31,7 +31,9 @@ La première a eu lieu à Dunkerque le :ref:`25 mars 2015 <l-session_2015_03_25>
 .. toctree::
     :maxdepth: 1
 
-    Parcours d'attraction <sessions/session_2015_03_25>
+    sessions/session_2015_03_25
+    sessions/session_2016_02_22
+    
     
 .. _l-contenu-range:
 

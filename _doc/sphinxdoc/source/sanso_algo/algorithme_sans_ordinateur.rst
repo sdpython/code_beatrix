@@ -44,6 +44,7 @@ Sujets
     parti
     puzzle_aveugle
     angle_droit
+    dichotomie
 
 
 
@@ -65,6 +66,7 @@ Indices et solutions
     parti_solution
     puzzle_aveugle_solution
     angle_droit_solution
+    dichotomie_solution
     notions
 
 
