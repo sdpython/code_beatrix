@@ -33,7 +33,8 @@ Pour compléter la réflexion :
 `La Poste teste la livraison de colis par drones dans le Var <http://www.lemondeinformatique.fr/actualites/lire-la-poste-teste-la-livraison-de-colis-par-drones-dans-le-var-59710.html>`_,
 `Les pirates réclament une rançon de 3,4 millions de dollars pour débloquer les données du Centre médical basé en Californie. <http://www.lesechos.fr/tech-medias/hightech/021704417085-des-hackers-prennent-en-otage-le-systeme-informatique-dun-hopital-1200975.php>`_,
 `« Le numérique s'impose partout, mais la croissance ne décollera pas » <http://www.latribune.fr/opinions/tribunes/le-numerique-s-impose-partout-mais-la-croissance-ne-decollera-pas-510227.html>`_,
-`Retour sur le Google Hash Code 2016, optimisation d'un système de livraison à base de drones <http://blog.sodifrance.fr/google-hash-code-2016/>`_.
+`Retour sur le Google Hash Code 2016, optimisation d'un système de livraison à base de drones <http://blog.sodifrance.fr/google-hash-code-2016/>`_,
+`Abeilles: un appât radical contre le frelon asiatique <http://www.lefigaro.fr/jardin/2016/02/24/30008-20160224ARTFIG00290-abeilles-un-appat-radical-contre-le-frelon-asiatique.php>`_.
 
 
 Voici neuf questions pour démarrer :
