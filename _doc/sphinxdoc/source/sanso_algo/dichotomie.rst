@@ -25,12 +25,22 @@ il faut aller le plus vite possible.
 .. image:: dicho1.jpg
     :width: 600
 
+**astuces de mise en scène**
+
+Le jeu est plus drôle s'il est minuté (5 minutes environ).
+Cetains choisissent d'étaler toutes les cartes sur une table.
+On peut alors scotcher deux feuilles de papier sur la table
+qui délimite la zone à ne pas dépasser pour trier. On peut également disposer
+des clochettes tout autour qu'il ne faut bien sûr pas toucher.
+
+
 **astuce**
 
 Il n'est pas évident pour un aveugle de faire plusieurs piles rangées
 sur la table. Et si on en réduisait le nombre...
 
 Question subsidiaire : combien de fois a-t-on déplacé une carte pour arriver au résultat final ?
+
 
 
 Solution

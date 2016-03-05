@@ -3,13 +3,14 @@
 .. _l-session_2016_02_22:
 
 
-Sans ordinateur - 22 février 2016
-=================================
+Sans ordinateur - 22 février et 4 mars 2016
+===========================================
 
 .. index:: patchwork
 
 Chez `Microsoft France <https://www.microsoft.com/fr-fr/>`_, les deux sessions d'une heure et demi environ ont eu lieu 
-dans le salon de `l'Explorer <https://www.microsoft.com/france/microsoft-en-france/microsoft-france/explorer-notre-appartement-numerique.aspx>`_.
+dans le cadre des
+`Colos Digigirlz <http://www.ladn.eu/actualites/microsoft-fait-decouvrir-numerique-aux-adolescentes,article,30488.html>`_
 Les problèmes abordés :
 
 
