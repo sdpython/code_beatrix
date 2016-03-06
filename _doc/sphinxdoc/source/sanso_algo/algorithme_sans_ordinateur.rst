@@ -34,7 +34,7 @@ Sujets
     :maxdepth: 1
     :numbered:
     
-    confetti
+    confetti_logn
     tri
     tsp
     orange
@@ -56,7 +56,7 @@ Indices et solutions
     :maxdepth: 1
     :numbered:
 
-    confetti_solution
+    confetti_logn_solution
     tri_solution
     tsp_solution
     orange_solution

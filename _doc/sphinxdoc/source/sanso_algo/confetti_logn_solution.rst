@@ -16,10 +16,10 @@ Il n'est pas possible de plier indéfiniment,
 la feuille devient vite difficile à percer.
 Il y a un compromis à trouver.
 
-.. image:: confetti2.jpg
+.. image:: confetti2.png
     :width: 300
 
-.. image:: confetti2.jpg
+.. image:: confetti3.png
     :width: 500
 
 

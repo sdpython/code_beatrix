@@ -10,7 +10,7 @@ Le dessert de la cantine
 
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
-Voir également :ref:`_blog_post_reseaux_soc` car on n'est pas censé
+Voir également :ref:`blog_post_reseaux_soc` car on n'est pas censé
 être sur un réseau social aussi jeune. Les boutons *partage* s'adressent 
 donc aux parents.
 

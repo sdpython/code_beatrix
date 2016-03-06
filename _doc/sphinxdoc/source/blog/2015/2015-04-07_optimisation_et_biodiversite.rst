@@ -1,11 +1,12 @@
 
-.. _b-biodiversite:
 
 .. blogpost::
     :title: Motif, optimisation, biodiversité
     :keywords: optimisation, biodiversité
     :date: 2015-04-07
     :categories: programmation, nature
+    
+    .. _b-biodiversite:
     
     Le site `Possible <http://www.possiblemedia.fr/>`_
     recense des initiatives qui permettent de cultiver de façon plus écologique.

@@ -29,7 +29,8 @@ set_sphinx_variables(__file__,
                      "hachibee",
                      hachibee_sphinx_theme.get_html_themes_path(),
                      locals(),
-                     add_extensions=['hachibee_sphinx_theme'])
+                     add_extensions=['hachibee_sphinx_theme'],
+                     custom_style='custom_style.css')
 
 html_show_copyright = False
 html_title = "lesenfantcodaient.fr"

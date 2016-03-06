@@ -59,7 +59,7 @@ quoi il dépense plus d'énergie pour porter. En 2016, il est apparemment possib
 colis, de se débarrasser des plus lourds en premier quitte à faire un détour. On dit qu'on
 optimise le chemin suivi par les drones ou plus exactement leur tournée. Ce n'est pas
 par hasard si Google propose un challenge sur un sujet plus complexe que le 
-problème classique du :ref:`algo_tsp`. Les gagnants contribueront sans doute à la mise au point de 
+problème classique du :ref:`l-algo_tsp`. Les gagnants contribueront sans doute à la mise au point de 
 l'algorithme final probablement embauchés par Google. Un drone n'est pas tout-à-fait autonome.
 Il est capable de prendre des décisions pour tout ce qui est urgent (les collisions, délivrer,
 aller dans une direction) mais il ne sait pas optimiser une trajectoire sur une grande distance.

@@ -161,7 +161,8 @@ if is_local():
         additional_notebook_path=[
             "pyquickhelper", "pyensae", "pyrsslocal", "pymyinstall", "pymmails"],
         requirements=["pyquickhelper"],
-        blog_list=os.path.abspath(os.path.join("src", project_var_name, package_data[project_var_name][0])),
+        blog_list=os.path.abspath(os.path.join(
+            "src", project_var_name, package_data[project_var_name][0])),
         fLOG=logging_function,
         covtoken=("4326eb4c-78b5-4ff3-9317-9329fdb20f43", "'jenkins' in outfile"))
     if not r and not ({"bdist_msi", "sdist",
