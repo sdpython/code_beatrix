@@ -10,7 +10,7 @@ README / Changes
     :alt: Build status
     
 .. image:: https://ci.appveyor.com/api/projects/status/jf1l4choe2ty22jr?svg=true
-    :target: https://ci.appveyor.com/project/sdpython/code_beatrix
+    :target: https://ci.appveyor.com/project/sdpython/code-beatrix
     :alt: Build Status Windows        
 
 .. image:: https://badge.fury.io/py/code_beatrix.svg
