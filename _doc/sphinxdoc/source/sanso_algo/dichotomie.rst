@@ -20,7 +20,8 @@ Le jeu de cartes est mélangé.
 L'un des deux joueurs a les yeux bandés et pourtant il doit trier le paquet de cartes
 en suivant les instructions de l'autres. On peut soit considérer de ranger les cartes par
 ordre croissant ou par couleurs s'il y a suffisamment de couleurs (6, 7). Et bien évidemment,
-il faut aller le plus vite possible.
+il faut aller le plus vite possible. Une limite de temps, 5 minutes, ajoute un peu de piquant
+au jeu.
 
 .. image:: dicho1.jpg
     :width: 600
