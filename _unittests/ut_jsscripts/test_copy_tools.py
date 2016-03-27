@@ -5,7 +5,6 @@
 import sys
 import os
 import unittest
-import re
 import warnings
 
 
@@ -23,7 +22,7 @@ except ImportError:
     import src
 
 try:
-    import pyquickhelper
+    import pyquickhelper as skip_
 except ImportError:
     path = os.path.normpath(
         os.path.abspath(
@@ -36,11 +35,10 @@ except ImportError:
                 "src")))
     if path not in sys.path:
         sys.path.append(path)
-    import pyquickhelper
+    import pyquickhelper as skip_
 
 
-from pyquickhelper import fLOG, explore_folder_iterfile
-from pyquickhelper.ipythonhelper import upgrade_notebook
+from pyquickhelper.loghelper import fLOG
 from src.code_beatrix.jsscripts import copy_jstool2ipython
 
 

@@ -15,9 +15,6 @@ __blog__ = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "rss_blog_list.xml"))
 
 
-from .scratchs import check
-
-
 def _setup_hook(add_print=False, unit_test=False):
     """
     if this function is added to the module,
@@ -42,17 +39,29 @@ def check(log=False):
     @param      log     if True, display information, otherwise
     @return             0 or exception
     """
+    from .scratchs import check
     check()
     return True
 
+
+def load_ipython_extension(ip):
+    """
+    to allow the call ``%load_ext code_beatrix``
+
+    @param      ip      from ``get_ipython()``
+    """
+    from .ipythonhelper.magic_scratch import register_scratch_magics
+    register_scratch_magics(ip)
+
+
 try:
     from IPython import get_ipython
-    from .ipythonhelper.magic_scratch import register_scratch_magics
-
     ip = get_ipython()
     if ip is not None:
-        # the program is not run from a notebook
-        register_scratch_magics()
+        import pyquickhelper
+        pyquickhelper.load_ipython_extension(ip)
+        load_ipython_extension(ip)
+
 except ImportError as e:
     # IPython is not installed
     pass

@@ -4,7 +4,7 @@
 """
 
 import os
-from pyquickhelper import synchronize_folder
+from pyquickhelper.filehelper import synchronize_folder
 
 
 def copy_jstool2ipython(tool):

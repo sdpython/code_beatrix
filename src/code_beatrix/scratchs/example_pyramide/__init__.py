@@ -1,6 +1,8 @@
 """
-basic checking
+@file
+@brief basic checking
 """
+import os
 
 
 def check_pyramide():

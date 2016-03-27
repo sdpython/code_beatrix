@@ -114,10 +114,10 @@ class MagicScratch(MagicClassWithHelpers):
             return HTML(libs + "\n" + test_js + "\n" + html_src + "\n")
 
 
-def register_scratch_magics():
+def register_scratch_magics(ip):
     """
     register magics function, can be called from a notebook
+
+    @param      ip      ip
     """
-    from IPython import get_ipython
-    ip = get_ipython()
     ip.register_magics(MagicScratch)
