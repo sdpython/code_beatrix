@@ -2,7 +2,7 @@
 
 .. blogpost::
     :title: Tout le monde a inventé le tri
-    :keywords: tri, atelier,
+    :keywords: tri, atelier
     :date: 2016-03-04
     :categories: coding goûter
 
