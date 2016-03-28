@@ -1,6 +1,4 @@
 
-.. issue.
-
 .. index:: énoncé, dessin, pyramide, scratch, programmation
 
 .. _l-prog_dessin_pyramide:

@@ -49,6 +49,7 @@ Contenu rangé par thèmes
     programmation/index_programmation
     arduino/index_arduino
     histoires/index_histoires
+    maths/index_maths
     
 On programme pour faire des jeux, des sites internets, des recherches scientifiques,
 pour automatiser une tâche qu'on ne souhaite plus faire à la main.

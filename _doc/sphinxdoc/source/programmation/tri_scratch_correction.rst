@@ -1,5 +1,4 @@
-﻿
-.. issue.
+
 
 .. index:: solution, tri, scratch
 

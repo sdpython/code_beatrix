@@ -1,5 +1,3 @@
-﻿
-.. issue.
 
 .. index:: énoncé, tri, scratch
 

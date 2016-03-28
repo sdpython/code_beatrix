@@ -1,5 +1,4 @@
 
-.. issue.
 
 .. index:: solution, dessin, pyramide, scratch, programmation
 

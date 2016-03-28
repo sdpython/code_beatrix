@@ -1,4 +1,3 @@
-﻿
 
 
 .. _l-programmation:
