@@ -40,7 +40,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder
-from pyquickhelper.helpgen import BlogPost, BlogPostList, BlogPostDirective
+from pyquickhelper.sphinxext import BlogPost, BlogPostList, BlogPostDirective
 
 
 class TestBlogHelper(unittest.TestCase):
