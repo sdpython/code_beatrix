@@ -67,6 +67,7 @@ class TestFlake8(unittest.TestCase):
                          "'skip_' imported but unused",
                          "'skip__' imported but unused",
                          "'skip___' imported but unused",
+                         "'pyquickhelper' imported",
                          ],
                    extended=[("fLOG", _extended_refactoring)],
                    max_line_length=320)

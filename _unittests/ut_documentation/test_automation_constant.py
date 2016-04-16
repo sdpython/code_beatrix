@@ -6,7 +6,6 @@
 import sys
 import os
 import unittest
-from docutils.parsers.rst import directives
 
 try:
     import src
