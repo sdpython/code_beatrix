@@ -11,7 +11,8 @@ A partir de 8 ans.
 
 Un solide régulier ou plus précisément
 `Polyèdres réguliers <https://fr.wikipedia.org/wiki/Poly%C3%A8dre_r%C3%A9gulier>`_
-est un volume géométrique dont les arêtes ont toutes la même longueur.
+est un volume géométrique dont les arêtes ont toutes la même longueur, les faces
+ont toutes la même forme et chaque sommet est relié au même nombre de faces.
 Le cube est l'un deux. La pyramide également. Mais combien sont-ils ?
 Une infinité ou juste quelques-uns ?
 
@@ -19,11 +20,17 @@ Une infinité ou juste quelques-uns ?
 Mise en scène
 -------------
 
-Pour bien comprendre il faut utiliser de la pâte à modeler et des cures-dents
-pour former une pyramide, un cube et...
+Pour bien comprendre il faut utiliser de la pâte à modeler, des cures-dents ou des mikados,
+pour former une pyramide, un cube... un peu comme sur la photo qui illustre l'article
+du Parisien (23/04/2016) :
+`A Issy, les collégiennes passent leurs vacances en "colo" numérique <http://www.leparisien.fr/issy-les-moulineaux-92130/a-issy-les-collegiennes-passent-leurs-vacances-en-colo-numerique-22-04-2016-5737487.php>`_.
+
+*Indications :* 
+
+* Un sommet est rattaché à combien de faces au minimum ?
+* On peut construire un polyèdre régulier avec des triangles, des carrés, des pentagones, des hexagones, des heptagones ?
 
 
-    
 
 Solution
 --------

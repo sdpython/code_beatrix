@@ -1,0 +1,63 @@
+
+
+.. _l-session_2016_04_22:
+
+
+Sans ordinateur - 22 avril 2016
+===============================
+
+.. index:: patchwork
+
+Chez `Microsoft France <https://www.microsoft.com/fr-fr/>`_, les deux sessions de deux heures environ ont eu lieu 
+dans le cadre des
+`Colos Digigirlz <http://www.ladn.eu/actualites/microsoft-fait-decouvrir-numerique-aux-adolescentes,article,30488.html>`_
+
+Les problèmes abordés :
+
+
+* :ref:`l-maths_solides`
+* :ref:`l-algo_tri`
+* :ref:`l-prog_parcours_echiquier`
+* :ref:`l-dessert_cantine`
+
+
+
+
+Solutions
+---------
+
+* :ref:`l-maths_solides_sol`
+* :ref:`l-algo_tri_sol`
+* :ref:`l-prog_parcours_echiquier_sol`
+* :ref:`l-dessert_cantine_sol`
+
+
+
+.. _l-lecture_2302:
+
+Livres, Bibliographie
+---------------------
+
+Parmi les autres sujets et les histoires que j'ai abordées :
+
+* `Les fractales pour les nuls <http://brunomarion.com/fr/les-fractales-pour-les-nuls/>`_,
+  `Peut-on mesurer précisément la côte de Bretagne ? <https://sites.google.com/site/fractaletpe/les-applications/les-cotes-bretonnes>`_,
+  `Dimension Fractales <https://fr.wikipedia.org/wiki/Dimension_fractale>`_
+* `Histoire des symboles de mathématiques <http://trucsmaths.free.fr/hist_symbol.htm>`_,
+  `Les symboles du plus et du moins. <http://www.math93.com/index.php/histoire-des-maths/les-symboles-menu/97-histoire-des-mathematiques/symboles-mathematiques/129-plus-et-moins>`_
+* `Révolution Industrielle <https://fr.wikipedia.org/wiki/R%C3%A9volution_industrielle>`_
+* `Thalès <http://www.maths-et-tiques.fr/index.php/histoire-des-maths/mathematiciens-celebres/thales>`_
+
+Et quelques livres :
+
+* `Les mathématiciens <http://www.editions-belin.com/ewb_pages/f/fiche-article-les-mathematiciens-6817.php>`_ (livre)
+* `Mathématiques et architectures <http://www.actes-sud.fr/catalogue/actes-sud-beaux-arts/mathematiques-et-architecture>`_, Jane Burry, Mark Burry
+* `Deployable Structures <http://www.laurenceking.com/us/deployable-structures/>`_, Esther Rivas Adrover
+  
+
+
+**Autres pistes**
+
+* :ref:`l-biblio_algo` à propos des algorithmes
+* :ref:`l-biblio_prog` à propos de la programmation
+* :ref:`l-biblio_donnes` à propos des données
