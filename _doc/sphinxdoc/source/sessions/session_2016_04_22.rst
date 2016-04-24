@@ -3,8 +3,8 @@
 .. _l-session_2016_04_22:
 
 
-Sans ordinateur - 22 avril 2016
-===============================
+Mathématiques et pâte à modeler - 22 avril 2016
+===============================================
 
 .. index:: patchwork
 
@@ -18,7 +18,7 @@ Les problèmes abordés :
 * :ref:`l-maths_solides`
 * :ref:`l-algo_tri`
 * :ref:`l-prog_parcours_echiquier`
-* :ref:`l-dessert_cantine`
+* :ref:`l-donnes_cantine`
 
 
 
@@ -29,7 +29,7 @@ Solutions
 * :ref:`l-maths_solides_sol`
 * :ref:`l-algo_tri_sol`
 * :ref:`l-prog_parcours_echiquier_sol`
-* :ref:`l-dessert_cantine_sol`
+* :ref:`l-donnes_cantine_sol`
 
 
 

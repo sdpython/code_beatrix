@@ -16,6 +16,9 @@ ont toutes la même forme et chaque sommet est relié au même nombre de faces.
 Le cube est l'un deux. La pyramide également. Mais combien sont-ils ?
 Une infinité ou juste quelques-uns ?
 
+.. image:: pyramid.png
+    :height: 400
+
 
 Mise en scène
 -------------
