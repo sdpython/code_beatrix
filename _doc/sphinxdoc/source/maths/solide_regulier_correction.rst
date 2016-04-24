@@ -12,7 +12,7 @@ Il y a en 5 ainsi que le rapelle la page Wikipédia
 dont les illustrations qui suvient sont extraites.
 
 
-.. html::
+.. raw:: html
 
     <table><tr> 
     <td width="120"><img alt="Tétraèdre" src="https://upload.wikimedia.org/wikipedia/commons/7/70/Tetrahedron.gif" width="120" height="120" /></td>
