@@ -27,5 +27,7 @@
     oublie parfois que les idées ne viennent pas de nulle part, qu'elles sont 
     inspirées de problèmes rencontrées par d'autres. Peut-être qu'un 
     peu d'histoires des sciences ramènerait un peu d'humanité à aux sciences
-    techniques.
+    techniques. Voici la photo publiée dans le Parisien :
     
+    
+    .. image:: http://s1.lprs1.fr/images/2016/04/22/5737487_79682064-0895-11e6-ae1b-485357199b15-1_545x460_autocrop.jpg

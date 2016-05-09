@@ -11,8 +11,9 @@
     `Exploratorium <http://www.exploratorium.edu/>`_. Celui de Seattle 
     est plus petit bien sûr mais dans le même esprit.
     L'exposition permanente était sur les mathématiques. Je l'ai trouvée un peu 
-    répétitive (diviser les dimensions par 2 veut dire diviser le volume par 8).
-    La mise en scène des problèmes était néanmoins réussi. Sur le mur du fond,
+    répétitive (on explique plusieurs fois que diviser les 
+    dimensions par 2 veut dire diviser le volume par 8).
+    La mise en scène des problèmes était néanmoins réussie. Sur le mur du fond,
     on peut lire des énigmes bien installé sur un canapé. J'en cite une :
     
         Une lampe a Znfinnbesoin de 2 piles en état de marche
@@ -21,8 +22,8 @@
         trouver 2 piles qui fonctionnent ?
         
     Le nombre d'essai au minimum signifie le plus grand 
-    nombre minimum d'essai sur toutes les configurations 
-    possibles. La réponse était donné (7) mais la démonstration 
+    nombre minimum d'essais sur toutes les configurations 
+    possibles. La réponse était donnée (7) mais la démonstration 
     un peu faible.
     
     Je suis aussi tombé sur un livre pas mal du tout 
