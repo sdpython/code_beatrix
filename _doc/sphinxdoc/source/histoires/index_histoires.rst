@@ -31,6 +31,7 @@ un peu plus de données
 
     big_data
     donnees_isolees
+    
 
 
 un peu plus d'Histoire
@@ -46,3 +47,13 @@ un peu plus d'Histoire
     rome_maya
     
     
+et quelques histoires courtes
++++++++++++++++++++++++++++++
+
+.. toctree::
+    :maxdepth: 2
+    
+    short_stories_2016
+
+
+
