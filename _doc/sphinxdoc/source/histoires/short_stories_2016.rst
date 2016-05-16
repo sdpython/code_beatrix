@@ -108,7 +108,7 @@ Michel avait l'air songeur devant sa salade de tomates.
 - Tu as trop de ruches papa.
 - Et ?
 - C'est compliqué de jouer, trop de frelons à la fois.
-- Ah... c'est petits robots, on finirait par croire que tout est automatique.
+- Ah... ces petits robots, on finirait par croire que tout est automatique.
 
 Michel relève la tête sur cette dernière réplique et commence à manger à toute vitesse.
 
