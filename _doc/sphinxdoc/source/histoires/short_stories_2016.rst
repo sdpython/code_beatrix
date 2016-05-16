@@ -98,7 +98,26 @@ qui déboula en grande trombe.
 - Non mais il est grave mouillé. Je vais trouver un jet d'eau plus fort.
 - Mais retournes-y, qu'attends-tu ? Va dégommer le suivant.
 - Je ne peux pas, il n'y a plus d'eau. Faut que j'y retourne, il faut
-  que j'en fabrique pour toutes les ruches. C'est génial.
+  que j'en fabrique pour toutes les ruches. C'est génial !
+  
+*Une semaine plus tard.*
+
+Michel avait l'air songeur devant sa salade de tomates.
+
+- Tu as l'air abattu ?
+- Tu as trop de ruches papa.
+- Et ?
+- C'est compliqué de jouer, trop de frelons à la fois.
+- Ah... c'est petits robots, on finirait par croire que tout est automatique.
+
+Michel relève la tête sur cette dernière réplique et commence à manger à toute vitesse.
+
+- Tu es génial papa. Je vais programmer l'ordinateur pour qu'il tire automatiquement sur les frelons.
+- C'est possible ça ?
+- Absolument !
+
+
+
   
 
 
