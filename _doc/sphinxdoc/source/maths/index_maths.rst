@@ -43,6 +43,7 @@ Sujets
     
     solide_regulier
     compter_reel
+    fractales
 
 
 Indices et solutions
@@ -53,6 +54,7 @@ Indices et solutions
     
     solide_regulier_correction
     compter_reel_correction
+    fractales_correction
 
     
 

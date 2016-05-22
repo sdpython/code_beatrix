@@ -19,6 +19,7 @@ Les problèmes abordés :
 * :ref:`l-algo_tri`
 * :ref:`l-prog_parcours_echiquier`
 * :ref:`l-donnes_cantine`
+* :ref:`l-maths_fractales`
 
 
 
@@ -30,6 +31,7 @@ Solutions
 * :ref:`l-algo_tri_sol`
 * :ref:`l-prog_parcours_echiquier_sol`
 * :ref:`l-donnes_cantine_sol`
+* :ref:`l-maths_fractales_sol`
 
 
 
