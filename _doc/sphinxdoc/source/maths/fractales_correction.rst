@@ -12,7 +12,7 @@ Les fractales
 
 Le périmètre de la France est infini mais sa surface l'est. 
 C'était la conclusion de la petite digression que je me suis 
-permise lors du dernier coding gouter. Si on le laisse de côté le 
+permis lors du dernier coding gouter. Si on le laisse de côté le 
 phénomène des marées qui complique un peu les choses, il est assez 
 facile de parcourir le bord de France avec des tiges d'une longueur 
 d'un kilomètre pour entourer maladroitement le pays.
@@ -50,12 +50,12 @@ la théorie des fractales et celle-ci dit (en l'adaptant) :
 Pour s'en convaincre, on peut construire une figure célèbre en forme d'étoile : 
 le `flocon de Koch <https://fr.wikipedia.org/wiki/Flocon_de_Koch>`_.
 
-.. image:: https://commons.wikimedia.org/wiki/File:Von_Koch_curve.gif?uselang=fr
+.. image:: https://fr.wikipedia.org/wiki/Flocon_de_Koch#/media/File:Von_Koch_curve.gif
     :alt: image extraite de Wikipédia
 
 On part d'un triangle équilatéral dont on coupe chaque côté en trois.
 
-.. image:: https://commons.wikimedia.org/wiki/File:Droite_Koch.png?uselang=fr
+.. image:: https://fr.wikipedia.org/wiki/Flocon_de_Koch#/media/File:Droite_Koch.png
     :alt: image extraite de Wikipédia
     
 A chaque tour, on multiplie la longueur par 4/3.
