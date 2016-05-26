@@ -4,7 +4,7 @@
     :title: Fractales
     :keywords: fractales
     :date: 2016-05-22
-    :categories: mathémtiques
+    :categories: mathématiques
     
     J'avais abordé le sujet des fractales lors de la dernière
     session de coding goûter organisée par Microsoft
