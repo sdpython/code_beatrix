@@ -22,15 +22,11 @@ import my_hachibee_sphinx_theme as hachibee_sphinx_theme
 from pyquickhelper.helpgen.default_conf import set_sphinx_variables
 
 
-set_sphinx_variables(__file__,
-                     "Les enfants codaient",
-                     "Xavier Dupré",
-                     2015,
-                     "hachibee",
-                     hachibee_sphinx_theme.get_html_themes_path(),
-                     locals(),
-                     add_extensions=['hachibee_sphinx_theme'],
-                     custom_style='custom_style.css')
+set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2016,
+                     "hachibee", hachibee_sphinx_theme.get_html_themes_path(),
+                     locals(), add_extensions=['hachibee_sphinx_theme'],
+                     custom_style='custom_style.css',
+                     extlinks=dict(issue=('https://github.com/sdpython/code_beatrix/issues/%d', 'issue')))
 
 html_show_copyright = False
 html_title = "lesenfantcodaient.fr"
