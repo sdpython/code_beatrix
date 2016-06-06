@@ -81,7 +81,7 @@ Annexes
 * :ref:`l-notebooks`
 * :ref:`modindex` (voir aussi :ref:`l-modules`, :ref:`l-classes`, :ref:`l-functions`)
 * :ref:`l-FAQ`
-
+* :ref:`l-issues-todolist`
 
 
 .. toctree::
