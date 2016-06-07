@@ -2,8 +2,8 @@
 
 .. _l-README:
 
-README / Changes
-================
+README
+======
 
 .. image:: https://travis-ci.org/sdpython/code_beatrix.svg?branch=master
     :target: https://travis-ci.org/sdpython/code_beatrix
@@ -57,12 +57,3 @@ Contributions
 
 Started in 2015/03.
 
-
-Versions
---------
-
-* **0.5 - 2016/??/??**
-    * **ajout:** ajout d'un code illustrant le tri à bulles sous Scratch (avec personnage animé)
-    * **ajout:** ajout d'une petite histoire sur les langages
-* **0.1 - 2015/03/25**
-    * **nouveau:** première version
