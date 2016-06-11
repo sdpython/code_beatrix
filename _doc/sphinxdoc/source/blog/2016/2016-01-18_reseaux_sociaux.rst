@@ -1,11 +1,11 @@
 
-.. _blog_post_reseaux_soc:
 
 .. blogpost::
     :title: Réseaux à quel âge
     :keywords: 
     :date: 2016-01-18
     :categories: loi, numérique
+    :lid: blog_post_reseaux_soc
     
     Le mois dernier, le parlement a discuté de l'âge à partir duquel un adolescent peut
     évoluer sans l'accord de ses parents sur les réseaux sociaux. Quelques articles :
