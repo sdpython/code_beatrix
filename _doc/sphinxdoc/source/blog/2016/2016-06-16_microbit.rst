@@ -1,0 +1,14 @@
+
+
+.. blogpost::
+    :title: MicroBit, Software Carpentry
+    :keywords: initiation
+    :date: 2016-06-16
+    :categories: programmation
+    
+    Deux sites
+    `MicroBit <https://www.microbit.co.uk/>`_,
+    `Software Carpentry <http://software-carpentry.org/>`_
+    autour de la programmation, de sa découverte.
+    A suivre.
+    
