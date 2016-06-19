@@ -35,6 +35,7 @@ install:
   - "%PYTHON%\\Scripts\\pymy_install3 opencv_python"
   - "%PYTHON%\\Scripts\\pymy_install3 yaml"
   - "%PYTHON%\\Scripts\\pip install tutormagic"
+  - "%PYTHON%\\Scripts\\pip install pycodestyle"
 
 build: off
 
