@@ -15,6 +15,8 @@
         c'est de former des citoyens conscients de ce qu'est l'informatique, 
         des mécanismes de pensée et des évolutions de pratiques que cela suppose. 
         Et de découvrir un art qui a emmené l'humanité sur les chemins d'une révolution.
+        
+    [...]
 
         Des tablettes, les élèves en ont à la maison ! Savoir se servir d'une tablette, 
         ce n'est pas cela l'enjeu : un enfant un tant soit peu 
@@ -22,6 +24,8 @@
         En éducation, l'enjeu, c'est d'apprendre à penser, 
         ce qui est bien plus difficile.
         
+    [...]
+
         Si le programme ne fonctionne pas, c'est qu'il est faux !  
         Alors qu'en maths, si votre démonstration est fausse, vous n'avez guère 
         de moyens de le voir par vous-même, vous avez besoin du regard de l'enseignant.
@@ -35,8 +39,9 @@
         
     Pour paraphraser, les meilleures séances de programmation sont celles que je passe au soleil, 
     les yeux fermés à réfléchir à un algorithme. La suite, où on programme,
-    n'est pas nécessaire plus courte, c'est là qu'on découvre parfois des petits détails
-    qui nous avait échappés. On est parfois obligé de retourner au soleil.
+    n'est pas nécessairement plus courte, et c'est là qu'on découvre parfois des petits détails
+    qui nous avait échappés et qui nous oblige parfois de retourner au soleil. 
+    On apprend beaucoup dans ces moments-là.
     
     .. index:: 1, 2, 3, Codez !
     
