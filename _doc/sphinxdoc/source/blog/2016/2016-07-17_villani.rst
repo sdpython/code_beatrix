@@ -1,0 +1,46 @@
+
+
+.. blogpost::
+    :title: Cédric Villani : il faut apprendre la programmation à 10 ans
+    :keywords: 10 ans, Villani
+    :date: 2016-07-17   
+    :categories: programmation
+    
+    Une interview de Cédric Villani est parue début juillet :
+    `Je ne suis pas certain que l'éducation nationale saisisse les enjeux de l'enseignement de l'informatique <http://www.acteurspublics.com/2016/07/01/cedric-villani-je-ne-suis-pas-certain-que-l-education-nationale-saisisse-les-enjeux-de-l-enseignement-de-l-informatique>`_.
+    Il y parle de l'apprentissage de la programmation à l'école.
+    Quelques extraits :
+    
+        L'objectif premier de cet enseignement n'est pas de former des informaticiens, 
+        c'est de former des citoyens conscients de ce qu'est l'informatique, 
+        des mécanismes de pensée et des évolutions de pratiques que cela suppose. 
+        Et de découvrir un art qui a emmené l'humanité sur les chemins d'une révolution.
+
+        Des tablettes, les élèves en ont à la maison ! Savoir se servir d'une tablette, 
+        ce n'est pas cela l'enjeu : un enfant un tant soit peu 
+        curieux apprendra cela tout seul, sans aide.
+        En éducation, l'enjeu, c'est d'apprendre à penser, 
+        ce qui est bien plus difficile.
+        
+        Si le programme ne fonctionne pas, c'est qu'il est faux !  
+        Alors qu'en maths, si votre démonstration est fausse, vous n'avez guère 
+        de moyens de le voir par vous-même, vous avez besoin du regard de l'enseignant.
+        
+    Enfin, un dernier extrait qui va dans le sens de ce site :
+        
+        Évidemment, l'informatique se fait majoritairement sur un ordinateur. 
+        Mais ce qui compte, c'est la démarche de l'algorithmique, de la mise en 
+        programmation de la réflexion structurée, à laquelle on peut s'initier, 
+        même sans ordinateur.
+        
+    Pour paraphraser, les meilleures séances de programmation sont celles que je passe au soleil, 
+    les yeux fermés à réfléchir à un algorithme. La suite, où on programme,
+    n'est pas nécessaire plus courte, c'est là qu'on découvre parfois des petits détails
+    qui nous avait échappés. On est parfois obligé de retourner au soleil.
+    
+    .. index:: 1, 2, 3, Codez !
+    
+    Pour finir, une référence vers un site pour apprendre à programmer :
+    `1, 2, 3, Codez ! <http://www.fondation-lamap.org/fr/123codez>`_.
+        
+    

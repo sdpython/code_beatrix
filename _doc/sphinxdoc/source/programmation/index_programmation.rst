@@ -71,6 +71,7 @@ Bibliographie
 * `Apprentissage de la programmation avec Python 3 <http://inforef.be/swi/python.htm>`_ Gérard Swinnen.
   C'est un livre qu'un adolescent pourra lire tout seul afin d'apprendre aussi tout seul la programmation
   avec le langage Python. Le livre est gratuit en ligne.
+* `1, 2, 3, Codez ! <http://www.fondation-lamap.org/fr/123codez>`_
 
 
 Lorsqu'on programme, il ne faut pas hésiter à chercher les réponses
