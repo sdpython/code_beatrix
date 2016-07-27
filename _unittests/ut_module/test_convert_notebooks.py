@@ -53,11 +53,13 @@ class TestConvertNotebooks(unittest.TestCase):
         fold2 = os.path.normpath(
             os.path.join(fold, "..", "..", "_doc", "notebooks"))
         for nbf in explore_folder_iterfile(fold2, pattern=".*[.]ipynb"):
+            fLOG(nbf)
             t = upgrade_notebook(nbf)
             if t:
                 fLOG("modified", nbf)
         fold2 = os.path.normpath(os.path.join(fold, "..", "..", "_unittests"))
         for nbf in explore_folder_iterfile(fold2, pattern=".*[.]ipynb"):
+            fLOG(nbf)
             t = upgrade_notebook(nbf)
             if t:
                 fLOG("modified", nbf)
