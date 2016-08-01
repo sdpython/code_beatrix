@@ -3,7 +3,7 @@
 .. blogpost::
     :title: Faire un circuit sur plage
     :keywords: plage, sable
-    :date: 2016-08-31   
+    :date: 2016-08-01  
     :categories: jeu
     
     Votre enfant vous demande pour la énième fois de

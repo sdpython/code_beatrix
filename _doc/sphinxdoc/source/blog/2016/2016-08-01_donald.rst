@@ -1,0 +1,27 @@
+
+
+.. blogpost::
+    :title: Donald au Pays des Mathémagiques (1959) - Walt Disney
+    :keywords: youtube, Donald
+    :date: 2016-08-01
+    :categories: référence
+    
+    Découvert ou redécouvert, 
+    `Donald au Pays des Mathémagiques <https://www.youtube.com/watch?v=j_a4-zoTtAU>`_
+    illustre la présence des mathématiques au quotidien.
+    
+    .. raw:: html
+    
+        <iframe frameborder="0" height="315" src="https://www.youtube.com/watch?v=j_a4-zoTtAU" width="560">
+        </iframe>
+    
+    
+    Cité par Cédric Villani dans 
+    `Les Rêveurs Lunaires <https://www.youtube.com/watch?v=-aIZ6X1P1G4>`_.
+    
+    .. raw:: html
+    
+        <iframe frameborder="0" height="315" src="https://www.youtube.com/watch?v=-aIZ6X1P1G4" width="560">
+        </iframe>
+    
+    
