@@ -1,0 +1,14 @@
+
+
+.. blogpost::
+    :title: Faire un circuit sur plage
+    :keywords: plage, sable
+    :date: 2016-08-31   
+    :categories: jeu
+    
+    Votre enfant vous demande pour la énième fois de
+    traver une route sur la plage ? Le plus simple est
+    de le poser assis sur une serviette puis de le tirer en zigzag.
+    La route est faite en quelques secondes. Pour peu que la plage soit en pente, 
+    on peut facilement tracer une piste de bobsleigh et y faire rouler 
+    un ballon.
