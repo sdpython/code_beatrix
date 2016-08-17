@@ -65,8 +65,9 @@ Indices et solutions
 Bibliographie
 -------------
 
+* :ref:`L'arithmétique du Grand-Papa <jean-mace-blog-post>` de 
+  `Jean Macé <https://fr.wikipedia.org/wiki/Jean_Mac%C3%A9>`_
 * `Apprentissage de la programmation avec Python 3 <http://inforef.be/swi/python.htm>`_ Gérard Swinnen.
   C'est un livre qu'un adolescent pourra lire tout seul afin d'apprendre aussi tout seul la programmation
   avec le langage Python. Le livre est gratuit en ligne.
-
 

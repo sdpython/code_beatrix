@@ -1,0 +1,23 @@
+
+
+.. blogpost::
+    :title: L'arithmétique du Grand-Papa
+    :keywords: livre, Jean Macé, Macé
+    :date: 2016-08-17
+    :categories: livre
+    :lid: jean-mace-blog-post
+    
+    Mon père n'a jamais vraiment bien compris les mathématiques
+    et je pense qu'il n'en a retenu que la dimension poétique.
+    C'est ainsi qu'on trouve dans sa bibliothèque un livre 
+    fabuleux pour découvrir ce que sont les mathématiques :
+    `L'arithmétique de Grand-Papa <http://gallica.bnf.fr/ark:/12148/bpt6k204042m>`_
+    de `Jean Macé <https://fr.wikipedia.org/wiki/Jean_Mac%C3%A9>`_.
+    Ce professeur n'a cessé d'écrire des histoires pour aborder
+    des thèmes scientifiques. Grand-Papa aborde dans son premier 
+    chapitre le système de numération en base 10 au travers
+    d'une histoire de deux frères espiègles, tout aussi
+    différents que complémentaires, qui ne savent compter
+    que jusqu'à 10. Chaque histoire et courte tiendra lieu 
+    de l'histoire du soir. Et si vous êtes curieux, vous 
+    irez découvrir toute la collection.
