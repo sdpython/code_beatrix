@@ -21,3 +21,10 @@
     que jusqu'à 10. Chaque histoire et courte tiendra lieu 
     de l'histoire du soir. Et si vous êtes curieux, vous 
     irez découvrir toute la collection.
+
+    **2016-09-09** : j'ai fini par terminer ce livre
+    avec quelques autres. L'approche du premier chapitre
+    est intéressante. J'ai un peu calé sur les opérations
+    numériques. L'auteur dépeint minutieusement la façon
+    de faire une division sans s'appuyer sur une idée
+    éclairante comme la première.
