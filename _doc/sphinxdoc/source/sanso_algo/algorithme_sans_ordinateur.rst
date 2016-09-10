@@ -45,6 +45,7 @@ Sujets
     puzzle_aveugle
     angle_droit
     dichotomie
+    pluie
 
 
 
@@ -67,6 +68,7 @@ Indices et solutions
     puzzle_aveugle_solution
     angle_droit_solution
     dichotomie_solution
+    pluie_solution
     notions
 
 
