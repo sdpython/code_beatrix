@@ -17,4 +17,9 @@
     
     .. image:: http://t1.gstatic.com/images?q=tbn:ANd9GcRvI0HKGpx53CCcNUQwPKSuXzkoxbD2CV4ArhmOJy10MT7CIOeTGRjPskE
     
+    Les livres de maths font très peu référence à l'histoire des théorèmes et des algorithmes
+    qu'ils exposent.
+    
+    * `L'informatique sans ordinateur, tome 1 <https://interstices.info/upload/docs/application/pdf/2014-06/csunplugged2014-fr.pdf>`_
+    * `L'informatique sans ordinateur, tome 2 <https://interstices.info/upload/docs/application/pdf/2015-09/csunplugged_part2_fr.pdf>`_
     
