@@ -6,7 +6,7 @@
     :date: 2016-03-28
     :categories: architecture
     
-    Un des jeux préféréq de ma grand-mère, avec moi en tout cas
+    Un des jeux préférés de ma grand-mère, avec moi en tout cas
     quand j'étais petit, était la construction de 
     `cocottes en papier <https://www.youtube.com/watch?v=77OX1FlJLIo>`_.
     Je sais faire les bateaux mais la cocotte m'a toujours parue compliquée.
@@ -38,7 +38,7 @@
     A bien y réfléchir, les objets pliables sont présents un peu partout. 
     D'ailleurs je me suis toujours demandé comment ce jouet s'appelait :
     
-    .. image:: https://fr.wikipedia.org/wiki/Sph%C3%A8re_d%27Hoberman#/media/File:Hoberman_Sphere.jpg
+    .. image:: https://upload.wikimedia.org/wikipedia/commons/7/7f/Hoberman_Sphere.jpg
         :width: 300
     
     La `Sphère d'Hoberman <https://fr.wikipedia.org/wiki/Sph%C3%A8re_d%27Hoberman>`_

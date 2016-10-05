@@ -11,7 +11,7 @@
     sur France Inter aujourd'hui. Dans la seconde moitié, la psychanalyste invitée
     aborde le fait que les enfants redemandent toujours et toujours la même histoire.
     Au premier abord, j'ai été un peu surpris car j'ai beaucoup raconté d'histoires
-    sans livre à mes petits frères et soeurs et ils ne semblaient pas s'en lassé.
+    sans livre à mes petits frères et soeurs et ils ne semblaient pas s'en lasser.
     Après réflexion, je me suis aperçu que je faisais la même chose
     en repassant les mêmes séries télévisées ou les bandes dessinées.
     Je ne relis jamais les livres mais j'en parle avec beaucoup plus de 
@@ -20,8 +20,8 @@
     Je regarde distraitement les films. Ce sont des sachets de thés. 
     Ils sont sans détour à la première projection. L'infusion commence
     une fois qu'on a quitté la salle. Le livre infuse tout de suite.
-    En écoutant cette émission, je me suis dit que j'allais figé l'histoire
-    que j'ai raconté à ma nière il y a quelques jours.
+    En écoutant cette émission, je me suis dit que j'allais figer l'histoire
+    que j'ai racontée à ma nière il y a quelques jours.
     J'ai tout figé de travers mais l'esprit de l'histoire demeure.
     Je repense aussi à ces étudiants qui me disaient lire mes histoires en cours
     plutôt que de m'écouter parler d'informatique. J'aime bien cette métaphore du
@@ -127,3 +127,7 @@
     du tout car sa fille refusait de se couper les ongles pour les avoir 
     aussi longs que ceux de l'éléphant. Elle ne pouvait même plus mettre 
     de chaussures.
+    
+    *Il faut être pris pour être appris.*
+    
+    Cette phrase ne devrait plus avoir aucun secret.
