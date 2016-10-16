@@ -48,6 +48,7 @@ Sujets
     parcours_echiquier
     dessin_pyramide
     tri_scratch
+    voisins_amis
 
 
 Indices et solutions
@@ -59,6 +60,7 @@ Indices et solutions
     parcours_echiquier_correction
     dessin_pyramide_correction
     tri_scratch_correction
+    voisins_amis_correction
     
 
 

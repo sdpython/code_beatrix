@@ -1,0 +1,45 @@
+
+
+.. _l-session_2016_10_18:
+
+
+Algorithmes et dessins - 18 octobre 2016
+========================================
+
+.. index:: patchwork
+
+Les problèmes abordés :
+
+
+* :ref:`l-algo_facteur_chinois`
+* :ref:`l-prog_dessin_pyramide`
+* :ref:`l-prog_voisin_amis`
+* :ref:`l-algo_enigme`
+`
+
+
+
+
+Solutions
+---------
+
+* :ref:`l-algo_facteur_chinois_sol`
+* :ref:`l-prog_dessin_pyramide_sol`
+* :ref:`l-prog_voisin_amis_sol`
+* :ref:`l-algo_enigme_sol`
+
+.. _l-lecture_1018:
+
+Livres, Bibliographie
+---------------------
+
+
+* `Mathématiques <http://www.unitheque.com/Livre/place_des_victoires/Les_mathematiques-97902.html>`_ de Bertrand Maurer
+  
+
+
+**Autres pistes**
+
+* :ref:`l-biblio_algo` à propos des algorithmes
+* :ref:`l-biblio_prog` à propos de la programmation
+* :ref:`l-biblio_donnes` à propos des données

@@ -46,7 +46,8 @@ Sujets
     angle_droit
     dichotomie
     pluie
-
+    facteur_chinois
+    enigme
 
 
 
@@ -69,6 +70,8 @@ Indices et solutions
     angle_droit_solution
     dichotomie_solution
     pluie_solution
+    facteur_chinois_solution
+    enigme_solution
     notions
 
 
