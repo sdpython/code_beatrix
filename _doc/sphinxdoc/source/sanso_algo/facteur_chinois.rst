@@ -20,17 +20,27 @@ par toutes les rues.
 Mise en scène
 -------------
 
-On part de la carte de votre ville. Avec un feutre, on repasse sur toutes 
-les rues que le camion poubelle devra traverser. On recouvre la carte 
+On part de la carte de votre ville. Avec un feutre, on encercle la zone
+dans laquelle le camion poubelle devra traverser toutes les rues. On recouvre la carte 
 de papier calque. Avec un feutre d'une autre couleur, on surligne les rues 
-par lesquelles le camion poubelle passe. Il faut bien faire attention à noter
-les rues par lesquelles le camion poubelle passe deux fois. Plus il y en a, plus
-le chemin est long.
+par lesquelles le camion poubelle passe et on numérote le rues dans l'ordre 
+dans lequel on les parcourt. Quelques dessins de difficulté croissantes :
+
+.. image:: images/touquet2.png
+
+
+.. image:: images/touquet3.png
+
+
+.. image:: images/touquet.png
+
 
 
 Quelques indices :
 
-**Q1 :** Avez-vous lu cette histoire sur les 
+**Q1 :** Le point de départ importe-t-il peu ?
+
+**Q2 :** Avez-vous lu cette histoire sur les 
 `sept ponts de Königsberg <https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_sept_ponts_de_K%C3%B6nigsberg>`_ ?
 Il est possible qu'elle ait un lien avec l'histoire du camion poubelle.
 
