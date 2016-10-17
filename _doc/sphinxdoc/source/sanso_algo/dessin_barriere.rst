@@ -39,4 +39,4 @@ Voir :ref:`l-algo_dessin_barriere_sol`.
 A quoi ça sert ?
 ----------------
 
-Lire :ref:`b-biodiversite <Motif, optimisation, biodiversité>`.
+Lire :ref:`Motif, optimisation, biodiversité <b-biodiversite>`.

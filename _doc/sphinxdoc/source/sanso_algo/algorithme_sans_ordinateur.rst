@@ -72,8 +72,8 @@ Indices et solutions
     dichotomie_solution
     pluie_solution
     facteur_chinois_solution
-    enigme_solution
     dessin_barriere_solution
+    enigme_solution
     notions
 
 
