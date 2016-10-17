@@ -48,10 +48,8 @@ def plot_positions(positions, edges=None, ax=None, **options):
                 p1 = posdict[e1]
                 p2 = posdict[e2]
                 if p1 != p2:
-                    dx = ((p2[0] - p1[0]) / abs(p2[0] - p1[0])
-                          * 0.1) if p2[0] != p1[0] else 0.0
-                    dy = ((p2[1] - p1[1]) / abs(p2[1] - p1[1])
-                          * 0.1) if p2[1] != p1[1] else 0.0
+                    dx = ((p2[0] - p1[0]) / abs(p2[0] - p1[0]) * 0.1) if p2[0] != p1[0] else 0.0
+                    dy = ((p2[1] - p1[1]) / abs(p2[1] - p1[1]) * 0.1) if p2[1] != p1[1] else 0.0
                     d = distance(p1, p2)
                     if d < 1.1:
                         color = "y"
@@ -253,7 +251,6 @@ def optimize_positions(positions, edges, max_iter=100, fLOG=noLOG,
             name = find_name(positions, edges_dict)
             if name is None:
                 raise ValueError("impossible")
-            empty_pos = positions[name]
 
         total = measure_positions(positions, edges)
         memo.append((total, name, positions[name]))
