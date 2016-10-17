@@ -12,7 +12,7 @@ Les problèmes abordés :
 
 
 * :ref:`l-algo_facteur_chinois`
-* :ref:`l-prog_dessin_pyramide`
+* :ref:`l-algo_dessin_barriere`
 * :ref:`l-prog_voisin_amis`
 * :ref:`l-algo_enigme`
 `
@@ -24,7 +24,7 @@ Solutions
 ---------
 
 * :ref:`l-algo_facteur_chinois_sol`
-* :ref:`l-prog_dessin_pyramide_sol`
+* :ref:`l-algo_dessin_barriere_sol`
 * :ref:`l-prog_voisin_amis_sol`
 * :ref:`l-algo_enigme_sol`
 

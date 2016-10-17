@@ -54,7 +54,7 @@ class TestClassRoom(unittest.TestCase):
         names = load_prenoms_w()
         self.assertEqual(len(names), 50)
 
-    def _test_random_position(self):
+    def test_random_position(self):
         fLOG(
             __file__,
             self._testMethodName,

@@ -47,6 +47,7 @@ Sujets
     dichotomie
     pluie
     facteur_chinois
+    dessin_barriere
     enigme
 
 
@@ -72,6 +73,7 @@ Indices et solutions
     pluie_solution
     facteur_chinois_solution
     enigme_solution
+    dessin_barriere_solution
     notions
 
 

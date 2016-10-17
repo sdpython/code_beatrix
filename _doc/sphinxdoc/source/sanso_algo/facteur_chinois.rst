@@ -28,9 +28,11 @@ dans lequel on les parcourt. Quelques dessins de difficulté croissantes :
 
 .. image:: images/touquet2.png
 
+Un peu plus dur :
 
 .. image:: images/touquet3.png
 
+Toujours un peu plus dur :
 
 .. image:: images/touquet.png
 
