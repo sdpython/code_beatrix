@@ -3,8 +3,11 @@
 .. _l-session_2016_10_18:
 
 
-Algorithmes et dessins - 18 octobre 2016
-========================================
+Algorithmes et dessins - Le Touquet - 18 octobre 2016
+=====================================================
+
+A l'école Saint-Exupéry avec l'association
+`Coding & Bricks <http://www.codingandbricks.com/>`_
 
 .. index:: patchwork
 
@@ -14,10 +17,10 @@ Les problèmes abordés :
 * :ref:`l-algo_facteur_chinois`
 * :ref:`l-algo_dessin_barriere`
 * :ref:`l-prog_voisin_amis`
-* :ref:`l-algo_enigme`
-`
 
+Une histoire :
 
+* :ref:`l-histoire_telephone`
 
 
 Solutions
@@ -26,7 +29,6 @@ Solutions
 * :ref:`l-algo_facteur_chinois_sol`
 * :ref:`l-algo_dessin_barriere_sol`
 * :ref:`l-prog_voisin_amis_sol`
-* :ref:`l-algo_enigme_sol`
 
 .. _l-lecture_1018:
 
