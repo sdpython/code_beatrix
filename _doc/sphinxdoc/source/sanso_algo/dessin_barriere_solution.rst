@@ -71,14 +71,14 @@ ils ne touchent pas tous le rond central.
 Il est donc impossible d'avoir moins de six voisins sauf si le rond central est
 plus petit :
 
-.. image:: rondpe.png
+.. image:: images/rondpe.png
 
 Et dans cette configuration là, le plus petit nombre de voisins
 est trois. On ne peut pas faire moins de trois voisins.
 Et pour colorier trois cercles qui se touchent, il faut
 au moins trois couleurs.
 
-.. image:: rondpec.png
+.. image:: images/rondpec.png
 
 On a donc démontré (ou prouvé) qu'il faut au moins trois
 couleurs et donc trois arbres différents afin que dans un champ,
