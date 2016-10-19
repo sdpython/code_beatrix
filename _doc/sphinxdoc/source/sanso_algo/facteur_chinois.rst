@@ -46,9 +46,16 @@ Quelques indices :
 `sept ponts de Königsberg <https://fr.wikipedia.org/wiki/Probl%C3%A8me_des_sept_ponts_de_K%C3%B6nigsberg>`_ ?
 Il est possible qu'elle ait un lien avec l'histoire du camion poubelle.
 
+**Q3 :** Maintenant que vous avez bien planché sur ces grands dessins,
+que diriez-vous de ces deux petits dessins ? Existe-t-il un moyen 
+de parcourir ces deux petits réseaux de rues en ne passant qu'une seule
+fois par chaque rue ? Car si cela était possible, nous serions sûr alors
+d'avoir trouvé le chemin le plus court...
 
-A vous.
 
+.. image:: images/maison.png
+
+.. image:: images/maison_double.png
 
 
 
