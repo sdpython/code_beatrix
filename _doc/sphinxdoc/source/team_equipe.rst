@@ -21,22 +21,14 @@ moteur de recherche de Microsoft. En parallèle, Xavier Dupré enseigne
 la programmation depuis 2001 à l'ENSAE, des cours qui se sont 
 étoffés en 2014 avec une partie dédiée au machine learning et au big data. 
 Plus récemment, Xavier explore différentes façons de faire découvrir 
-la programmation à de plus jeunes enfants avec l'animation de coding goûters.
+la programmation à de plus jeunes enfants avec l'animation de coding goûters
+et l'organisation de hackathon.
 
 .. image:: http://www.xavierdupre.fr/blog/documents/linkedin.png
     :width: 15
     :target: http://fr.linkedin.com/pub/xavier-dupre/0/924/780/
 
+* `Hackathon Microsoft, ENSAE, La Croix-Rouge <http://www.xavierdupre.fr/blog/2016-06-14_nojs.html>`_
+* `Regard personnel sur le Big Data <http://variances.eu/?p=1426>`_
 
-Adrien Roux
------------
-
-Adrien Roux a d'abord suivi une formation d'ingénieur du son, avant de 
-se lancer dans l'informatique. Il rejoint Fitnext en 2011, une entreprise 
-regroupant anciens sportifs professionnels et médecins dont le but est 
-de fournir des programmes personnalisés de sport et nutrition, et 
-participe à l'élaboration des règles de l'algorithme du programme. 
-Il travaille aujourd'hui en freelance, et continue d'être passionné 
-par les nouvelles technologies, le sport et la nutrition, ainsi que 
-tous les outils de self tracking et objets connectés liés à ces domaines.
 

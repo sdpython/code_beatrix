@@ -112,7 +112,7 @@ Contacts
 --------
 
 * :ref:`l-team`
-* Mail: ``lesenfantscodaient AT gmail.com``
+* Mail: ``xavier.dupre AT gmail.com``
 
 
 .. [#asj1] `Steve Jobs was a Low-Tech Parent <http://www.nytimes.com/2014/09/11/fashion/steve-jobs-apple-was-a-low-tech-parent.html?_r=0>`_, New-York Times, 11/09/2014

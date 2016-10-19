@@ -17,6 +17,7 @@ Les problèmes abordés :
 * :ref:`l-algo_facteur_chinois`
 * :ref:`l-algo_dessin_barriere`
 * :ref:`l-prog_voisin_amis`
+* :ref:`l-donnes_orthographe`
 
 Une histoire :
 
@@ -29,6 +30,7 @@ Solutions
 * :ref:`l-algo_facteur_chinois_sol`
 * :ref:`l-algo_dessin_barriere_sol`
 * :ref:`l-prog_voisin_amis_sol`
+* :ref:`l-donnes_orthographe_sol`
 
 .. _l-lecture_1018:
 
