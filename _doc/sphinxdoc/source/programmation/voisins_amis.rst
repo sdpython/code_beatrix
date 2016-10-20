@@ -23,16 +23,20 @@ est reliée par un élastique. Tout se place comme il veut tout en maintenant
 les élastiques. Une fois que tout le monde est placé, comment améliorer 
 la situation ? Voici une situation de départ :
 
-.. images/classroom_0000.png
+.. image:: images/classroom_0000.png
 
 Les traits rouges sont des amis éloignés, les traits bleus
 sont un peu moins éloignés, et les amis jaunes sont plutot 
 satisfaits et voici la situation qu'on aimerait atteindre :
 
-.. images/classroom_0019.png
+.. image:: images/classroom_0019.png
 
 
 Quelques indices :
+
+**Q1 :** Va-t-on aboutir à une solution unique ? Et si on retournait la salle de classe ?
+
+**Q2 :** S'il y a plusieurs solutions, comment pourrait-on les comparer facilement ?
 
 
 
@@ -45,10 +49,13 @@ A vous.
 Solution
 --------
 
-Voir :ref:`l-algo_voisin_amis_sol`.
+Voir :ref:`l-prog_voisin_amis_sol`.
 
 
 A quoi ça sert ?
 ----------------
 
-
+Et si nous réarrangions un orchestre en fonction de l'affinité des instruments ?
+Déjà fait... Je crois que nous pourrions nous servir de cette approche pour trier.
+Tout est déjà dit sur ce sujet mais par extension, le fait de réfléchir à ce problème
+pourrait nous aider à définir ce que voudrait dire trier spatialement.
