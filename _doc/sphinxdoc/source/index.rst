@@ -71,24 +71,10 @@ D'autres informations sont disponibles via le
 :ref:`blog <ap-main-0>`.
 
 
-    
-Annexes
--------
-
-* :ref:`genindex`
-* :ref:`l-remerciements`
-* :ref:`l-getting_started`
-* :ref:`l-glossary`
-* :ref:`l-notebooks`
-* :ref:`modindex` (voir aussi :ref:`l-modules`, :ref:`l-classes`, :ref:`l-functions`)
-* :ref:`l-FAQ`
-* :ref:`l-issues-todolist`
-
 
 .. toctree::
-    :hidden:
-    :maxdepth: 1
-
+    :maxdepth: 2
+    
     remerciements
     getting_started
     glossary
@@ -143,3 +129,9 @@ Contacts
 
 .. image:: https://codecov.io/github/sdpython/code_beatrix/coverage.svg?branch=master
     :target: https://codecov.io/github/sdpython/code_beatrix?branch=master
+
+Annexes
+-------
+
+* :ref:`genindex`
+* :ref:`modindex` (voir aussi :ref:`l-modules`, :ref:`l-classes`, :ref:`l-functions`)
