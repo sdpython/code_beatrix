@@ -48,8 +48,10 @@ def plot_positions(positions, edges=None, ax=None, **options):
                 p1 = posdict[e1]
                 p2 = posdict[e2]
                 if p1 != p2:
-                    dx = ((p2[0] - p1[0]) / abs(p2[0] - p1[0]) * 0.1) if p2[0] != p1[0] else 0.0
-                    dy = ((p2[1] - p1[1]) / abs(p2[1] - p1[1]) * 0.1) if p2[1] != p1[1] else 0.0
+                    d0 = p2[0] - p1[0]
+                    dx = (d0 / abs(d0) * 0.1) if p2[0] != p1[0] else 0.0
+                    d1 = p2[1] - p1[1]
+                    dy = (d1 / abs(d1) * 0.1) if p2[1] != p1[1] else 0.0
                     d = distance(p1, p2)
                     if d < 1.1:
                         color = "y"

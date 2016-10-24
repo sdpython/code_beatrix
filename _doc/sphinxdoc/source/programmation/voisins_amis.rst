@@ -58,4 +58,7 @@ A quoi ça sert ?
 Et si nous réarrangions un orchestre en fonction de l'affinité des instruments ?
 Déjà fait... Je crois que nous pourrions nous servir de cette approche pour trier.
 Tout est déjà dit sur ce sujet mais par extension, le fait de réfléchir à ce problème
-pourrait nous aider à définir ce que voudrait dire trier spatialement.
+pourrait nous aider à définir ce que voudrait dire trier spatialement. Plus concrètement,
+n'avez-vous jamais eu envie de vous retrouver à côté de vos amis dans le train,
+dans l'avion, à l'hôtel ? Cet algorithme pourrait vous aider à trouver 
+une solution qui convient mieux à tout le monde.
