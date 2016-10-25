@@ -73,7 +73,7 @@ D'autres informations sont disponibles via le
 
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     
     remerciements
     getting_started
