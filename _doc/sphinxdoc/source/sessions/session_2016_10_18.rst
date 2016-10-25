@@ -6,7 +6,7 @@
 Algorithmes et dessins - Le Touquet - 18 octobre 2016
 =====================================================
 
-A l'école Saint-Exupéry avec l'association
+A l'école Saint-Exupéry avec
 `Coding & Bricks <http://www.codingandbricks.com/>`_,
 événements organisés dans le cadre de la `CodeWeek <http://www.codeweekfrance.org/>`_,
 quelques photos : 
