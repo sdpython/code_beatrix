@@ -58,6 +58,10 @@ d'avoir trouvé le chemin le plus court...
 .. image:: images/maison_double.png
 
 
+Un problème simple avec la `ville de Seattle <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx/notebooks/city_tour_1.html#problem-definition>`_.
+Les villes en quadrillage sont un peu plus faciles.
+
+
 
 
 Solution

@@ -12,6 +12,7 @@ pour les petits
     :maxdepth: 1
 
     la_poule_a_change
+    le_vin_de_pepe
     
 histoires interactives
 ++++++++++++++++++++++
