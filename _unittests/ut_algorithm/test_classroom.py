@@ -170,5 +170,6 @@ class TestClassRoom(unittest.TestCase):
             assert iter
             assert new_positions
 
+
 if __name__ == "__main__":
     unittest.main()

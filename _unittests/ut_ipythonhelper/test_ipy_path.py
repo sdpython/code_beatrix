@@ -53,5 +53,6 @@ class TestIpyPath(unittest.TestCase):
         if "http://" not in r:
             assert os.path.exists(r)
 
+
 if __name__ == "__main__":
     unittest.main()
