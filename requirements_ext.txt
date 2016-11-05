@@ -1,5 +1,5 @@
+ensae_projects
 pyensae
 pymyinstall
 pymmails
 pyrsslocal
-ensae_projects
