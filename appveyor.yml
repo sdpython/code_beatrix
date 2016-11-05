@@ -24,7 +24,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install psutil"
   - "%PYTHON%\\Scripts\\pip install cloudpickle"
   - "%PYTHON%\\Scripts\\pip install beautifulsoup4 "
-  - "%PYTHON%\\Scripts\\pip install pyquickhelper"
+  - "%PYTHON%\\Scripts\\pip install jyquickhelper pyquickhelper"
   - "%PYTHON%\\Scripts\\pip install cryptography"
   - "%PYTHON%\\Scripts\\pip install pycryptodome"
   - "%PYTHON%\\Scripts\\pip install pymmails"
