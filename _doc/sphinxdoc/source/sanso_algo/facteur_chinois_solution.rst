@@ -30,10 +30,15 @@ Les deux suivantes construisent le menu pour naviguer plus facilement.
     from jyquickhelper import add_notebook_menu
     add_notebook_menu()
     
-Les deux lignes qui suivent insère une image dans la page.
+Les deux lignes qui suivent insèrent une image dans la page.
 
 ::
 
     from pyquickhelper.helpgen import NbImage
     NbImage("7_bridges.png", width="30%")
     
+Les autres fonctions sont décrites dans le module 
+`ensae_projects <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx/index.html>`_ :
+
+* `data_geo_streets <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx//ensae_projects/data/data_geo_streets.html#module-ensae_projects.data.data_geo_streets>`_
+* `city_tour <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx//ensae_projects/challenge/city_tour.html#module-ensae_projects.challenge.city_tour>`_
