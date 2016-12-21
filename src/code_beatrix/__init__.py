@@ -2,6 +2,28 @@
 """
 @file
 @brief Main file
+
+.. faqref::
+    :title: Pourquoi Python?
+
+    `Python <https://www.python.org/>`_
+    est un langage de programmation très répandu aujourd'hui
+    qui fut choisi à l'`ENSAE <http://www.ensae.fr/ensae/fr/>`_ en
+    2005 pour remplacer le `C++ <https://fr.wikipedia.org/wiki/C%2B%2B>`_.
+    Dès la première année, il est apparu que ce nouveau langage permettait
+    aux étudiants de mettre leurs idées plus rapidement en forme.
+    Les opinions ont commencé alors un peu à changer à propos de la programmation.
+    Il est très rare maintenant qu'un étudiant quitte une grande école
+    d'ingénieurs sans programmer.
+    Il a été choisi pour trois raisons. La première est sa syntaxe
+    car il oblige les dévelopeurs à aligner leurs instructions
+    ce qui rend les programmes plus lisibles.
+    La seconde parce que sa `grammaire <https://docs.python.org/3/reference/grammar.html>`_
+    est une des plus courte (voir aussi
+    `The Python Language Reference <https://docs.python.org/3/reference/>`_).
+    Enfin, beaucoup de librairies existantes mais codées en C++ étaient déjà
+    disponibles à l'époque. 10 ans plus tard, le langage est quasi incontournable
+    dès qu'on touche au traitement de données.
 """
 import os
 

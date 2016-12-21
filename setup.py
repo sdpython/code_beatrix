@@ -179,9 +179,9 @@ if is_local():
     r = process_standard_options_for_setup(
         sys.argv, __file__, project_var_name,
         unittest_modules=["pyquickhelper"],
-        additional_notebook_path=["jyquickhelper", "pyquickhelper", "pyensae", 
-            "pyrsslocal", "pymyinstall", "pymmails", "ensae_projects"],
-        requirements=["pyquickhelper", "jyquickhelper",],
+        additional_notebook_path=["jyquickhelper", "pyquickhelper", "pyensae",
+                                  "pyrsslocal", "pymyinstall", "pymmails", "ensae_projects"],
+        requirements=["pyquickhelper", "jyquickhelper", ],
         blog_list=os.path.abspath(os.path.join(
             "src", project_var_name, package_data[project_var_name][0])),
         fLOG=logging_function,
