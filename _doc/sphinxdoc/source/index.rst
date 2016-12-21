@@ -78,9 +78,10 @@ D'autres informations sont disponibles via le
     remerciements
     getting_started
     glossary
-    all_FAQ
+    i_faq
     index_et_autre
-    all_notebooks
+    gyexamples/index
+    gynotebooks/index    
     blog/blogindex
     all_indexes
     all_report
