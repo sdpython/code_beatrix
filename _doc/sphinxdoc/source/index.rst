@@ -78,15 +78,11 @@ D'autres informations sont disponibles via le
     remerciements
     getting_started
     glossary
+    all_notebooks
     i_faq
+    end_index
     index_et_autre
     gyexamples/index
-    gynotebooks/index    
-    blog/blogindex
-    all_indexes
-    all_report
-    blog/index_blog
-    README
     
 
 Pour les plus chevronnés, certains bouts de codes en python 
