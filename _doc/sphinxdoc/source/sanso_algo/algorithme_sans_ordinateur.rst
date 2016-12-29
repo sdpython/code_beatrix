@@ -1,5 +1,4 @@
 
-
 .. _l-algo_sans_ordinateur:
 
 Algorithmes sans ordinateur
@@ -16,7 +15,7 @@ Quelques règles :
 #. On comprend mieux avec un dessin ou des grands gestes.
 #. Il faut savoir être patient.
 
-On pense souvent que les mathématiques sont difficiles sans doute parce 
+On pense souvent que les mathématiques sont difficiles sans doute parce
 qu'on se résume souvent à dire *j'ai compris* ou *je n'ai pas compris*.
 On oublie tout le chemin qu'il faut parcourir pour **imaginer** une solution
 à un problème. J'emploie le terme *imaginer* car, la plupart du temps,
@@ -25,15 +24,13 @@ il existe plein de solutions et déterminer la meilleure n'est pas toujours évi
 Il faut plein d'idées pour en avoir une bonne. On avance plus vite à deux,
 les idées de l'un complètent celles de l'autre.
 
-
-
 Sujets
 ------
 
 .. toctree::
     :maxdepth: 1
     :numbered:
-    
+
     confetti_logn
     tri
     tsp
@@ -49,8 +46,6 @@ Sujets
     facteur_chinois
     dessin_barriere
     enigme
-
-
 
 Indices et solutions
 --------------------
@@ -76,9 +71,6 @@ Indices et solutions
     enigme_solution
     notions
 
-
-
-
 .. _l-biblio_algo:
 
 Bibliographie
@@ -99,6 +91,3 @@ Bibliographie
 
 * `Welcome to the home of rich mathematics! <http://nrich.maths.org/frontpage>`_ (NRICH)
 * `Computer Science Unplugged <http://csunplugged.org/>`_
-
-
-

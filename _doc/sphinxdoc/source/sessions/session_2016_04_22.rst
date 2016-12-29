@@ -1,28 +1,22 @@
 
-
 .. _l-session_2016_04_22:
-
 
 Mathématiques et pâte à modeler - 22 avril 2016
 ===============================================
 
 .. index:: patchwork
 
-Chez `Microsoft France <https://www.microsoft.com/fr-fr/>`_, les deux sessions de deux heures environ ont eu lieu 
+Chez `Microsoft France <https://www.microsoft.com/fr-fr/>`_, les deux sessions de deux heures environ ont eu lieu
 dans le cadre des
 `Colos Digigirlz <http://www.ladn.eu/actualites/microsoft-fait-decouvrir-numerique-aux-adolescentes,article,30488.html>`_
 
 Les problèmes abordés :
-
 
 * :ref:`l-maths_solides`
 * :ref:`l-algo_tri`
 * :ref:`l-prog_parcours_echiquier`
 * :ref:`l-donnes_cantine`
 * :ref:`l-maths_fractales`
-
-
-
 
 Solutions
 ---------
@@ -32,8 +26,6 @@ Solutions
 * :ref:`l-prog_parcours_echiquier_sol`
 * :ref:`l-donnes_cantine_sol`
 * :ref:`l-maths_fractales_sol`
-
-
 
 .. _l-lecture_2302:
 
@@ -55,8 +47,6 @@ Et quelques livres :
 * `Les mathématiciens <http://www.editions-belin.com/ewb_pages/f/fiche-article-les-mathematiciens-6817.php>`_ (livre)
 * `Mathématiques et architectures <http://www.actes-sud.fr/catalogue/actes-sud-beaux-arts/mathematiques-et-architecture>`_, Jane Burry, Mark Burry
 * `Deployable Structures <http://www.laurenceking.com/us/deployable-structures/>`_, Esther Rivas Adrover
-  
-
 
 **Autres pistes**
 

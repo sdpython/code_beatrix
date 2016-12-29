@@ -1,12 +1,10 @@
 
-
 .. index:: démineur, énoncé, énigme, Dunkerque 2015-03-25
 
 .. _l-algo_demineur:
 
 Le démineur
 ===========
-
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 
@@ -29,71 +27,56 @@ Il faut trouver toutes les bombes à partir des nombres indiquées dans les case
 Mais tout d'abord, une partie :
 `démineur <http://demineur.hugames.fr/index.php#level-3>`_.
 
-
 Où sont les bombes et où elles ne sont pas
 ------------------------------------------
 
-
 Sur ces exemples, il faut trouver le plus de bombes et le plus de cases vides possibles.
 
-
-**Q1 :** 
+**Q1 :**
 
 .. image:: demineur_q1.png
 
-**Q2 :** 
+**Q2 :**
 
 .. image:: demineur_q2.png
 
-**Q3 :** 
+**Q3 :**
 
 .. image:: demineur_q3.png
 
-**Q4 :** 
+**Q4 :**
 
 .. image:: demineur_q4.png
 
-
-**Q5 :** 
+**Q5 :**
 
 .. image:: demineur_q5.png
 
-
-**Q6 :** 
+**Q6 :**
 
 .. image:: demineur_q6.png
 
-
-**Q7 :** 
+**Q7 :**
 
 .. image:: demineur_q7.png
 
-
-**Q8 :** 
+**Q8 :**
 
 .. image:: demineur_q8.png
 
-
-**Q9 :** 
+**Q9 :**
 
 .. image:: demineur_q9.png
 
-
-**Q10 :** 
+**Q10 :**
 
 .. image:: demineur_q10.png
-
 
 **Q11 :**  Peut-on conclure ?
 
 .. image:: demineur_q11.png
 
-
 **Q12:** S'il restait 4 bombes à placer, pourrait-on placer les bombes du coin supérieur gauche ?
-
-
-
-
 
 Solution
 --------
@@ -102,11 +85,10 @@ Voir :ref:`l-algo_demineur_sol`.
 
 .. index:: Hermionne, Harry Potter, Harry, Potter, énigme, potion, fiole
 
-
 A quoi ça sert ?
 ----------------
 
-A résoudre l'énigme que Hermionne résoud dans le premier tome d'Harry Potter et que je reproduis ici 
+A résoudre l'énigme que Hermionne résoud dans le premier tome d'Harry Potter et que je reproduis ici
 (source : `L'encyclopédie Harry Potter <http://www.encyclopedie-hp.org/forums/viewtopic.php?t=2430>`_) :
 
     #. Il y a trois fioles de poison, deux fioles de vin d'ortie, une fiole permettant d'avancer et une
@@ -116,7 +98,6 @@ A résoudre l'énigme que Hermionne résoud dans le premier tome d'Harry Potter 
     #. Ni la fiole la plus grande (fiole 6) ni la plus petite (fiole 3) ne contient du poison.
     #. Les contenus des fioles 2 et 6 sont identiques.
 
-
 Lorsqu'on cherche à résoudre une énigme, chaque indice élimine des possibilités.
 Lorsqu'il n'en reste plus qu'une, on a trouvé. La vitesse à laquelle on trouve dépend
 des indices qu'on considère en premier. On cherche toujours à éliminer un grand nombre de possibilités
@@ -124,7 +105,6 @@ le plus tôt possible.
 Pour finir, je citerai *Arthur Conan Doyle* (l'auteur des Sherlock Holmes) :
 
     Lorsque vous avez éliminé l'impossible, ce qui reste, si improbable soit-il, est nécessairement la vérité.
-    
-    
-L'énigme du même style la plus célèbre a été écrite par Einstein : 
+
+L'énigme du même style la plus célèbre a été écrite par Einstein :
 l'`Enigme d'Einstein <http://fr.wikipedia.org/wiki/%C3%89nigme_d%27Einstein>`_.

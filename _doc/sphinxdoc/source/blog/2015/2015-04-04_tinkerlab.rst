@@ -10,5 +10,5 @@
     pour les enfants comme celles décrites par les sites
     `tinkerlab <http://tinkerlab.com/>`_
     ou `the artful parent <http://artfulparent.com/>`_.
-    Je ne pense pas qu'une version française soit disponible 
+    Je ne pense pas qu'une version française soit disponible
     mais l'anglais ne devrait pas être trop difficile à comprendre.

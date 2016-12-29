@@ -8,20 +8,17 @@
 Le dessert de la cantine
 ========================
 
-
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 Voir également :ref:`blog_post_reseaux_soc` car on n'est pas censé
-être sur un réseau social aussi jeune. Les boutons *partage* s'adressent 
+être sur un réseau social aussi jeune. Les boutons *partage* s'adressent
 donc aux parents.
 
 :sharenet:`facebook-twitter-linkedin-20-body`
-
 
 Le jeu se joue à deux : une personne connaît la solution et tente
 de la faire découvrir à l'autre au travers de questions.
 L'enchaînement des questions dépend fortement des réponses.
 Il faudra lire les premières réponses pour comprendre le scénario proposé.
-
 
 Mise en scène
 -------------
@@ -37,8 +34,8 @@ Pourrez-vous l'aider ?
 
 **Q1 :** Que proposez-vous comme moyen de sondage ? (un moyen d'aujourd'hui)
 
-Après le premier sondage, le cuisinier est content. Il y a moins de desserts inachevés 
-dans les assiettes. Les élèves sont contents aussi. 
+Après le premier sondage, le cuisinier est content. Il y a moins de desserts inachevés
+dans les assiettes. Les élèves sont contents aussi.
 
 Pourtant un mois plus tard,
 tout semble se dérègler. Le cuisiner suspecte les parents
@@ -54,12 +51,11 @@ il regarde à nouveau, il y en avait 170.
 
 **Q3 :** Que s'est-il passé à votre avis ? Comment le cuisiner va-t-il s'en servir ?
 
-Le cuisiner est plutôt satisfait. Les desserts choisis par les votes sont de nouveaux populaires. 
-
+Le cuisiner est plutôt satisfait. Les desserts choisis par les votes sont de nouveaux populaires.
 
 Tout le monde est plutôt content sauf un élève qui a été convoqué chez le directeur.
 Il ne comprend pas pourquoi mais il va bientôt le savoir.
-Tout ce qu'il sait est que le directeur n'aime pas trop les élèves qui n'écoutent 
+Tout ce qu'il sait est que le directeur n'aime pas trop les élèves qui n'écoutent
 pas les professeurs.
 
 **Q4 :** A votre avis, pourquoi le directeur convoque-t-il l'élève ? Comment aurait-il pu le savoir ?
@@ -76,14 +72,14 @@ qu'ils préfèreraient déguster.
 
 Mais le directeur a une autre idée en tête.
 Il voudrait utiliser la même solution pour proposer d'autres services aux élèves.
-Cela prend de nouveaux quelques mois et quelques longues discussions mais 
-cela marche plutôtt bien. Les élèves en sont très friands, les parents également. 
+Cela prend de nouveaux quelques mois et quelques longues discussions mais
+cela marche plutôtt bien. Les élèves en sont très friands, les parents également.
 On peut maintenant consulter
 les devoirs donnés par les professeurs. C'est très pratique surtout
 si on a oublié son cahier en classe. Les parents sont très contents aussi car ils
 peuvent consulter ce qui est fait en cours.
 
-Quelques mois plus tard, le directeur a convoqué les parents d'un élève. 
+Quelques mois plus tard, le directeur a convoqué les parents d'un élève.
 Personne ne sait pourquoi mais il est souvent fatigué.
 
 **Q6 :** Auriez-vous une petite histoire à raconter à ce sujet ?
@@ -93,9 +89,7 @@ Personne ne sait pourquoi mais il est souvent fatigué.
 **Q8 :** A votre avis, la précédente question ne vous enjoint-elle pas à répondre
 de façon manichéenne ? Aurait-il le droit de faire autre chose ?
 
-
 Solution
 --------
 
 Voir :ref:`l-donnes_cantine_sol`.
-

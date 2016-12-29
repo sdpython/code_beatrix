@@ -2,7 +2,6 @@
 Index
 =====
 
-
 .. toctree::
     :hidden:
     :maxdepth: 1
@@ -16,4 +15,3 @@ Index
     all_report
     blog/index_blog
     README
-    

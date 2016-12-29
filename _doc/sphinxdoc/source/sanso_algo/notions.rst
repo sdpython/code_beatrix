@@ -1,13 +1,10 @@
 
-
 .. index:: notion, concept
 
 .. _l-algo_sans_ordinateur_notions:
 
-
 Notions, Concepts
 =================
-
 
 **Stratégies**
 
@@ -15,38 +12,35 @@ Il n'existe pas toujours de solution parfaite ou de solution parfaite
 qui puisse être mise en oeuvre en un temps raisonnable.
 Une solution est souvent un assemblage de briques.
 Certains reviennent plus souvent que d'autres comme
-trier les éléments, procéder par 
+trier les éléments, procéder par
 `récurrence <http://fr.wikipedia.org/wiki/D%C3%A9finition_par_r%C3%A9currence>`_
 (ajouter de nouveaux éléments un par un en adaptant la meilleure solution).
 
 On a utilise parfois un langage guerrier quand on parle d'un problème.
-Comment l'attaquer ? Il faut une stratégie pour le résoudre, 
+Comment l'attaquer ? Il faut une stratégie pour le résoudre,
 un plan de bataille. Il faut le couper en petits bouts
 et chercher une solution pour chacun de ses bouts.
 
-Les informaticiens aiment aussi beaucoup le terme 
+Les informaticiens aiment aussi beaucoup le terme
 `heuristique <http://fr.wikipedia.org/wiki/Heuristique_%28math%C3%A9matiques%29>`_.
 C'est une sorte de règle dont on sait qu'elle marche bien pour un problème donné.
 
-
 **Propriété locale - globale**
 
-
 C'est une façon de découper une problème. Une solution à
-un problème n'est pas toujours facile à comprendre dans son 
+un problème n'est pas toujours facile à comprendre dans son
 ensemble mais elle est plus facile à interpréter localement.
 
 Lorsqu'un ensemble d'objets est trié, cela veut dire que si on prendre
 deux éléments rangés côte à côte, ils sont toujours dans le bon ordre.
 Une idée pour trier des éléments est de faire respecter cette propriété locale :
-et d'inverser deux éléments proches qui sont mal rangés. 
+et d'inverser deux éléments proches qui sont mal rangés.
 C'est l'idée du `tri à bulles <http://fr.wikipedia.org/wiki/Tri_%C3%A0_bulles>`_
 qui permet effectivement d'obtenir un tableau trié.
 
 **Algorithme optimal**
 
-
-On parle d'*algorithme optimal* pour un problème données 
+On parle d'*algorithme optimal* pour un problème données
 lorsque celui-ci produit une solution et qu'il n'est pas
 possible de produire cette même solution plus rapidement.
 
@@ -59,8 +53,6 @@ l'algorithme optimal. On ne sait pas toujours dire si un algorithme
 est optimal. Dans la grande majorité, on fabrique des *algorithmes
 rapides* qui produisent des *solutions approchées* mais tout-à-fait satsifaisante.
 
-
-    
 **Concept clés d'un algorithme**
 
 * **La séquence** - on effectue des tâches les unes à la suite des autres.
@@ -76,7 +68,6 @@ rapides* qui produisent des *solutions approchées* mais tout-à-fait satsifaisa
   précisément mais on veur toujours avoir un ordre de grandeur :
   si mon problème est dix fois plus grand, l'algorithme
   sera combien sera combien de fois plus lent ?
-  
 
 Par exemple, le tri le plus rapide est en :math:`O(n \log n)`
 où :math:`n` est le nombre d'éléments à trier.
@@ -89,9 +80,6 @@ Donc, pour trier :math:`n=100` éléments, il faut environ
 d'éléments, il faut : :math:`1000 \log(1000) = 3000`.
 Trier 1000 éléments est 15 fois plus lent que trier 100 éléments.
 
-
 **Vocabulaire**
 
 Voir :ref:`l-glossary`.
-
-

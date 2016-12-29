@@ -1,7 +1,5 @@
 
-
 .. _l-session_2016_10_18:
-
 
 Algorithmes et dessins - Le Touquet - 18 octobre 2016
 =====================================================
@@ -9,13 +7,12 @@ Algorithmes et dessins - Le Touquet - 18 octobre 2016
 A l'école Saint-Exupéry avec
 `Coding & Bricks <http://www.codingandbricks.com/>`_,
 événements organisés dans le cadre de la `CodeWeek <http://www.codeweekfrance.org/>`_,
-quelques photos : 
+quelques photos :
 `Best of Jours 2-4 : Bordeaux, Troyes, Le Touquet, Vannes, Paris... <http://blog.codeweekfrance.org/best-of-jour-2-4-bordeaux-troyes-le-touquet-vannes-paris-2/>`_.
 
 .. index:: patchwork
 
 Les problèmes abordés :
-
 
 * :ref:`l-algo_facteur_chinois`
 * :ref:`l-algo_dessin_barriere`
@@ -25,7 +22,6 @@ Les problèmes abordés :
 Une histoire :
 
 * :ref:`l-histoire_telephone`
-
 
 Solutions
 ---------
@@ -40,10 +36,7 @@ Solutions
 Livres, Bibliographie
 ---------------------
 
-
 * `Mathématiques <http://www.unitheque.com/Livre/place_des_victoires/Les_mathematiques-97902.html>`_ de Bertram Maurer
-  
-
 
 **Autres pistes**
 

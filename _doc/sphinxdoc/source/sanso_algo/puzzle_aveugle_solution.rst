@@ -3,10 +3,8 @@
 
 .. _l-algo_puzzle_aveugle_sol:
 
-
 Puzzle en aveugle (solution)
 ============================
-
 
 Il est très difficile de faire un puzzle en aveugle
 puisqu'on ne peut plus s'aider du motif qu'il représente.

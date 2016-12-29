@@ -3,7 +3,5 @@
 
 .. _l-algo_coloriage_sol:
 
-
 Pluie et coloriage
 ==================
-

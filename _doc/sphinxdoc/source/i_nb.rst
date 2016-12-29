@@ -3,6 +3,3 @@
 
 Commandes Magiques
 ==================
-
-
-

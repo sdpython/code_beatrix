@@ -1,11 +1,10 @@
 
-
 .. blogpost::
     :title: Marbles brain, des jeux pour réfléchir
     :keywords: Marbles brain, jeux de sociétés, jeux de réflexion
     :date: 2016-01-12
     :categories: magasins, jeux de réflexion
-    
+
     J'ai découvert `Marbles brain <http://www.marblesthebrainstore.com/>`_ dans un centre commercial,
     un magasin enrobé de verre qui m'a happé pendant une heure à Seattle.
     Le vendeur connaissait visiblement tous les jeux qu'il vendait et il a pris un peu de
@@ -17,4 +16,3 @@
     J'ai craqué pour celui-ci `Logic Dots <http://www.marblesthebrainstore.com/logic-dots.htm>`_
     qui m'a rappelé l'énigme des potions dans Harry Potter et pour un autre du même style
     avec des petits miroirs pour guider une lumière.
-    

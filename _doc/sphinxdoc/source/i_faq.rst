@@ -6,11 +6,10 @@ FAQ
 
 .. contents::
     :local:
-    
+
 Questions
 +++++++++
 
 .. faqreflist::
     :sort: title
     :contents:
-    

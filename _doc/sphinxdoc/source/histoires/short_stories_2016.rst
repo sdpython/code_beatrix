@@ -1,5 +1,4 @@
 
-
 .. index:: histoire, short stories
 
 .. _l-short-stories:
@@ -11,7 +10,7 @@ Darth Hornet (le frelon noir)
 +++++++++++++++++++++++++++++
 
 Les parents de Michel se lamentaient de voir leur fils passer de nombreuses journées devant son ordinateur.
-Il jouait inlassablement au même jeu *La guerre des étoiles*. L'écran avait le don de se 
+Il jouait inlassablement au même jeu *La guerre des étoiles*. L'écran avait le don de se
 métamorphoser en trou noir dès qu'on essayait de commencer une conversation.
 Les mots disparaissait comme par magie et rien ne semblait en sortir.
 
@@ -49,7 +48,7 @@ Petit blanc dans la conversation et comme la répartie ne venait pas, Michel pou
 - Encore vrai.
 - Mais qu'ils restaient postés à l'entrée pour les attraper.
 - Toujours vrai.
-- Alors voilà, si on mettait une petite caméra à l'entrée 
+- Alors voilà, si on mettait une petite caméra à l'entrée
   sur un `RasberryPI <https://www.raspberrypi.org/>`_
   et puis on pourrait monter...
 - Attends, je ne comprends pas très bien tout ce que tu me racontes.
@@ -64,7 +63,7 @@ Son fils avait un grand sourire.
 Evidemment répéta le père pas très sûr vouloir de mettre une ruche en danger.
 Michel passa la fin de l'après-midi dans sa chambre. Jusque là, il n'y
 avait rien d'inhabituel. Il en sortit pour l'apéritif avec un curieux engin
-doté d'une caméra, de deux pistolets à eau, d'une télécommande. 
+doté d'une caméra, de deux pistolets à eau, d'une télécommande.
 Le père et le fils partirent fixer le tout sous une ruche.
 Quand ils revinrent, Michel repartit dans sa chambre comme
 d'habitude.
@@ -76,7 +75,7 @@ Sur l'écran, on pouvait voir un frelon.
 - Génial !
 - Attends tu n'as encore rien vu.
 
-Et son fils sortit sa manette de jeu et commença à viser l'animal avec 
+Et son fils sortit sa manette de jeu et commença à viser l'animal avec
 ses deux pistolets qui bougeaient en même temps que la caméra.
 Son père repartit sur la pointe des pieds.
 
@@ -99,7 +98,7 @@ qui déboula en grande trombe.
 - Mais retournes-y, qu'attends-tu ? Va dégommer le suivant.
 - Je ne peux pas, il n'y a plus d'eau. Faut que j'y retourne, il faut
   que j'en fabrique pour toutes les ruches. C'est génial !
-  
+
 *Une semaine plus tard.*
 
 Michel avait l'air songeur devant sa salade de tomates.
@@ -115,15 +114,3 @@ Michel relève la tête sur cette dernière réplique et commence à manger à t
 - Tu es génial papa. Je vais programmer l'ordinateur pour qu'il tire automatiquement sur les frelons.
 - C'est possible ça ?
 - Absolument !
-
-
-
-  
-
-
-
-
-
-
-
-

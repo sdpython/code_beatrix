@@ -1,5 +1,4 @@
 
-
 .. index:: solution, tri, scratch
 
 .. _l-prog_tri_sol:
@@ -7,15 +6,12 @@
 Réaliser un tri sous Scratch (solution)
 =======================================
 
-
-A partir de 10 ans. 
-
-
+A partir de 10 ans.
 
 Trier un tableau sous scratch
 +++++++++++++++++++++++++++++
 
-La solution peut être trouvée dans le code du premier personnage du projet 
+La solution peut être trouvée dans le code du premier personnage du projet
 :download:`bubble_sort.sb2 <../../../../src/code_beatrix/scratchs/example_tri/bubble_sort.sb2>`.
 
 .. image:: tri_bulle_sol.png
@@ -27,7 +23,7 @@ quand deux éléments doivent être échangés, soit deux parties.
 
 .. image:: tri_bulle_p1.png
 
-La première envoie des messages aux personnages pour leur dire 
+La première envoie des messages aux personnages pour leur dire
 de prendre les positions correspondant à celle du tableau une fois
 celui-ci modifié.
 

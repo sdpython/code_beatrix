@@ -1,5 +1,4 @@
 
-
 .. index:: sac-à-dos, solution, poids, algorithme, glouton
 
 .. _l-algo_sacados_sol:
@@ -7,28 +6,23 @@
 Sac-à-dos (solution)
 ====================
 
-
-
-Il n'existe pas d'algorithme rapide qui permette de trouver la solution optimale 
+Il n'existe pas d'algorithme rapide qui permette de trouver la solution optimale
 - la meilleure solution. Mais on peut essayer de trouver une façon rapide
 de constuire une solution approchée avec un peu d'astuce.
 
-
-**Q1 :** 
+**Q1 :**
 
 La pièce la plus difficile à placer dans le sac-à-dos où le coffre d'une voiture
 est toujours la plus grosse. C'est pourquoi on commence toujours par elle.
 Et puis cela permet de remplir le sac-à-dos rapidement.
 
+**Q2 :**
 
-**Q2 :** 
-
-La seconde pièce la plus difficle à placer est la seconde pièce la plus lourde. 
+La seconde pièce la plus difficle à placer est la seconde pièce la plus lourde.
 Une fois qu'on a placé le premier objet, c'est comme ci on repartait de zéro avec un
 sac-à-dos plus petit et une pièce en moins.
 
-
-**Q3 :** 
+**Q3 :**
 
 Voici la liste d'instructions proposées :
 
@@ -40,7 +34,7 @@ Voici la liste d'instructions proposées :
 
 C'est l'algorithme `glouton <http://fr.wikipedia.org/wiki/Probl%C3%A8me_du_sac_%C3%A0_dos#Algorithme_glouton>`_
 qui est décrit ici. Il en existe plein d'autres pour trouver une solution approchée
-à ce problème mais celui-ci est très court, on l'essaye toujours en premier. 
+à ce problème mais celui-ci est très court, on l'essaye toujours en premier.
 
 Ensuite, il est vrai, quand on veut vraiment emmener quelque chose en vacances,
 on fait tout pour que ça rentre dans le coffre. On fait, on défait mais on enlève rarement
@@ -50,5 +44,3 @@ Liens
 -----
 
 * `Le problème du sac à dos <https://interstices.info/jcms/c_19213/le-probleme-du-sac-a-dos>`_ (interstices.info)
-
-

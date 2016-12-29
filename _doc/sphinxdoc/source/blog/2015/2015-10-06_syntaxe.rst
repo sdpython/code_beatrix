@@ -1,26 +1,21 @@
 
-
 .. blogpost::
     :title: Syntaxe et grammaire en programmation
     :keywords: enseignement, cours, ENSAE, syntaxe
     :date: 2015-10-06
     :categories: cours
-    
+
     Les élèves me disent parfois que l'ordinateur devrait pouvoir
     comprendre quand on oublie quelques éléments de syntaxe,
     en l'occurence celle du langage Python.
     Effectivement, plus rien ne marche lorsqu'on oublie un ``:`` à la fin d'une ligne ::
-    
+
         s = 0
         for i in range(10)
             s += i**2
-            
+
     Dans ce cas là, il est vrai qu'on se doute qu'il manque
     un symbol ``:``. La grammaire et l'orthographe sont aussi très
     strictes, même si on peut comprendre un texte sans accents,
-    sa lecture est désagréable et il faut parfois un peu de contexte 
+    sa lecture est désagréable et il faut parfois un peu de contexte
     pour éviter les ambiguïtés.
-    
-    
-    
-    

@@ -10,11 +10,9 @@ Arduino et programmation
 
 Projet de long terme. En attendant :
 
-* `Introduction à l'Arduino ! <https://www.youtube.com/watch?v=A3YGFTn7JCA&index=4&list=PLUbqgn02i-lglH1I33NWuwy3NX6D8hj0h>`_, 
+* `Introduction à l'Arduino ! <https://www.youtube.com/watch?v=A3YGFTn7JCA&index=4&list=PLUbqgn02i-lglH1I33NWuwy3NX6D8hj0h>`_,
   de `Experiment Boy <https://www.youtube.com/user/experimentboyTV>`_
-* `Le blog d'Eskimon <http://eskimon.fr/>`_ 
-
-
+* `Le blog d'Eskimon <http://eskimon.fr/>`_
 
 Bibliographie
 -------------

@@ -1,11 +1,10 @@
 
-
 .. blogpost::
     :title: Salon Culture et Jeux Mathématiques
     :keywords: salon
     :date: 2016-05-25
     :categories: mathématiques
-    
+
     `Cédric Villani <http://www.franceinter.fr/emission-le-79-cedric-villani-la-france-ne-pourra-pas-exister-sans-une-recherche-de-qualite>`_
     était ce matin sur France Inter pour parler entre autres du budget de la recherche.
     Parmi les sujets abordés, celui du `salon des jeux mathématiques <http://www.cijm.org/salon/accueil-salon>`_
@@ -13,8 +12,8 @@
     au `programme des conférences <http://www.cijm.org/images/documents/308/progsalonL.pdf>`_.
     Si l'informatique est encore peu enseignée à l'école, l'histoire des sciences ne l'est pratiquement pas.
     Et c'est dommage car elle est au coeur des révolutions industrielles et des guerres.
-    La cryptographie aurait écourté la seconde guerre mondiale d'un an et demi (lire 
-    `Simon Singh <https://en.wikipedia.org/wiki/The_Code_Book>`_). Et quoi de mieux que d'apprendre 
+    La cryptographie aurait écourté la seconde guerre mondiale d'un an et demi (lire
+    `Simon Singh <https://en.wikipedia.org/wiki/The_Code_Book>`_). Et quoi de mieux que d'apprendre
     comment les inventions ont changé le monde pour anticiper les changements de demain.
     Si vous n'avez pas la chance d'assister à la conférence de Mireille Schumacher,
     vous pouvez lire une de ses présentations :

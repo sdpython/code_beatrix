@@ -1,30 +1,26 @@
 
-
 .. blogpost::
     :title: Atelier coding octobre 2015 au college du - Coding & Bricks
     :keywords: lego
-    :date: 2016-07-07   
+    :date: 2016-07-07
     :categories: programmation
-    
+
     En octobre dernier, je participais à une table ronde à Dunkerque :
     `Big data : quels enjeux et quels risques ? <http://www.urbislemag.fr/big-data-quels-enjeux-et-quels-risques--billet-156-urbis-le-mag.html>`_.
     tandis que le matin, je redécouvrais les legos qu'on peut programmer.
-    
+
     .. raw:: html
-    
+
         <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/cug8A29HnUU" frameborder="0">
         </iframe>
         </p>
-    
+
     Deux groupes d'enfants ont suivi l'atelier chacun pendant un peu plus d'une heure.
     J'ai dû expliquer ce qu'est un langage de programmation et j'ai
     comme souvent choisi deux directions différentes et il n'y en a qu'une
     qui a retenu leur attention.
-    
-    On apprend plusieurs langues à l'école pour 
+
+    On apprend plusieurs langues à l'école pour
     échanger avec plus de monde. Et les machines
     ont aussi leur langage. Il faut être polyglotte.
-    
-    
-    

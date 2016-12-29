@@ -6,19 +6,16 @@ Données, Numérique, Big Data
 
 A partir de 7-8 ans (mais ce n'est qu'une indication).
 
-
-
 Sujets
 ------
 
 .. toctree::
     :maxdepth: 1
     :numbered:
-    
+
     dessert_cantine
     correcteur_orthographe
     abeilles_drone
-
 
 Indices et solutions
 --------------------
@@ -26,20 +23,17 @@ Indices et solutions
 .. toctree::
     :maxdepth: 1
     :numbered:
-    
+
     dessert_cantine_solution
     correcteur_orthographe_solution
     abeilles_drone_solution
-    
-
-
 
 .. _l-biblio_donnes:
 
 Bibliographie
 -------------
 
-* `La vie algorithmique, critique de la raison numérique <http://www.lechappee.org/la-vie-algorithmique>`_, 
+* `La vie algorithmique, critique de la raison numérique <http://www.lechappee.org/la-vie-algorithmique>`_,
   Eric Sadin, Editions l'Echappée. Il faut lire l'ouverture qui raconte une journée type telle
   que vous pourriez la connaître d'ici quelques dizaines d'années si la plupart de vos données
   étaient utilisées pour anticipez vos besoins.

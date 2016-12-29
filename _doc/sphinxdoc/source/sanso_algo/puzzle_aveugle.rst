@@ -1,21 +1,17 @@
 
-
 .. index:: puzzle, numérotation, aveugle
 
 .. _l-algo_puzzle_aveugle:
 
-
 Puzzle en aveugle
 =================
 
-
 A partir de 4-5 ans (mais ce n'est qu'une indication).
 
-Tout le monde sait faire des puzzles. 
+Tout le monde sait faire des puzzles.
 Beaucoup suggèrent qu'il faut commencer par les coins, puis les bords,
 puis aller petit à petit vers le centre. Et si tout ceci
 n'était que de fausses indications...
-
 
 Mise en scène
 -------------
@@ -30,7 +26,7 @@ lui donner des indications. Il ne peut pas mettre la main dans la rectangle
 
 **indication 1**
 
-Un excentrique et plutôt riche a décidé d'acheter un château en France pour le 
+Un excentrique et plutôt riche a décidé d'acheter un château en France pour le
 ramener chez lui en bateau et le remonter à l'identique. Que lui conseilleriez-vous ?
 
 **indication 2**
@@ -42,16 +38,12 @@ A quoi ça sert ?
 
 .. index:: numérotation
 
-
 Démonter des meubles et les remonter, construire un lego,
 toutes ces tâches requiert un plan.
 Dans toute cette histoire, le puzzle sert de diversion
 mais l'idée de construire ce plan quand il n'existe pas.
 
-
-
 Solution
 --------
 
 Voir :ref:`l-algo_puzzle_aveugle_sol`.
-

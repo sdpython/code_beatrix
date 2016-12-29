@@ -1,11 +1,10 @@
 
-
 .. _l-programmation:
 
 Découvrir la programmation
 ==========================
 
-A partir de 10 ans. 
+A partir de 10 ans.
 Ce n'est qu'une indication, pour ma part, j'ai commencé à 11 ans
 sur un `Amstrad CPC 464 <http://fr.wikipedia.org/wiki/Amstrad_CPC_464>`_.
 J'installais des jeux depuis des `cassettes <http://fr.wikipedia.org/wiki/Cassette_audio>`_.
@@ -37,33 +36,27 @@ Si on n'est pas encore au collège, le langage `Scratch <https://scratch.mit.edu
 aide un peu à représenter visuellement un algorithme. L'objectif est principalement
 pédagogique. On ne pourra pas vraiment écrire de grands programmes.
 
-
 Sujets
 ------
 
-
 .. toctree::
     :maxdepth: 1
-    
+
     parcours_echiquier
     dessin_pyramide
     tri_scratch
     voisins_amis
-
 
 Indices et solutions
 --------------------
 
 .. toctree::
     :maxdepth: 1
-    
+
     parcours_echiquier_correction
     dessin_pyramide_correction
     tri_scratch_correction
     voisins_amis_correction
-    
-
-
 
 .. _l-biblio_prog:
 
@@ -75,20 +68,17 @@ Bibliographie
   avec le langage Python. Le livre est gratuit en ligne.
 * `1, 2, 3, Codez ! <http://www.fondation-lamap.org/fr/123codez>`_
 
-
 Lorsqu'on programme, il ne faut pas hésiter à chercher les réponses
 sur Internet avec un moteur de recherche. On tombe sur des sites,
-des forums où on trouve le plus souvent 
+des forums où on trouve le plus souvent
 pas mal de réponses à pas mal de questions.
 Et très souvent, c'est en anglais excepté quelques sites.
-
 
 * `Wiki Débrouillard <http://www.wikidebrouillard.org/index.php/Accueil>`_
 
 Langage de programmation conseillé :
 
 * `Python <https://www.python.org/>`_
-
 
 Langages de programmation en français ou visuels : leur but est uniquement pédagogique.
 Personne ne les utilise pour écrire des logiciels. En contre partie, le début
@@ -99,7 +89,7 @@ Il faut passer à Python.
 
 * `Scratch <https://scratch.mit.edu/>`_ (pour le télécharger `Scratch 2 Offline Editor <http://scratch.mit.edu/scratch2download/>`_)
 * `Linotte <http://langagelinotte.free.fr/wordpress/>`_
-* `AlgoBox <http://www.xm1math.net/algobox/>`_, 
+* `AlgoBox <http://www.xm1math.net/algobox/>`_,
   voir `Algorithmique en classe de première avec AlgoBox <http://www.xm1math.net/algobox/algobook/algoboxbook1.pdf>`_
   même si en classe de première, ce devrait être Python et pas un langage français.
 * `Tangara <http://tangara.colombbus.org/>`_

@@ -1,29 +1,21 @@
 
-
 .. _l-session_2016_02_22:
-
 
 Sans ordinateur - 22 février et 4 mars 2016
 ===========================================
 
 .. index:: patchwork
 
-Chez `Microsoft France <https://www.microsoft.com/fr-fr/>`_, les deux sessions d'une heure et demi environ ont eu lieu 
+Chez `Microsoft France <https://www.microsoft.com/fr-fr/>`_, les deux sessions d'une heure et demi environ ont eu lieu
 dans le cadre des
 `Colos Digigirlz <http://www.ladn.eu/actualites/microsoft-fait-decouvrir-numerique-aux-adolescentes,article,30488.html>`_
 Les problèmes abordés :
-
-
-
 
 * :ref:`l-algo_tsp`
 * :ref:`l-prog_parcours_echiquier`
 * :ref:`l-algo_tri`
 * :ref:`l-abeilles_drones`
 * :ref:`l-algo_dichotomie`
-
-
-
 
 Solutions
 ---------
@@ -37,27 +29,23 @@ Solutions
 Pour aller plus loin
 --------------------
 
-Vous pouvez par exemple réfléchir au problème suivant : 
+Vous pouvez par exemple réfléchir au problème suivant :
 :ref:`le plus court circuit et le moins de poids à transporter <l-algo_tsp_plus_loin>`.
-
 
 .. _l-lecture_2302:
 
 Livres, Bibliographie
 ---------------------
 
-
 * `Pourquoi j'ai mangé mon père <http://fr.wikipedia.org/wiki/Pourquoi_j%27ai_mang%C3%A9_mon_p%C3%A8re>`_, Row Lewis,
   quand le progrès bouleverse l'ordre des choses, que fait-on ?
 * `Le théorème du Perroquet <http://fr.wikipedia.org/wiki/Le_Th%C3%A9or%C3%A8me_du_Perroquet>`_, Denis Guedj
 * `Les carnets de Cerise <http://www.soleilprod.com/serie/carnets-de-cerise-cahiers.html>`_, Cerise est une petite fille très curieuse
   qui aime comprendre. Les intrigues sont magnifiques et la bande dessinée est très bien dessinée.
-* `Le Prince des Nuages <http://www.leprincedesnuages.fr/>`_, et si la surface de la terre était invivable ? 
+* `Le Prince des Nuages <http://www.leprincedesnuages.fr/>`_, et si la surface de la terre était invivable ?
   Le livre contient des encarts sur le fonctionnement des nuages. Le livre se lit très vite.
 * `Pico Bogue <http://www.dargaud.com/bd/Pico-Bogue/Pico-Bogue>`_, Pico a toujours tendance à faire l'inverse
   de ce que vous lui proposez de faire mais il explique toujours pourquoi il a eu raison de tout comprendre de travers.
-
-
 
 **Autres pistes**
 
