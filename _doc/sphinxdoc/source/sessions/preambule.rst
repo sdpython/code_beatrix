@@ -1,4 +1,3 @@
-﻿
 
 On pense souvent que les mathématiques sont difficiles sans doute parce
 qu'on se résume souvent à dire *j'ai compris* ou *je n'ai pas compris*.
