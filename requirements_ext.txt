@@ -2,4 +2,5 @@ ensae_projects
 pyensae
 pymyinstall
 pymmails
+pyquickhelper
 pyrsslocal

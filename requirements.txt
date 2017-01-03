@@ -5,11 +5,8 @@ easydev
 folium
 jyquickhelper
 keyring
-keyrings.alt
 pycodestyle
 pycryptodomex
-pyensae
-pyquickhelper
 pyshp
 qgrid
 tutormagic
