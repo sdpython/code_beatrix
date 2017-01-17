@@ -37,7 +37,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install ensae_projects"
   - "%PYTHON%\\Scripts\\pip install pygame"
   - "%PYTHON%\\Scripts\\pymy_install3 opencv_python"
-  - "%PYTHON%\\Scripts\\pymy_install3 yaml"
+  - "%PYTHON%\\Scripts\\pymy_install3 yaml pyproj"
   - "%PYTHON%\\Scripts\\pip install tutormagic"
   - "%PYTHON%\\Scripts\\pip install pycodestyle"
 
