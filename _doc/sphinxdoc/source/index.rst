@@ -95,7 +95,7 @@ Contacts
     :target: https://travis-ci.org/sdpython/code_beatrix
     :alt: Build status
 
-.. image:: https://ci.appveyor.com/api/projects/status/jf1l4choe2ty22jr?svg=true
+.. image:: https://ci.appveyor.com/api/projects/status/g7065ubabg7xxpm6?svg=true
     :target: https://ci.appveyor.com/project/sdpython/code-beatrix
     :alt: Build Status Windows
 
