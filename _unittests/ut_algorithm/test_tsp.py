@@ -38,6 +38,7 @@ except ImportError:
     import pyquickhelper as skip_
 
 from pyquickhelper.loghelper import fLOG
+from pyquickhelper.pycode import fix_tkinter_issues_virtualenv, get_temp_folder
 from src.code_beatrix.algorithm import voyageur_commerce_simple, distance_circuit, plot_circuit
 
 
@@ -71,10 +72,18 @@ class TestTsp (unittest.TestCase):
         fLOG(d0, d1)
         assert d1 < d0
 
+        fix_tkinter_issues_virtualenv(fLOG=fLOG)
+        import matplotlib.pyplot as plt
+        fig, ax = plt.subplots(1, 1)
+        plot_circuit(newp, ax=ax)
+
+        temp = get_temp_folder(__file__, "temp_voyageur_commerce_simple")
+        img = os.path.join(temp, "tsp.png")
+        fig.savefig(img)
+        assert os.path.exists(img)
         if __name__ == "__main__":
-            import matplotlib.pyplot as plt
-            plot_circuit(newp)
             plt.show()
+        plt.close("all")
 
 
 if __name__ == "__main__":

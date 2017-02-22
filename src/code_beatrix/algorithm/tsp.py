@@ -4,7 +4,6 @@
 """
 
 import random
-import matplotlib.pyplot as plt
 
 
 def distance_point(p1, p2):
@@ -121,6 +120,7 @@ def plot_circuit(points, ax=None, **kwargs):
     @return                 ax
     """
     if ax is None:
+        import matplotlib.pyplot as plt
         f, ax = plt.subplots(**kwargs)
 
     ax.plot([_[0] for _ in points], [_[1] for _ in points], "o")
