@@ -1,0 +1,12 @@
+
+.. blogpost::
+    :title: Ressources sur Raspberrypi
+    :keywords: raspberrypi
+    :date: 2017-04-17
+    :categories: programmation, iot
+
+    Quelques resources que je redécouvre pour apprendre à programmer
+    des petits robots qu'on construit soit même :
+    `raspberrypi.org <https://www.raspberrypi.org/resources/>`_
+    ou encore `adruino <https://www.arduino.cc/>`_.
+    
