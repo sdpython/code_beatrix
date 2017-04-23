@@ -9,4 +9,3 @@
     des petits robots qu'on construit soit même :
     `raspberrypi.org <https://www.raspberrypi.org/resources/>`_
     ou encore `adruino <https://www.arduino.cc/>`_.
-    

@@ -1,0 +1,17 @@
+
+.. _l-session_2017_04_24:
+
+Histoire de machine learning - 24 avril 2017
+============================================
+
+Chez Microsoft.
+
+De nombreuses personnes qui ont déjà quitté l'école
+y reviennent pour apprendre la programmation et
+d'autres outils pour traiter les données. Cette session
+d'une heure est articulée autour trois sujets.
+
+* `Mokadi <>`_ : mon bot à moi
+* La fractale : comment mesurer la longueur du périmètre de la France ?
+* Un arbre de décision : comment construire un
+  automate qui diagnostique les maladies ?
