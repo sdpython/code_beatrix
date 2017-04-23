@@ -11,7 +11,7 @@ y reviennent pour apprendre la programmation et
 d'autres outils pour traiter les données. Cette session
 d'une heure est articulée autour trois sujets.
 
-* `Mokadi <>`_ : mon bot à moi
+* `Mokadi <http://www.xavierdupre.fr/app/jupytalk/helpsphinx/2017/devoxx2017.html>`_ : mon bot à moi
 * La fractale : comment mesurer la longueur du périmètre de la France ?
 * Un arbre de décision : comment construire un
   automate qui diagnostique les maladies ?
