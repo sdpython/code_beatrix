@@ -6,12 +6,16 @@ Histoire de machine learning - 24 avril 2017
 
 Chez Microsoft.
 
-De nombreuses personnes qui ont déjà quitté l'école
-y reviennent pour apprendre la programmation et
-d'autres outils pour traiter les données. Cette session
-d'une heure est articulée autour trois sujets.
+Non l'intelligence artificielle n'est pas magique !
+Il suffit de dessiner.
 
 * `Mokadi <http://www.xavierdupre.fr/app/jupytalk/helpsphinx/2017/devoxx2017.html>`_ : mon bot à moi
+* Digression autour de :ref:`l-prog_dessin_pyramide`
+  avec pour objectif de mettre algorithme en mots.
+* :ref:`l-donnes_cantine`
+
+Et les histoires auxquelles j'ai pensé mais que je n'ai pas racontées.
+
 * La fractale : comment mesurer la longueur du périmètre de la France ?
 * Un arbre de décision : comment construire un
   automate qui diagnostique les maladies ?
