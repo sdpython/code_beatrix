@@ -1,0 +1,25 @@
+
+.. blogpost::
+    :title: Blocky, puzzle de programmation
+    :keywords: blocky
+    :date: 2017-05-04
+    :categories: programmation
+
+    Le site `Blocky <https://blockly-games.appspot.com/?lang=fr>`_
+    propose différent pour découvrir la programmation.
+    La façon de programmer s'inspire de
+    `Scratch <https://scratch.mit.edu/>`_.
+    La copie d'écran ci-dessous est extraite du site.
+    Il faut diriger l'oiseau avec un programme
+    de telle sorte qu'il passe prendre le ver
+    et le rapport au nid.
+
+    .. image:: blocky.png
+        :width: 500
+
+    Quand j'étais petit enfin pas si petit que ça,
+    je jouais à ce jeu
+    `The Incredible Machine <https://fr.wikipedia.org/wiki/The_Incredible_Machine>`_
+    qu'on peut voir dans cette vidéo
+    `The Incredible Machine Gameplay <https://www.youtube.com/watch?v=dl1LvFDgCio>`_.
+    C'était plus amusant que de la programmation.
