@@ -1,0 +1,54 @@
+
+.. _l-session_2017_05_15:
+
+Langages - 15 mai 2017
+======================
+
+Chez Microsoft.
+
+La coque d'un bateau
+++++++++++++++++++++
+
+La perspective a été inventé entre 1420 et 1450 à Florence
+(`L'invention de la perspective <https://www.franceculture.fr/histoire/histoires-de-peintures-l-invention-de-la-perspective>`_).
+Dessiner un paysage avec de la profondeur n'est pas quelque chose qui était innée.
+Il a fallu définir ses règles, son langage au point que certains
+peintres comme `Joan Miro <https://fr.wikipedia.org/wiki/Joan_Mir%C3%B3>`_
+jouent avec cette représentation désormais usuelle.
+
+.. image:: https://en.wikipedia.org/wiki/The_Farm_(Mir%C3%B3)#/media/File:TheFarmMiro21to22.jpg
+    :width: 200
+
+Pourquoi les bateaux flottent ? Comment savoir si un bateau va flotter
+avant de le construire ? C'est l'occasion de faire un petit voyage du dessin, aux mathématiques
+puis aux simulations informatiques. Un bateau flotte-t-il toujours par gros temps ?
+
+* `La poussée d'Archimède <https://fr.wikipedia.org/wiki/Pouss%C3%A9e_d%27Archim%C3%A8de>`_
+* `Équilibre du navire <https://fr.wikipedia.org/wiki/%C3%89quilibre_d%27un_navire_sous_voiles>`_
+* `Sea Bubbles <https://www.franceinter.fr/emissions/et-si-demain/et-si-demain-03-janvier-2017>`_
+  (taxi parisiens)
+
+.. image:: https://upload.wikimedia.org/wikipedia/commons/f/ff/Les_centres_d%27un_voilier_en_Gite.JPG
+    :width: 200
+
+Les épidémies et leur propagation
++++++++++++++++++++++++++++++++++
+
+Imaginons que nous soyons en file indienne, qu'une personne à un bout est malade
+et contagieuse. Si la probabilité de transmettre la maladie est du 80%, quelle
+est la probabilité d'être malade ? Et si une personne est vaccinée au milieu de
+cette chaîne ? Savez-vous ce que c'est une probabilité ?
+
+En file indienne, c'est simple. Que se passe-t-il dans une grille si une personne
+est malade dans un coin ?
+
+De fil en fil en aiguille, nous serions bien capables d'arriver jusqu'aux réseaux sociaux.
+
+`Evolution d’un voisinage, d’une population <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/specials/voisinage.html>`_.
+
+Un arbre de décision
+++++++++++++++++++++
+
+Comment construire un automate qui diagnostique les maladies ?
+
+* `Arbre de décision <https://fr.wikipedia.org/wiki/Arbre_de_d%C3%A9cision>`_
