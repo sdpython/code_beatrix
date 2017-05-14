@@ -40,6 +40,10 @@ package_data = {project_var_name + ".algorithm.data": ["*.txt"],
                 project_var_name + ".scratch.example_pyramide": ["*.sb2"],
                 project_var_name + ".scratch.example_chute": ["*.sb2"],
                 project_var_name + ".jsscripts.snap": ["*.*"],
+                project_var_name + ".jsscripts.snap.Backgrounds": ["*.*"],
+                project_var_name + ".jsscripts.snap.Costumes": ["*.*"],
+                project_var_name + ".jsscripts.snap.libraries": ["*.*"],
+                project_var_name + ".jsscripts.snap.Sounds": ["*.*"],
                 project_var_name: ["rss_blog_list.xml"],
                 }
 

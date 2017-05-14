@@ -7,7 +7,7 @@ import os
 from pyquickhelper.filehelper import synchronize_folder
 
 
-def copy_jstool2ipython(tool):
+def copy_jstool2notebook(tool):
     """
     copy a tool to ipython folder
 

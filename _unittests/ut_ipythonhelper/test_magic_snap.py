@@ -41,6 +41,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from src.code_beatrix.ipythonhelper.magic_scratch import MagicScratch
+from src.code_beatrix.jsscripts.nbsnap import RenderSnap
 
 
 class TestMagicSnap(unittest.TestCase):
@@ -58,7 +59,17 @@ class TestMagicSnap(unittest.TestCase):
         mg.add_context({"this": this})
         res = mg.snap(cmd)
         fLOG(res)
-        assert res is not None
+        self.assertTrue(res)
+
+    def test_snap(self):
+        fLOG(
+            __file__,
+            self._testMethodName,
+            OutputPrint=__name__ == "__main__")
+
+        obj = RenderSnap()
+        s = obj._repr_html_()
+        self.assertTrue(s)
 
 
 if __name__ == "__main__":
