@@ -36,12 +36,17 @@ except ImportError:
         sys.path.append(path)
     import pyquickhelper as skip_
 
+
 from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder
+from pyquickhelper.pycode import get_temp_folder, add_missing_development_version
 from src.code_beatrix.automation.notebook_test_helper import ls_notebooks, execute_notebooks, clean_function_notebook, unittest_raise_exception_notebook
 
 
 class TestNotebookAlgorithm (unittest.TestCase):
+
+    def setUp(self):
+        add_missing_development_version(["pymyinstall", "pyensae", "pymmails", "ensae_projects",
+                                         "jyquickhelper"], __file__, hide=True)
 
     def test_notebook_algorithm(self):
         fLOG(

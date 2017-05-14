@@ -260,3 +260,5 @@ auto_*.db3
 /src/code_beatrix/jsscripts/Snapin8r/tests/Topsy Turvy- the game
 /src/code_beatrix/jsscripts/Snapin8r/tests/Snap test
 /src/code_beatrix/jsscripts/Snapin8r/tests
+_unittests/ut_documentation/test_notebook_algorithm.py.err
+_unittests/run_unittests.py.out

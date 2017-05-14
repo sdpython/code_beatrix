@@ -49,7 +49,13 @@ def get_additional_paths():
     @return             list of paths
     """
     import pyquickhelper
+    import jyquickhelper
+    import ensae_projects
+    import pyensae
     addpath = [os.path.dirname(pyquickhelper.__file__),
+               os.path.dirname(jyquickhelper.__file__),
+               os.path.dirname(ensae_projects.__file__),
+               os.path.dirname(pyensae.__file__),
                os.path.join(os.path.abspath(os.path.dirname(__file__)), ".."),
                ]
     addpath = [os.path.normpath(os.path.join(_, "..")) for _ in addpath]
@@ -105,12 +111,8 @@ def clean_function_notebook(code):
     return code
 
 
-def execute_notebooks(folder,
-                      notebooks,
-                      filter,
-                      clean_function=None,
-                      fLOG=noLOG,
-                      deepfLOG=noLOG):
+def execute_notebooks(folder, notebooks, filter, clean_function=None,
+                      fLOG=noLOG, deepfLOG=noLOG):
     """
     execute a list of notebooks
 

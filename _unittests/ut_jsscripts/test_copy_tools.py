@@ -39,7 +39,7 @@ except ImportError:
 
 
 from pyquickhelper.loghelper import fLOG
-from src.code_beatrix.jsscripts import copy_jstool2ipython
+from src.code_beatrix.jsscripts import copy_jstool2notebook
 
 
 class TestCopyTools(unittest.TestCase):
@@ -55,7 +55,7 @@ class TestCopyTools(unittest.TestCase):
                 "travis, unable to test TestCopyTools.test_copy_tools")
             return
 
-        res = copy_jstool2ipython("snap")
+        res = copy_jstool2notebook("snap")
         assert isinstance(res, list)
 
 
