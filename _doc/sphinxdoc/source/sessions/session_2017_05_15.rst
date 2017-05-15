@@ -13,10 +13,10 @@ La perspective a été inventé entre 1420 et 1450 à Florence
 (`L'invention de la perspective <https://www.franceculture.fr/histoire/histoires-de-peintures-l-invention-de-la-perspective>`_).
 Dessiner un paysage avec de la profondeur n'est pas quelque chose qui était innée.
 Il a fallu définir ses règles, son langage au point que certains
-peintres comme `Joan Miro <https://fr.wikipedia.org/wiki/Joan_Mir%C3%B3>`_
+peintres comme `Joan Miró <https://fr.wikipedia.org/wiki/Joan_Mir%C3%B3>`_
 jouent avec cette représentation désormais usuelle.
 
-.. image:: https://en.wikipedia.org/wiki/The_Farm_(Mir%C3%B3)#/media/File:TheFarmMiro21to22.jpg
+.. image:: https://upload.wikimedia.org/wikipedia/en/3/33/TheFarmMiro21to22.jpg
     :width: 200
 
 Pourquoi les bateaux flottent ? Comment savoir si un bateau va flotter
