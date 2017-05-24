@@ -38,5 +38,5 @@ Les deux lignes qui suivent insèrent une image dans la page.
 Les autres fonctions sont décrites dans le module
 `ensae_projects <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx/index.html>`_ :
 
-* `data_geo_streets <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx//ensae_projects/data/data_geo_streets.html#module-ensae_projects.data.data_geo_streets>`_
+* `data_geo_streets <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx//ensae_projects/data/data_geo_streets.html#module-ensae_projects.datainc.data_geo_streets>`_
 * `city_tour <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx//ensae_projects/challenge/city_tour.html#module-ensae_projects.challenge.city_tour>`_
