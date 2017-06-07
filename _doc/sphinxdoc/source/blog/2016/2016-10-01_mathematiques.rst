@@ -16,7 +16,7 @@
     `Mathématiques <http://www.unitheque.com/Livre/place_des_victoires/Les_mathematiques-97902.html>`_
     de Bertram Maurer.
 
-    .. image:: http://t1.gstatic.com/images?q=tbn:ANd9GcRvI0HKGpx53CCcNUQwPKSuXzkoxbD2CV4ArhmOJy10MT7CIOeTGRjPskE
+    .. image:: imagemath.jpg
 
     Les livres de maths font très peu référence à l'histoire des théorèmes et des algorithmes
     qu'ils exposent. C'est le cas des deux livres suivant qui parlent d'algorithmes mais pas de leur histoire.
