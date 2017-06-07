@@ -48,12 +48,12 @@ la théorie des fractales et celle-ci dit (en l'adaptant) :
 Pour s'en convaincre, on peut construire une figure célèbre en forme d'étoile :
 le `flocon de Koch <https://fr.wikipedia.org/wiki/Flocon_de_Koch>`_.
 
-.. image:: https://fr.wikipedia.org/wiki/Flocon_de_Koch#/media/File:Von_Koch_curve.gif
+.. image:: koch.png
     :alt: image extraite de Wikipédia
 
 On part d'un triangle équilatéral dont on coupe chaque côté en trois.
 
-.. image:: https://fr.wikipedia.org/wiki/Flocon_de_Koch#/media/File:Droite_Koch.png
+.. image:: https://upload.wikimedia.org/wikipedia/commons/0/04/Droite_Koch.png
     :alt: image extraite de Wikipédia
 
 A chaque tour, on multiplie la longueur par 4/3.
