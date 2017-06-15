@@ -40,7 +40,7 @@ except ImportError:
 from pyquickhelper.loghelper import fLOG, CustomLog
 from pyquickhelper.pycode import get_temp_folder, fix_tkinter_issues_virtualenv
 from src.code_beatrix.algorithm.data import load_prenoms_w
-from src.code_beatrix.algorithm.classroom import random_positions, plot_positions, optimize_positions, find_best_positions_greedy, measure_positions
+from src.code_beatrix.algorithm.classroom import random_positions, plot_positions, find_best_positions_greedy, measure_positions
 
 
 class TestClassRoom(unittest.TestCase):
@@ -79,11 +79,11 @@ class TestClassRoom(unittest.TestCase):
         clog("plotting positions")
         fLOG("plotting positions")
         plot_positions(positions, ax=ax)
-        assert ax is not None
+        self.assertTrue(ax is not None)
         clog("savefig")
         img = os.path.join(temp, "img.png")
         fig.savefig(img)
-        assert os.path.exists(img)
+        self.assertTrue(os.path.exists(img))
         clog("noshow")
         if __name__ == "__main__":
             fig.show()
@@ -129,7 +129,7 @@ class TestClassRoom(unittest.TestCase):
         res = find_best_positions_greedy(positions, edges_dict, names[0])
         d0 = measure_positions(positions, edges)
         d0_ = measure_positions(positions, edges_dict)
-        assert abs(d0 - d0_) < 1e-5
+        self.assertTrue(abs(d0 - d0_) < 1e-5)
         delta, pos = res[0]
 
         rev = {v: k for k, v in positions.items()}
@@ -143,47 +143,8 @@ class TestClassRoom(unittest.TestCase):
 
         d1 = measure_positions(positions, edges)
         fLOG("d1", d1)
-        assert c != positions
-        assert abs(d1 - d0 - delta) < 1e-5
-
-    def test_optimize_position(self):
-        fLOG(
-            __file__,
-            self._testMethodName,
-            OutputPrint=__name__ == "__main__")
-
-        positions = random_positions(24)
-        names = list(name for name, x, y in positions)
-        names.sort()
-        edges = [(names[0], names[1]), (names[0], names[2]), (names[0], names[3]),
-                 (names[3], names[4]), (names[3], names[5]), (names[0], names[6])]
-
-        if __name__ == "__main__":
-            temp = get_temp_folder(__file__, "temp_optimization")
-            new_positions, iter = optimize_positions(
-                positions, edges, fLOG=fLOG, max_iter=20, plot_folder=temp)
-            for i in iter:
-                fLOG(i)
-            positions = [(k, ) + v for k, v in new_positions.items()]
-            fix_tkinter_issues_virtualenv()
-            import matplotlib.pyplot as plt
-            fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(8, 8))
-            plot_positions(positions, edges=edges, ax=ax)
-            assert ax is not None
-            img = os.path.join(temp, "img.png")
-            fig.savefig(img)
-            assert os.path.exists(img)
-            if __name__ == "__main__":
-                fig.show()
-            plt.close('all')
-            fLOG("end")
-        else:
-            new_positions, iter = optimize_positions(
-                positions, edges, fLOG=fLOG, max_iter=20)
-            for i in iter:
-                fLOG(i)
-            assert iter
-            assert new_positions
+        self.assertTrue(c != positions)
+        self.assertTrue(abs(d1 - d0 - delta) < 1e-5)
 
 
 if __name__ == "__main__":
