@@ -39,20 +39,10 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG, CustomLog
 from pyquickhelper.pycode import get_temp_folder, fix_tkinter_issues_virtualenv
-from src.code_beatrix.algorithm.data import load_prenoms_w
 from src.code_beatrix.algorithm.classroom import random_positions, plot_positions
 
 
-class TestClassRoomShort(unittest.TestCase):
-
-    def test_names(self):
-        fLOG(
-            __file__,
-            self._testMethodName,
-            OutputPrint=__name__ == "__main__")
-
-        names = load_prenoms_w()
-        self.assertEqual(len(names), 50)
+class TestClassRoomShort1(unittest.TestCase):
 
     def test_random_position(self):
         fLOG(
