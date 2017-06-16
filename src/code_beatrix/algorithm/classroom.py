@@ -20,10 +20,10 @@ def plot_positions(positions, edges=None, ax=None, **options):
 
     First position: 0
     """
+    import matplotlib.pyplot as plt
     from matplotlib.patches import Rectangle
 
     if ax is None:
-        import matplotlib.pyplot as plt
         _, ax = plt.subplots(
             nrows=1, ncols=1, figsize=options.get('figsize', (5, 5)))
 
