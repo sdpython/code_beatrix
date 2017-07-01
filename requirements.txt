@@ -5,10 +5,12 @@ easydev
 folium
 jyquickhelper
 keyring
+mpld3
 pycodestyle
 pycryptodomex
 pyshp
 qgrid
+shapely
 tutormagic
 xgboost
 xlrd
