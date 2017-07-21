@@ -1,0 +1,11 @@
+
+.. blogpost::
+    :title: Un petit tour en vélo dans les langes
+    :keywords: cariole
+    :date: 2017-07-21
+    :categories: vélo
+
+    `Bordeeaux Mimizan à vélo <https://fr.mappy.com/itineraire/bordeaux/mimizan#/3/M2/TItinerary/IFRBordeaux%2033000-33800|TOMimizan-Plage%2C%2040200%20Mimizan|MOvelo|GP1.402|GTpetrol|TS1/N151.12061,6.11309,-0.9045,44.51878/Z8/>`_
+    
+    .. image:: velo.png
+    
