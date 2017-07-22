@@ -1,11 +1,51 @@
 
 .. blogpost::
-    :title: Un petit tour en vélo dans les langes
-    :keywords: cariole
+    :title: Un tour en vélo avec Géovélo
+    :keywords: cariole, planifieur de route
     :date: 2017-07-21
     :categories: vélo
 
-    `Bordeeaux Mimizan à vélo <https://fr.mappy.com/itineraire/bordeaux/mimizan#/3/M2/TItinerary/IFRBordeaux%2033000-33800|TOMimizan-Plage%2C%2040200%20Mimizan|MOvelo|GP1.402|GTpetrol|TS1/N151.12061,6.11309,-0.9045,44.51878/Z8/>`_
-    
+    Sur un coup de tête, j'ai décidé que j'allais terminer mon voyage à vélo
+    et relier Mimizan depuis Bordeaux soit une petite centaine de kilomètres
+    dans un pays perclus de pistes cyclables.
+    Après avoir acheté l'essentiel,
+    un vélo, une cariole pour y poser ma valise et quelques chambres à air de rechange,
+    je me suis mis en quête d'un site pour y tracer mon itinéaire.
+    *Bing*, *Google Maps*, *Michelin*, *Mappy*. Tout y est passé et c'est le dernier qui l'a emporté.
+    *Bing* ne propose pas d'itinéaire vélo, *Google Maps* ne me disait pas si j'étais sur une piste
+    cyclable ou non et se révélait d'un usage compliqué, *Michelin* non plus même si le trajet
+    proposé est un des plus efficace, celui de Mappy est le plus proche de que j'ai fait et
+    il indique clairement les portions cyclables :
+    `Bordeaux Mimizan à vélo <https://fr.mappy.com/itineraire/bordeaux/mimizan#/3/M2/TItinerary/IFRBordeaux%2033000-33800|TOMimizan-Plage%2C%2040200%20Mimizan|MOvelo|GP1.402|GTpetrol|TS1/N151.12061,6.11309,-0.9045,44.51878/Z8/>`_.
+    Je me permets de reproduire leur carte et le parcours suivi :
+
     .. image:: velo.png
-    
+
+    Les pistes cyclables sont conçues comme des balades et le voyage à vélo non bouclé
+    reste l'incongru. Chaque ville recense le réseau de son domaine sans le relier
+    aux autres et il reste difficile d'organiser un voyage sans éviter des portions de route
+    où le cycliste agace les conducteurs de voitures. L'office du tourisme distribue
+    des cartes qui ne vont pas plus loin que les 20 kilomètres autour de la ville.
+    Parti du centre ville de Bordeaux à 9h15, je suis arrivé à destination
+    un peu avant 17h. et je me suis gavé de pêches tout au long du chemin.
+    Ma cariole portait ma valise et tout ce que j'ai croisé attiraillés de la sorte
+    s'en servait de la même manière. Le parcours est encore trop dangereux pour se permettre
+    d'y emmener un enfant. La route D46 est un calvère du genre. J'étais un des rares
+    cyclistes égarés. On s'y fait doubler
+    toutes les 30 secondes. Près de l'arrivée, on hésite entre une voie cyclable à l'issue
+    incertaine - rien n'y est indiqué encore moins le kilométrage - et la départementale
+    encombrée mais qui rassure. On va aussi plus vite sur son goudron que sur celui
+    de la piste cyclable.
+
+    Je passe le petit vieux qui a ouvert la fenêtre de sa voiture pour me hurler
+    dessus car j'étais sur sa route et non la piste cyclable attenante. Je suis retourné
+    sur Mappy le lendemain pour m'apercevoir que le chemin proposé venait en fait du site
+    `Geovelo <http://www.geovelo.fr/la-rochelle/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints=44.837789,-0.57918%7C44.212862,-1.293683>`_.
+    C'est de loin l'itinéraire le plus pertinent. Il ne manque plus que les marchands de pêche
+    sur le parcours quand on est à court de carburant.
+
+    Je n'ai fait finalement que du 15 à l'heure. Quelle déception après m'être fait
+    flashé de nombreuses fois à 24 mais je me suis arrêté tellement de fois
+    pour consulter la carte sur mon téléphone. Je ne peux plus rien faire sans lui.
+    C'est peut-être pour ça que les routes ne sont plus fléchées. Plus besoin quand le téléphone
+    bip au moindre texto et changement de route.
