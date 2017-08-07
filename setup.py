@@ -211,6 +211,7 @@ if not r:
         version='%s%s' % (sversion, subversion),
         author='Xavier Dupré',
         author_email='xavier.dupre@gmail.com',
+        license="MIT",
         url="http://lesenfantscodaient.fr/",
         download_url="https://github.com/sdpython/code_beatrix/",
         description=DESCRIPTION,
