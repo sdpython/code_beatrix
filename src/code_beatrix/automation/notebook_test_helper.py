@@ -142,5 +142,9 @@ def execute_notebooks(folder, notebooks, filter, clean_function=None,
     kernel_name = None if "travis" in sys.executable else install_python_kernel_for_unittest(
         "code_beatrix")
     addpaths = get_additional_paths()
+    if filter:
+        notebooks = [_ for i, _ in enumerate(notebooks) if filter(i, _)]
+    if len(notebooks) == 0:
+        raise ValueError("Empty list of notebooks.")
     return execute_notebook_list(
         folder, notebooks, fLOG=fLOG, valid=valid_cell, additional_path=addpaths, kernel_name=kernel_name)
