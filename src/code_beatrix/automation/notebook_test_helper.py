@@ -7,7 +7,7 @@ import os
 import sys
 from pyquickhelper.loghelper import noLOG
 from pyquickhelper.ipythonhelper.notebook_helper import install_python_kernel_for_unittest
-from pyquickhelper.ipythonhelper import run_notebook
+from pyquickhelper.ipythonhelper import execute_notebook_list
 
 
 def ls_notebooks(subfolder):
@@ -141,40 +141,6 @@ def execute_notebooks(folder, notebooks, filter, clean_function=None,
 
     kernel_name = None if "travis" in sys.executable else install_python_kernel_for_unittest(
         "code_beatrix")
-    addpath = get_additional_paths()
-    results = {}
-    for i, note in enumerate(notebooks):
-        if filter(i, note):
-            fLOG("******", i, os.path.split(note)[-1])
-            outfile = os.path.join(folder, "out_" + os.path.split(note)[-1])
-            try:
-                out = run_notebook(note, working_dir=folder, outfilename=outfile,
-                                   additional_path=addpath,
-                                   valid=valid_cell,
-                                   clean_function=clean_function,
-                                   fLOG=deepfLOG,
-                                   kernel_name=kernel_name
-                                   )
-                if not os.path.exists(outfile):
-                    raise FileNotFoundError(outfile)
-                results[note] = (True, out)
-            except Exception as e:
-                results[note] = (False, e)
-    return results
-
-
-def unittest_raise_exception_notebook(res, fLOG):
-    """
-    same code for all unit tests
-
-    @param      res     output of @see fn execute_notebooks
-    """
-    assert len(res) > 0
-    fails = [(os.path.split(k)[-1], ) + v
-             for k, v in sorted(res.items()) if not v[0]]
-    for f in fails:
-        fLOG(f)
-    if len(fails) > 0:
-        raise fails[0][-1]
-    for k, v in sorted(res.items()):
-        fLOG("final", os.path.split(k)[-1], v[0], v[1])
+    addpaths = get_additional_paths()
+    return execute_notebook_list(
+        folder, notebooks, fLOG=fLOG, valid=valid_cell, additional_path=addpaths, kernel_name=kernel_name)

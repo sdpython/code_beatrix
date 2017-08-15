@@ -7,7 +7,6 @@ import sys
 import os
 import unittest
 
-
 try:
     import src
 except ImportError:
@@ -37,6 +36,7 @@ except ImportError:
         sys.path.append(path)
     import pyquickhelper as skip_
 
+
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, add_missing_development_version
 from pyquickhelper.ipythonhelper import execute_notebook_list_finalize_ut
@@ -44,19 +44,19 @@ from src.code_beatrix.automation.notebook_test_helper import ls_notebooks, execu
 import src.code_beatrix
 
 
-class TestNotebookExample (unittest.TestCase):
+class TestNotebookJavascript(unittest.TestCase):
 
     def setUp(self):
-        add_missing_development_version(
-            ["pyensae", "jyquickhelper"], __file__)
+        add_missing_development_version(["pymyinstall", "pyensae", "pymmails", "ensae_projects",
+                                         "jyquickhelper"], __file__, hide=True)
 
-    def test_notebook_example(self):
+    def test_notebook_javascript(self):
         fLOG(
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-        temp = get_temp_folder(__file__, "temp_exemples")
-        keepnote = ls_notebooks("exemples")
+        temp = get_temp_folder(__file__, "temp_javascript")
+        keepnote = ls_notebooks("javascript")
         self.assertTrue(len(keepnote) > 0)
         res = execute_notebooks(temp, keepnote,
                                 lambda i, n: "deviner" not in n,

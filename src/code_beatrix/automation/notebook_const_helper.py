@@ -8,7 +8,7 @@ when running a notebook.
 
 def voyageur_de_commerce_points():
     """
-    default value for the notebook ``voyageur_de_commerce``
+    Default values for the notebook :ref:`voyageurdecommercerst`.
     """
     return [(533.61669921875, -201.39999389648438),
             (451.6166687011719, -201.39999389648438),

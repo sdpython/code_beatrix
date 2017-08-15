@@ -39,7 +39,9 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, add_missing_development_version
-from src.code_beatrix.automation.notebook_test_helper import ls_notebooks, execute_notebooks, clean_function_notebook, unittest_raise_exception_notebook
+from pyquickhelper.ipythonhelper import execute_notebook_list_finalize_ut
+from src.code_beatrix.automation.notebook_test_helper import ls_notebooks, execute_notebooks, clean_function_notebook
+import src.code_beatrix
 
 
 class TestNotebookAlgorithm (unittest.TestCase):
@@ -55,12 +57,13 @@ class TestNotebookAlgorithm (unittest.TestCase):
             OutputPrint=__name__ == "__main__")
         temp = get_temp_folder(__file__, "temp_algorithm")
         keepnote = ls_notebooks("algorithmes")
-        assert len(keepnote) > 0
+        self.assertTrue(len(keepnote) > 0)
         res = execute_notebooks(temp, keepnote,
                                 lambda i, n: "deviner" not in n,
                                 fLOG=fLOG,
                                 clean_function=clean_function_notebook)
-        unittest_raise_exception_notebook(res, fLOG)
+        execute_notebook_list_finalize_ut(
+            res, fLOG=fLOG, dump=src.code_beatrix)
 
 
 if __name__ == "__main__":

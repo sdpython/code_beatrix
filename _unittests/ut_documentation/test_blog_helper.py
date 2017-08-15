@@ -58,9 +58,9 @@ class TestBlogHelper(unittest.TestCase):
                             "source", "blog", "2015", "2015-04-04_tinkerlab.rst")
         p = BlogPost(file)
         fLOG(p.title)
-        assert len(p.title) > 0
-        assert p.date == "2015-04-04"
-        assert isinstance(p.Fields, dict)
+        self.assertTrue(len(p.title) > 0)
+        self.assertEqual(p.date, "2015-04-04")
+        self.assertTrue(isinstance(p.Fields, dict))
 
     def test_post_list(self):
         fLOG(
@@ -73,21 +73,21 @@ class TestBlogHelper(unittest.TestCase):
         path = os.path.abspath(os.path.split(__file__)[0])
         fold = os.path.join(
             path, "..", "..", "_doc", "sphinxdoc", "source", "blog")
-        assert os.path.exists(fold)
+        self.assertTrue(os.path.exists(fold))
         out = get_temp_folder(__file__, "temp_post_list")
         p = BlogPostList(fold)
         cats = p.get_categories()
         fLOG(cats)
         months = p.get_months()
         fLOG(months)
-        assert len(p) > 0
-        assert len(cats) > 0
-        assert len(months) > 0
+        self.assertTrue(len(p) > 0)
+        self.assertTrue(len(cats) > 0)
+        self.assertTrue(len(months) > 0)
 
         res = p.write_aggregated(out)
-        assert len(res) >= 4
+        self.assertTrue(len(res) >= 4)
         for r in res:
-            assert os.path.exists(r)
+            self.assertTrue(os.path.exists(r))
 
 
 if __name__ == "__main__":
