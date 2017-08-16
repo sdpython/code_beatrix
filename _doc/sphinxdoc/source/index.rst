@@ -110,6 +110,11 @@ Contacts
 .. image:: https://codecov.io/github/sdpython/code_beatrix/coverage.svg?branch=master
     :target: https://codecov.io/github/sdpython/code_beatrix?branch=master
 
+.. image:: nbcov.png
+    :target: http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/all_notebooks_coverage.html
+    :alt: Notebook Coverage        
+
+
 Annexes
 -------
 
