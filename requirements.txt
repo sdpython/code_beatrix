@@ -1,16 +1,18 @@
 antlr4-python3-runtime
 autopep8
 babel!=2.0
+coverage
 blockdiag
 folium
 jyquickhelper
 mpld3
 pycodestyle>=2.0.0
+pyquickhelper
 pyshp
 qgrid
-shapely
-tutormagic
 semantic_version
+shapely
+
 sphinx-gallery
 sphinxcontrib-images
 sphinxcontrib-imagesvg
@@ -19,5 +21,6 @@ sphinxjp.themes.basicstrap
 sphinxjp.themes.revealjs
 sphinxjp.themes.sphinxjp
 tqdm
+tutormagic
 unify
 wheel
