@@ -13,6 +13,7 @@ pandas>=0.20.0
 pillow
 pyproj
 pyzmq
+setuptools>=36.0.0
 scikit-learn
 seaborn
 Sphinx
