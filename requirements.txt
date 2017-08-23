@@ -8,6 +8,7 @@ jyquickhelper
 mpld3
 pycodestyle>=2.0.0
 pyensae
+pymmails
 pymyinstall
 pyquickhelper
 pyshp
