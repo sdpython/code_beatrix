@@ -11,8 +11,8 @@ pyquickhelper
 pyshp
 qgrid
 semantic_version
+setuptools>=36.0.0
 shapely
-
 sphinx-gallery
 sphinxcontrib-images
 sphinxcontrib-imagesvg
