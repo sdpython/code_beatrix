@@ -115,8 +115,7 @@ Contacts
 
 .. image:: nbcov.png
     :target: http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/all_notebooks_coverage.html
-    :alt: Notebook Coverage        
-
+    :alt: Notebook Coverage
 
 Annexes
 -------
