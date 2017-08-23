@@ -96,6 +96,9 @@ Contacts
     :target: https://ci.appveyor.com/project/sdpython/code-beatrix
     :alt: Build Status Windows
 
+.. image:: https://circleci.com/gh/sdpython/code_beatrix/tree/master.svg?style=svg
+    :target: https://circleci.com/gh/sdpython/code_beatrix/tree/master
+
 .. image:: https://badge.fury.io/py/code_beatrix.svg
     :target: http://badge.fury.io/py/code_beatrix
 
