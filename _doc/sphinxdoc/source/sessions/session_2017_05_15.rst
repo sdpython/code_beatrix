@@ -28,8 +28,9 @@ puis aux simulations informatiques. Un bateau flotte-t-il toujours par gros temp
 * `Sea Bubbles <https://www.franceinter.fr/emissions/et-si-demain/et-si-demain-03-janvier-2017>`_
   (taxi parisiens)
 
-.. image:: https://upload.wikimedia.org/wikipedia/commons/f/ff/Les_centres_d%27un_voilier_en_Gite.JPG
+.. image:: Les_centres_dun_voilier_en_Gite.jpg
     :width: 200
+    alt: Source: https://upload.wikimedia.org/wikipedia/commons/f/ff/Les_centres_d%27un_voilier_en_Gite.JPG
 
 Les épidémies et leur propagation
 +++++++++++++++++++++++++++++++++

@@ -55,7 +55,7 @@ C'est la distribution de la loi normale qui correspond plus ou moins à la distr
 des tailles dans une population ou celle des billes donnée par la
 `machine de Galton <http://therese.eveilleau.pagesperso-orange.fr/pages/truc_mat/textes/galton.htm>`_.
 
-.. image:: Glaton_Box.png
+.. image:: Galton_Box.png
     :width: 300
     :alt: Source: http://upload.wikimedia.org/wikipedia/commons/7/78/Galton_Box.svg
 
