@@ -73,9 +73,9 @@ Dans ce problème, on se retrouve dans une situation ou on ne peut pas
 colorier de la même couleur deux noeuds du graphe ou deux personnes reliées par un fil.
 On ne peut pas colorier deux voisins de la même couleur. Cette situation
 est plus fréquente qu'on ne le croit pas et particulièrement
-lorsqu'il faut colorier une carte
+lorsqu'il faut colorier une carte.
 
-.. image:: https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/France_maximale.svg/220px-France_maximale.svg.png
+.. image:: images/france_dep.png
 
 *source : `wikipedia <https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais>`_
 

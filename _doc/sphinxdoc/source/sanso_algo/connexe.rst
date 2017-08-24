@@ -15,7 +15,8 @@ Facebook est un graphe : les noeuds sont les pofils, les arcs sont les connexion
 Un chemin est une suite d'un ou plusieurs arcs qui relient deux noeuds. On les représente
 parfois sous cette forme assez schématique :
 
-.. image:: https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Chromatically_equivalent_graphs.svg/220px-Chromatically_equivalent_graphs.svg.png
+.. image:: images/220px-Chromatically_equivalent_graphs.png
+    :alt: Source: https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Chromatically_equivalent_graphs.svg/220px-Chromatically_equivalent_graphs.svg.png
 
 A partir de là, on peut définir ce que sont les
 `composantes connexes <https://fr.wikipedia.org/wiki/Graphe_connexe>`_ dans un graphe.

@@ -47,15 +47,17 @@ ou encore de la découvrir dans une formule :
 
 Elle correspond à une courbe très célèbre en forme de cloche :
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/0/01/Gauss_reduite.svg
+.. image:: Gauss_reduite.png
     :width: 300
+    :alt: Source: https://upload.wikimedia.org/wikipedia/commons/0/01/Gauss_reduite.svg
 
 C'est la distribution de la loi normale qui correspond plus ou moins à la distribution
 des tailles dans une population ou celle des billes donnée par la
 `machine de Galton <http://therese.eveilleau.pagesperso-orange.fr/pages/truc_mat/textes/galton.htm>`_.
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/7/78/Galton_Box.svg
+.. image:: Glaton_Box.png
     :width: 300
+    :alt: Source: http://upload.wikimedia.org/wikipedia/commons/7/78/Galton_Box.svg
 
 .. index:: pi
 
@@ -66,8 +68,9 @@ de décrire des choses abstraites. La formule ci-dessus définit une courbe. La 
 :math:`f(z_0)=\lim_{\infty} z_n` où la suite la suite vérifie :math:`z_{n+1} = z_n^2 + c`
 définit `l'ensemble de Julia <http://fr.wikipedia.org/wiki/Ensemble_de_Julia>`_ :
 
-.. image:: http://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Julia_%28Fractal%29.png/640px-Julia_%28Fractal%29.png
+.. image:: Julia_Fractal.png
     :width: 300
+    :alt: Source: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Julia_%28Fractal%29.png/640px-Julia_%28Fractal%29.png
 
 L'ensemble de Julia est une fractale, concept dont on se sert pour
 décrire la forme d'un chou ou celle des côtes Bretonnes mais aussi réfléchir sur

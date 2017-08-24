@@ -88,34 +88,36 @@ Contacts
 
 .. [#asj1] `Steve Jobs was a Low-Tech Parent <http://www.nytimes.com/2014/09/11/fashion/steve-jobs-apple-was-a-low-tech-parent.html?_r=0>`_, New-York Times, 11/09/2014
 
-.. image:: https://travis-ci.org/sdpython/code_beatrix.svg?branch=master
-    :target: https://travis-ci.org/sdpython/code_beatrix
-    :alt: Build status
+.. only:: html
 
-.. image:: https://ci.appveyor.com/api/projects/status/g7065ubabg7xxpm6?svg=true
-    :target: https://ci.appveyor.com/project/sdpython/code-beatrix
-    :alt: Build Status Windows
+    .. image:: https://travis-ci.org/sdpython/code_beatrix.svg?branch=master
+        :target: https://travis-ci.org/sdpython/code_beatrix
+        :alt: Build status
 
-.. image:: https://circleci.com/gh/sdpython/code_beatrix/tree/master.svg?style=svg
-    :target: https://circleci.com/gh/sdpython/code_beatrix/tree/master
+    .. image:: https://ci.appveyor.com/api/projects/status/g7065ubabg7xxpm6?svg=true
+        :target: https://ci.appveyor.com/project/sdpython/code-beatrix
+        :alt: Build Status Windows
 
-.. image:: https://badge.fury.io/py/code_beatrix.svg
-    :target: http://badge.fury.io/py/code_beatrix
+    .. image:: https://circleci.com/gh/sdpython/code_beatrix/tree/master.svg?style=svg
+        :target: https://circleci.com/gh/sdpython/code_beatrix/tree/master
 
-.. image:: http://img.shields.io/github/issues/sdpython/code_beatrix.png
-    :alt: GitHub Issues
-    :target: https://github.com/sdpython/code_beatrix/issues
+    .. image:: https://badge.fury.io/py/code_beatrix.svg
+        :target: http://badge.fury.io/py/code_beatrix
 
-.. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :alt: MIT License
-    :target: http://opensource.org/licenses/MIT
+    .. image:: http://img.shields.io/github/issues/sdpython/code_beatrix.png
+        :alt: GitHub Issues
+        :target: https://github.com/sdpython/code_beatrix/issues
 
-.. image:: https://codecov.io/github/sdpython/code_beatrix/coverage.svg?branch=master
-    :target: https://codecov.io/github/sdpython/code_beatrix?branch=master
+    .. image:: https://img.shields.io/badge/license-MIT-blue.svg
+        :alt: MIT License
+        :target: http://opensource.org/licenses/MIT
 
-.. image:: nbcov.png
-    :target: http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/all_notebooks_coverage.html
-    :alt: Notebook Coverage
+    .. image:: https://codecov.io/github/sdpython/code_beatrix/coverage.svg?branch=master
+        :target: https://codecov.io/github/sdpython/code_beatrix?branch=master
+
+    .. image:: nbcov.png
+        :target: http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/all_notebooks_coverage.html
+        :alt: Notebook Coverage
 
 Annexes
 -------
