@@ -5,6 +5,7 @@ coverage
 blockdiag
 ensae_projects
 folium
+hachibee_sphinx_theme
 jyquickhelper
 mpld3
 pycodestyle>=2.0.0
