@@ -47,8 +47,8 @@ jobs:
           name: install avconv (ffmpeg)
           command: |
                     sudo apt-get install libav-tools
-		    
-      - run
+
+      - run:
           name: install dependencies 1
           command: |
             python3 -m venv venv
@@ -110,7 +110,7 @@ jobs:
             cp -r  _doc/sphinxdoc/build/html test-reports/doc
             mkdir -p test-reports/pdf
             cp _doc/sphinxdoc/build/latex/*.pdf test-reports/pdf
-            cp _doc/sphinxdoc/build/latex/co*.tex test-reports/pdf
+            cp _doc/sphinxdoc/build/latex/co*.tex* test-reports/pdf
             
       - store_artifacts:
           path: test-reports
