@@ -2,6 +2,7 @@ bokeh
 Cython
 ipython
 jupyter
+jupyter_client
 jupyter_core
 matplotlib
 nbformat
@@ -13,7 +14,8 @@ pandas>=0.20.0
 pillow
 pyproj
 pyzmq
-setuptools>=36.0.0
 scikit-learn
+scipy
 seaborn
+setuptools
 Sphinx
