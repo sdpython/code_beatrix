@@ -69,10 +69,11 @@ D'autres informations sont disponibles via le
     getting_started
     glossary
     all_notebooks
+    gyexamples/index
+    blog/blogindex
     i_faq
     end_index
     index_et_autre
-    gyexamples/index
 
 Pour les plus chevronnés, certains bouts de codes en python
 pourront être réutilisés via

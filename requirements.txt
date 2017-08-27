@@ -14,7 +14,7 @@ pydocstyle
 pyensae
 pymmails
 pymyinstall
-pyquickhelper>1.5.2126
+pyquickhelper>=1.5.2156
 pyshp
 qgrid
 semantic_version
