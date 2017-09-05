@@ -28,7 +28,7 @@ set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2017,
                      custom_style='custom_style.css',
                      extlinks=dict(
                          issue=('https://github.com/sdpython/code_beatrix/issues/%s', 'issue')),
-                     book=True)
+                     book=True, nblayout='table')
 
 html_show_copyright = False
 html_title = "lesenfantcodaient.fr"
