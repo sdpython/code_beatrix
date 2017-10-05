@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 """
 @file
-@brief Main file
+@brief Module *code_beatrix*.
 
 .. faqref::
     :title: Pourquoi Python?

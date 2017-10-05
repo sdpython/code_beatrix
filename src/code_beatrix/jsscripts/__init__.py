@@ -1,6 +1,6 @@
 """
 @file
-@brief Copy files to the proper location
+@brief Copy files to the proper location.
 """
 
 import os

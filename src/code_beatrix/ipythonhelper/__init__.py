@@ -1,5 +1,6 @@
 """
-shortcuts to ipythonhelper
+@file
+@brief shortcuts to ipythonhelper
 """
 
 from .path_helper import local_d3js

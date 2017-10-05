@@ -1,5 +1,6 @@
 """
-shortcuts for scratch
+@file
+@brief shortcuts for scratch
 """
 
 #from .example_echiquier import check as check1
