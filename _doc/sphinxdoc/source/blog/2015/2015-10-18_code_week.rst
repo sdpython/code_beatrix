@@ -1,0 +1,16 @@
+
+.. blogpost::
+    :title: La programmation et les legos
+    :keywords: lego, programmation
+    :date: 2015-10-18
+    :categories: jeu
+
+    Petite vidéo d'une animation sur la programmation à laquelle
+    j'ai participé avec l'assocation
+    `codingandbricks <https://www.codingandbricks.com/blog/project/que-fait-coding-bricks-pour-la-code-week-2015/>`_.
+
+    .. youtube:: https://www.youtube.com/watch?v=cug8A29HnUU
+
+    C'est une déclinaison de :epkg:`scratch` où le programme
+    est relié à un robot qui réplique les actions imaginées
+    par le programmeur.

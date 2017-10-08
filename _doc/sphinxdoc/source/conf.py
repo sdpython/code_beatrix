@@ -66,3 +66,5 @@ custom_preamble = """\n
 imgmath_latex_preamble += custom_preamble
 latex_elements['preamble'] += custom_preamble
 mathdef_link_only = True
+
+epkg_dictionary['scratch'] = "https://scratch.mit.edu/"
