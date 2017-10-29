@@ -1,0 +1,39 @@
+
+.. blogpost::
+    :title: Un professeur audacieux
+    :keywords: manga
+    :date: 2017-10-29
+    :categories: dessin animé
+
+    J'ai fait aujourd'hui ce qu'on ne fait que quand
+    on est malade : passer la journée devant des films.
+    Des dessins animés en l'occurrence et japonais
+    car je trouve que leurs scénarios sont moins
+    prévisibles que les scénarios des dessins animés
+    de Disney. Aujourd'hui, c'était
+    `Jun la voix du coeur <https://en.wikipedia.org/wiki/The_Anthem_of_the_Heart>`_.
+
+    .. image:: The_Anthem_of_the_Heart_poster.jpg
+        :width: 300
+        :alt: source: https://en.wikipedia.org/wiki/File:The_Anthem_of_the_Heart_poster.jpeg#filelinks
+
+    En fait, j'ai fait comme les enfants, je l'ai regardé quasiment
+    deux fois de suite. Il a comme tous les films un dernier rebondissement
+    final avant la fin mais il parle aussi des mots qu'on retient
+    parce qu'on sait qu'ils sont douloureux et qu'on finir par sortir quand même
+    sur un ton plus agressif encore. La façon dont on se protège dépend de chacun.
+    C'est aussi l'histoire d'un professeur qui nomme quatre élèves responsables
+    d'un événement. Et il ne choisit pas ces quatre-là au hasard. Il compose
+    l'équipe la plus improbable, quatre personnes qu'il force quelque
+    peu à communiquer ensemble ce qu'ils n'avaient pas pour habitude de faire.
+    Et c'est comme cela qu'il donne la première impulsion au film.
+    Je me suis revu à l'école, au collège, au lycée, et je me suis
+    demandé si les professeurs avaient quelques occasions de perturber
+    les clans qui se forment au sein d'une classe, de secouer
+    les moqueries qui vont toujours dans le même sens.
+    Je n'ai pas de souvenirs clairs mais je ne me souviens pas
+    d'avoir fait beaucoup de projets à plusieurs avant d'entrer dans
+    une grande école. Cela fait écho au hackathon que l'ENSAE organise
+    et que les étudiants voient aussi comme une expérience qui
+    permet de créer des liens. Il n'y a pas assez de projets
+    à plusieurs à l'école.
