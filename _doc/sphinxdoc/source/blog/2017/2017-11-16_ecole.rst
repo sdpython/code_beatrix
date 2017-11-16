@@ -1,0 +1,25 @@
+
+.. blogpost::
+    :title: Les enfants dans le monde de demain
+    :keywords: code, pédagogie
+    :date: 2017-11-16
+    :categories: école
+
+    Préparer les enfants à rentrer dans un monde
+    de plus en plus incertain est une angoisse perpétuelle
+    pour les parents qui cherchent sur Internet une façon d'y
+    répondre. C'est ce que propose des sites comme
+    `startupforkids <http://startupforkids.fr/>`_ qui organise des événements
+    `Cycle de conférences - S4k17 <http://startupforkids.fr/cycle-de-conferences-s4k17/>`_
+    dans lequel j'ai trouvé quelques sites intéressants.
+    Le premier site fourmille d'histoires et de conseils en tout genre
+    `Cool Parents Make Happy Kids <http://www.coolparentsmakehappykids.com/>`_,
+    les suivants sont plus thématiques en centrés sur la pédagogie.
+    Le second site référence tout un tas d'applications ludiques
+    autour de l'apprentissage : `Super-Julie <http://www.super-julie.fr/>`_,
+    le dernier
+    `Parents de 21ème siècle <http://parents-du-21-eme-siecle.fr/>`_
+    s'articule autour d'une question :
+    *comment préparer les enfants d'aujourd'hui à un monde beaucoup plus incertain que celui qu'on a connu ?*.
+    Il faut regarder l'interview de l'auteur dans la
+    `maison des maternelles <http://parents-du-21-eme-siecle.fr/mes-interventions-dans-les-medias/>`_.
