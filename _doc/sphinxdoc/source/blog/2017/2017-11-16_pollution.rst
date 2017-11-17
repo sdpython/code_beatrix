@@ -26,8 +26,10 @@
     Deux questions à mon avis mal posées qui caractérise notre façon de penser
     depuis plusieurs années. Pousser une usine qui pollue un peu plus loin
     des habitations revient à souiller un lieu qui pourrait être plus tard
-    utiliser pour une école. Il serait plus judicieux de fabriquer des usines
+    utilisé pour une école. Il serait plus judicieux de fabriquer des usines
     qui ne polluent plus du tout. Car si les pirates enfouissaient leurs
     pièces d'or, nous avons construit un immense champ de mines
     qui dépasse toutes les frontières. Un dernier article paru aujourd'hui
     `Vincennes : 650 collégiens obligés de déménager à cause de l'air pollué de leurs locaux <http://www.lefigaro.fr/actualite-france/2017/11/16/01016-20171116ARTFIG00216-vincennes-650-collegiens-obliges-de-demenager-a-cause-de-l-air-pollue-de-leurs-locaux.php>`_.
+    Un dernier site qui recense la qualité de l'air en Europe :
+    `European Air Quality Index <http://airindex.eea.europa.eu/#_blank>`_.
