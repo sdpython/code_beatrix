@@ -231,5 +231,5 @@ if not r:
         packages=packages,
         package_dir=package_dir,
         package_data=package_data,
-        install_requires=["pyquickhelper"],
+        install_requires=["pyquickhelper>=1.5.2259"],
     )
