@@ -37,7 +37,7 @@ except ImportError:
     import pyquickhelper as skip_
 
 from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder
+from pyquickhelper.pycode import get_temp_folder, is_travis_or_appveyor
 from pyquickhelper.pycode.setup_helper import write_module_scripts
 
 from src.code_beatrix import __blog__
