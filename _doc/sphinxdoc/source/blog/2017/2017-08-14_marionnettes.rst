@@ -1,7 +1,7 @@
 
 .. blogpost::
-    :title: Une histoire de mationnettes
-    :keywords: mationnette, histoire
+    :title: Une histoire de marionnettes
+    :keywords: marionnette, histoire
     :date: 2017-08-14
     :categories: histoire
 

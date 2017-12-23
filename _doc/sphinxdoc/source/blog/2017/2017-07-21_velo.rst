@@ -20,6 +20,7 @@
     Je me permets de reproduire leur carte et le parcours suivi :
 
     .. image:: velo.png
+        :width: 500
 
     Les pistes cyclables sont conçues comme des balades et le voyage à vélo non bouclé
     reste l'incongru. Chaque ville recense le réseau de son domaine sans le relier
