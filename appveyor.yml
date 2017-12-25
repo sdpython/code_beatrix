@@ -34,7 +34,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install ensae_projects"
   - "%PYTHON%\\Scripts\\pip install pygame"
   - "%PYTHON%\\Scripts\\pymy_install3 opencv_python cupy"
-  - "%PYTHON%\\Scripts\\pymy_install3 yaml pyproj skimage"
+  - "%PYTHON%\\Scripts\\pymy_install3 yaml pyproj scikit-image"
   - "%PYTHON%\\Scripts\\pip install tutormagic"
   - "%PYTHON%\\Scripts\\pip install pycodestyle"
   - "%PYTHON%\\Scripts\\pip install chainer gdown"

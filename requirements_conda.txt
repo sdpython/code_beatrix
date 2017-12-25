@@ -14,9 +14,9 @@ pandas>=0.20.0
 pillow
 pyproj
 pyzmq
-scikit-learn
 scipy
+scikit-image
+scikit-learn
 seaborn
 setuptools
-skimage
 Sphinx
