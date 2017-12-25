@@ -14,4 +14,9 @@ scratch
 python
 ^^^^^^
 
-Voir `Getting Started <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/index.html#getting-started>`_.
+Voir `Getting Started <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/index.html#getting-started-demarrer>`_.
+
+::
+
+    pip install code_beatrix
+

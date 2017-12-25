@@ -12,6 +12,7 @@ hachibee_sphinx_theme
 jyquickhelper
 mpld3
 mutagen
+opencv-python
 pycodestyle>=2.0.0
 pydocstyle
 pyensae

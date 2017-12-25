@@ -72,7 +72,6 @@ D'autres informations sont disponibles via le
     gyexamples/index
     blog/blogindex
     i_faq
-    end_index
     index_et_autre
 
 Pour les plus chevronnés, certains bouts de codes en python

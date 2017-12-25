@@ -3,7 +3,6 @@ Index
 =====
 
 .. toctree::
-    :hidden:
     :maxdepth: 1
 
     remerciements
