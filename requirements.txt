@@ -2,9 +2,11 @@ antlr4-python3-runtime
 autopep8
 babel!=2.0
 blockdiag
+chainer
 coverage
 ensae_projects
 folium
+gdown
 hachibee_sphinx_theme
 jyquickhelper
 mpld3
