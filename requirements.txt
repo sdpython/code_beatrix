@@ -5,6 +5,7 @@ blockdiag
 chainer
 coverage
 ensae_projects
+fcn
 folium
 gdown
 hachibee_sphinx_theme
