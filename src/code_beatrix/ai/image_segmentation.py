@@ -84,7 +84,7 @@ class DLImageSegmentation(DeepLearningImage):
             if not os.path.exists(img):
                 raise FileNotFoundError(img)
             feat = skimage.io.imread(img)
-        elif isinstance(img, numpy.array):
+        elif isinstance(img, numpy.ndarray):
             feat = img
         else:
             raise NotImplementedError(
