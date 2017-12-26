@@ -19,4 +19,3 @@ Voir `Getting Started <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphin
 ::
 
     pip install code_beatrix
-
