@@ -99,3 +99,25 @@ def save_video(video_or_file, filename, verbose=False, **kwargs):
         with redirect_stdout(f):
             with redirect_stderr(f):
                 video.write_videofile(filename, verbose=verbose, **kwargs)
+
+
+def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%04d.jpg', **kwargs):
+    """
+    Enumerates frames from a video.
+    Itère sur des images depuis une vidéo.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      folder          where to exports the images or returns arrays if None
+    @param      pattern         image names
+    @param      fps             frames per seconds
+    @param      kwargs          arguments to `iter_frames <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=frames#moviepy.audio.AudioClip.AudioClip.iter_frames>`_
+    @return                     iterator on arrays or files
+    """
+    video = get_video(video_or_file)
+    if folder is None:
+        for frame in video.iter_frames(fps=fps, **kwargs):
+            yield frame
+    else:
+        for frame in video.iter_frames(fps=fps, **kwargs):
+            # saves as image
+            raise NotImplementedError()
