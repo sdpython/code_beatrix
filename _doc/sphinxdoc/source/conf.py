@@ -36,6 +36,11 @@ language = "fr"
 
 blog_root = "http://lesenfantscodaient.fr/"
 
+html_context = {
+    'css_files': get_default_stylesheet() + ['_static/my-styles.css', '_static/custom_style.css', '_static/style_notebook_snippet.css'],
+}
+
+
 custom_preamble = """\n
 \\newcommand{\\vecteur}[2]{\\pa{#1,\\dots,#2}}
 \\newcommand{\\N}[0]{\\mathbb{N}}

@@ -28,5 +28,8 @@ et l'organisation de hackathon.
     :width: 15
     :target: http://fr.linkedin.com/pub/xavier-dupre/0/924/780/
 
-* `Hackathon Microsoft, ENSAE, La Croix-Rouge <http://www.xavierdupre.fr/blog/2016-06-14_nojs.html>`_
+* Organisation de `hackathons avec les étudiants de l'ENSAE <http://www.xavierdupre.fr/app/ensae_projects/helpsphinx/index.html>`_,
+  ces événements ont été sponsorisés par Microsoft ou Ernst and Young et ont été
+  organisés au profit d'associations cariatives ou d'entreprises solidaires d'utilité sociale.
+  (`ESUS <https://www.tresor.economie.gouv.fr/Ressources/14662_agrement-esus>`_).
 * `Regard personnel sur le Big Data <http://variances.eu/?p=1426>`_
