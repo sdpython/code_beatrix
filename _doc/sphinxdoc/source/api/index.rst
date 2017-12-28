@@ -6,3 +6,5 @@ API Summary
     :maxdepth: 2
 
     ai
+    algorithm
+    notebooks

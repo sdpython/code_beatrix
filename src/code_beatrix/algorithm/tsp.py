@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 @file
 @brief Function solving the TSP problem
@@ -8,7 +9,8 @@ import random
 
 def distance_point(p1, p2):
     """
-    returns the distance between two points
+    Returns the Euclidian distance between two points.
+    Retourne la distance euclidienne entre deux points.
 
     @param      p1      point 1
     @param      p2      point 2
@@ -22,7 +24,8 @@ def distance_point(p1, p2):
 
 def distance_circuit(points):
     """
-    computes the distance of this circuit
+    Computes the distance of this circuit.
+    Calcule la longueur d'un circuit.
 
     @param      points      list of points, the circuit assumes they are giving in that order
     @return                 distance
@@ -35,7 +38,8 @@ def distance_circuit(points):
 
 def permutation(points, i, j):
     """
-    switch two points and return a new path
+    Switches two points and returns a new path.
+    Echange deux points et retourne le nouveau circuit.
 
     @param      points      circuit
     @param      i           first index
@@ -49,7 +53,8 @@ def permutation(points, i, j):
 
 def reverse(points, i, j):
     """
-    reverse a sub part of circuit
+    Reverses a sub part of circuit.
+    Retourne une partie du circuit.
 
     @param      points      circuit
     @param      i           first index
@@ -67,8 +72,9 @@ def reverse(points, i, j):
 
 def voyageur_commerce_simple(points):
     """
-    solves the TSP using basic permutations,
-    points are 2D coordinates
+    Solves the TSP using basic permutations,
+    points are 2D coordinates.
+    Résoud le problème du voyageur de commerce.
 
     @param      points      list of points
     """
@@ -112,7 +118,8 @@ def voyageur_commerce_simple(points):
 
 def plot_circuit(points, ax=None, **kwargs):
     """
-    plot the circuit on a graph
+    Plots the circuit on a graph.
+    Dessine la solution du voyageur de commerce.
 
     @param      points      points
     @param      ax          axe

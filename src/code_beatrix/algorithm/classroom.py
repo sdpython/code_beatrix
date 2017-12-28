@@ -1,6 +1,6 @@
 """
 @file
-@brief Position in a classroom
+@brief Positions in a classroom
 """
 
 import random
@@ -10,7 +10,7 @@ from .data import load_prenoms_w
 
 def plot_positions(positions, edges=None, ax=None, **options):
     """
-    draw positions and first names into a graph
+    Draws positions and first names into a graph.
 
     @param      positions       list of 3-uple (name, x, y)
     @param      ax              axis
@@ -72,7 +72,7 @@ def plot_positions(positions, edges=None, ax=None, **options):
 
 def random_positions(nb, names=None):
     """
-    draws random position for some person in a classroom
+    Draws random position for some person in a classroom.
 
     @param      nb      number of persons
     @param      names   names (None for default)
@@ -105,7 +105,7 @@ def random_positions(nb, names=None):
 
 def distance(p1, p2):
     """
-    computes the distance between two positions
+    Computes the distance between two positions.
 
     @param      p1      position 1
     @param      p2      position 2
@@ -116,7 +116,7 @@ def distance(p1, p2):
 
 def measure_positions(positions, edges):
     """
-    returns the sum of edges weights
+    Returns the sum of edges weights.
 
     @param      positions       dictionary ``{ name : (x, y) }``
     @param      edges           list of affinities ``(name1, name2)``
@@ -136,7 +136,7 @@ def measure_positions(positions, edges):
 
 def find_best_positions_greedy(positions, edges, name):
     """
-    find the best position for name, explore all positions
+    Finds the best position for name, explore all positions.
 
     @param      positions       dictionary ``{ name : (x, y) }``
     @param      edges           list of affinities as a dictionary ``{ name: [names] }``
@@ -167,7 +167,7 @@ def find_best_positions_greedy(positions, edges, name):
 def optimize_positions(positions, edges, max_iter=100, fLOG=noLOG,
                        plot_folder=None):
     """
-    optimize the positions
+    Optimizes the positions.
 
     @param      positions       dictionary ``{ name : (x, y) }``
     @param      edges           list of affinities ``(name1, name2)``

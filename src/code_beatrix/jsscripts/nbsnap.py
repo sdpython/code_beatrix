@@ -10,7 +10,7 @@ from .snap import __file__ as location_js_snap
 
 class RenderSnapRaw(object):
     """
-    Render `Snap <https://snap.berkeley.edu/>`_ using javascript.
+    Renders `Snap <https://snap.berkeley.edu/>`_ using javascript.
     """
 
     def __init__(self, width="1000", height="600", divid=None, filename=None):

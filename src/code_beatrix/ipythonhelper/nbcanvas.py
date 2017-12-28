@@ -11,7 +11,7 @@ from .path_helper import local_d3js
 
 def display_canvas_point(html_id, width=800, heigth=400, var_name="points"):
     """
-    add a canvas to draw from a notebook, the code use javascript
+    Adds a canvas to draw from a notebook, the code use javascript.
 
     @param      height      height
     @param      width       width
