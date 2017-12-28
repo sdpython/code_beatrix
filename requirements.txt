@@ -20,6 +20,7 @@ pymmails
 pymyinstall
 pyquickhelper>=1.5.2259
 pyshp
+pytube
 qgrid
 semantic_version
 shapely

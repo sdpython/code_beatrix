@@ -1,17 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 @file
-@brief Quelques questions d'ordre général autour du langage Python.
-
+@brief Quelques questions d'ordre général autour du langage :epkg:`Python`.
 """
 
 
 def instruction_pass():
     """
-
     Cette fonction ne fait rien.
 
-    ..reffaq::
+    .. faqref::
         :title: Quel est l'entier le plus grand ?
 
         La version 3 du langage Python a supprimé la constante ``sys.maxint``
@@ -31,16 +29,16 @@ def instruction_pass():
         Au delà, il faut utiliser la librairie `gmpy2 <http://gmpy2.readthedocs.org/en/latest/>`_.
         Il est également recommandé d'utiliser cette librairie pour les grands nombres entiers
         (entre 20 et 40 chiffres). La librairie est plus rapide que l'implémentation
-        du langage Python (voir `Overview of gmpy2 <https://gmpy2.readthedocs.org/en/latest/overview.html>`_).
+        du langage :epkg:`Pythonè  (voir `Overview of gmpy2 <https://gmpy2.readthedocs.org/en/latest/overview.html>`_).
 
 
-    .. reffaq::
+    .. faqref::
         :title: Tabulations ou espace ?
 
         Il est préférable de ne pas utiliser les tabulations et de les remplacer par des espaces.
         Lorsqu'on passe d'un Editeur à un autre, les espaces ne bougent pas. Les tabulations sont plus ou moins grandes visuellement.
         L'essentiel est de ne pas mélanger.
-        Dans `SciTE <http://www.scintilla.org/SciTE.html>`_, il faut aller dans le menu Options / Change Indentation Settings...
+        Dans :epkg:`SciTe`, il faut aller dans le menu Options / Change Indentation Settings...
         Tous les éditeurs ont une option similaire.
     """
     pass

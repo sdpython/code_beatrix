@@ -74,4 +74,7 @@ mathdef_link_only = True
 
 epkg_dictionary['deep learning'] = 'https://en.wikipedia.org/wiki/Deep_learning'
 epkg_dictionary['fcn'] = 'https://github.com/wkentaro/fcn'
+epkg_dictionary['pytube'] = 'https://github.com/nficano/pytube'
+epkg_dictionary['SciTe'] = 'http://www.scintilla.org/SciTE.html'
 epkg_dictionary['scratch'] = "https://scratch.mit.edu/"
+epkg_dictionary['youtube'] = "https://www.youtube.com/"
