@@ -141,6 +141,8 @@ if is_local() and "--help" not in sys.argv and "--help-commands" not in sys.argv
         from pyquickhelper.pycode import write_version_for_setup
         return write_version_for_setup(__file__)
 
+    write_version()
+
     versiontxt = os.path.join(os.path.dirname(__file__), "version.txt")
     if os.path.exists(versiontxt):
         with open(versiontxt, "r") as f:
