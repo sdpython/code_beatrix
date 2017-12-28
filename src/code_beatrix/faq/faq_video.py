@@ -3,7 +3,12 @@
 @file
 @brief Quelques questions d'ordre général autour du langage Python.
 """
+from contextlib import redirect_stdout, redirect_stderr
+import io
+import os
 from pytube import YouTube
+from moviepy.video.VideoClip import VideoClip
+from moviepy.editor import VideoFileClip
 
 
 def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/mp4", **kwargs):
@@ -40,3 +45,57 @@ def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/m
     fi = st.first()
     fi.download(output_path=output_path)
     return fi.default_filename
+
+
+def get_video(video_or_file):
+    """
+    Returns a :epkg:`VideoClip`.
+    Retourne un objet de type :epkg:`VideoClip`.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @return                     :epkg:`VideoClip`
+    """
+    if isinstance(video_or_file, str):
+        if not os.path.exists(video_or_file):
+            raise FileNotFoundError(video_or_file)
+        video = VideoFileClip(video_or_file)
+    elif isinstance(video_or_file, VideoClip):
+        video = video_or_file
+    else:
+        raise TypeError('Unable to use type {0}'.format(type(video_or_file)))
+    return video
+
+
+def extract_video(video_or_file, ta=0, tb=None):
+    """
+    Extracts a part of a video.
+    Extrait une partie de la vidéo.
+    Uses `subclip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.VideoClip.VideoClip.subclip>`_.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      ta              beginning
+    @param      tb              end
+    @return                     :epkg:`VideoClip`
+    """
+    video = get_video(video_or_file)
+    return video.subclip(ta, tb)
+
+
+def save_video(video_or_file, filename, verbose=False, **kwargs):
+    """
+    Saves as a video.
+    Enregistre une vidéo dans un fichier.
+    Uses `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      verbose         logging or not
+    @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
+    """
+    video = get_video(video_or_file)
+    if verbose:
+        video.write_videofile(filename, verbose=verbose, **kwargs)
+    else:
+        f = io.StringIO()
+        with redirect_stdout(f):
+            with redirect_stderr(f):
+                video.write_videofile(filename, verbose=verbose, **kwargs)

@@ -77,4 +77,5 @@ epkg_dictionary['fcn'] = 'https://github.com/wkentaro/fcn'
 epkg_dictionary['pytube'] = 'https://github.com/nficano/pytube'
 epkg_dictionary['SciTe'] = 'http://www.scintilla.org/SciTE.html'
 epkg_dictionary['scratch'] = "https://scratch.mit.edu/"
+epkg_dictionary['VideoClip'] = 'https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html'
 epkg_dictionary['youtube'] = "https://www.youtube.com/"
