@@ -1,6 +1,6 @@
 
-API Summary
-===========
+API
+===
 
 .. toctree::
     :maxdepth: 2
@@ -8,3 +8,4 @@ API Summary
     ai
     algorithm
     notebooks
+    video

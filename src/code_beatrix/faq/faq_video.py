@@ -8,7 +8,8 @@ from pytube import YouTube
 
 def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/mp4", **kwargs):
     """
-    Downloads a video from :epkg:`youtube`.
+    Downloads a video from :epkg:`youtube` with :epkg:`pytube`.
+    Télécharge une vidéo depuis :epkg:`youtube` avec :epkg:`pytube`.
 
     @param      tag         tag of the :epkg:`youtube` video to download
     @param      output_path output path
