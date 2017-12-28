@@ -40,6 +40,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install tutormagic"
   - "%PYTHON%\\Scripts\\pip install pycodestyle"
   - "%PYTHON%\\Scripts\\pip install chainer gdown fcn"
+  - "%PYTHON%\\python setup.py moviepy-setup"
 
 build: off
 

@@ -85,6 +85,7 @@ def is_local():
        "upload_docs" in sys.argv or \
        "setup_hook" in sys.argv or \
        "copy_sphinx" in sys.argv or \
+       "moviepy-setup" in sys.argv or \
        "write_version" in sys.argv:
         try:
             import_pyquickhelper()
@@ -138,9 +139,6 @@ if is_local() and "--help" not in sys.argv and "--help-commands" not in sys.argv
         from pyquickhelper.pycode import write_version_for_setup
         return write_version_for_setup(__file__)
 
-    if sys.version_info[0] != 2:
-        write_version()
-
     versiontxt = os.path.join(os.path.dirname(__file__), "version.txt")
     if os.path.exists(versiontxt):
         with open(versiontxt, "r") as f:
@@ -185,24 +183,30 @@ if "--verbose" in sys.argv:
     verbose()
 
 if is_local():
-    pyquickhelper = import_pyquickhelper()
-    logging_function = pyquickhelper.get_fLOG()
-    from pyquickhelper.pycode import process_standard_options_for_setup
-    logging_function(OutputPrint=True)
-    r = process_standard_options_for_setup(
-        sys.argv, __file__, project_var_name,
-        unittest_modules=["pyquickhelper"],
-        additional_notebook_path=["jyquickhelper", "pyquickhelper", "pyensae",
-                                  "pyrsslocal", "pymyinstall", "pymmails", "ensae_projects"],
-        requirements=["pyquickhelper", "jyquickhelper", ],
-        blog_list=os.path.abspath(os.path.join(
-            "src", project_var_name, package_data[project_var_name][0])),
-        fLOG=logging_function,
-        covtoken=("4326eb4c-78b5-4ff3-9317-9329fdb20f43", "'_UT_36_std' in outfile"))
-    if not r and not ({"bdist_msi", "sdist",
-                       "bdist_wheel", "publish", "publish_doc", "register",
-                       "upload_docs", "bdist_wininst", "build_ext"} & set(sys.argv)):
-        raise Exception("unable to interpret command line: " + str(sys.argv))
+    if 'moviepy-setup' in sys.argv:
+        from imageio.plugins.ffmpeg import download
+        download()
+        r = True
+    else:
+        pyquickhelper = import_pyquickhelper()
+        logging_function = pyquickhelper.get_fLOG()
+        from pyquickhelper.pycode import process_standard_options_for_setup
+        logging_function(OutputPrint=True)
+        r = process_standard_options_for_setup(
+            sys.argv, __file__, project_var_name,
+            unittest_modules=["pyquickhelper"],
+            additional_notebook_path=["jyquickhelper", "pyquickhelper", "pyensae",
+                                      "pyrsslocal", "pymyinstall", "pymmails", "ensae_projects"],
+            requirements=["pyquickhelper", "jyquickhelper", ],
+            blog_list=os.path.abspath(os.path.join(
+                "src", project_var_name, package_data[project_var_name][0])),
+            fLOG=logging_function,
+            covtoken=("4326eb4c-78b5-4ff3-9317-9329fdb20f43", "'_UT_36_std' in outfile"))
+        if not r and not ({"bdist_msi", "sdist",
+                           "bdist_wheel", "publish", "publish_doc", "register",
+                           "upload_docs", "bdist_wininst", "build_ext"} & set(sys.argv)):
+            raise Exception(
+                "unable to interpret command line: " + str(sys.argv))
 else:
     r = False
 

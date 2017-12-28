@@ -26,5 +26,6 @@ install:
   - conda install -q --file=requirements_conda.txt
   - conda install -y basemap
   - pip install -r requirements.txt
+  - python setup.py moviepy-setup
 script:
   - python setup.py unittests
