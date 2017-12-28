@@ -149,7 +149,7 @@ if is_local() and "--help" not in sys.argv and "--help-commands" not in sys.argv
         if subversion == ".0":
             raise Exception("Subversion is wrong: '{0}'.".format(subversion))
     else:
-        raise FileNotFoundError(versiontxt)
+        raise FileNotFoundError("Unable to find '{0}' argv={1}".format(versiontxt, sys.argv))
 else:
     # when the module is installed, no commit number is displayed
     subversion = ""
