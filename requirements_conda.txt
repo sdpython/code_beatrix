@@ -1,4 +1,5 @@
 basemap
+chainer
 bokeh
 Cython
 ipython

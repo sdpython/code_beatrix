@@ -2,9 +2,7 @@ antlr4-python3-runtime
 autopep8
 babel!=2.0
 blockdiag
-chainer
 coverage
-cupy
 ensae_projects
 fastrlock
 fcn

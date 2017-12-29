@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-@brief      test log(time=1s)
+@brief      test log(time=1000s)
+
+Duraction is around a few seconds but the test needs to be run
+at the end of the series of unitests as it interferes
+with the notebook unittesting (it uses Popen too).
 """
 
 
