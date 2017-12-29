@@ -44,7 +44,7 @@ from src.code_beatrix.automation.notebook_test_helper import ls_notebooks, execu
 import src.code_beatrix
 
 
-class TestNotebookExample (unittest.TestCase):
+class TestLONGNotebookExample (unittest.TestCase):
 
     def setUp(self):
         add_missing_development_version(
@@ -59,7 +59,7 @@ class TestNotebookExample (unittest.TestCase):
         keepnote = ls_notebooks("exemples")
         self.assertTrue(len(keepnote) > 0)
         res = execute_notebooks(temp, keepnote,
-                                lambda i, n: "poppins" not in n,
+                                lambda i, n: "poppins" in n,
                                 fLOG=fLOG,
                                 clean_function=clean_function_notebook)
         execute_notebook_list_finalize_ut(
