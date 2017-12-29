@@ -35,6 +35,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install pygame"
   - "%PYTHON%\\Scripts\\pip install moviepy"
   - "%PYTHON%\\Scripts\\pip install pytube"
+  - "%PYTHON%\\Scripts\\pymy_install3 basemap"
   - "%PYTHON%\\Scripts\\pymy_install3 opencv_python fastrlock cupy"
   - "%PYTHON%\\Scripts\\pymy_install3 yaml pyproj scikit-image opencv-python"
   - "%PYTHON%\\Scripts\\pip install tutormagic"
