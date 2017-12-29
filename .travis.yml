@@ -7,6 +7,9 @@ addons:
 -  apt:
 -    packages:
       - ffmpeg
+      - gfortran
+      - libhdf5-serial-dev
+      - liblapack-dev      
 install:
   # We do this conditionally because it saves us some downloading if the
   # version is the same.

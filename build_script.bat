@@ -10,4 +10,5 @@ if not exist %pythonexe% set pythonexe="c:\Python36_x64\python.exe"
 :custom_python:
 @echo [python] %pythonexe%
 %pythonexe% -u setup.py build_script
+%pythonexe% -u setup.py moviepy-setup
 if %errorlevel% neq 0 exit /b %errorlevel%
