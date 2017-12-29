@@ -59,8 +59,31 @@ class TestSegImage(ExtTestCase):
         dl = DLImageSegmentation(fLOG=fLOG)
 
         for i, img in enumerate(imgs):
-            res = dl.predict(img)
+            feat, res = dl.predict(img)
             viz = dl.plot(img, res)
+
+            out_file = os.path.join(temp, "out_img%d.png" % i)
+            skimage.io.imsave(out_file, viz)
+            self.assertExists(out_file)
+
+        # skimage.io.imshow(viz)
+        # skimage.io.show()
+
+    def test_seg_image2(self):
+        fLOG(
+            __file__,
+            self._testMethodName,
+            OutputPrint=__name__ == "__main__")
+
+        temp = get_temp_folder(__file__, "temp_seg_image2")
+        img1 = os.path.join(temp, "..", "data", "Mona_elephant.jpg")
+        imgs = [img1]
+
+        dl = DLImageSegmentation(fLOG=fLOG)
+
+        for i, img in enumerate(imgs):
+            feat, res = dl.predict(img, resize=('max2', 200))
+            viz = dl.plot(feat, res)
 
             out_file = os.path.join(temp, "out_img%d.png" % i)
             skimage.io.imsave(out_file, viz)

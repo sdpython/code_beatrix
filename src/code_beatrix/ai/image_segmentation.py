@@ -9,6 +9,8 @@ import chainer
 import fcn
 import skimage
 import numpy
+from PIL import Image
+from skimage.io._plugins.pil_plugin import pil_to_ndarray
 from .dlbase import DeepLearningImage
 
 
@@ -71,24 +73,81 @@ class DLImageSegmentation(DeepLearningImage):
         """
         return self._model_file
 
-    def _load_image(self, img, preprocess=True):
+    def _new_size(self, old_size, new_size):
+        """
+        Computes a new size.
+
+        @param      old_size        current size
+        @param      new_size        new desired size
+        @return                     new size
+
+        *new_size* can be of:
+
+        * (int, int): this is the new size
+        * ('max2', int): this size is divided by 2 until the greater dimension
+          is below a threshold
+        """
+        if not isinstance(new_size, tuple):
+            raise TypeError("new_size must be a tuple")
+        if not isinstance(old_size, tuple):
+            raise TypeError("old_size must be a tuple")
+        if len(old_size) != 2:
+            raise ValueError("old_size must have two values")
+        if len(new_size) != 2:
+            raise ValueError("new_size must have two values")
+        if isinstance(new_size[0], str):
+            if new_size[0] == 'max2':
+                mx = max(old_size)
+                p = 1
+                while mx > new_size[1]:
+                    mx //= 2
+                    p *= 2
+                return (old_size[0] // p, old_size[1] // p)
+            else:
+                raise ValueError(
+                    "Unable to interpret '{0}'".format(new_size[0]))
+        elif isinstance(new_size[0], int):
+            return new_size
+        else:
+            raise TypeError("new_size[0] must be an int")
+
+    def _load_image(self, img, resize=None):
         """
         Loads an image as a :epkg:`numpy:array`.
 
         @param      img         image
-        @param      preprocess  transform images
+        @param      resize      resize the image before predicting,
+                                see @see me _new_size
         @return                 :epkg:`numpy:array`
         """
         if isinstance(img, str):
             # Loads the image.
             if not os.path.exists(img):
                 raise FileNotFoundError(img)
-            feat = skimage.io.imread(img)
+            if resize is None:
+                feat = skimage.io.imread(img)
+            else:
+                pilimg = Image.open(img)
+                si = self._new_size(pilimg.size, resize)
+                pilimg2 = pilimg.resize(si)
+                feat = pil_to_ndarray(pilimg2)
         elif isinstance(img, numpy.ndarray):
+            if resize is not None:
+                raise NotImplementedError('resize not None is not implemented')
             feat = img
         else:
             raise NotImplementedError(
                 "Not implemented for type '{0}'".format(type(img)))
+        return feat
+
+    def _preprocess(self, feat, preprocess=True):
+        """
+        Preprocesses the image before prediction.
+
+        @param      feat        image (output of @see me _load_image)
+        @param      preprocess  applies some preprocessing or not
+        @return                 preprocessed image
+        """
         if preprocess:
             input, = fcn.datasets.transform_lsvrc2012_vgg16((feat,))
             input = input[numpy.newaxis, :, :, :]
@@ -96,14 +155,17 @@ class DLImageSegmentation(DeepLearningImage):
         else:
             return feat
 
-    def predict(self, img):
+    def predict(self, img, resize=None):
         """
         Applies the model on features *X*.
 
         @param      img     image
-        @return             prediction
+        @param      resize  resize the image before predicting,
+                            see @see me _new_size
+        @return             (image, prediction)
         """
-        input = self._load_image(img)
+        feat = self._load_image(img, resize=resize)
+        input = self._preprocess(feat, preprocess=True)
         if self._gpu:
             input = chainer.cuda.to_gpu(input)
 
@@ -115,7 +177,7 @@ class DLImageSegmentation(DeepLearningImage):
                     self._model.score, axis=1)[0]
                 lbl_pred = chainer.cuda.to_cpu(lbl_pred.data)
 
-        return lbl_pred
+        return feat, lbl_pred
 
     def plot(self, img, pred):
         """
@@ -124,7 +186,7 @@ class DLImageSegmentation(DeepLearningImage):
         @param      img     initial image
         @return             new image
         """
-        img = self._load_image(img, preprocess=False)
+        img = self._load_image(img)
         viz = fcn.utils.visualize_segmentation(
             lbl_pred=pred, img=img, n_class=self._n_class, label_names=self._class_name)
         return viz
