@@ -5,14 +5,14 @@
     :date: 2017-08-14
     :categories: histoire
 
-    C'est une histoire de marionnette qui a commencé avec
+    C'est une histoire de marionnettes qui a commencé avec
     quelques bouts de journaux amolis dans une bassine d'eau,
     des capsules de cafés usagées, des serviettes en papier
     émiettées, l'aluminium des barres de chocolat, des tiges
     pour brochettes, de la gouache, une immense toile cirée,
     un vieux drap, une paire de ciseaux et beaucoup de colle.
     Les marionnettes ne peuvent conter que l'histoire pour
-    laquelle elles ont  été créées.
+    laquelle elles ont été créées.
 
     .. image:: mar0.jpg
         :width: 600
@@ -21,8 +21,10 @@
     Parmi eux, deux frères jumeaux, l'un a l'ouïe fine, le second
     l'odorat infaillible. Le dernier amis a des yeux perçants,
     il reste un peu en retrait et observe tout en riant sous cape.
-    Un champignon les nargue depuis une petite fenêtre découpé
-    dans le drap qui cache les marionnettiste. La suite de l'histoire
+    Un champignon les nargue depuis une petite fenêtre découpée
+    dans le drap qui cache les marionnettistes.
+    Ils n'attraperont le champignon que s'ils s'associent ce qu'ils
+    ne feront qausiment jamais. La suite de l'histoire
     est laissée à votre convenance.
 
     .. image:: mar1.jpg
@@ -52,4 +54,4 @@
     pour le calmer. Malheureusement, ça le fait grossir et il ne
     rentre plus dans la bouteille. Ils le relâchent encore.
 
-    Bref, c'est sans simple.
+    C'est le genre d'histoire à rallonge.

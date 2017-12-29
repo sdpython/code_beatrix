@@ -42,7 +42,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.faq.faq_video import extract_video, save_video
+from src.code_beatrix.faq.faq_video import extract_video, save_video, video_enumerate_frames
 
 
 class TestVideo(ExtTestCase):
@@ -60,6 +60,19 @@ class TestVideo(ExtTestCase):
         exp = os.path.join(temp, "courte.mp4")
         save_video(vid2, exp)
         self.assertExists(exp)
+
+    def test_extract_frames(self):
+        fLOG(
+            __file__,
+            self._testMethodName,
+            OutputPrint=__name__ == "__main__")
+        temp = get_temp_folder(__file__, "temp_video_extract_frames")
+        vid = os.path.join(temp, '..', 'data', 'videxa.mp4')
+        fra = list(video_enumerate_frames(vid))
+        self.assertEqual(len(fra), 78)
+        self.assertEqual(fra[0].shape, (720, 404, 3))
+        fns = list(video_enumerate_frames(vid, folder=temp))
+        self.assertEqual(len(fns), 78)
 
 
 if __name__ == "__main__":

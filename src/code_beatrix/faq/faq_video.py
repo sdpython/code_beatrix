@@ -7,6 +7,7 @@ from contextlib import redirect_stdout, redirect_stderr
 import io
 import os
 from pytube import YouTube
+from imageio import imsave
 from moviepy.video.VideoClip import VideoClip
 from moviepy.editor import VideoFileClip
 
@@ -118,6 +119,14 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
         for frame in video.iter_frames(fps=fps, **kwargs):
             yield frame
     else:
-        for frame in video.iter_frames(fps=fps, **kwargs):
+        if 'dtype' in kwargs:
+            if kwargs['dtype'] != 'uint8':
+                raise ValueError("dtype must be uint8")
+            else:
+                del kwargs['dtype']
+
+        for i, frame in enumerate(video.iter_frames(fps=fps, dtype='uint8', **kwargs)):
             # saves as image
-            raise NotImplementedError()
+            name = os.path.join(folder, pattern % i)
+            imsave(name, frame)
+            yield name
