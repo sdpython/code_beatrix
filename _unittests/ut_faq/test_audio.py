@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.faq.faq_video import audio_compose, save_audio
+from src.code_beatrix.faq.faq_video import audio_compose, audio_save
 
 
 class TestAudio(ExtTestCase):
@@ -61,7 +61,7 @@ class TestAudio(ExtTestCase):
 
         aud2 = audio_compose(aud, aud, 1, 3)
         exp = os.path.join(temp, "courte_audio.wav")
-        save_audio(aud2, exp)
+        audio_save(aud2, exp)
         self.assertExists(exp)
 
 

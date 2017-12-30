@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.faq.faq_video import save_video, video_replace_sound, video_extract_audio
+from src.code_beatrix.faq.faq_video import video_save, video_replace_sound, video_extract_audio
 
 
 class TestAudioVideo(ExtTestCase):
@@ -63,7 +63,7 @@ class TestAudioVideo(ExtTestCase):
                                    t_end='00:00:05', speed=2.)
         self.assertTrue(video_extract_audio(vid2) is not None)
         exp = os.path.join(temp, "courte_audio.mp4")
-        save_video(vid2, exp, verbose=False)
+        video_save(vid2, exp, verbose=False)
         self.assertExists(exp)
 
 

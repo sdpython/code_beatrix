@@ -64,7 +64,7 @@ def video_extract_video(video_or_file, ta=0, tb=None):
         return video.subclip(ta, tb)
 
 
-def save_video(video_or_file, filename, verbose=False, **kwargs):
+def video_save(video_or_file, filename, verbose=False, **kwargs):
     """
     Saves as a video.
     Enregistre une vidéo dans un fichier.
@@ -84,7 +84,7 @@ def save_video(video_or_file, filename, verbose=False, **kwargs):
                     video.write_videofile(filename, verbose=verbose, **kwargs)
 
 
-def save_audio(audio_or_file, filename, verbose=False, **kwargs):
+def audio_save(audio_or_file, filename, verbose=False, **kwargs):
     """
     Saves as a sound.
     Enregistre un son dans un fichier.

@@ -1,4 +1,6 @@
 
+.. _l-api-video-audio:
+
 Vidéos et Sons
 ==============
 
@@ -12,12 +14,10 @@ Audio
 
 .. autosignature:: code_beatrix.faq.faq_video.audio_modification
 
-.. autosignature:: code_beatrix.faq.faq_video.save_audio
+.. autosignature:: code_beatrix.faq.faq_video.audio_save
 
 Video
 +++++
-
-.. autosignature:: code_beatrix.faq.faq_video.save_video
 
 .. autosignature:: code_beatrix.faq.faq_video.video_extract_video
 
@@ -26,6 +26,8 @@ Video
 .. autosignature:: code_beatrix.faq.faq_video.video_extract_audio
 
 .. autosignature:: code_beatrix.faq.faq_video.video_replace_sound
+
+.. autosignature:: code_beatrix.faq.faq_video.video_save
 
 YouTube
 +++++++
