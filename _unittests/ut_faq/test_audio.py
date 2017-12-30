@@ -46,20 +46,33 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.faq.faq_video import audio_compose, audio_save
+from src.code_beatrix.faq.faq_video import audio_compose, audio_save, audio_extract_audio
 
 
 class TestAudio(ExtTestCase):
+
+    def test_compose_audio(self):
+        fLOG(
+            __file__,
+            self._testMethodName,
+            OutputPrint=__name__ == "__main__")
+        temp = get_temp_folder(__file__, "temp_audio_compose")
+        aud = os.path.join(temp, '..', 'data', 'cartoon011.wav')
+
+        aud2 = audio_compose(aud, aud, 1, 3)
+        exp = os.path.join(temp, "courte_audio.wav")
+        audio_save(aud2, exp)
+        self.assertExists(exp)
 
     def test_extract_audio(self):
         fLOG(
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-        temp = get_temp_folder(__file__, "temp_audio")
-        aud = os.path.join(temp, '..', 'data', 'cartoon011.wav')
+        temp = get_temp_folder(__file__, "temp_audio_extract")
+        aud = os.path.join(temp, '..', 'data', 'cartoon026.wav')
 
-        aud2 = audio_compose(aud, aud, 1, 3)
+        aud2 = audio_extract_audio(aud, '00:00:01', '00:00:02')
         exp = os.path.join(temp, "courte_audio.wav")
         audio_save(aud2, exp)
         self.assertExists(exp)

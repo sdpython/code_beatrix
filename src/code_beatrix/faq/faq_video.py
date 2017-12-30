@@ -10,6 +10,7 @@ from pytube import YouTube
 from imageio import imsave
 import moviepy.audio.fx.all as afx
 from moviepy.audio.AudioClip import AudioArrayClip, CompositeAudioClip
+from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from .moviepy_context import AudioContext, VideoContext
 
 
@@ -64,9 +65,24 @@ def video_extract_video(video_or_file, ta=0, tb=None):
         return video.subclip(ta, tb)
 
 
+def audio_extract_audio(audio_or_file, ta=0, tb=None):
+    """
+    Extracts a part of an audio.
+    Extrait une partie du son.
+    Uses `subclip <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=audioclip#moviepy.audio.AudioClip.AudioClip.subclip>`_.
+
+    @param      audio_or_file   string or :epkg:`AudioClip`
+    @param      ta              beginning
+    @param      tb              end
+    @return                     :epkg:`VideoClip`
+    """
+    with AudioContext(audio_or_file) as audio:
+        return audio.subclip(ta, tb)
+
+
 def video_save(video_or_file, filename, verbose=False, **kwargs):
     """
-    Saves as a video.
+    Saves as a video or as a :epkg:`gif`.
     Enregistre une vidéo dans un fichier.
     Uses `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_.
 
@@ -74,14 +90,25 @@ def video_save(video_or_file, filename, verbose=False, **kwargs):
     @param      verbose         logging or not
     @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
     """
-    with VideoContext(video_or_file) as video:
-        if verbose:
-            video.write_videofile(filename, verbose=verbose, **kwargs)
-        else:
-            f = io.StringIO()
-            with redirect_stdout(f):
-                with redirect_stderr(f):
-                    video.write_videofile(filename, verbose=verbose, **kwargs)
+    if isinstance(filename, str) and os.path.splitext(filename)[-1] == '.gif':
+        with VideoContext(video_or_file) as video:
+            if verbose:
+                video.write_gif(filename, verbose=verbose, **kwargs)
+            else:
+                f = io.StringIO()
+                with redirect_stdout(f):
+                    with redirect_stderr(f):
+                        video.write_gif(filename, verbose=verbose, **kwargs)
+    else:
+        with VideoContext(video_or_file) as video:
+            if verbose:
+                video.write_videofile(filename, verbose=verbose, **kwargs)
+            else:
+                f = io.StringIO()
+                with redirect_stdout(f):
+                    with redirect_stderr(f):
+                        video.write_videofile(
+                            filename, verbose=verbose, **kwargs)
 
 
 def audio_save(audio_or_file, filename, verbose=False, **kwargs):
@@ -212,7 +239,6 @@ def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
     @param      audio_or_file2      son 2
     @param      t1                  start of the first sound
     @param      t2                  start of the second sound (or None to add it ad
-    @param      concatenate         concatenate or superpose
     @return                         new sound
     """
     with AudioContext(audio_or_file1) as audio1:
@@ -227,3 +253,30 @@ def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
             else:
                 add.append(audio2.set_start(t2))
             return CompositeAudioClip(add)
+
+
+def video_compose(video_or_file1, video_or_file2, t1=0, t2=None, **kwargs):
+    """
+    Concatenates or superposes two videos.
+    Ajoute ou superpose deux vidéos.
+
+    @param      video_or_file1      vidéo 1
+    @param      video_or_file2      vidéo 2
+    @param      t1                  start of the first sound
+    @param      t2                  start of the second sound (or None to add it ad
+    @param      kwargs              additional parameters,
+                                    sent to `CompositeVideoClip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#compositevideoclip>`_
+    @return                         new sound
+    """
+    with VideoContext(video_or_file1) as video1:
+        with VideoContext(video_or_file2) as video2:
+            add = []
+            if t1 != 0:
+                add.append(video1.set_start(t1))
+            else:
+                add.append(video1)
+            if t2 is None:
+                add.append(video2.set_start(video1.duration + t1))
+            else:
+                add.append(video2.set_start(t2))
+            return CompositeVideoClip(add)
