@@ -11,7 +11,6 @@ with the notebook unittesting (it uses Popen too).
 import sys
 import os
 import unittest
-import subprocess
 
 
 try:
@@ -47,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.faq.faq_video import extract_video, save_video, video_enumerate_frames
+from src.code_beatrix.faq.faq_video import save_video, extract_video
 
 
 class TestVideo(ExtTestCase):
@@ -63,18 +62,6 @@ class TestVideo(ExtTestCase):
         exp = os.path.join(temp, "courte.mp4")
         save_video(vid2, exp)
         self.assertExists(exp)
-        subprocess._cleanup()
-
-    def test_extract_frames(self):
-        fLOG(
-            __file__,
-            self._testMethodName,
-            OutputPrint=__name__ == "__main__")
-        vid = os.path.join(os.path.dirname(__file__), 'data', 'videxa.mp4')
-        fra = list(video_enumerate_frames(vid))
-        self.assertEqual(len(fra), 78)
-        self.assertEqual(fra[0].shape, (720, 404, 3))
-        subprocess._cleanup()
 
 
 if __name__ == "__main__":

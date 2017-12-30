@@ -46,21 +46,21 @@ except ImportError:
 
 
 from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder, ExtTestCase
+from pyquickhelper.pycode import ExtTestCase
 from src.code_beatrix.faq.faq_video import video_enumerate_frames
 
 
-class TestLONGVideo(ExtTestCase):
+class TestVideoOpenProcess(ExtTestCase):
 
-    def test_extract_frames_img(self):
+    def test_extract_frames_check_open(self):
         fLOG(
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-        temp = get_temp_folder(__file__, "temp_video_extract_frames_img")
-        vid = os.path.join(temp, '..', 'data', 'videxa.mp4')
-        fns = list(video_enumerate_frames(vid, folder=temp))
-        self.assertEqual(len(fns), 78)
+        vid = os.path.join(os.path.dirname(__file__), 'data', 'videxa.mp4')
+        fra = list(video_enumerate_frames(vid))
+        self.assertEqual(len(fra), 78)
+        self.assertEqual(fra[0].shape, (720, 404, 3))
         subprocess._cleanup()
 
 
