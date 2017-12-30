@@ -48,23 +48,59 @@ def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/m
     return fi.default_filename
 
 
-def get_video(video_or_file):
+class VideoContext:
     """
-    Returns a :epkg:`VideoClip`.
-    Retourne un objet de type :epkg:`VideoClip`.
+    Creates a context for a :epkg:`VideoClip`.
+    It deals with opening, closing subprocesses.
 
-    @param      video_or_file   string or :epkg:`VideoClip`
     @return                     :epkg:`VideoClip`
     """
-    if isinstance(video_or_file, str):
-        if not os.path.exists(video_or_file):
-            raise FileNotFoundError(video_or_file)
-        video = VideoFileClip(video_or_file)
-    elif isinstance(video_or_file, VideoClip):
-        video = video_or_file
-    else:
-        raise TypeError('Unable to use type {0}'.format(type(video_or_file)))
-    return video
+
+    def __init__(self, video_or_file):
+        """
+        @param      video_or_file   string or :epkg:`VideoClip`
+        """
+        self.video_or_file = video_or_file
+
+    def __enter__(self):
+        """
+        Enters the context.
+        """
+        if isinstance(self.video_or_file, str):
+            if not os.path.exists(self.video_or_file):
+                raise FileNotFoundError(self.video_or_file)
+            video = VideoFileClip(self.video_or_file)
+            self.close = True
+        elif isinstance(self.video_or_file, VideoClip):
+            video = self.video_or_file
+            self.close = False
+        else:
+            raise TypeError(
+                'Unable to use type {0}'.format(type(self.video_or_file)))
+        self.video = video
+        return self
+
+    def __exit__(self, *exc):
+        """
+        Leaves the context.
+        """
+        if exc and len(exc) == 3 and exc[1] is not None:
+            raise exc[1]
+        if self.close:
+            del self.video
+        return False
+
+    def __getattr__(self, fct):
+        """
+        Retrieves a method in :epkg:`VideoClip`.
+
+        @param      fct     method name
+        @return             method
+        """
+        if not hasattr(self.video, fct):
+            raise AttributeError(
+                "Unable to find function '{0}' in {1}".format(fct, type(self.video)))
+        return getattr(self.video, fct)
 
 
 def extract_video(video_or_file, ta=0, tb=None):
@@ -78,8 +114,8 @@ def extract_video(video_or_file, ta=0, tb=None):
     @param      tb              end
     @return                     :epkg:`VideoClip`
     """
-    video = get_video(video_or_file)
-    return video.subclip(ta, tb)
+    with VideoContext(video_or_file) as video:
+        return video.subclip(ta, tb)
 
 
 def save_video(video_or_file, filename, verbose=False, **kwargs):
@@ -92,14 +128,14 @@ def save_video(video_or_file, filename, verbose=False, **kwargs):
     @param      verbose         logging or not
     @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
     """
-    video = get_video(video_or_file)
-    if verbose:
-        video.write_videofile(filename, verbose=verbose, **kwargs)
-    else:
-        f = io.StringIO()
-        with redirect_stdout(f):
-            with redirect_stderr(f):
-                video.write_videofile(filename, verbose=verbose, **kwargs)
+    with VideoContext(video_or_file) as video:
+        if verbose:
+            video.write_videofile(filename, verbose=verbose, **kwargs)
+        else:
+            f = io.StringIO()
+            with redirect_stdout(f):
+                with redirect_stderr(f):
+                    video.write_videofile(filename, verbose=verbose, **kwargs)
 
 
 def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%04d.jpg', **kwargs):
@@ -114,19 +150,19 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
     @param      kwargs          arguments to `iter_frames <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=frames#moviepy.audio.AudioClip.AudioClip.iter_frames>`_
     @return                     iterator on arrays or files
     """
-    video = get_video(video_or_file)
-    if folder is None:
-        for frame in video.iter_frames(fps=fps, **kwargs):
-            yield frame
-    else:
-        if 'dtype' in kwargs:
-            if kwargs['dtype'] != 'uint8':
-                raise ValueError("dtype must be uint8")
-            else:
-                del kwargs['dtype']
+    with VideoContext(video_or_file) as video:
+        if folder is None:
+            for frame in video.iter_frames(fps=fps, **kwargs):
+                yield frame
+        else:
+            if 'dtype' in kwargs:
+                if kwargs['dtype'] != 'uint8':
+                    raise ValueError("dtype must be uint8")
+                else:
+                    del kwargs['dtype']
 
-        for i, frame in enumerate(video.iter_frames(fps=fps, dtype='uint8', **kwargs)):
-            # saves as image
-            name = os.path.join(folder, pattern % i)
-            imsave(name, frame)
-            yield name
+            for i, frame in enumerate(video.iter_frames(fps=fps, dtype='uint8', **kwargs)):
+                # saves as image
+                name = os.path.join(folder, pattern % i)
+                imsave(name, frame)
+                yield name

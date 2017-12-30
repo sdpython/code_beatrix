@@ -11,7 +11,6 @@ with the notebook unittesting (it uses Popen too).
 import sys
 import os
 import unittest
-import subprocess
 
 
 try:
@@ -61,7 +60,6 @@ class TestVideoOpenProcess(ExtTestCase):
         fra = list(video_enumerate_frames(vid))
         self.assertEqual(len(fra), 78)
         self.assertEqual(fra[0].shape, (720, 404, 3))
-        subprocess._cleanup()
 
 
 if __name__ == "__main__":
