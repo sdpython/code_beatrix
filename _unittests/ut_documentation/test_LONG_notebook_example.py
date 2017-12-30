@@ -6,6 +6,7 @@
 import sys
 import os
 import unittest
+import shutil
 
 
 try:
@@ -48,16 +49,23 @@ class TestLONGNotebookExample (unittest.TestCase):
 
     def setUp(self):
         add_missing_development_version(
-            ["pyensae", "jyquickhelper"], __file__)
+            ["pyensae", "jyquickhelper", "ensae_projects"], __file__)
 
     def test_notebook_example(self):
         fLOG(
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-        temp = get_temp_folder(__file__, "temp_exemples")
+        temp = get_temp_folder(__file__, "temp_exemples_long")
         keepnote = ls_notebooks("exemples")
         self.assertTrue(len(keepnote) > 0)
+        
+        source = os.path.join(os.path.dirname(keepnote[0]), "data")
+        data = os.path.join(temp, 'data')
+        os.mkdir(data)
+        for img in os.listdir(source):
+            shutil.copy(os.path.join(source, img), data)
+        
         res = execute_notebooks(temp, keepnote,
                                 lambda i, n: "poppins" in n,
                                 fLOG=fLOG,
