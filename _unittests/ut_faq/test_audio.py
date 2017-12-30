@@ -46,21 +46,22 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.faq.faq_video import save_video, video_extract_video
+from src.code_beatrix.faq.faq_video import audio_compose, save_audio
 
 
-class TestVideo(ExtTestCase):
+class TestAudio(ExtTestCase):
 
-    def test_extract_avideo(self):
+    def test_extract_audio(self):
         fLOG(
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-        temp = get_temp_folder(__file__, "temp_video_extract")
-        vid = os.path.join(temp, '..', 'data', 'videxa.mp4')
-        vid2 = video_extract_video(vid, '00:00:01', '00:00:04')
-        exp = os.path.join(temp, "courte.mp4")
-        save_video(vid2, exp)
+        temp = get_temp_folder(__file__, "temp_audio")
+        aud = os.path.join(temp, '..', 'data', 'cartoon011.wav')
+
+        aud2 = audio_compose(aud, aud, 1, 3)
+        exp = os.path.join(temp, "courte_audio.wav")
+        save_audio(aud2, exp)
         self.assertExists(exp)
 
 

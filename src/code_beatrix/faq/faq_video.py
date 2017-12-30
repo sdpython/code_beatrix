@@ -8,8 +8,9 @@ import io
 import os
 from pytube import YouTube
 from imageio import imsave
-from moviepy.video.VideoClip import VideoClip
-from moviepy.editor import VideoFileClip
+import moviepy.audio.fx.all as afx
+from moviepy.audio.AudioClip import AudioArrayClip, CompositeAudioClip
+from .moviepy_context import AudioContext, VideoContext
 
 
 def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/mp4", **kwargs):
@@ -48,62 +49,7 @@ def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/m
     return fi.default_filename
 
 
-class VideoContext:
-    """
-    Creates a context for a :epkg:`VideoClip`.
-    It deals with opening, closing subprocesses.
-
-    @return                     :epkg:`VideoClip`
-    """
-
-    def __init__(self, video_or_file):
-        """
-        @param      video_or_file   string or :epkg:`VideoClip`
-        """
-        self.video_or_file = video_or_file
-
-    def __enter__(self):
-        """
-        Enters the context.
-        """
-        if isinstance(self.video_or_file, str):
-            if not os.path.exists(self.video_or_file):
-                raise FileNotFoundError(self.video_or_file)
-            video = VideoFileClip(self.video_or_file)
-            self.close = True
-        elif isinstance(self.video_or_file, VideoClip):
-            video = self.video_or_file
-            self.close = False
-        else:
-            raise TypeError(
-                'Unable to use type {0}'.format(type(self.video_or_file)))
-        self.video = video
-        return self
-
-    def __exit__(self, *exc):
-        """
-        Leaves the context.
-        """
-        if exc and len(exc) == 3 and exc[1] is not None:
-            raise exc[1]
-        if self.close:
-            del self.video
-        return False
-
-    def __getattr__(self, fct):
-        """
-        Retrieves a method in :epkg:`VideoClip`.
-
-        @param      fct     method name
-        @return             method
-        """
-        if not hasattr(self.video, fct):
-            raise AttributeError(
-                "Unable to find function '{0}' in {1}".format(fct, type(self.video)))
-        return getattr(self.video, fct)
-
-
-def extract_video(video_or_file, ta=0, tb=None):
+def video_extract_video(video_or_file, ta=0, tb=None):
     """
     Extracts a part of a video.
     Extrait une partie de la vidéo.
@@ -138,6 +84,26 @@ def save_video(video_or_file, filename, verbose=False, **kwargs):
                     video.write_videofile(filename, verbose=verbose, **kwargs)
 
 
+def save_audio(audio_or_file, filename, verbose=False, **kwargs):
+    """
+    Saves as a sound.
+    Enregistre un son dans un fichier.
+    Uses `write_audiofile <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=audioclip#moviepy.audio.AudioClip.AudioClip.write_audiofile>`_.
+
+    @param      audio_or_file   string or :epkg:`AudioClip`
+    @param      verbose         logging or not
+    @param      kwargs          see `write_audiofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
+    """
+    with AudioContext(audio_or_file) as audio:
+        if verbose:
+            audio.write_audiofile(filename, verbose=verbose, **kwargs)
+        else:
+            f = io.StringIO()
+            with redirect_stdout(f):
+                with redirect_stderr(f):
+                    audio.write_audiofile(filename, verbose=verbose, **kwargs)
+
+
 def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%04d.jpg', **kwargs):
     """
     Enumerates frames from a video.
@@ -166,3 +132,98 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
                 name = os.path.join(folder, pattern % i)
                 imsave(name, frame)
                 yield name
+
+
+def audio_modification(new_sound, loop_duration=None, volumex=1.,
+                       fadein=False, fadeout=False, t_start=0, t_end=None,
+                       speed=1.):
+    """
+    Modifies a sound.
+    Modifie un son.
+
+    @param      loop_duration   loops sound
+    @param      volumex         multiplies the sound
+    @param      fadein          decreases the volume of the first seconds
+    @param      fadeout         decreases the volume of the last seconds
+    @param      t_start         shorten the audio
+    @param      t_end           shorten the audio
+    @param      speed           speed of the sound
+    @return                     new sound
+    """
+    with AudioContext(new_sound) as audio:
+        if speed:
+            audio = audio.fl_time(lambda t: t * speed, keep_duration=True)
+            wav = audio.to_soundarray(fps=audio.fps)
+            audio = AudioArrayClip(wav, audio.fps)
+        if volumex != 1.:
+            audio = audio.fx(afx.volumex, volumex)
+        if loop_duration:
+            audio = afx.audio_loop(audio, duration=loop_duration)
+        if fadein:
+            audio = audio.fx(afx.audio_fadein, 1.0)
+        if fadeout:
+            audio = audio.fx(afx.audio_fadeout, 1.0)
+        if t_start != 0 or t_end is not None:
+            audio = audio.subclip(t_start=t_start, t_end=t_end)
+        return audio
+
+
+def video_replace_sound(video_or_file, new_sound, **kwargs):
+    """
+    Replaces the sound of a video.
+    Remplace la bande-son d'une vidéo.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      new_sound       sound
+    @param      kwargs          see @see fn audio_modification
+    @param      loop            if True, *loop_duration* becomes the duration of the video
+    @return                     :epkg:`VideoClip`
+
+    The list of available transformations is at:
+    `vfx <https://zulko.github.io/moviepy/ref/videofx.html?highlight=vfx>`_.
+    """
+    with VideoContext(video_or_file) as video:
+        if 'loop' in kwargs:
+            kwargs['loop_duration'] = video.duration
+            del kwargs['loop']
+        audio = audio_modification(new_sound, **kwargs)
+        new_clip = video.set_audio(audio)
+        return new_clip
+
+
+def video_extract_audio(video_or_file):
+    """
+    Returns the audio of a video.
+    Retourne le son d'une vidéo.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @return                     :epkg:`AudioClip`
+    """
+    with VideoContext(video_or_file) as video:
+        return video.audio
+
+
+def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
+    """
+    Concatenates or superposes two sounds.
+    Ajoute ou superpose deux sons.
+
+    @param      audio_or_file1      son 1
+    @param      audio_or_file2      son 2
+    @param      t1                  start of the first sound
+    @param      t2                  start of the second sound (or None to add it ad
+    @param      concatenate         concatenate or superpose
+    @return                         new sound
+    """
+    with AudioContext(audio_or_file1) as audio1:
+        with AudioContext(audio_or_file2) as audio2:
+            add = []
+            if t1 != 0:
+                add.append(audio1.set_start(t1))
+            else:
+                add.append(audio1)
+            if t2 is None:
+                add.append(audio2.set_start(audio1.duration + t1))
+            else:
+                add.append(audio2.set_start(t2))
+            return CompositeAudioClip(add)

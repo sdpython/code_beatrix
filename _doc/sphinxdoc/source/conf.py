@@ -72,6 +72,7 @@ imgmath_latex_preamble += custom_preamble
 latex_elements['preamble'] += custom_preamble
 mathdef_link_only = True
 
+epkg_dictionary['AutioClip'] = 'https://zulko.github.io/moviepy/ref/AudioClip/AudioClip.html'
 epkg_dictionary['deep learning'] = 'https://en.wikipedia.org/wiki/Deep_learning'
 epkg_dictionary['fcn'] = 'https://github.com/wkentaro/fcn'
 epkg_dictionary['pytube'] = 'https://github.com/nficano/pytube'

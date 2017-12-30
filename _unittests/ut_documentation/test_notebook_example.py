@@ -48,7 +48,7 @@ class TestNotebookExample (unittest.TestCase):
 
     def setUp(self):
         add_missing_development_version(
-            ["pyensae", "jyquickhelper"], __file__)
+            ["pyensae", "jyquickhelper", "ensae_projects"], __file__)
 
     def test_notebook_example(self):
         fLOG(
