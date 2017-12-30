@@ -10,8 +10,8 @@ install:
   - pip freeze
   - pip freeze > pip_freeze.txt
 script:
-  - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -g ".*noenv.*", NAME: "UT" }
-  - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -e ".*noenv.*", NAME: "UT_NOENV" }
+  - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -g \".*noenv.*\", NAME: "UT" }
+  - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -e \".*noenv.*\", NAME: "UT_NOENV" }
   - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests_LONG", NAME: "UT_LONG" }
   - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests_SKIP", NAME: "UT_SKIP" }
 after_script:
