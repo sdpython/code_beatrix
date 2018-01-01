@@ -129,3 +129,4 @@ Annexes
 
 * :ref:`genindex`
 * :ref:`modindex` (voir aussi :ref:`l-modules`, :ref:`l-classes`, :ref:`l-functions`)
+* `Unit Test Coverage <coverage/index.html>`_
