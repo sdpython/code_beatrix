@@ -13,6 +13,10 @@ from moviepy.audio.AudioClip import AudioArrayClip, CompositeAudioClip
 from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from .moviepy_context import AudioContext, VideoContext
 
+##########
+# youtube
+##########
+
 
 def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/mp4", **kwargs):
     """
@@ -49,20 +53,9 @@ def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/m
     fi.download(output_path=output_path)
     return fi.default_filename
 
-
-def video_extract_video(video_or_file, ta=0, tb=None):
-    """
-    Extracts a part of a video.
-    Extrait une partie de la vidéo.
-    Uses `subclip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.VideoClip.VideoClip.subclip>`_.
-
-    @param      video_or_file   string or :epkg:`VideoClip`
-    @param      ta              beginning
-    @param      tb              end
-    @return                     :epkg:`VideoClip`
-    """
-    with VideoContext(video_or_file) as video:
-        return video.subclip(ta, tb)
+########
+# audio
+########
 
 
 def audio_extract_audio(audio_or_file, ta=0, tb=None):
@@ -78,37 +71,6 @@ def audio_extract_audio(audio_or_file, ta=0, tb=None):
     """
     with AudioContext(audio_or_file) as audio:
         return audio.subclip(ta, tb)
-
-
-def video_save(video_or_file, filename, verbose=False, **kwargs):
-    """
-    Saves as a video or as a :epkg:`gif`.
-    Enregistre une vidéo dans un fichier.
-    Uses `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_.
-
-    @param      video_or_file   string or :epkg:`VideoClip`
-    @param      verbose         logging or not
-    @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
-    """
-    if isinstance(filename, str) and os.path.splitext(filename)[-1] == '.gif':
-        with VideoContext(video_or_file) as video:
-            if verbose:
-                video.write_gif(filename, verbose=verbose, **kwargs)
-            else:
-                f = io.StringIO()
-                with redirect_stdout(f):
-                    with redirect_stderr(f):
-                        video.write_gif(filename, verbose=verbose, **kwargs)
-    else:
-        with VideoContext(video_or_file) as video:
-            if verbose:
-                video.write_videofile(filename, verbose=verbose, **kwargs)
-            else:
-                f = io.StringIO()
-                with redirect_stdout(f):
-                    with redirect_stderr(f):
-                        video.write_videofile(
-                            filename, verbose=verbose, **kwargs)
 
 
 def audio_save(audio_or_file, filename, verbose=False, **kwargs):
@@ -129,36 +91,6 @@ def audio_save(audio_or_file, filename, verbose=False, **kwargs):
             with redirect_stdout(f):
                 with redirect_stderr(f):
                     audio.write_audiofile(filename, verbose=verbose, **kwargs)
-
-
-def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%04d.jpg', **kwargs):
-    """
-    Enumerates frames from a video.
-    Itère sur des images depuis une vidéo.
-
-    @param      video_or_file   string or :epkg:`VideoClip`
-    @param      folder          where to exports the images or returns arrays if None
-    @param      pattern         image names
-    @param      fps             frames per seconds
-    @param      kwargs          arguments to `iter_frames <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=frames#moviepy.audio.AudioClip.AudioClip.iter_frames>`_
-    @return                     iterator on arrays or files
-    """
-    with VideoContext(video_or_file) as video:
-        if folder is None:
-            for frame in video.iter_frames(fps=fps, **kwargs):
-                yield frame
-        else:
-            if 'dtype' in kwargs:
-                if kwargs['dtype'] != 'uint8':
-                    raise ValueError("dtype must be uint8")
-                else:
-                    del kwargs['dtype']
-
-            for i, frame in enumerate(video.iter_frames(fps=fps, dtype='uint8', **kwargs)):
-                # saves as image
-                name = os.path.join(folder, pattern % i)
-                imsave(name, frame)
-                yield name
 
 
 def audio_modification(new_sound, loop_duration=None, volumex=1.,
@@ -195,6 +127,111 @@ def audio_modification(new_sound, loop_duration=None, volumex=1.,
         return audio
 
 
+def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
+    """
+    Concatenates or superposes two sounds.
+    Ajoute ou superpose deux sons.
+
+    @param      audio_or_file1      son 1
+    @param      audio_or_file2      son 2
+    @param      t1                  start of the first sound
+    @param      t2                  start of the second sound (or None to add it ad
+    @return                         new sound
+    """
+    with AudioContext(audio_or_file1) as audio1:
+        with AudioContext(audio_or_file2) as audio2:
+            add = []
+            if t1 != 0:
+                add.append(audio1.set_start(t1))
+            else:
+                add.append(audio1)
+            if t2 is None:
+                add.append(audio2.set_start(audio1.duration + t1))
+            else:
+                add.append(audio2.set_start(t2))
+            return CompositeAudioClip(add)
+
+
+########
+# vidéo
+########
+
+def video_extract_video(video_or_file, ta=0, tb=None):
+    """
+    Extracts a part of a video.
+    Extrait une partie de la vidéo.
+    Uses `subclip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.VideoClip.VideoClip.subclip>`_.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      ta              beginning
+    @param      tb              end
+    @return                     :epkg:`VideoClip`
+    """
+    with VideoContext(video_or_file) as video:
+        return video.subclip(ta, tb)
+
+
+def video_save(video_or_file, filename, verbose=False, **kwargs):
+    """
+    Saves as a video or as a :epkg:`gif`.
+    Enregistre une vidéo dans un fichier.
+    Uses `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      verbose         logging or not
+    @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
+    """
+    if isinstance(filename, str) and os.path.splitext(filename)[-1] == '.gif':
+        with VideoContext(video_or_file) as video:
+            if verbose:
+                video.write_gif(filename, verbose=verbose, **kwargs)
+            else:
+                f = io.StringIO()
+                with redirect_stdout(f):
+                    with redirect_stderr(f):
+                        video.write_gif(filename, verbose=verbose, **kwargs)
+    else:
+        with VideoContext(video_or_file) as video:
+            if verbose:
+                video.write_videofile(filename, verbose=verbose, **kwargs)
+            else:
+                f = io.StringIO()
+                with redirect_stdout(f):
+                    with redirect_stderr(f):
+                        video.write_videofile(
+                            filename, verbose=verbose, **kwargs)
+
+
+def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%04d.jpg', **kwargs):
+    """
+    Enumerates frames from a video.
+    Itère sur des images depuis une vidéo.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      folder          where to exports the images or returns arrays if None
+    @param      pattern         image names
+    @param      fps             frames per seconds
+    @param      kwargs          arguments to `iter_frames <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=frames#moviepy.audio.AudioClip.AudioClip.iter_frames>`_
+    @return                     iterator on arrays or files
+    """
+    with VideoContext(video_or_file) as video:
+        if folder is None:
+            for frame in video.iter_frames(fps=fps, **kwargs):
+                yield frame
+        else:
+            if 'dtype' in kwargs:
+                if kwargs['dtype'] != 'uint8':
+                    raise ValueError("dtype must be uint8")
+                else:
+                    del kwargs['dtype']
+
+            for i, frame in enumerate(video.iter_frames(fps=fps, dtype='uint8', **kwargs)):
+                # saves as image
+                name = os.path.join(folder, pattern % i)
+                imsave(name, frame)
+                yield name
+
+
 def video_replace_sound(video_or_file, new_sound, **kwargs):
     """
     Replaces the sound of a video.
@@ -228,31 +265,6 @@ def video_extract_audio(video_or_file):
     """
     with VideoContext(video_or_file) as video:
         return video.audio
-
-
-def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
-    """
-    Concatenates or superposes two sounds.
-    Ajoute ou superpose deux sons.
-
-    @param      audio_or_file1      son 1
-    @param      audio_or_file2      son 2
-    @param      t1                  start of the first sound
-    @param      t2                  start of the second sound (or None to add it ad
-    @return                         new sound
-    """
-    with AudioContext(audio_or_file1) as audio1:
-        with AudioContext(audio_or_file2) as audio2:
-            add = []
-            if t1 != 0:
-                add.append(audio1.set_start(t1))
-            else:
-                add.append(audio1)
-            if t2 is None:
-                add.append(audio2.set_start(audio1.duration + t1))
-            else:
-                add.append(audio2.set_start(t2))
-            return CompositeAudioClip(add)
 
 
 def video_compose(video_or_file1, video_or_file2, t1=0, t2=None, **kwargs):
