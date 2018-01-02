@@ -35,6 +35,7 @@
     :epkg:`Mary Poppins` du décor dans lequel elle danse.
 
     .. image:: image_mary_poppins_12_0.jpeg
+        :width: 400
 
     Ce procédé s'appuie sur du :epkg:`deep learning` et je ne pense pas
     que cette fonctionnalité soit accessible depuis un logiciel de

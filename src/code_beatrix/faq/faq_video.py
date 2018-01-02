@@ -9,6 +9,7 @@ import os
 from pytube import YouTube
 from imageio import imsave
 import moviepy.audio.fx.all as afx
+import moviepy.video.fx.all as vfx
 from moviepy.audio.AudioClip import AudioArrayClip, CompositeAudioClip
 from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
@@ -328,3 +329,41 @@ def video_concatenate(video_or_files, **kwargs):
     for _ in ctx:
         _.__exit__()
     return res
+
+
+def video_modification(new_video, volumex=1., resize=1., speed=1.,
+                       mirrorx=False, mirrory=False, method=None):
+    """
+    Modifies a video.
+    Modifie une vidéo.
+
+    @param      volumex         multiplies the sound
+    @param      speed           speed of the sound
+    @param      resize          resize
+    @param      mirrorx         mirror x
+    @param      mirrory         mirror y
+    @param      method          method used to resize
+    @return                     new video
+    """
+    def check_duration(video):
+        if video.duration is None:
+            raise ValueError('video duration should not be None')
+
+    with VideoContext(new_video) as video:
+        if speed:
+            check_duration(video)
+            dur = video.duration
+            video = video.fl_time(lambda t: t * speed)
+            video = video.set_duration(dur / speed)
+        if volumex != 1.:
+            video = video.fx(vfx.volumex, volumex)
+        if resize != 1.:
+            if method is not None:
+                video = video.fx(vfx.resize, resize)
+            else:
+                video = video.fx(vfx.resize, resize, method=method)
+        if mirrorx:
+            video = video.fx(vfx.mirror_x)
+        if mirrory:
+            video = video.fx(vfx.mirror_y)
+        return video
