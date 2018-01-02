@@ -19,7 +19,7 @@
     (voir `FramaLibre / montage <https://framalibre.org/recherche-par-crit-res?keys=montage>`_).
     Au lieu de ça, j'ai regardé s'il existait un module :epkg:`Python`
     qui me permettait de faire cela. J'ai trouvé
-    :epgk:`moviepy` et surtout la
+    :epkg:`moviepy` et surtout la
     `gallerie d'exemples <https://zulko.github.io/moviepy/examples/examples.html>`_
     qui donne une assez bonne idée de ce qu'on peut faire avec.
 
@@ -34,7 +34,7 @@
     vidéo. J'ai par exemple isolé
     :epkg:`Mary Poppins` du décor dans lequel elle danse.
 
-    .. image:: images/image_mary_poppins_12_0.jpeg
+    .. image:: image_mary_poppins_12_0.jpeg
 
     Ce procédé s'appuie sur du :epkg:`deep learning` et je ne pense pas
     que cette fonctionnalité soit accessible depuis un logiciel de
@@ -42,7 +42,7 @@
     une interface utilisateur plutôt complexe. Et voici
     :epkg:`Mary Poppins` sur une plage.
 
-    .. image:: images/image_mary_poppins_29_1.png
+    .. image:: image_mary_poppins_29_1.png
 
     Ce qu'on souhaite faire est souvent un assemblage plus ou moins
     long de tâche simple et c'est assez facile à écrire qu'on on dispose

@@ -1,8 +1,8 @@
 
 .. _l-medias:
 
-Médias
-======
+Arts, Médias et Programmation
+=============================
 
 Le monde d'aujourd'hui est à mon grand regret très médiatique.
 Les enfants lisent moins, ingurgitent des vidéos sur :epkg:`YouTube` et

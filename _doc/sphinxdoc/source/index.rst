@@ -45,7 +45,7 @@ Contenu rangé par thèmes
     arduino/index_arduino
     histoires/index_histoires
     maths/index_maths
-    medias/index_medias
+    art/index_art
     API/index
 
 On programme pour faire des jeux, des sites internets, des recherches scientifiques,
