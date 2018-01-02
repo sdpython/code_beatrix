@@ -22,7 +22,7 @@ import my_hachibee_sphinx_theme as hachibee_sphinx_theme
 from pyquickhelper.helpgen.default_conf import set_sphinx_variables, get_default_stylesheet
 
 
-set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2017,
+set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2018,
                      "hachibee", hachibee_sphinx_theme.get_html_themes_path(),
                      locals(), add_extensions=['hachibee_sphinx_theme'],
                      custom_style='custom_style.css',
