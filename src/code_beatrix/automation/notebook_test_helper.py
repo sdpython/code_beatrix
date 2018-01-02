@@ -147,4 +147,5 @@ def execute_notebooks(folder, notebooks, filter, clean_function=None,
     if len(notebooks) == 0:
         raise ValueError("Empty list of notebooks.")
     return execute_notebook_list(
-        folder, notebooks, fLOG=fLOG, valid=valid_cell, additional_path=addpaths, kernel_name=kernel_name)
+        folder, notebooks, fLOG=fLOG, valid=valid_cell, additional_path=addpaths,
+        kernel_name=kernel_name, clean_function=clean_function)
