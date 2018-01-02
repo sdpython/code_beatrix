@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.faq.faq_video import video_save, video_extract_video, video_compose
+from src.code_beatrix.faq.faq_video import video_save, video_extract_video, video_compose, video_concatenate
 
 
 class TestVideo(ExtTestCase):
@@ -76,6 +76,11 @@ class TestVideo(ExtTestCase):
         vid2 = video_compose(vid, vid, '00:00:01', '00:00:04')
         exp = os.path.join(temp, "courte.mp4")
         video_save(vid2, exp)
+        self.assertExists(exp)
+
+        exp = os.path.join(temp, "courte2.mp4")
+        vid3 = video_concatenate([vid, vid])
+        video_save(vid3, exp)
         self.assertExists(exp)
 
 

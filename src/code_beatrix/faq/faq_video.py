@@ -11,6 +11,8 @@ from imageio import imsave
 import moviepy.audio.fx.all as afx
 from moviepy.audio.AudioClip import AudioArrayClip, CompositeAudioClip
 from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
+from moviepy.video.compositing.concatenate import concatenate_videoclips
+from moviepy.audio.AudioClip import concatenate_audioclips
 from .moviepy_context import AudioContext, VideoContext
 
 ##########
@@ -152,9 +154,26 @@ def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
             return CompositeAudioClip(add)
 
 
+def audio_concatenate(audio_or_files, **kwargs):
+    """
+    Concatenates sounds.
+    Met bout à bout des sons.
+
+    @param      audio_or_files  list of sounds or filenames
+    @param      kwargs          additional parameters for
+                                `concatenate_audioclips <https://github.com/Zulko/moviepy/blob/master/moviepy/audio/AudioClip.py#L308>`_
+    @return                     :epkg:`VideoClip`
+    """
+    ctx = [AudioContext(_).__enter__() for _ in audio_or_files]
+    res = concatenate_audioclips([_.audio for _ in ctx], **kwargs)
+    for _ in ctx:
+        _.__exit__()
+    return res
+
 ########
 # vidéo
 ########
+
 
 def video_extract_video(video_or_file, ta=0, tb=None):
     """
@@ -278,7 +297,7 @@ def video_compose(video_or_file1, video_or_file2, t1=0, t2=None, **kwargs):
     @param      t2                  start of the second sound (or None to add it ad
     @param      kwargs              additional parameters,
                                     sent to `CompositeVideoClip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#compositevideoclip>`_
-    @return                         new sound
+    @return                         :epkg:`VideoClip`
     """
     with VideoContext(video_or_file1) as video1:
         with VideoContext(video_or_file2) as video2:
@@ -292,3 +311,20 @@ def video_compose(video_or_file1, video_or_file2, t1=0, t2=None, **kwargs):
             else:
                 add.append(video2.set_start(t2))
             return CompositeVideoClip(add)
+
+
+def video_concatenate(video_or_files, **kwargs):
+    """
+    Concatenates videos.
+    Met bout à bout des vidéos.
+
+    @param      video_or_files  list of videos or filenames
+    @param      kwargs          additional parameters for
+                                `concatenate_videoclips <https://github.com/Zulko/moviepy/blob/master/moviepy/video/compositing/concatenate.py#L15>`_
+    @return                     :epkg:`VideoClip`
+    """
+    ctx = [VideoContext(_).__enter__() for _ in video_or_files]
+    res = concatenate_videoclips([_.video for _ in ctx], **kwargs)
+    for _ in ctx:
+        _.__exit__()
+    return res

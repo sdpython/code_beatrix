@@ -76,10 +76,14 @@ epkg_dictionary['AutioClip'] = 'https://zulko.github.io/moviepy/ref/AudioClip/Au
 epkg_dictionary['deep learning'] = 'https://en.wikipedia.org/wiki/Deep_learning'
 epkg_dictionary['fcn'] = 'https://github.com/wkentaro/fcn'
 epkg_dictionary['gif'] = 'https://fr.wikipedia.org/wiki/Graphics_Interchange_Format'
+epkg_dictionary[
+    'Mary Poppins'] = 'https://fr.wikipedia.org/wiki/Mary_Poppins_(film,_1964)'
 epkg_dictionary['OpenShot'] = 'https://www.openshot.org/'
 epkg_dictionary['pytube'] = 'https://github.com/nficano/pytube'
 epkg_dictionary['SciTe'] = 'http://www.scintilla.org/SciTE.html'
 epkg_dictionary['scratch'] = "https://scratch.mit.edu/"
 epkg_dictionary['ShotCut'] = 'https://www.shotcut.org/'
 epkg_dictionary['VideoClip'] = 'https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html'
+epkg_dictionary['VLC'] = 'https://www.videolan.org/vlc/index.html'
+epkg_dictionary['YouTube'] = "https://www.youtube.com/"
 epkg_dictionary['youtube'] = "https://www.youtube.com/"

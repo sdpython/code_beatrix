@@ -14,15 +14,45 @@ la même opération sur chaque image d'un image comme l'extraction
 des personnages du film (voir :ref:`imagemarypoppinsrst`).
 Il est parfois plus simple de programmer plutôt que d'apprendre
 à se servir d'un logiciel qui propose une interface utilisateur
-pas toujours intuitive.
+pas toujours intuitive (lire aussi
+:ref:`Montage vidéo avec Python <b-montage-video-2018>`.
 
 .. contents::
     :local:
+
+Les fonctions sur les vidéos commencent quasiment toutes par le même
+paramètre :*video_or_file*. Celui-ci peut soit être un nom de fichier,
+soit un objet de type :epkg:`VideoClip`. Un exemple :
+
+::
+
+    from code_beatrix.faq.faq_video import video_concatenate, video_save
+
+    new_video = video_concatenate(["video1.mp4", "video2.avi"])
+    video_save(new_video)
+
+Un autre exemple où la première vidéo est un extrait d'une vidéo :
+
+::
+
+    from code_beatrix.faq.faq_video import video_concatenate, video_save
+
+    v1 = video_extract_video("video1.mp4", '00:00:01.45', '00:00:010.51')
+    new_video = video_concatenate([v1, "video2.avi"])
+    video_save(new_video)
+
+La même logique s'applique aux sons. Les fonctions qui suivent
+couvrent un petit sous-ensemble de ce qu'il est possible de faire
+avec le module :epkg:`moviepy`. Pour aller plus loin, il peut être
+utile de s'inspirer du code de celles-ci et de regarder
+les `exemples de la documentation <https://zulko.github.io/moviepy/examples/examples.html>`_.
 
 Audio
 +++++
 
 .. autosignature:: code_beatrix.faq.faq_video.audio_compose
+
+.. autosignature:: code_beatrix.faq.faq_video.audio_concatenate
 
 .. autosignature:: code_beatrix.faq.faq_video.audio_extract_audio
 
@@ -35,13 +65,15 @@ Video
 
 .. autosignature:: code_beatrix.faq.faq_video.video_compose
 
-.. autosignature:: code_beatrix.faq.faq_video.video_extract_video
+.. autosignature:: code_beatrix.faq.faq_video.video_concatenate
 
 .. autosignature:: code_beatrix.faq.faq_video.video_enumerate_frames
 
 .. autosignature:: code_beatrix.faq.faq_video.video_extract_audio
 
 .. autosignature:: code_beatrix.faq.faq_video.video_extract_video
+
+.. autosignature:: code_beatrix.faq.faq_video.video_modification
 
 .. autosignature:: code_beatrix.faq.faq_video.video_replace_sound
 
