@@ -71,6 +71,13 @@ def audio_extract_audio(audio_or_file, ta=0, tb=None):
     @param      ta              beginning
     @param      tb              end
     @return                     :epkg:`VideoClip`
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq.faq_video import audio_extract_audio
+        son = audio_extract_audio('son.mp3', '00:00:01', '00:00:02')
     """
     with AudioContext(audio_or_file) as audio:
         return audio.subclip(ta, tb)
@@ -140,6 +147,13 @@ def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
     @param      t1                  start of the first sound
     @param      t2                  start of the second sound (or None to add it ad
     @return                         new sound
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq.faq_video import audio_compose
+        son = audio_compose('son1.mp3', 'son2.mp3', 0, 10)
     """
     with AudioContext(audio_or_file1) as audio1:
         with AudioContext(audio_or_file2) as audio2:
@@ -164,6 +178,13 @@ def audio_concatenate(audio_or_files, **kwargs):
     @param      kwargs          additional parameters for
                                 `concatenate_audioclips <https://github.com/Zulko/moviepy/blob/master/moviepy/audio/AudioClip.py#L308>`_
     @return                     :epkg:`VideoClip`
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq.faq_video import audio_concatenate
+        son = audio_concatenate('son1.mp3', 'son2.mp3')
     """
     ctx = [AudioContext(_).__enter__() for _ in audio_or_files]
     res = concatenate_audioclips([_.audio for _ in ctx], **kwargs)
@@ -186,6 +207,13 @@ def video_extract_video(video_or_file, ta=0, tb=None):
     @param      ta              beginning
     @param      tb              end
     @return                     :epkg:`VideoClip`
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq_faq_video import video_extract_video
+        vid = video_extract_video('exemple.mp4', '00:00:01', '00:00:04')
     """
     with VideoContext(video_or_file) as video:
         return video.subclip(ta, tb)
@@ -200,6 +228,14 @@ def video_save(video_or_file, filename, verbose=False, **kwargs):
     @param      video_or_file   string or :epkg:`VideoClip`
     @param      verbose         logging or not
     @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq_faq_video import video_extract_video, video_save
+        vid = video_extract_video('exemple.mp4', '00:00:01', '00:00:04')
+        video_save(vid, 'new_video.mp4')
     """
     if isinstance(filename, str) and os.path.splitext(filename)[-1] == '.gif':
         with VideoContext(video_or_file) as video:
@@ -232,7 +268,17 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
     @param      pattern         image names
     @param      fps             frames per seconds
     @param      kwargs          arguments to `iter_frames <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=frames#moviepy.audio.AudioClip.AudioClip.iter_frames>`_
-    @return                     iterator on arrays or files
+    @return                     iterator on arrays or files (see parameter *folder*)
+
+    Example:
+
+    ::
+
+        form code_beatrix.faq.faq_video import video_enumerate_frames
+        vid = 'example.mp4')
+        for frame in video_enumerate_frames(vid, folder=temp):
+            # ...
+
     """
     with VideoContext(video_or_file) as video:
         if folder is None:
@@ -265,6 +311,13 @@ def video_replace_sound(video_or_file, new_sound, **kwargs):
 
     The list of available transformations is at:
     `vfx <https://zulko.github.io/moviepy/ref/videofx.html?highlight=vfx>`_.
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq.faq_video import video_replace_sound
+        vid = video_replace_sound('video.mp4', 'son.mp3', loop=True, volumex=5.5, t_end='00:00:05')
     """
     with VideoContext(video_or_file) as video:
         if 'loop' in kwargs:
@@ -299,6 +352,13 @@ def video_compose(video_or_file1, video_or_file2, t1=0, t2=None, **kwargs):
     @param      kwargs              additional parameters,
                                     sent to `CompositeVideoClip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#compositevideoclip>`_
     @return                         :epkg:`VideoClip`
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq.faq_video import video_compose
+        vid = video_compose('video1.mp4', 'video2.mp4', '00:00:01', '00:00:04')
     """
     with VideoContext(video_or_file1) as video1:
         with VideoContext(video_or_file2) as video2:
@@ -344,6 +404,13 @@ def video_modification(new_video, volumex=1., resize=1., speed=1.,
     @param      mirrory         mirror y
     @param      method          method used to resize
     @return                     new video
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq.faq_video import video_modification
+        vid = video_modification('video.mp4', speed=2., mirrory=True, mirrorx=True)
     """
     def check_duration(video):
         if video.duration is None:
