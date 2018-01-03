@@ -50,7 +50,7 @@ Description
 
 Exercices pour découvrir la programmation et les algorithmes.
 Ceux-ci peuvent servir de base pour organiser un
-`coding goûter <http://www.frenchtechtoulouse.com/coding-gouter-toulouse-apprendre-coder-en-samusant/>`_
+`coding goûter <https://www.facebook.com/ateliergouterducode/>`_
 Exercises to learn programming, algorithms for Coding Snacks.
 
 Language: French.
