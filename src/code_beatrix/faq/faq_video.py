@@ -6,15 +6,20 @@
 from contextlib import redirect_stdout, redirect_stderr
 import io
 import os
+import numpy
 from pytube import YouTube
 from imageio import imsave
 import moviepy.audio.fx.all as afx
 import moviepy.video.fx.all as vfx
+from moviepy.video.VideoClip import ImageClip
 from moviepy.audio.AudioClip import AudioArrayClip, CompositeAudioClip
 from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
 from moviepy.audio.AudioClip import concatenate_audioclips
 from .moviepy_context import AudioContext, VideoContext
+from PIL import Image
+from skimage.io._plugins.pil_plugin import pil_to_ndarray
+
 
 ##########
 # youtube
@@ -434,3 +439,22 @@ def video_modification(new_video, volumex=1., resize=1., speed=1.,
         if mirrory:
             video = video.fx(vfx.mirror_y)
         return video
+
+
+def video_image(image_or_file, **kwargs):
+    """
+    Creates a :epkg:`ImageClip`.
+    Créé une vidéo à partir d'une image.
+
+    @param      image_or_file   image or file
+    @param      kwargs          additional parameters for :epkg:`ImageClip`
+    @return                     :epkg:`ImageClip`
+    """
+    if isinstance(image_or_file, (str, numpy.ndarray)):
+        return ImageClip(image_or_file, **kwargs)
+    elif isinstance(image_or_file, Image.Image):
+        img = pil_to_ndarray(image_or_file)
+        return ImageClip(img, **kwargs)
+    else:
+        raise TypeError(
+            "Unable to create a video from type {0}".format(type(image_or_file)))
