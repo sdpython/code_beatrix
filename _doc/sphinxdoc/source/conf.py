@@ -76,6 +76,7 @@ epkg_dictionary['AutioClip'] = 'https://zulko.github.io/moviepy/ref/AudioClip/Au
 epkg_dictionary['deep learning'] = 'https://en.wikipedia.org/wiki/Deep_learning'
 epkg_dictionary['fcn'] = 'https://github.com/wkentaro/fcn'
 epkg_dictionary['gif'] = 'https://fr.wikipedia.org/wiki/Graphics_Interchange_Format'
+epkg_dictionary['ImageClip'] = 'https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#imageclip'
 epkg_dictionary[
     'Mary Poppins'] = 'https://fr.wikipedia.org/wiki/Mary_Poppins_(film,_1964)'
 epkg_dictionary['moviepy'] = 'https://zulko.github.io/moviepy/'

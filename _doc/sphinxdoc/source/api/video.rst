@@ -73,11 +73,19 @@ Video
 
 .. autosignature:: code_beatrix.faq.faq_video.video_extract_video
 
+.. autosignature:: code_beatrix.faq.faq_video.video_image
+
 .. autosignature:: code_beatrix.faq.faq_video.video_modification
 
-.. autosignature:: code_beatrix.faq.faq_video.video_replace_sound
+.. autosignature:: code_beatrix.faq.faq_video.video_position
+
+.. autosignature:: code_beatrix.faq.faq_video.video_remove_audio
+
+.. autosignature:: code_beatrix.faq.faq_video.video_replace_audio
 
 .. autosignature:: code_beatrix.faq.faq_video.video_save
+
+.. autosignature:: code_beatrix.faq.faq_video.video_text
 
 YouTube
 +++++++

@@ -17,8 +17,9 @@ from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
 from moviepy.audio.AudioClip import concatenate_audioclips
 from .moviepy_context import AudioContext, VideoContext
-from PIL import Image
+from PIL import Image, ImageFont, ImageDraw
 from skimage.io._plugins.pil_plugin import pil_to_ndarray
+from skimage.transform import rescale
 
 
 ##########
@@ -108,13 +109,14 @@ def audio_save(audio_or_file, filename, verbose=False, **kwargs):
                     audio.write_audiofile(filename, verbose=verbose, **kwargs)
 
 
-def audio_modification(new_sound, loop_duration=None, volumex=1.,
+def audio_modification(audio, loop_duration=None, volumex=1.,
                        fadein=False, fadeout=False, t_start=0, t_end=None,
                        speed=1.):
     """
     Modifies a sound.
     Modifie un son.
 
+    @param      audio           sound
     @param      loop_duration   loops sound
     @param      volumex         multiplies the sound
     @param      fadein          decreases the volume of the first seconds
@@ -124,7 +126,7 @@ def audio_modification(new_sound, loop_duration=None, volumex=1.,
     @param      speed           speed of the sound
     @return                     new sound
     """
-    with AudioContext(new_sound) as audio:
+    with AudioContext(audio) as audio:
         if speed:
             audio = audio.fl_time(lambda t: t * speed, keep_duration=True)
             wav = audio.to_soundarray(fps=audio.fps)
@@ -224,13 +226,15 @@ def video_extract_video(video_or_file, ta=0, tb=None):
         return video.subclip(ta, tb)
 
 
-def video_save(video_or_file, filename, verbose=False, **kwargs):
+def video_save(video_or_file, filename, verbose=False, duration=None, **kwargs):
     """
     Saves as a video or as a :epkg:`gif`.
     Enregistre une vidéo dans un fichier.
     Uses `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_.
 
     @param      video_or_file   string or :epkg:`VideoClip`
+    @param      duration        overwrite duration,
+                                see method `set_duration <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videoclip#moviepy.video.VideoClip.VideoClip.set_duration>`_
     @param      verbose         logging or not
     @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
 
@@ -244,6 +248,8 @@ def video_save(video_or_file, filename, verbose=False, **kwargs):
     """
     if isinstance(filename, str) and os.path.splitext(filename)[-1] == '.gif':
         with VideoContext(video_or_file) as video:
+            if duration is not None:
+                video = video.set_duration(duration)
             if verbose:
                 video.write_gif(filename, verbose=verbose, **kwargs)
             else:
@@ -253,6 +259,8 @@ def video_save(video_or_file, filename, verbose=False, **kwargs):
                         video.write_gif(filename, verbose=verbose, **kwargs)
     else:
         with VideoContext(video_or_file) as video:
+            if duration is not None:
+                video = video.set_duration(duration)
             if verbose:
                 video.write_videofile(filename, verbose=verbose, **kwargs)
             else:
@@ -303,7 +311,7 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
                 yield name
 
 
-def video_replace_sound(video_or_file, new_sound, **kwargs):
+def video_replace_audio(video_or_file, new_sound, **kwargs):
     """
     Replaces the sound of a video.
     Remplace la bande-son d'une vidéo.
@@ -345,12 +353,24 @@ def video_extract_audio(video_or_file):
         return video.audio
 
 
-def video_compose(video_or_file1, video_or_file2, t1=0, t2=None, **kwargs):
+def video_remove_audio(video_or_file):
+    """
+    Returns the same video without audio.
+    Retourne la même vidéo sans le son.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @return                     :epkg:`AudioClip`
+    """
+    with VideoContext(video_or_file) as video:
+        return video.without_audio()
+
+
+def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, **kwargs):
     """
     Concatenates or superposes two videos.
     Ajoute ou superpose deux vidéos.
 
-    @param      video_or_file1      vidéo 1
+    @param      video_or_file1      vidéo 1 or list of video
     @param      video_or_file2      vidéo 2
     @param      t1                  start of the first sound
     @param      t2                  start of the second sound (or None to add it ad
@@ -364,19 +384,37 @@ def video_compose(video_or_file1, video_or_file2, t1=0, t2=None, **kwargs):
 
         from code_beatrix.faq.faq_video import video_compose
         vid = video_compose('video1.mp4', 'video2.mp4', '00:00:01', '00:00:04')
+
+    The first video defines the size of the final video.
     """
-    with VideoContext(video_or_file1) as video1:
-        with VideoContext(video_or_file2) as video2:
-            add = []
-            if t1 != 0:
-                add.append(video1.set_start(t1))
-            else:
-                add.append(video1)
-            if t2 is None:
-                add.append(video2.set_start(video1.duration + t1))
-            else:
-                add.append(video2.set_start(t2))
-            return CompositeVideoClip(add)
+    if isinstance(video_or_file1, list):
+        if video_or_file2 is not None:
+            raise ValueError(
+                'video_or_file1 is a list, video_or_file2 should be None')
+        vids = [VideoContext(i).__enter__() for i in video_or_file1]
+        comp = []
+        for i, v in enumerate(vids):
+            v = v.video
+            if isinstance(t1, list) and i < len(t1):
+                v.set_start(t1[i])
+            comp.append(v)
+        res = CompositeVideoClip(comp, **kwargs)
+        for v in vids:
+            v.__exit__()
+        return res
+    else:
+        with VideoContext(video_or_file1) as video1:
+            with VideoContext(video_or_file2) as video2:
+                add = []
+                if t1 != 0:
+                    add.append(video1.set_start(t1))
+                else:
+                    add.append(video1)
+                if t2 is None:
+                    add.append(video2.set_start(video1.duration + t1))
+                else:
+                    add.append(video2.set_start(t2))
+                return CompositeVideoClip(add, **kwargs)
 
 
 def video_concatenate(video_or_files, **kwargs):
@@ -396,12 +434,13 @@ def video_concatenate(video_or_files, **kwargs):
     return res
 
 
-def video_modification(new_video, volumex=1., resize=1., speed=1.,
+def video_modification(video_or_file, volumex=1., resize=1., speed=1.,
                        mirrorx=False, mirrory=False, method=None):
     """
     Modifies a video.
     Modifie une vidéo.
 
+    @param      video_or_file   string or :epkg:`VideoClip`
     @param      volumex         multiplies the sound
     @param      speed           speed of the sound
     @param      resize          resize
@@ -421,7 +460,7 @@ def video_modification(new_video, volumex=1., resize=1., speed=1.,
         if video.duration is None:
             raise ValueError('video duration should not be None')
 
-    with VideoContext(new_video) as video:
+    with VideoContext(video_or_file) as video:
         if speed:
             check_duration(video)
             dur = video.duration
@@ -441,20 +480,138 @@ def video_modification(new_video, volumex=1., resize=1., speed=1.,
         return video
 
 
-def video_image(image_or_file, **kwargs):
+def video_image(image_or_file, duration=None, zoom=None, opacity=None, **kwargs):
     """
     Creates a :epkg:`ImageClip`.
     Créé une vidéo à partir d'une image.
 
     @param      image_or_file   image or file
+    @param      duration        duration or None if not known
+    @param      zoom            applies a zoom on the image
+    @param      opacity         opacity of the image (0 for transparent, 255 for opaque)
     @param      kwargs          additional parameters for :epkg:`ImageClip`
     @return                     :epkg:`ImageClip`
+
+    If *duration* is None, it will be fixed when the image is
+    composed with another one. The image remains wherever it is placed.
     """
-    if isinstance(image_or_file, (str, numpy.ndarray)):
-        return ImageClip(image_or_file, **kwargs)
+    if isinstance(image_or_file, str):
+        img = Image.open(image_or_file)
+        return video_image(img, duration=duration, zoom=zoom, opacity=opacity, **kwargs)
+    elif isinstance(image_or_file, numpy.ndarray):
+        if zoom is not None:
+            img = rescale(image_or_file, zoom)
+            return video_image(img, duration=duration, opacity=opacity, **kwargs)
+        else:
+            img = image_or_file
+            if len(img.shape) != 3:
+                raise ValueError(
+                    "Image is not RGB or RGBA shape={0}".format(img.shape))
+            if img.shape[2] == 3:
+                pilimg = Image.fromarray(img).convert('RGBA')
+                img = pil_to_ndarray(pilimg)
+                if opacity is None:
+                    opacity = 255
+            if isinstance(opacity, int):
+                img[:, :, 3] = opacity
+            elif isinstance(opacity, float):
+                img[:, :, 3] = int(opacity * 255)
+            elif opacity is not None:
+                raise TypeError("opacity should be int or float or None")
+            return ImageClip(img, duration=duration, transparent=True, **kwargs)
     elif isinstance(image_or_file, Image.Image):
+        if image_or_file.mode != 'RGBA':
+            image_or_file = image_or_file.convert('RGBA')
+        if zoom is not None:
+            image_or_file = image_or_file.resize(zoom)
         img = pil_to_ndarray(image_or_file)
-        return ImageClip(img, **kwargs)
+        return video_image(img, duration=duration, opacity=opacity, **kwargs)
     else:
         raise TypeError(
             "Unable to create a video from type {0}".format(type(image_or_file)))
+
+
+def video_position(video_or_file, pos, relative=False):
+    """
+    Modifies the position of a position.
+    Modifie la position d'une video.
+    Relies on function
+    `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      pos             see `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_
+    @param      relative        see `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_
+    @return                     :epkg:`VideoClip`
+    """
+    with VideoContext(video_or_file) as video:
+        video = video.set_position(pos=pos, relative=relative)
+        return CompositeVideoClip([video])
+
+
+def video_resize(video_or_file, newsize):
+    """
+    Resizes a video.
+    Modifie la taille d'une video.
+    Relies on function
+    `resize <https://zulko.github.io/moviepy/ref/videofx/moviepy.video.fx.all.resize.html#moviepy.video.fx.all.resize>`_.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      newsize         `resize <https://zulko.github.io/moviepy/ref/videofx/moviepy.video.fx.all.resize.html#moviepy.video.fx.all.resize>`_
+    @return                     :epkg:`VideoClip`
+    """
+    with VideoContext(video_or_file) as video:
+        video = video.resize(newsize)
+        return CompositeVideoClip([video])
+
+
+def video_text(text, font="arial", fontsize=32, size=None,
+               color=None, background=None, opacity=None,
+               **kwargs):
+    """
+    Creates an image with text (:epkg:`ImageClip`).
+    Créé une image à partir de texte.
+
+    @param      text            text
+    @param      color           color
+    @param      font            police name
+    @param      fontsize        font size
+    @param      size            image size, None to get the smallest one which
+                                contains the text, a float to get *size* times
+                                this smallest size
+    @param      backgorund      background of the image
+    @param      opacity         to overwrite the opacity,
+                                *color* and *background* should be 4-uple colors,
+                                the last number in ``(0, 0, 0, 255)`` represents the
+                                opacity
+    @param      kwargs          additional parameters sent to @see fn video_image
+    @return                     :epkg:`ImageClip`
+
+    If *duration* is None, it will be fixed when the image is
+    composed with another one. The image remains wherever it is placed.
+    The *opacity* is a number between 0 (transparent) and 255 (opaque).
+    0 means the image cannot be seen. The number can be set up for each
+    pixel. By default, the image background is transparent (0).
+    """
+    if background is None:
+        background = (255, 255, 255, 0)
+    if color is None:
+        color = (0, 0, 0, 255)
+    obj = ImageFont.truetype("{0}.ttf".format(font), fontsize)
+    if size is None:
+        size = obj.getsize(text)
+    elif isinstance(size, (float, int)):
+        fs = obj.getsize(text)
+        size = (int(fs[0] * size), int(fs[1] * size))
+    elif not isinstance(size, tuple):
+        raise TypeError("size should be a tuple or a float")
+    if opacity is not None:
+        if len(color) == 3:
+            color = color + (opacity,)
+        elif len(color) == 4:
+            color = color[:3] + (opacity,)
+        else:
+            raise ValueError("color should a 3 or 4 tuple")
+    img = Image.new('RGBA', size, background)
+    draw = ImageDraw.Draw(img)
+    draw.text((0, 0), text, font=obj, fill=color)
+    return video_image(img, **kwargs)
