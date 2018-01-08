@@ -620,7 +620,9 @@ def video_text(text, font=None, fontsize=32, size=None,
     composed with another one. The image remains wherever it is placed.
     The *opacity* is a number between 0 (transparent) and 255 (opaque).
     0 means the image cannot be seen. The number can be set up for each
-    pixel. By default, the image background is transparent (0).
+    pixel. By default, the image background is transparent (0). You can find
+    many font at `google/fonts <https://github.com/google/fonts/tree/master/ofl>`_
+    or `msfonts <https://github.com/caarlos0-graveyard/msfonts/tree/master/fonts>`_.
     """
     if background is None:
         background = (255, 255, 255, 0)
@@ -633,10 +635,10 @@ def video_text(text, font=None, fontsize=32, size=None,
         if sys.platform.startswith('win'):
             font = "arial.ttf"
         else:
-            d = '/usr/share/fonts/truetype/freefont'
+            d = '~/.local/share/fonts'
             if os.path.exists(d):
                 raise FileNotFoundError("Unable to find '{0}'".format(d))
-            font = os.path.join(d, "FreeSerif.ttf")
+            font = os.path.join(d, "Ubuntu-Regular.ttf")
             if not os.path.exists(font):
                 raise FileNotFoundError("Unable to find font '{0}'. Available:\n{1}".format(
                     font, "\n".join(os.listdir(d))))
