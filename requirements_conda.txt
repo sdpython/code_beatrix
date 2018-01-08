@@ -2,7 +2,6 @@ basemap
 chainer
 bokeh
 Cython
-freetype
 ipython
 jupyter
 jupyter_client
