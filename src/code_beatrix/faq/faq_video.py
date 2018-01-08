@@ -12,7 +12,8 @@ from pytube import YouTube
 from imageio import imsave
 import moviepy.audio.fx.all as afx
 import moviepy.video.fx.all as vfx
-from moviepy.video.VideoClip import ImageClip
+from moviepy.video.VideoClip import ImageClip, VideoClip
+from moviepy.video.io.ImageSequenceClip import ImageSequenceClip
 from moviepy.audio.AudioClip import AudioArrayClip, CompositeAudioClip
 from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
@@ -632,7 +633,13 @@ def video_text(text, font=None, fontsize=32, size=None,
         if sys.platform.startswith('win'):
             font = "arial.ttf"
         else:
-            font = "/usr/share/fonts/truetype/freefont/FreeSerif.ttf"
+            d = '/usr/share/fonts/truetype/freefont'
+            if os.path.exists(d):
+                raise FileNotFoundError("Unable to find '{0}'".format(d))
+            font = os.path.join(d, "FreeSerif.ttf")
+            if not os.path.exists(font):
+                raise FileNotFoundError("Unable to find font '{0}'. Available:\n{1}".format(
+                    font, "\n".join(os.listdir(d))))
     try:
         obj = ImageFont.truetype(font=font, size=fontsize)
     except OSError as e:
@@ -655,3 +662,37 @@ def video_text(text, font=None, fontsize=32, size=None,
     draw = ImageDraw.Draw(img)
     draw.text((0, 0), text, font=obj, fill=color)
     return video_image(img, **kwargs)
+
+
+def video_frame(fct_frame, **kwargs):
+    """
+    Creates a video from drawing or images.
+    *fct_frame* can either be a function which draws a picture at time *t*
+    or a list of picture names or a folder.
+    Créé une vidéo à partir de dessins ou d'images.
+    *fct_frame* est soit une fonction qui dessine chaque image à chaque instant *t*,
+    une liste de noms d'images ou un répertoire.
+
+    @param      fct_frame       function like ``def make_frame(t: float) -> numpy.ndarray``,
+                                or list of images or folder name
+    @param      kwargs          additional arguments for function
+                                `make_frame <https://zulko.github.io/moviepy/getting_started/videoclips.html#videoclip>`_
+    @return                     :epkg:`VideoClip`
+    """
+    if isinstance(fct_frame, str):
+        if not os.path.exists(fct_frame):
+            raise FileNotFoundError(
+                "Unable to find folder '{0}'".format(fct_frame))
+        imgs = os.listdir(fct_frame)
+        exts = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff'}
+        imgs = [os.path.join(fct_frame, _)
+                for _ in imgs if os.path.splitext(_)[-1].lower() in exts]
+        return video_frame(imgs, **kwargs)
+    elif isinstance(fct_frame, list):
+        for img in fct_frame:
+            if not os.path.exists(img):
+                raise FileNotFoundError(
+                    "Unable to find image '{0}'".format(img))
+        return ImageSequenceClip(fct_frame, **kwargs)
+    else:
+        return VideoClip(fct_frame, **kwargs)
