@@ -23,6 +23,13 @@ from skimage.io._plugins.pil_plugin import pil_to_ndarray
 from skimage.transform import rescale
 
 
+class FontError(Exception):
+    """
+    Raised when a font cannot be found.
+    """
+    pass
+
+
 ##########
 # youtube
 ##########
@@ -626,7 +633,10 @@ def video_text(text, font=None, fontsize=32, size=None,
             font = "arial.ttf"
         else:
             font = "fnt/arial.ttf"
-    obj = ImageFont.truetype(font=font, size=fontsize)
+    try:
+        obj = ImageFont.truetype(font=font, size=fontsize)
+    except OSError as e:
+        raise FontError("Unable to find font '{0}'".format(font)) from e
     if size is None:
         size = obj.getsize(text)
     elif isinstance(size, (float, int)):
