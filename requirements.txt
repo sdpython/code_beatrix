@@ -8,6 +8,7 @@ fastrlock
 fcn
 folium
 gdown
+gizeh
 hachibee_sphinx_theme
 jyquickhelper
 moviepy

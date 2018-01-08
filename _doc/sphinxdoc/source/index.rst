@@ -47,6 +47,7 @@ Contenu rangé par thèmes
     maths/index_maths
     art/index_art
     API/index
+    python_setup
 
 On programme pour faire des jeux, des sites internets, des recherches scientifiques,
 pour automatiser une tâche qu'on ne souhaite plus faire à la main.
