@@ -6,6 +6,7 @@
 import sys
 import os
 import unittest
+import shutil
 
 
 try:
@@ -58,6 +59,13 @@ class TestNotebookExample (unittest.TestCase):
         temp = get_temp_folder(__file__, "temp_exemples")
         keepnote = ls_notebooks("exemples")
         self.assertTrue(len(keepnote) > 0)
+
+        source = os.path.join(os.path.dirname(keepnote[0]), "data")
+        images = os.path.join(temp, 'data')
+        os.mkdir(images)
+        for img in os.listdir(source):
+            shutil.copy(os.path.join(source, img), images)
+
         res = execute_notebooks(temp, keepnote,
                                 lambda i, n: "poppins" not in n,
                                 fLOG=fLOG,
