@@ -75,6 +75,8 @@ Video
 
 .. autosignature:: code_beatrix.faq.faq_video.video_extract_video
 
+.. autosignature:: code_beatrix.faq.faq_video.video_frame
+
 .. autosignature:: code_beatrix.faq.faq_video.video_image
 
 .. autosignature:: code_beatrix.faq.faq_video.video_modification
