@@ -635,8 +635,9 @@ def video_text(text, font=None, fontsize=32, size=None,
         if sys.platform.startswith('win'):
             font = "arial.ttf"
         else:
-            d = '~/.local/share/fonts'
-            if os.path.exists(d):
+            exp = os.path.expanduser('~')
+            d = os.path.join(exp, '.local', 'share', 'fonts')
+            if not os.path.exists(d):
                 raise FileNotFoundError("Unable to find '{0}'".format(d))
             font = os.path.join(d, "Ubuntu-Regular.ttf")
             if not os.path.exists(font):
