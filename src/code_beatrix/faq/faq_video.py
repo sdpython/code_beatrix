@@ -6,6 +6,7 @@
 from contextlib import redirect_stdout, redirect_stderr
 import io
 import os
+import sys
 import numpy
 from pytube import YouTube
 from imageio import imsave
@@ -542,10 +543,31 @@ def video_position(video_or_file, pos, relative=False):
     @param      pos             see `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_
     @param      relative        see `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_
     @return                     :epkg:`VideoClip`
+
+    This function moves the video inside another one.
+    Therefore, it has no effect if the result of this video
+    is composed. See function @see fn video_compose.
+    Example:
+
+    ::
+
+        from code_beatrix.faq.faq_video import video_image, video_position, video_compose, video_text
+
+        img = 'GastonLagaffe_1121.jpg'
+        vidimg = video_image(img, duration=5, opacity=200)
+        vidimg = video_position(vidimg, lambda t: (0, 0), relative=True)
+
+        text = video_text('boule', size=2., color=(255, 0, 0, 128), background=(0, 255, 0, 100))
+        text = video_position(text, lambda t: (t * 0.1, t * 0.2), relative=True)
+
+        comb = video_compose([vidimg, text], t1=[0, 1])
+
+    You can see an example of the video it produces in notebook
+    :ref:`video_notebook`.
     """
     with VideoContext(video_or_file) as video:
         video = video.set_position(pos=pos, relative=relative)
-        return CompositeVideoClip([video])
+        return video
 
 
 def video_resize(video_or_file, newsize):
@@ -564,7 +586,7 @@ def video_resize(video_or_file, newsize):
         return CompositeVideoClip([video])
 
 
-def video_text(text, font="arial", fontsize=32, size=None,
+def video_text(text, font=None, fontsize=32, size=None,
                color=None, background=None, opacity=None,
                **kwargs):
     """
@@ -596,7 +618,15 @@ def video_text(text, font="arial", fontsize=32, size=None,
         background = (255, 255, 255, 0)
     if color is None:
         color = (0, 0, 0, 255)
-    obj = ImageFont.truetype("{0}.ttf".format(font), fontsize)
+    if isinstance(font, str):
+        if not font.endswith('.ttf'):
+            font += '.ttf'
+    elif font is None:
+        if sys.platform.startswith('win'):
+            font = "arial.ttf"
+        else:
+            font = "fnt/arial.ttf"
+    obj = ImageFont.truetype(font=font, size=fontsize)
     if size is None:
         size = obj.getsize(text)
     elif isinstance(size, (float, int)):

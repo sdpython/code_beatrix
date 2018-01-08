@@ -46,6 +46,8 @@ couvrent un petit sous-ensemble de ce qu'il est possible de faire
 avec le module :epkg:`moviepy`. Pour aller plus loin, il peut être
 utile de s'inspirer du code de celles-ci et de regarder
 les `exemples de la documentation <https://zulko.github.io/moviepy/examples/examples.html>`_.
+Le notebook :ref:`video_notebook` montre comment insérer
+un texte qui défile et comment le voir facilement dans un notebook.
 
 Audio
 +++++
