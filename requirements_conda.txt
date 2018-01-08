@@ -2,6 +2,8 @@ basemap
 chainer
 bokeh
 Cython
+fontconfig
+freetype
 ipython
 jupyter
 jupyter_client

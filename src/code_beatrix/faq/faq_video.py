@@ -632,7 +632,7 @@ def video_text(text, font=None, fontsize=32, size=None,
         if sys.platform.startswith('win'):
             font = "arial.ttf"
         else:
-            font = "fnt/arial.ttf"
+            font = "/usr/share/fonts/truetype/freefont/FreeSerif.ttf"
     try:
         obj = ImageFont.truetype(font=font, size=fontsize)
     except OSError as e:
