@@ -26,7 +26,7 @@ jobs:
           command: |
                     sudo apt-get install -y libfreetype6-dev
                     mkdir -p ~/.local/share/fonts
-                    wget -nc https://github.com/google/fonts/blob/master/ufl/ubuntu/Ubuntu-Regular.ttf -O ~/.local/share/fonts/Ubuntu-Regular.ttf || true
+                    wget -nc https://github.com/google/fonts/tree/master/apache/roboto/Roboto-Regular.ttf -O ~/.local/share/fonts/Roboto-Regular.ttf || true
           
       - run:
           name: Install tex

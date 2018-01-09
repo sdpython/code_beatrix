@@ -18,7 +18,7 @@ install:
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - mkdir -p ~/.local/share/fonts
-  - wget -nc https://github.com/google/fonts/blob/master/ufl/ubuntu/Ubuntu-Regular.ttf -O ~/.local/share/fonts/Ubuntu-Regular.ttf || true
+  - wget -nc https://github.com/google/fonts/tree/master/apache/roboto/Roboto-Regular.ttf -O ~/.local/share/fonts/Roboto-Regular.ttf || true
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q conda
