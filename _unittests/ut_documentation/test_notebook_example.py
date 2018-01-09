@@ -39,7 +39,7 @@ except ImportError:
     import pyquickhelper as skip_
 
 from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder, add_missing_development_version
+from pyquickhelper.pycode import get_temp_folder, add_missing_development_version, is_travis_or_appveyor
 from pyquickhelper.ipythonhelper import execute_notebook_list_finalize_ut
 from src.code_beatrix.automation.notebook_test_helper import ls_notebooks, execute_notebooks, clean_function_notebook
 import src.code_beatrix
@@ -66,10 +66,19 @@ class TestNotebookExample (unittest.TestCase):
         for img in os.listdir(source):
             shutil.copy(os.path.join(source, img), images)
 
+        if is_travis_or_appveyor() == "circleci":
+            def clean(cell):
+                cell = clean_function_notebook(cell)
+                # ValueError: Cannot embed the 'gif' image format (circleci)
+                cell = cell.replace('Image("video.gif")',
+                                    '# Image("video.gif")')
+                return cell
+        else:
+            clean = clean_function_notebook
+
         res = execute_notebooks(temp, keepnote,
                                 lambda i, n: "poppins" not in n,
-                                fLOG=fLOG,
-                                clean_function=clean_function_notebook)
+                                fLOG=fLOG, clean_function=clean)
         execute_notebook_list_finalize_ut(
             res, fLOG=fLOG, dump=src.code_beatrix)
 
