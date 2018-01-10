@@ -374,7 +374,7 @@ def video_remove_audio(video_or_file):
         return video.without_audio()
 
 
-def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, **kwargs):
+def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, place=None, **kwargs):
     """
     Concatenates or superposes two videos.
     Ajoute ou superpose deux vidéos.
@@ -383,6 +383,7 @@ def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, **kwargs):
     @param      video_or_file2      vidéo 2
     @param      t1                  start of the first sound
     @param      t2                  start of the second sound (or None to add it ad
+    @param      place               predefined placements
     @param      kwargs              additional parameters,
                                     sent to `CompositeVideoClip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#compositevideoclip>`_
     @return                         :epkg:`VideoClip`
@@ -395,35 +396,88 @@ def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, **kwargs):
         vid = video_compose('video1.mp4', 'video2.mp4', '00:00:01', '00:00:04')
 
     The first video defines the size of the final video.
+    List of predefined placements:
+
+    * *h2*: two videos side by side horizontally
+    * *v2*: two videos side by side vertically
     """
-    if isinstance(video_or_file1, list):
-        if video_or_file2 is not None:
-            raise ValueError(
-                'video_or_file1 is a list, video_or_file2 should be None')
-        vids = [VideoContext(i).__enter__() for i in video_or_file1]
-        comp = []
-        for i, v in enumerate(vids):
-            v = v.video
-            if isinstance(t1, list) and i < len(t1):
-                v.set_start(t1[i])
-            comp.append(v)
-        res = CompositeVideoClip(comp, **kwargs)
-        for v in vids:
-            v.__exit__()
-        return res
+    if place is None:
+        if isinstance(video_or_file1, list):
+            if video_or_file2 is not None:
+                raise ValueError(
+                    'video_or_file1 is a list, video_or_file2 should be None')
+            vids = [VideoContext(i).__enter__() for i in video_or_file1]
+            comp = []
+            for i, v in enumerate(vids):
+                v = v.video
+                if isinstance(t1, list) and i < len(t1):
+                    v.set_start(t1[i])
+                comp.append(v)
+            res = CompositeVideoClip(comp, **kwargs)
+            for v in vids:
+                v.__exit__()
+            return res
+        else:
+            with VideoContext(video_or_file1) as video1:
+                with VideoContext(video_or_file2) as video2:
+                    add = []
+                    if t1 != 0:
+                        add.append(video1.set_start(t1))
+                    else:
+                        add.append(video1)
+                    if t2 is None:
+                        add.append(video2.set_start(video1.duration + t1))
+                    else:
+                        add.append(video2.set_start(t2))
+                    return CompositeVideoClip(add, **kwargs)
     else:
-        with VideoContext(video_or_file1) as video1:
-            with VideoContext(video_or_file2) as video2:
-                add = []
-                if t1 != 0:
-                    add.append(video1.set_start(t1))
-                else:
-                    add.append(video1)
-                if t2 is None:
-                    add.append(video2.set_start(video1.duration + t1))
-                else:
-                    add.append(video2.set_start(t2))
-                return CompositeVideoClip(add, **kwargs)
+
+        def get_two(video_or_file1, video_or_file2, t1, t2):
+            if isinstance(video_or_file1, list):
+                if len(video_or_file1) != 2:
+                    raise ValueError(
+                        "Expecting two videos not {0}".format(len(video_or_file1)))
+                v1, v2 = video_or_file1
+                t1, t2 = t1
+            else:
+                if len(video_or_file2) is None:
+                    raise ValueError("Expecting two videos not less")
+                v1, v2 = video_or_file1, video_or_file2
+            vc1 = VideoContext(v1).__enter__()
+            vc2 = VideoContext(v2).__enter__()
+            return (vc1, vc2), (t1, t2)
+
+        (vc1, vc2), (t1, t2) = get_two(video_or_file1, video_or_file2, t1, t2)
+        v1 = vc1.video
+        v2 = vc2.video
+
+        # Predefined placements.
+        if place == "h2":
+            pos1 = 0, 0
+            pos2 = v1.size[0], 0
+            v1 = video_position(v1, pos=pos1)
+            v2 = video_position(v2, pos=pos2)
+            if 'size' not in kwargs:
+                kwargs['size'] = v1.size[0] + \
+                    v2.size[0], max(v1.size[1], v2.size[1])
+            res = video_compose(v1, v2, t1, t2, **kwargs)
+        elif place == "v2":
+            (vc1, vc2), (t1, t2) = get_two(
+                video_or_file1, video_or_file2, t1, t2)
+            pos1 = 0, 0
+            pos2 = 0, v1.size[1]
+            v1 = video_position(v1, pos=pos1)
+            v2 = video_position(v2, pos=pos2)
+            if 'size' not in kwargs:
+                kwargs['size'] = max(v1.size[0], v2.size[0]
+                                     ), v1.size[1] + v2.size[1]
+            res = video_compose(v1, v2, t1, t2, **kwargs)
+        else:
+            raise ValueError("Unknown placement '{0}'".format(place))
+
+        vc1.__exit__()
+        vc2.__exit__()
+        return res
 
 
 def video_concatenate(video_or_files, **kwargs):
