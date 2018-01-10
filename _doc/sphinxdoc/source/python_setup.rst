@@ -20,6 +20,17 @@ Windows
 
 * Télécharger et installer `Anaconda <https://www.anaconda.com/download/>`_.
 
+::
+
+    conda update --all
+
+Pour les jeux avec vidéo :
+
+::
+
+    conda install -y keras
+    pip install -y code_beatrix moviepy pytube
+
 Mise à jour
 ===========
 

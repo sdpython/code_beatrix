@@ -41,7 +41,7 @@ from pyquickhelper.loghelper import fLOG
 from src.code_beatrix import check
 
 
-class TestCheckScratchFiles(unittest.TestCase):
+class TestCheckVideo(unittest.TestCase):
 
     def test_check(self):
         fLOG(
@@ -49,7 +49,7 @@ class TestCheckScratchFiles(unittest.TestCase):
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
 
-        check(kind="scratch")
+        check(kind="video")
 
 
 if __name__ == "__main__":

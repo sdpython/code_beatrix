@@ -8,6 +8,7 @@ import io
 import os
 import sys
 import numpy
+import tempfile
 from pytube import YouTube
 from imageio import imsave
 import moviepy.audio.fx.all as afx
@@ -29,6 +30,18 @@ class FontError(Exception):
     Raised when a font cannot be found.
     """
     pass
+
+
+def check():
+    """
+    Checks a couple of functionality works.
+    """
+    with tempfile.TemporaryDirectory() as temp:
+        vid = download_youtube_video("4o5baMYWdtQ", temp)
+        ext = video_compose(vid, vid, t2=2, place="h2")
+        dest = os.path.join(temp, "res.mp4")
+        video_save(exp, dest)
+        return os.path.exists(dest)
 
 
 ##########

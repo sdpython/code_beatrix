@@ -52,17 +52,23 @@ def _setup_hook(add_print=False, unit_test=False):
         print("Success: _setup_hook")
 
 
-def check(log=False):
+def check(log=False, kind=None):
     """
     Checks the library is working.
     It raises an exception.
 
     @param      log     if True, display information, otherwise
+    @param      kind    None or ``'scratch'`` or ``'video'``
     @return             0 or exception
     """
-    from .scratchs import check
-    check()
-    return True
+    r = True
+    if kind is None or kind == "scratch":
+        from .scratchs import check
+        r &= check()
+    if kind is None or kind == "video":
+        from .faq.faq_video import check
+        r &= check()
+    return r
 
 
 def load_ipython_extension(ip):
