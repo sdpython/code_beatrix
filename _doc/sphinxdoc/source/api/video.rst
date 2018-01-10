@@ -48,50 +48,168 @@ utile de s'inspirer du code de celles-ci et de regarder
 les `exemples de la documentation <https://zulko.github.io/moviepy/examples/examples.html>`_.
 Le notebook :ref:`video_notebook` montre comment insÃ©rer
 un texte qui dÃ©file et comment le voir facilement dans un notebook.
+Il faut voir ces fonctions comme des outils pour agir sur une pellicule,
+des ciseaux, de la colle...
 
 Audio
 +++++
 
+.. image:: images/music.png
+    :height: 40
+
+.. image:: images/comp.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.audio_compose
+
+.. image:: images/music.png
+    :height: 40
+
+.. image:: images/glue.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.audio_concatenate
 
+.. image:: images/music.png
+    :height: 40
+
+.. image:: images/ciseau.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.audio_extract_audio
 
+.. image:: images/music.png
+    :height: 40
+
+.. image:: images/work.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.audio_modification
+
+.. image:: images/music.png
+    :height: 40
+
+.. image:: images/up.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.audio_save
 
 Video
 +++++
 
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/comp.png
+    :height: 40
+
+La fonction :func:`video_compose <code_beatrix.faq.faq_video.video_compose>`
+assemble plusieurs vidéo en même temps. Le paramètre *place* permet
+de choisir une configuration déjà implémentée comme la juxtaposition de
+deux vidéos côte à côte horizontalement ou verticalement.
+
 .. autosignature:: code_beatrix.faq.faq_video.video_compose
+
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/glue.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.video_concatenate
 
+.. image:: images/pellicule.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.video_enumerate_frames
+
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/music.png
+    :height: 40
+
+.. image:: images/ciseau.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.video_extract_audio
 
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/ciseau.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.video_extract_video
+
+.. image:: images/pellicule.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.video_frame
 
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/camera.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.video_image
+
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/work.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.video_modification
 
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/arrow.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.video_position
+
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/musicno.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.video_remove_audio
 
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/music.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.video_replace_audio
 
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/up.png
+    :height: 40
+
 .. autosignature:: code_beatrix.faq.faq_video.video_save
+
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/text.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.video_text
 
 YouTube
 +++++++
+
+.. image:: images/pellicule.png
+    :height: 40
+
+.. image:: images/yt.png
+    :height: 40
 
 .. autosignature:: code_beatrix.faq.faq_video.download_youtube_video
