@@ -49,7 +49,7 @@ class TestCheckVideo(unittest.TestCase):
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
 
-        check(kind="video")
+        check(kind="video", fLOG=fLOG)
 
 
 if __name__ == "__main__":

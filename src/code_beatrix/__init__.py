@@ -52,13 +52,14 @@ def _setup_hook(add_print=False, unit_test=False):
         print("Success: _setup_hook")
 
 
-def check(log=False, kind=None):
+def check(log=False, kind=None, fLOG=None):
     """
     Checks the library is working.
     It raises an exception.
 
     @param      log     if True, display information, otherwise
     @param      kind    None or ``'scratch'`` or ``'video'``
+    @param      fLOG    logging function
     @return             0 or exception
     """
     r = True
@@ -67,7 +68,7 @@ def check(log=False, kind=None):
         r &= check()
     if kind is None or kind == "video":
         from .faq.faq_video import check
-        r &= check()
+        r &= check(fLOG=fLOG)
     return r
 
 

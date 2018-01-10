@@ -9,6 +9,7 @@ import os
 import sys
 import numpy
 import tempfile
+import time
 from pytube import YouTube
 from imageio import imsave
 import moviepy.audio.fx.all as afx
@@ -32,16 +33,34 @@ class FontError(Exception):
     pass
 
 
-def check():
+def check(fLOG=None):
     """
     Checks a couple of functionality works.
+    The test takes 5-6 seconds to download,
+    4-5 seconds to process the video.
+
+    @param      logging function
     """
+    t1 = time.clock()
     with tempfile.TemporaryDirectory() as temp:
-        vid = download_youtube_video("4o5baMYWdtQ", temp)
+        if fLOG:
+            fLOG('[check] download_youtube_video')
+        vid = download_youtube_video("4o5baMYWdtQ", temp, res=None)
+        vid = os.path.join(temp, vid)
+        t2 = time.clock()
+        if fLOG:
+            fLOG('[check] video_compose')
         ext = video_compose(vid, vid, t2=2, place="h2")
         dest = os.path.join(temp, "res.mp4")
-        video_save(exp, dest)
-        return os.path.exists(dest)
+        if fLOG:
+            fLOG('[check] video_save')
+        video_save(ext, dest)
+        res = os.path.exists(dest)
+    delta1 = time.clock() - t1
+    delta2 = time.clock() - t2
+    if fLOG:
+        fLOG("[check] video time={0} - video={1}".format(delta1, delta2))
+    return res
 
 
 ##########
@@ -59,7 +78,7 @@ def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/m
     @param      mime_type   see :epkg:`youtube`
     @param      res         see :epkg:`youtube`
     @param      kwargs      see :epkg:`youtube`
-    @return                 filename
+    @return                 filename (relative to *output_path*)
 
     .. faqref::
         :title: Télécharger une vidéo sur YouTube
