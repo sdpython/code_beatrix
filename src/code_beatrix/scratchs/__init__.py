@@ -19,3 +19,4 @@ def check():
     check_tri()
     check_pyramide()
     check_chute()
+    return True
