@@ -104,9 +104,9 @@ Video
     :height: 40
 
 La fonction :func:`video_compose <code_beatrix.faq.faq_video.video_compose>`
-assemble plusieurs vidéo en même temps. Le paramètre *place* permet
-de choisir une configuration déjà implémentée comme la juxtaposition de
-deux vidéos côte à côte horizontalement ou verticalement.
+assemble plusieurs vidÃ©o en mÃªme temps. Le paramÃ¨tre *place* permet
+de choisir une configuration dÃ©jÃ  implÃ©mentÃ©e comme la juxtaposition de
+deux vidÃ©os cÃ´te Ã  cÃ´te horizontalement ou verticalement.
 
 .. autosignature:: code_beatrix.faq.faq_video.video_compose
 
