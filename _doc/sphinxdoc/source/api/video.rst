@@ -29,7 +29,7 @@ soit un objet de type :epkg:`VideoClip`. Un exemple :
     from code_beatrix.faq.faq_video import video_concatenate, video_save
 
     new_video = video_concatenate(["video1.mp4", "video2.avi"])
-    video_save(new_video)
+    video_save(new_video, "new_video.mp4")
 
 Un autre exemple où la première vidéo est un extrait d'une vidéo :
 
@@ -39,7 +39,7 @@ Un autre exemple où la première vidéo est un extrait d'une vidéo :
 
     v1 = video_extract_video("video1.mp4", '00:00:01.45', '00:00:010.51')
     new_video = video_concatenate([v1, "video2.avi"])
-    video_save(new_video)
+    video_save(new_video, "new_video.mp4")
 
 La même logique s'applique aux sons. Les fonctions qui suivent
 couvrent un petit sous-ensemble de ce qu'il est possible de faire

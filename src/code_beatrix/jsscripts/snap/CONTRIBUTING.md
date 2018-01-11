@@ -6,9 +6,7 @@ most parts will be in flux and subject to frequent, even fundamental modificatio
 This document lays out a few simple guidelines ensuring that collaborative code
 contribution works out.
 
-
 ## Coding
-
 
 ### Working with changesets
 
@@ -42,7 +40,6 @@ help you debug your code. Feel free to use whichever suits you best, but let's
 all agree on JSLint's (nitpicky!) formatting rules so we get code that's well
 readable and easily shareable among ourselves.
 
-
 ### Coding style
 
 Snap's codebase is both big and fast moving. We'll continue to churn out several
@@ -55,7 +52,6 @@ Let me really stress this point: In creating Snap we're neither playing "Code Go
 (solving a problem using the least number of keystrokes) nor are we trying to
 outsmart Knuth. Instead we're maintaining a large number of small interchangeable
 code chunks, therefore:
-
 
 ### Avoid
 
@@ -84,7 +80,6 @@ code chunks, therefore:
 	- which often are "modules in disguise",
 	  especially if they define local helper functions
 	- create a new constructor instead
-
 
 ### Testing your code
 
@@ -118,7 +113,6 @@ Just modify this code so it returns your list of sample Morphs instead of
 Once you've added this code to your changeset you can open your sample html file
 in your browser, and you'll find your sample Morphs in the World's DEMO menu.
 
-
 ### Inspectors
 
 To actually test play with your Morphs you can right-click on them and open an
@@ -131,7 +125,6 @@ it" or "inspect it" (again, like in Squeak).
 Needless to say, in the evaluation pane `this` always refers to the inspected
 object.
 
-
 ### Source Code Mgmt
 
 The good thing about changesets is that you can continue working on them regardless
@@ -142,14 +135,12 @@ frequently) be a harmonized common code base.
 
 ---
 
-
 ## Translating Snap!
 
 At this stage of development, Snap! can be translated to any LTR language
 maintaining the current order of inputs (formal parameters in blocks).
 
 Translating Snap! is easy:
-
 
 ### 1. Download
 
@@ -162,7 +153,6 @@ you will be able to immediately check the results in your browsers while
 you're working on your translation (keep the local copy of snap.html open
 in your web browser, and refresh it as you progress with your
 translation).
-
 
 ### 2. Edit
 
@@ -181,7 +171,6 @@ e.g.
     el - Greek => => SnapTranslator.dict.el = {
 
 etc. (see <http://en.wikipedia.org/wiki/ISO_639-1>)
-
 
 ### 3. Translate
 
@@ -207,7 +196,6 @@ should check your file with [JSLint](https://JSLint.com)
 
 This will inform you about any missed commas etc.
 
-
 ### 4. Accented characters
 
 Depending on which text editor and which file encoding you use you can
@@ -218,7 +206,6 @@ check your results in several browsers. If you want to be on the safe
 side, it's even better to escape these characters using Unicode.
 
 See this collection of JavaScript utilities: http://0xcc.net/jsescape/
-
 
 ### 5. Block specs
 
@@ -248,7 +235,6 @@ cannot be changed into
 
 without breaking its functionality.
 
-
 ### 6. Submit
 
 When you're done, rename the edited file by replacing the "de" part of the
@@ -269,7 +255,6 @@ directly launch a translated version of Snap! in your browser by appending
     lang:xx
 
 to the URL, `xx` representing your translations two-letter code.
-
 
 ### 7. Known issues
 
