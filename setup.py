@@ -36,15 +36,16 @@ CLASSIFIERS = [
 packages = find_packages('src', exclude='src')
 package_dir = {k: "src/" + k.replace(".", "/") for k in packages}
 package_data = {project_var_name + ".algorithm.data": ["*.txt"],
-                project_var_name + ".scratch.example_echiquier": ["*.sb2"],
-                project_var_name + ".scratch.example_tri": ["*.sb2"],
-                project_var_name + ".scratch.example_pyramide": ["*.sb2"],
-                project_var_name + ".scratch.example_chute": ["*.sb2"],
+                project_var_name + ".scratchs.example_echiquier": ["*.sb2"],
+                project_var_name + ".scratchs.example_tri": ["*.sb2"],
+                project_var_name + ".scratchs.example_pyramide": ["*.sb2"],
+                project_var_name + ".scratchs.example_chute": ["*.sb2"],
                 project_var_name + ".jsscripts.snap": ["*.*"],
                 project_var_name + ".jsscripts.snap.Backgrounds": ["*.*"],
                 project_var_name + ".jsscripts.snap.Costumes": ["*.*"],
                 project_var_name + ".jsscripts.snap.libraries": ["*.*"],
                 project_var_name + ".jsscripts.snap.Sounds": ["*.*"],
+                project_var_name + ".jsscripts.Snapin8r2": ["*.*"],
                 project_var_name: ["rss_blog_list.xml"],
                 }
 
