@@ -256,10 +256,6 @@ auto_*.py
 auto_*.xml
 auto_*.db3
 /_unittests/ut_jsscripts/Snap_test_extracted
-/src/code_beatrix/jsscripts/Snapin8r/tests/Snap test extracted
-/src/code_beatrix/jsscripts/Snapin8r/tests/Topsy Turvy- the game
-/src/code_beatrix/jsscripts/Snapin8r/tests/Snap test
-/src/code_beatrix/jsscripts/Snapin8r/tests
 _unittests/ut_documentation/test_notebook_algorithm.py.err
 _unittests/run_unittests.py.out
 _doc/sphinxdoc/source/phdoc_static/style_notebook_snippet.css

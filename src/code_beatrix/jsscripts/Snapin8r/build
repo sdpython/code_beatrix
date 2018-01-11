@@ -1,6 +1,0 @@
-cat jszip.min.js snapin8r.js > snapin8r.min.js
-echo "Built."
-if [ "$1" == "-c" ]; then
-	cat snapin8r.min.js | pbcopy;
-	echo "Copied.";
-fi
