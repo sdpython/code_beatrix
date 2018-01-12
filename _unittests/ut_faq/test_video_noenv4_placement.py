@@ -69,6 +69,11 @@ class TestVideoPlacement(ExtTestCase):
         video_save(vid2, exp)
         self.assertExists(exp)
 
+        vid2 = video_compose(vid, vid, t2=1, place='br', zoom=0.2)
+        exp = os.path.join(temp, "br.mp4")
+        video_save(vid2, exp)
+        self.assertExists(exp)
+
 
 if __name__ == "__main__":
     unittest.main()

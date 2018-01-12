@@ -432,6 +432,10 @@ def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, place=None, *
 
     * *h2*: two videos side by side horizontally
     * *v2*: two videos side by side vertically
+    * *br*: two videos, second is placed at the bottom right corner
+
+    *zoom* can be defined as a argument, it applies on the second
+    video if *place* is defined and if there are two videos.
     """
     if place is None:
         if isinstance(video_or_file1, list):
@@ -480,8 +484,13 @@ def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, place=None, *
             return (vc1, vc2), (t1, t2)
 
         (vc1, vc2), (t1, t2) = get_two(video_or_file1, video_or_file2, t1, t2)
+
         v1 = vc1.video
         v2 = vc2.video
+
+        if kwargs.get('zoom', 1.) != 1.:
+            v2 = video_modification(v2, resize=kwargs['zoom'])
+            del kwargs['zoom']
 
         # Predefined placements.
         if place == "h2":
@@ -494,8 +503,6 @@ def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, place=None, *
                     v2.size[0], max(v1.size[1], v2.size[1])
             res = video_compose(v1, v2, t1, t2, **kwargs)
         elif place == "v2":
-            (vc1, vc2), (t1, t2) = get_two(
-                video_or_file1, video_or_file2, t1, t2)
             pos1 = 0, 0
             pos2 = 0, v1.size[1]
             v1 = video_position(v1, pos=pos1)
@@ -503,6 +510,15 @@ def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, place=None, *
             if 'size' not in kwargs:
                 kwargs['size'] = max(v1.size[0], v2.size[0]
                                      ), v1.size[1] + v2.size[1]
+            res = video_compose(v1, v2, t1, t2, **kwargs)
+        elif place == "br":
+            pos1 = 0, 0
+            pos2 = max(0, v1.size[0] - v2.size[0]
+                       ), max(0, v1.size[1] - v2.size[1])
+            v1 = video_position(v1, pos=pos1)
+            v2 = video_position(v2, pos=pos2)
+            if 'size' not in kwargs:
+                kwargs['size'] = v1.size[0], v1.size[1]
             res = video_compose(v1, v2, t1, t2, **kwargs)
         else:
             raise ValueError("Unknown placement '{0}'".format(place))
@@ -530,7 +546,7 @@ def video_concatenate(video_or_files, **kwargs):
 
 
 def video_modification(video_or_file, volumex=1., resize=1., speed=1.,
-                       mirrorx=False, mirrory=False, method=None):
+                       mirrorx=False, mirrory=False):
     """
     Modifies a video.
     Modifie une vidéo.
@@ -541,7 +557,6 @@ def video_modification(video_or_file, volumex=1., resize=1., speed=1.,
     @param      resize          resize
     @param      mirrorx         mirror x
     @param      mirrory         mirror y
-    @param      method          method used to resize
     @return                     new video
 
     Example:
@@ -564,10 +579,7 @@ def video_modification(video_or_file, volumex=1., resize=1., speed=1.,
         if volumex != 1.:
             video = video.fx(vfx.volumex, volumex)
         if resize != 1.:
-            if method is not None:
-                video = video.fx(vfx.resize, resize)
-            else:
-                video = video.fx(vfx.resize, resize, method=method)
+            video = video.fx(vfx.resize, resize)
         if mirrorx:
             video = video.fx(vfx.mirror_x)
         if mirrory:
