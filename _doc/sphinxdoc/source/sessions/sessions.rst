@@ -18,6 +18,7 @@ S'amuser en essayant de résoudre des problèmes.
     session_2016_02_22
     session_2016_04_22
     session_2016_10_18
+    session_2018_01_13
 
 Improvisations
 --------------

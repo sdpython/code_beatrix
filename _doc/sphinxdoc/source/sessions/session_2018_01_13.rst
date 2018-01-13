@@ -1,0 +1,18 @@
+
+.. _l-session_2018_01_13:
+
+Lille - Devoox Kid - 13 janvier 2018
+====================================
+
+.. contents::
+    :local:
+
+Le labyrinthe
++++++++++++++
+
+:ref:`l-algo_labyrinthe`
+
+Le montage vidéo
+++++++++++++++++
+
+:ref:`l-montage_video`

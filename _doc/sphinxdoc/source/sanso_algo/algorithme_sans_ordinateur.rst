@@ -46,6 +46,7 @@ Sujets
     facteur_chinois
     dessin_barriere
     enigme
+    labyrinthe
 
 Indices et solutions
 --------------------
@@ -69,6 +70,7 @@ Indices et solutions
     facteur_chinois_solution
     dessin_barriere_solution
     enigme_solution
+    labyrinthe_solution
     notions
 
 .. _l-biblio_algo:
