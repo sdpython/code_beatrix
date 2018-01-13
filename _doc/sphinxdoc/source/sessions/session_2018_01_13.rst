@@ -1,7 +1,7 @@
 
 .. _l-session_2018_01_13:
 
-Lille - Devoox Kid - 13 janvier 2018
+Lille - Devoxx Kid - 13 janvier 2018
 ====================================
 
 .. contents::
