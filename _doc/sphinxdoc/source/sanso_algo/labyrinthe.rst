@@ -17,14 +17,13 @@ Ou quelque chose comme ceci :
 
 .. image:: labyrinthe.jpg
     :width: 600
-    
 
 Le jeu se joue à deux équipes sachant qu'une équipe doit parcourir
 le labyrinthe en rapportant le trésor.
 
 #. La première équipe cache un trésor dans le labyrinthe.
    Il faut qu'il ne soit pas trop facile à trouver.
-#. La seconde équipe, sauf un joueur, entre dans le labyrinthe, 
+#. La seconde équipe, sauf un joueur, entre dans le labyrinthe,
    trouve le trésor (mais le laisse) puis la sortie.
 #. La seconde équipe établit une stratégie : il faut utiliser six gobelets
    du mieux qu'elle peut pour indiquer le chemin au dernier joueur

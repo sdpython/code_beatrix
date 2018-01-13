@@ -1,0 +1,13 @@
+
+.. blogpost::
+    :title: Atelier à Lille (Devoxx4Kids)
+    :keywords: Devoxx, CodingAndBricks, Lille, montage, labyrinthe
+    :date: 2018-01-13
+    :categories: atelier
+
+    J'étais invité par `Coding & Bricks <https://www.codingandbricks.com/>`_
+    à animer un atelier pour enfants à
+    `EuraTechnologies <https://www.euratechnologies.com/agenda/programmation-robotique-ingenierie/>`_.
+    Jeu dans un labyrinthe, montage vidéo, le détail
+    des animations et quelques photos :
+    :ref:`l-session_2018_01_13`.

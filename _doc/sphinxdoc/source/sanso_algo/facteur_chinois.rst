@@ -62,4 +62,9 @@ A quoi ça sert ?
 ----------------
 
 Le camion poubelle est un exemple d'utilisation.
-La tournée d'un homme politique pour visiter ses concitoyens en est un autre.
+La tournée d'un homme politique pour visiter ses
+concitoyens en est un autre. Imaginer que vous deviez
+construire un labyrinthe avec un unique rouleau de carton
+selon un schéma déterminé à l'avance. Il vous faudra
+bien sûr découper et la réponse à la question 2 vous
+permettra de découper le moins possible.

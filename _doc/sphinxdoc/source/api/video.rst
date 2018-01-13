@@ -21,7 +21,7 @@ pas toujours intuitive (lire aussi
     :local:
 
 Les fonctions sur les vidéos commencent quasiment toutes par le même
-paramètre :*video_or_file*. Celui-ci peut soit être un nom de fichier,
+paramètre *video_or_file*. Celui-ci peut soit être un nom de fichier,
 soit un objet de type :epkg:`VideoClip`. Un exemple :
 
 ::
