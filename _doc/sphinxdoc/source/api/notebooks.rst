@@ -8,7 +8,7 @@ Notebooks
 Javascript
 ++++++++++
 
-.. autosignature:: code_beatrix.ipython_helper.nbcanvas.display_canvas_point
+.. autosignature:: code_beatrix.ipythonhelper.nbcanvas.display_canvas_point
 
 Snap, Scratch
 +++++++++++++

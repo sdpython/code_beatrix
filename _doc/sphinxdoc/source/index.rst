@@ -46,7 +46,7 @@ Contenu rangé par thèmes
     histoires/index_histoires
     maths/index_maths
     art/index_art
-    API/index
+    api/index
     python_setup
 
 On programme pour faire des jeux, des sites internets, des recherches scientifiques,

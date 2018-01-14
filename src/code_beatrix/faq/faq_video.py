@@ -137,6 +137,7 @@ def audio_save(audio_or_file, filename, verbose=False, **kwargs):
     Uses `write_audiofile <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=audioclip#moviepy.audio.AudioClip.AudioClip.write_audiofile>`_.
 
     @param      audio_or_file   string or :epkg:`AudioClip`
+    @param      filename        save into this filename
     @param      verbose         logging or not
     @param      kwargs          see `write_audiofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
     """
@@ -274,6 +275,7 @@ def video_save(video_or_file, filename, verbose=False, duration=None, **kwargs):
     Uses `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_.
 
     @param      video_or_file   string or :epkg:`VideoClip`
+    @param      filename        video saved into this filename
     @param      duration        overwrite duration,
                                 see method `set_duration <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videoclip#moviepy.video.VideoClip.VideoClip.set_duration>`_
     @param      verbose         logging or not
@@ -360,11 +362,13 @@ def video_replace_audio(video_or_file, new_sound, **kwargs):
     @param      video_or_file   string or :epkg:`VideoClip`
     @param      new_sound       sound
     @param      kwargs          see @see fn audio_modification
-    @param      loop            if True, *loop_duration* becomes the duration of the video
     @return                     :epkg:`VideoClip`
 
     The list of available transformations is at:
     `vfx <https://zulko.github.io/moviepy/ref/videofx.html?highlight=vfx>`_.
+    If parameter ``loop=True`` is specified,
+    *loop_duration* becomes the duration of the video.
+
 
     Example:
 
@@ -706,7 +710,7 @@ def video_text(text, font=None, fontsize=32, size=None,
     @param      size            image size, None to get the smallest one which
                                 contains the text, a float to get *size* times
                                 this smallest size
-    @param      backgorund      background of the image
+    @param      background      background of the image
     @param      opacity         to overwrite the opacity,
                                 *color* and *background* should be 4-uple colors,
                                 the last number in ``(0, 0, 0, 255)`` represents the

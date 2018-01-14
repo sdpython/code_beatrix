@@ -50,7 +50,7 @@ Indices et solutions
     compter_reel_correction
     fractales_correction
 
-.. _l-biblio_prog:
+.. _l-biblio_maths:
 
 Bibliographie
 -------------

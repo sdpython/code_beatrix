@@ -69,3 +69,9 @@ de labyrinthe et ils s'y sont donnés à coeur joie.
 Une heure était assurément trop court pour appréhender
 les outils mais quelques-uns ont su adapter un montage
 donné comme premier exemple.
+
+Livres, Bibliographie
+---------------------
+
+* :ref:`l-biblio_algo` à propos des algorithmes
+* :ref:`l-biblio_art` à propos des médias

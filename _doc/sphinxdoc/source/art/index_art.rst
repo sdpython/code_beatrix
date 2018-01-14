@@ -33,7 +33,7 @@ Indices et solutions
 
     montage_video_correction
 
-.. _l-biblio_prog:
+.. _l-biblio_art:
 
 Bibliographie
 -------------

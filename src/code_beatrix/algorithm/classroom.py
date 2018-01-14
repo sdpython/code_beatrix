@@ -172,6 +172,7 @@ def optimize_positions(positions, edges, max_iter=100, fLOG=noLOG,
     @param      positions       dictionary ``{ name : (x, y) }``
     @param      edges           list of affinities ``(name1, name2)``
     @param      max_iter        maximum number of iterations
+    @param      plot_folder     if not None, saves images into this folder
     @return                     positions, iterations
     """
     edges_dict = {}

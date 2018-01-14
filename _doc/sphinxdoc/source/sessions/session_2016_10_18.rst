@@ -40,6 +40,7 @@ Livres, Bibliographie
 
 **Autres pistes**
 
+* :ref:`l-biblio_art` à propos des médias
 * :ref:`l-biblio_algo` à propos des algorithmes
 * :ref:`l-biblio_prog` à propos de la programmation
 * :ref:`l-biblio_donnes` à propos des données
