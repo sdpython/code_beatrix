@@ -43,11 +43,11 @@ Exercice 1 - passer à travers un mur
 #. Visionner les vidéos et noter à la seconde près les extraits
    des vidéos.
 #. Extraire chaque bout avec la fonction
-   :func:`video_extract_video <code_beatrix.faq.faq_video.video_extract_video>`.
+   :func:`video_extract_video <code_beatrix.art.video.video_extract_video>`.
 #. Assembler chaque bout en une seule vidéo avec la fonction
-   :func:`video_concatenate <code_beatrix.faq.faq_video.video_concatenate>`.
+   :func:`video_concatenate <code_beatrix.art.video.video_concatenate>`.
 #. Enregister la vidéo avec la fonction
-   :func:`video_save <code_beatrix.faq.faq_video.video_save>`.
+   :func:`video_save <code_beatrix.art.video.video_save>`.
 
 Exercice 2 - ajouter du texte
 -----------------------------
@@ -55,22 +55,22 @@ Exercice 2 - ajouter du texte
 #. On reprend la vidéo précédente et on y incruste
    du texte et des images pour commenter ce que les personnages,
    pour s'en moquer ou font ou pour les doubler :
-   :func:`video_text <code_beatrix.faq.faq_video.video_text>`.
+   :func:`video_text <code_beatrix.art.video.video_text>`.
 #. Enregister la vidéo avec la fonction
-   :func:`video_save <code_beatrix.faq.faq_video.video_save>`.
+   :func:`video_save <code_beatrix.art.video.video_save>`.
 
 Exercice 3 - changer la musique
 -------------------------------
 
 #. Choisir une musique pour en faire une bande son,
    sur :epkg:`youtube` par exemple, avec le module :epkg:`pytube`
-   ou la fonction :func:`download_youtube_video <code_beatrix.faq.faq_video.download_youtube_video>`.
+   ou la fonction :func:`download_youtube_video <code_beatrix.art.video.download_youtube_video>`.
 #. Extraire la bande de la vidéo précédente avec la fonction
-   :func:`video_extract_audio <code_beatrix.faq.faq_video.video_extract_audio>`.
+   :func:`video_extract_audio <code_beatrix.art.video.video_extract_audio>`.
 #. S'il y a plusieurs sons, il faudra les concaténer la fonction
-   :func:`audio_concatenate <code_beatrix.faq.faq_video.audio_concatenate>`.
+   :func:`audio_concatenate <code_beatrix.art.video.audio_concatenate>`.
 #. Enregister la vidéo avec la fonction
-   :func:`video_save <code_beatrix.faq.faq_video.video_save>`.
+   :func:`video_save <code_beatrix.art.video.video_save>`.
 
 Exercice 4 - accélérer
 ----------------------
@@ -78,7 +78,7 @@ Exercice 4 - accélérer
 On reprend toutes les opérations pour un faire une seul programme
 qu'on exécute pour vérifier qu'il donne bien la même chose qu'avant.
 On accélère la vidéo obtenue avec la fonction
-:func:`video_modification <code_beatrix.faq.faq_video.video_modification>`.
+:func:`video_modification <code_beatrix.art.video.video_modification>`.
 
 Solution
 --------

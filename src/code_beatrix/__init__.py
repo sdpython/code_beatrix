@@ -67,7 +67,7 @@ def check(log=False, kind=None, fLOG=None):
         from .scratchs import check
         r &= check()
     if kind is None or kind == "video":
-        from .faq.faq_video import check
+        from .art.video import check
         r &= check(fLOG=fLOG)
     return r
 
