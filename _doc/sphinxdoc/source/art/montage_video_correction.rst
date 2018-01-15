@@ -3,19 +3,19 @@
 
 .. _l-montage_video_sol:
 
-Petit montage vidéo avec Python (solution)
+Petit trucage vidéo avec Python (solution)
 ==========================================
 
 Solution de :ref:`l-montage_video`.
 
-Exercice 1
-----------
+Exercice 1 - passer à travers un mur
+------------------------------------
 
-Exercice 2
-----------
+Exercice 2 - ajouter du texte
+-----------------------------
 
-Exercice 3
-----------
+Exercice 3 - changer la musique
+-------------------------------
 
-Exercice 4
-----------
+Exercice 4 - accélérer
+----------------------

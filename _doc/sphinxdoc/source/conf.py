@@ -71,6 +71,7 @@ custom_preamble = """\n
 imgmath_latex_preamble += custom_preamble
 latex_elements['preamble'] += custom_preamble
 mathdef_link_only = True
+html_split_index = True
 
 epkg_dictionary['AudioClip'] = 'https://zulko.github.io/moviepy/ref/AudioClip/AudioClip.html'
 epkg_dictionary['deep learning'] = 'https://en.wikipedia.org/wiki/Deep_learning'

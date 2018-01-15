@@ -3,7 +3,7 @@
 
 .. _l-montage_video:
 
-Petit montage vidéo avec Python
+Petit trucage vidéo avec Python
 ===============================
 
 A partir de 7 ans.
@@ -21,19 +21,25 @@ sur la réalisation de petits films.
 Mise en scène
 -------------
 
-On souhaite réaliser un dialogue imaginaire à partir de
-personnages qui appartiennent à des films ou à des vidéos
-différentes.
+On souhaite réaliser des trucages vidéos comme
+celui de passer à travers un mur, de changer sa voix,
+ou courir à toute allure. Ce jeu se joue à deux ou trois,
+un metteur en scène, un ou deux acteurs.
 
-Exercice 1
-----------
+.. video:: mur.mp4
+    :width: 50%
+    :height: 50%
 
-#. Ecrire un petit scénario avec deux ou trois répliques
-   qu'on pourra réaliser à partir de vidéos :epkg:`youtube`.
-   On peut choisir des films, des chansons...
-#. Télécharger les vidéos si besoin avec le module
-   :epkg:`pytube` ou la fonction
-   :func:`download_youtube_video <code_beatrix.faq.faq_video.download_youtube_video>`.
+Ce petit notebook pour vous aider tout au long
+de l'atelier : :ref:`exemplevideodevoxx2018rst`.
+
+Exercice 1 - passer à travers un mur
+------------------------------------
+
+#. Choisir un mur, supposer qu'on peut trafiquer un film,
+   imaginer ce qu'il faudrait faire pour passer à travers
+   un mur.
+#. Filmer les séquences nécessaires.
 #. Visionner les vidéos et noter à la seconde près les extraits
    des vidéos.
 #. Extraire chaque bout avec la fonction
@@ -43,34 +49,35 @@ Exercice 1
 #. Enregister la vidéo avec la fonction
    :func:`video_save <code_beatrix.faq.faq_video.video_save>`.
 
-Exercice 2
-----------
+Exercice 2 - ajouter du texte
+-----------------------------
 
-#. On reprend la vidéo précédente et on y inscrute
+#. On reprend la vidéo précédente et on y incruste
    du texte et des images pour commenter ce que les personnages,
-   pour s'en moquer ou font ou pour les doubler.
-   **fonction non implémentée**
+   pour s'en moquer ou font ou pour les doubler :
+   :func:`video_text <code_beatrix.faq.faq_video.video_text>`.
 #. Enregister la vidéo avec la fonction
    :func:`video_save <code_beatrix.faq.faq_video.video_save>`.
 
-Exercice 3
-----------
+Exercice 3 - changer la musique
+-------------------------------
 
+#. Choisir une musique pour en faire une bande son,
+   sur :epkg:`youtube` par exemple, avec le module :epkg:`pytube`
+   ou la fonction :func:`download_youtube_video <code_beatrix.faq.faq_video.download_youtube_video>`.
 #. Extraire la bande de la vidéo précédente avec la fonction
    :func:`video_extract_audio <code_beatrix.faq.faq_video.video_extract_audio>`.
-#. Choisir une musique pour en faire une bande son.
-#. Superposer les deux sons avec la fonction
-   :func:`audio_compose <code_beatrix.faq.faq_video.audio_compose>`.
+#. S'il y a plusieurs sons, il faudra les concaténer la fonction
+   :func:`audio_concatenate <code_beatrix.faq.faq_video.audio_concatenate>`.
 #. Enregister la vidéo avec la fonction
    :func:`video_save <code_beatrix.faq.faq_video.video_save>`.
 
-Exercice 4
-----------
+Exercice 4 - accélérer
+----------------------
 
 On reprend toutes les opérations pour un faire une seul programme
 qu'on exécute pour vérifier qu'il donne bien la même chose qu'avant.
-On choisit un des personnages et le faire parler deux plus vite
-avec la fonction
+On accélère la vidéo obtenue avec la fonction
 :func:`video_modification <code_beatrix.faq.faq_video.video_modification>`.
 
 Solution

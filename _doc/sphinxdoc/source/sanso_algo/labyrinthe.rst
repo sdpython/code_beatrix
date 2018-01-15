@@ -40,3 +40,10 @@ Voir :ref:`l-algo_labyrinthe`.
 
 A quoi ça sert ?
 ----------------
+
+Le problème du plus court chemin consiste à trouver le chemin
+le plus rapide d'un point A à un point B sur un réseau routier,
+un réseau informatique... Ce problème cache deux problématiques,
+trouver la longueur du plus court chemin et le chemin lui-même.
+C'est lors de cette seconde étape que l'idée du labyrinthe est
+intéressante.

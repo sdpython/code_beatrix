@@ -16,7 +16,7 @@ import moviepy.audio.fx.all as afx
 import moviepy.video.fx.all as vfx
 from moviepy.video.VideoClip import ImageClip, VideoClip
 from moviepy.video.io.ImageSequenceClip import ImageSequenceClip
-from moviepy.audio.AudioClip import AudioArrayClip, CompositeAudioClip
+from moviepy.audio.AudioClip import CompositeAudioClip
 from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
 from moviepy.audio.AudioClip import concatenate_audioclips
@@ -100,6 +100,10 @@ def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/m
     yt = YouTube('https://www.youtube.com/watch?v={0}'.format(tag))
     st = yt.streams.filter(mime_type=mime_type, res=res, **kwargs)
     fi = st.first()
+    if fi is None:
+        raise ValueError("By default the function downloads a video with resolution = 720, " +
+                         "if it is not available, switch to res=None " +
+                         "to choose the first one available.")
     fi.download(output_path=output_path)
     return fi.default_filename
 
@@ -171,8 +175,8 @@ def audio_modification(audio, loop_duration=None, volumex=1.,
     with AudioContext(audio) as audio:
         if speed:
             audio = audio.fl_time(lambda t: t * speed, keep_duration=True)
-            wav = audio.to_soundarray(fps=audio.fps)
-            audio = AudioArrayClip(wav, audio.fps)
+            # wav = audio.to_soundarray(fps=audio.fps)
+            # audio = AudioArrayClip(wav, audio.fps)
         if volumex != 1.:
             audio = audio.fx(afx.volumex, volumex)
         if loop_duration:
