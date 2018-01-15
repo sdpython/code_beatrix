@@ -24,7 +24,7 @@ en évident avec cet atelier qui se déroulait dans un labyrinthe
 tracé avec un rouleau de 30 mètres de carton découpés en quelques
 tronçons.
 
-.. video:: images/rapide4.mp4
+.. video:: images/rapide.mp4
     :width: 400
 
 Un labyrinthe beaucoup plus grand, des murs plus haut,
@@ -55,7 +55,7 @@ mais c'est toujours plus facile en film.
     assemblage = video_concatenate([extrait1, extrait2])
     video_save(assemblage, 'mur.mp4', verbose=True)
 
-.. video:: images/rapide4.mp4
+.. video:: images/mur.mp4
     :width: 400
 
 Le notebook qui a servi d'exemple :ref:`exemplevideodevoxx2018rst`.
@@ -71,7 +71,7 @@ les outils mais quelques-uns ont su adapter un montage
 donné comme premier exemple.
 
 Livres, Bibliographie
----------------------
++++++++++++++++++++++
 
 * :ref:`l-biblio_algo` à propos des algorithmes
 * :ref:`l-biblio_art` à propos des médias

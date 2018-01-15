@@ -373,7 +373,6 @@ def video_replace_audio(video_or_file, new_sound, **kwargs):
     If parameter ``loop=True`` is specified,
     *loop_duration* becomes the duration of the video.
 
-
     Example:
 
     ::
