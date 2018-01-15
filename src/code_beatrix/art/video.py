@@ -19,7 +19,7 @@ from moviepy.video.io.ImageSequenceClip import ImageSequenceClip
 from moviepy.audio.AudioClip import CompositeAudioClip
 from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
-from moviepy.audio.AudioClip import concatenate_audioclips
+from moviepy.audio.AudioClip import concatenate_audioclips, AudioArrayClip
 from .moviepy_context import AudioContext, VideoContext
 from PIL import Image, ImageFont, ImageDraw
 from skimage.io._plugins.pil_plugin import pil_to_ndarray
@@ -157,7 +157,7 @@ def audio_save(audio_or_file, filename, verbose=False, **kwargs):
 
 def audio_modification(audio, loop_duration=None, volumex=1.,
                        fadein=False, fadeout=False, t_start=0, t_end=None,
-                       speed=1.):
+                       speed=1., keep_duration=False, wav=False):
     """
     Modifies a sound.
     Modifie un son.
@@ -170,17 +170,21 @@ def audio_modification(audio, loop_duration=None, volumex=1.,
     @param      t_start         shorten the audio
     @param      t_end           shorten the audio
     @param      speed           speed of the sound
+    @param      keep_duration   parameter to
+                                `ft_time <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=fl_time#moviepy.audio.AudioClip.AudioClip.fl_time>`_
     @return                     new sound
     """
     with AudioContext(audio) as audio:
-        if speed:
-            audio = audio.fl_time(lambda t: t * speed, keep_duration=True)
-            # wav = audio.to_soundarray(fps=audio.fps)
-            # audio = AudioArrayClip(wav, audio.fps)
+        if loop_duration:
+            if audio.duration is None:
+                raise ValueError(
+                    "The duration is unknown, maybe you should apply the loop first.")
+            audio = afx.audio_loop(audio, duration=loop_duration)
         if volumex != 1.:
             audio = audio.fx(afx.volumex, volumex)
-        if loop_duration:
-            audio = afx.audio_loop(audio, duration=loop_duration)
+        if speed != 1.:
+            audio = audio.fl_time(lambda t: t * speed,
+                                  keep_duration=keep_duration)
         if fadein:
             audio = audio.fx(afx.audio_fadein, 1.0)
         if fadeout:
@@ -188,6 +192,27 @@ def audio_modification(audio, loop_duration=None, volumex=1.,
         if t_start != 0 or t_end is not None:
             audio = audio.subclip(t_start=t_start, t_end=t_end)
         return audio
+
+
+def audio2wav(audio, duration=None, **kwargs):
+    """
+    The sound is converted into :epkg:`wav`
+    and returned as an :epkg:`AudioArrayClip`.
+    Le son est converti au format :epkg:`wav`.
+
+    @param      audio           sound
+    @param      duration        change the duration of the sound before converting it
+    @param      kwargs          see `to_soundarray <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=to_soundarray#moviepy.audio.AudioClip.AudioClip.to_soundarray>`_
+    @return                     :epkg:`AudioArrayClip`
+    """
+    with AudioContext(audio) as audio:
+        if duration is not None:
+            audio = audio.set_duration(duration)
+        wav = audio.to_soundarray(**kwargs)
+        fps = kwargs.get('fps', audio.fps if hasattr(audio, 'fps') else None)
+        if fps is None:
+            raise ValueError("fps cannot be None, 44100 is a proper value")
+        return AudioArrayClip(wav, fps=fps)
 
 
 def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
@@ -358,14 +383,14 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
                 yield name
 
 
-def video_replace_audio(video_or_file, new_sound, **kwargs):
+def video_replace_audio(video_or_file, new_sound, loop=True):
     """
     Replaces the sound of a video.
     Remplace la bande-son d'une vidéo.
 
     @param      video_or_file   string or :epkg:`VideoClip`
     @param      new_sound       sound
-    @param      kwargs          see @see fn audio_modification
+    @param      loop            loop on the audio if not long enough
     @return                     :epkg:`VideoClip`
 
     The list of available transformations is at:
@@ -381,10 +406,13 @@ def video_replace_audio(video_or_file, new_sound, **kwargs):
         vid = video_replace_sound('video.mp4', 'son.mp3', loop=True, volumex=5.5, t_end='00:00:05')
     """
     with VideoContext(video_or_file) as video:
-        if 'loop' in kwargs:
-            kwargs['loop_duration'] = video.duration
-            del kwargs['loop']
-        audio = audio_modification(new_sound, **kwargs)
+        if loop:
+            if video.duration is None:
+                raise ValueError(
+                    "The duration of the video is unknown, use audio_modification and loop=False")
+            audio = audio_modification(new_sound, loop_duration=video.duration)
+        else:
+            audio = new_sound
         new_clip = video.set_audio(audio)
         return new_clip
 

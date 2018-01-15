@@ -17,6 +17,7 @@ script:
   - { CMD: "python -u setup.py unittests -e \".*noenv4.*\"", NAME: "UT_NOENV4" }
   - { CMD: "python -u setup.py unittests -e \".*noenv5.*\"", NAME: "UT_NOENV5" }
   - { CMD: "python -u setup.py unittests -e \".*noenv6.*\"", NAME: "UT_NOENV6" }
+  - { CMD: "python -u setup.py unittests -e \".*noenv7.*\"", NAME: "UT_NOENV7" }
   - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests_LONG", NAME: "UT_LONG" }
   - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests_SKIP", NAME: "UT_SKIP" }
 after_script:

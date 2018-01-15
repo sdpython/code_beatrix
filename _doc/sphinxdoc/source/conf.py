@@ -74,6 +74,7 @@ mathdef_link_only = True
 html_split_index = True
 
 epkg_dictionary['AudioClip'] = 'https://zulko.github.io/moviepy/ref/AudioClip/AudioClip.html'
+epkg_dictionary['AudioArrayClip'] = 'https://zulko.github.io/moviepy/ref/AudioClip/AudioClip.html'
 epkg_dictionary['deep learning'] = 'https://en.wikipedia.org/wiki/Deep_learning'
 epkg_dictionary['fcn'] = 'https://github.com/wkentaro/fcn'
 epkg_dictionary['gif'] = 'https://fr.wikipedia.org/wiki/Graphics_Interchange_Format'
@@ -90,3 +91,4 @@ epkg_dictionary['VideoClip'] = 'https://zulko.github.io/moviepy/ref/VideoClip/Vi
 epkg_dictionary['VLC'] = 'https://www.videolan.org/vlc/index.html'
 epkg_dictionary['YouTube'] = "https://www.youtube.com/"
 epkg_dictionary['youtube'] = "https://www.youtube.com/"
+epkg_dictionary['wav'] = "https://fr.wikipedia.org/wiki/Waveform_Audio_File_Format"
