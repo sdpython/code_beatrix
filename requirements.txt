@@ -20,7 +20,7 @@ pydocstyle
 pyensae
 pymmails
 pymyinstall
-pyquickhelper>1.6.2361
+pyquickhelper>=1.6.2365
 pyshp
 pytube>=8.0.0
 qgrid
