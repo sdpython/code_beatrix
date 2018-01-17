@@ -27,8 +27,8 @@ ou courir à toute allure. Ce jeu se joue à deux ou trois,
 un metteur en scène, un ou deux acteurs.
 
 .. video:: mur.mp4
-    :width: 50%
-    :height: 50%
+    :width: 200
+    :height: 150
 
 Ce petit notebook pour vous aider tout au long
 de l'atelier : :ref:`exemplevideodevoxx2018rst`.
