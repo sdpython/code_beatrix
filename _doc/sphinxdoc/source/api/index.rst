@@ -2,6 +2,10 @@
 API
 ===
 
+Cette section résume les principales fonctionnalités
+implémentées dans ce module et principalement destinées
+à la préparation d'ateliers de découverte de la programmation.
+
 .. toctree::
     :maxdepth: 2
 
@@ -9,3 +13,4 @@ API
     algorithm
     notebooks
     video
+    videodl

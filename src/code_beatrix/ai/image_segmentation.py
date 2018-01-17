@@ -73,7 +73,8 @@ class DLImageSegmentation(DeepLearningImage):
         """
         return self._model_file
 
-    def _new_size(self, old_size, new_size):
+    @staticmethod
+    def _new_size(old_size, new_size):
         """
         Computes a new size.
 
@@ -128,13 +129,19 @@ class DLImageSegmentation(DeepLearningImage):
                 feat = skimage.io.imread(img)
             else:
                 pilimg = Image.open(img)
-                si = self._new_size(pilimg.size, resize)
+                si = DLImageSegmentation._new_size(pilimg.size, resize)
                 pilimg2 = pilimg.resize(si)
                 feat = pil_to_ndarray(pilimg2)
         elif isinstance(img, numpy.ndarray):
-            if resize is not None:
-                raise NotImplementedError('resize not None is not implemented')
-            feat = img
+            if resize is None:
+                feat = img
+            else:
+                # Does not work...
+                # feat = skimage.transform.resize(img, resize)
+                # So...
+                pilimg = Image.fromarray(img).convert('RGB')
+                pilimg2 = pilimg.resize(resize)
+                feat = pil_to_ndarray(pilimg)
         else:
             raise NotImplementedError(
                 "Not implemented for type '{0}'".format(type(img)))

@@ -24,7 +24,7 @@ README
 
 .. image:: https://badge.waffle.io/sdpython/code_beatrix.png?label=ready&title=Ready
     :alt: Waffle
-    :target: https://waffle.io/actuariat_python/code_beatrix
+    :target: https://waffle.io/sdpython/code_beatrix
 
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
     :alt: MIT License
