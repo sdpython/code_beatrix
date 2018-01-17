@@ -98,7 +98,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python setup.py unittests
+            python setup.py unittests -g .*noenv8.*
 
       - run:
           name: wheel
