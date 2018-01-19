@@ -36,6 +36,7 @@ CLASSIFIERS = [
 packages = find_packages('src', exclude='src')
 package_dir = {k: "src/" + k.replace(".", "/") for k in packages}
 package_data = {project_var_name + ".algorithm.data": ["*.txt"],
+                project_var_name + ".art.data": ["*.xml"],
                 project_var_name + ".scratchs.example_echiquier": ["*.sb2"],
                 project_var_name + ".scratchs.example_tri": ["*.sb2"],
                 project_var_name + ".scratchs.example_pyramide": ["*.sb2"],

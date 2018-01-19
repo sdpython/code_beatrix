@@ -15,3 +15,8 @@ Deep Learning
 +++++++++++++
 
 .. autosignature:: code_beatrix.art.videodl.video_map_images
+
+Détecteur rapides
++++++++++++++++++
+
+.. autosignature:: code_beatrix.art.videodl.video_map_images_detect

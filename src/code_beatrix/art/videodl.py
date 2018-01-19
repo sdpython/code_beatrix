@@ -5,9 +5,11 @@
 avec des traitements compliqués type
 :epkg:`deep learning`.
 """
+import os
 from moviepy.video.io.ImageSequenceClip import ImageSequenceClip
 from ..ai import DLImageSegmentation
 from .video import video_enumerate_frames
+from .moviepy_context import VideoContext
 
 
 def video_map_images(video_or_file, name, fLOG=None, **kwargs):
@@ -31,6 +33,7 @@ def video_map_images(video_or_file, name, fLOG=None, **kwargs):
       The movie is composed with an image and a
       `mask <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=mask#moviepy.audio.AudioClip.AudioClip.set_ismask>`_.
       Parameters: see @fn video_map_images_people.
+    * ``'detect'`` : blurs or put a rectangle around faces, uses :epkg:`opencv`
 
     .. warning:: A couple of errors timeout, out of memory...
         The following processes might be quite time consuming
@@ -42,6 +45,8 @@ def video_map_images(video_or_file, name, fLOG=None, **kwargs):
     allowed = {'people'}
     if name == 'people':
         return video_map_images_people(video_or_file, fLOG=fLOG, **kwargs)
+    elif name == "detect":
+        return video_map_images_detect(video_or_file, fLOG=fLOG, **kwargs)
     else:
         raise ValueError("Unknown process '{}', should be among: {}".format(
             name, ','.join(allowed)))
@@ -154,3 +159,138 @@ def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
         fLOG('[video_map_images_people] done.')
 
     return ImageSequenceClip(seq, fps=fps)
+
+
+def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_bar=False, dtype=None,
+                            scaleFactor=1.3, minNeighbors=4, minSize=(30, 30),
+                            action='blur', color=(255, 255, 0), haar=None, fLOG=None):
+    """
+    Blurs people faces.
+    Uses function `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_.
+    Relies on :epkg:`opencv`.
+    Floute les visages.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      fps             see @see fn video_enumerate_frames,
+                                faces are detected in each frame returned by
+                                @see fn video_enumerate_frames
+    @param      with_times      see @see fn video_enumerate_frames
+    @param      progress_bar    see @see fn video_enumerate_frames
+    @param      dtype           see @see fn video_enumerate_frames
+    @param      fLOG            logging function
+    @param      scaleFactor     see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_
+    @param      minNeighbors    see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_
+    @param      minSize         see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_
+    @param      haar            shape classifier to load, face by default, see below
+    @param      action          to blur, to put a rectangle around the detected zone... see below
+    @param      color           rectangle color if *action* is ``'rect'``
+    @return                     :epkg:`VideoClip`
+
+    Only ``haarcascade_frontalface_alt.xml`` is provided but you can
+    get more at `haarcascades <https://github.com/opencv/opencv/blob/master/data/haarcascades/>`_.
+
+    Parameter *action* can be:
+
+    * ``'blur'``: to blur faces (or detector zones)
+    * ``'rect'``: to draw a rectangle around faces (or detector zones)
+
+    .. exref::
+        :title: Faces in a yellow box in a video
+
+        The following example uses :epkg:`opencv` to detect faces
+        on each image of a video and put a yellow box around each of them.
+
+        ::
+
+            from code_beatrix.art.videodl import video_map_images
+            from code_beatrix.art.video import video_save, video_extract_video
+
+            vide = video_extract_video(vid, 0, 5 if __name__ == "__main__" else 1)
+            vid2 = video_map_images(
+                vide, fps=10, name='detect', action='rect',
+                progress_bar=True, fLOG=fLOG)
+            exp = os.path.join(temp, "people.mp4")
+            video_save(vid2, exp, fps=10)
+
+
+        The following video is taken from
+        `Charlie Chaplin's movies <source: https://www.youtube.com/watch?v=n_1apYo6-Ow>`_.
+
+        .. video:: face.mp4
+    """
+    from cv2 import CascadeClassifier, CASCADE_SCALE_IMAGE
+    from .video_drawing import blur, rectangle
+
+    def fl_blur(gf, t, rects):
+        im = gf(t)
+        ti = max(int(t * fps), len(rects))
+        rects = all_rects[ti]
+        for rect in rects:
+            x1, y1, dx, dy = rect
+            blur(im, (x1, y1), (x1 + dx, y1 + dy))
+        return im
+
+    def fl_rect(gf, t, rects):
+        im = gf(t)
+        ti = max(int(t * fps), len(rects))
+        rects = all_rects[ti]
+        for rect in rects:
+            x1, y1, dx, dy = rect
+            rectangle(im, (x1, y1), (x1 + dx, y1 + dy), color)
+        return im
+
+    fcts = dict(blur=fl_blur, rect=fl_rect)
+
+    if action not in fcts:
+        raise ValueError("action='{0}' should be in {1}".format(
+            action, list(sorted(fcts.keys()))))
+
+    if fLOG:
+        fLOG('[video_map_images_blur] detect faces')
+
+    if haar is None:
+        this = os.path.abspath(os.path.dirname(__file__))
+        cascade_fn = os.path.join(
+            this, 'data', 'haarcascade_frontalface_alt.xml')
+    elif not os.path.exists(haar):
+        raise FileNotFoundError(haar)
+    else:
+        cascade_fn = haar
+
+    cascade = CascadeClassifier(cascade_fn)
+
+    iter = video_enumerate_frames(video_or_file, fps=fps, with_times=with_times,
+                                  progress_bar=progress_bar, dtype=dtype)
+
+    if fLOG:
+        fLOG("[video_map_images_people] starts detecting and burring faces with: {0}".format(
+            cascade_fn))
+        if fps is not None:
+            every = max(fps, 1)
+            unit = 's'
+        else:
+            every = 20
+            unit = 'i'
+
+    all_rects = []
+    for i, img in enumerate(iter):
+        if not progress_bar and fLOG is not None and i % every == 0:
+            fLOG('[video_map_images_face] process %d%s images' % (i, unit))
+
+        try:
+            rects = cascade.detectMultiScale(img, scaleFactor=1.3,
+                                             minNeighbors=minNeighbors, minSize=minSize,
+                                             flags=CASCADE_SCALE_IMAGE)
+        except Exception as e:
+            if fLOG:
+                fLOG('Unable to retrieve any shape due to ', e)
+            rects = []
+        all_rects.append(rects)
+
+    if fLOG:
+        non = sum(map(len, (filter(lambda x: len(x) > 0, all_rects))))
+        fLOG('[video_map_images_blur] creates video nb image: {1}, nb faces: {0}'.format(
+            non, len(all_rects)))
+
+    with VideoContext(video_or_file) as video:
+        return video.video.fl(lambda im, t: fcts[action](im, t, rects), keep_duration=True)

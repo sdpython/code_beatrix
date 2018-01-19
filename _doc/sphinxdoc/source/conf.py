@@ -82,6 +82,7 @@ epkg_dictionary['ImageClip'] = 'https://zulko.github.io/moviepy/ref/VideoClip/Vi
 epkg_dictionary[
     'Mary Poppins'] = 'https://fr.wikipedia.org/wiki/Mary_Poppins_(film,_1964)'
 epkg_dictionary['moviepy'] = 'https://zulko.github.io/moviepy/'
+epkg_dictionary['opencv'] = 'https://opencv.org/'
 epkg_dictionary['OpenShot'] = 'https://www.openshot.org/'
 epkg_dictionary['pytube'] = 'https://github.com/nficano/pytube'
 epkg_dictionary['SciTe'] = 'http://www.scintilla.org/SciTE.html'

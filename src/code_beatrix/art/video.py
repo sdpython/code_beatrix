@@ -297,6 +297,38 @@ def video_extract_video(video_or_file, ta=0, tb=None):
         return video.subclip(ta, tb)
 
 
+def video_save_image(video_or_file, t=None, filename=None, **kwargs):
+    """
+    Saves one image from a video.
+    Enregistre une image extraite d'une vidéo.
+
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @param      filename        if not None, saves the image into this file
+    @param      kwargs          see `save_frame <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=save_frame#moviepy.video.io.VideoFileClip.VideoFileClip.save_frame>`_
+    @return                     one image if *filename* is None
+
+    Example:
+
+    ::
+
+        from code_beatrix.faq_faq_video import video_extract_video, video_save_image
+        vid = video_extract_video('exemple.mp4', '00:00:01', '00:00:04')
+        video_save_image(vid, filename='new_image.jpg', t=2)
+    """
+    with VideoContext(video_or_file) as video:
+        if filename is not None:
+            video.save_frame(filename, t=t, **kwargs)
+        else:
+            im = video.get_frame(t)
+            if kwargs.get('withmask', True) and video.mask is not None:
+                mask = 255 * video.mask.get_frame(t)
+                im = numpy.dstack([im, mask]).astype('uint8')
+                return Image.fromarray(im)
+            else:
+                return Image.fromarray(im).convert('RGBA')
+
+
 def video_save(video_or_file, filename, verbose=False, duration=None, **kwargs):
     """
     Saves as a video or as a :epkg:`gif`.
