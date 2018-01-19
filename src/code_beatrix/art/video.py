@@ -20,10 +20,10 @@ from moviepy.audio.AudioClip import CompositeAudioClip
 from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
 from moviepy.audio.AudioClip import concatenate_audioclips, AudioArrayClip
-from .moviepy_context import AudioContext, VideoContext
 from PIL import Image, ImageFont, ImageDraw
 from skimage.io._plugins.pil_plugin import pil_to_ndarray
 from skimage.transform import rescale
+from .moviepy_context import AudioContext, VideoContext, get_wrapped, clean_video
 
 
 class FontError(Exception):
@@ -255,7 +255,7 @@ def audio_concatenate(audio_or_files, **kwargs):
     @param      audio_or_files  list of sounds or filenames
     @param      kwargs          additional parameters for
                                 `concatenate_audioclips <https://github.com/Zulko/moviepy/blob/master/moviepy/audio/AudioClip.py#L308>`_
-    @return                     :epkg:`VideoClip`
+    @return                     :epkg:`AudioClip`
 
     Example:
 
@@ -265,7 +265,7 @@ def audio_concatenate(audio_or_files, **kwargs):
         son = audio_concatenate('son1.mp3', 'son2.mp3')
     """
     ctx = [AudioContext(_).__enter__() for _ in audio_or_files]
-    res = concatenate_audioclips([_.audio for _ in ctx], **kwargs)
+    res = concatenate_audioclips([get_wrapped(_) for _ in ctx], **kwargs)
     for _ in ctx:
         _.__exit__()
     return res
@@ -375,7 +375,8 @@ def video_save(video_or_file, filename, verbose=False, duration=None, **kwargs):
                             filename, verbose=verbose, **kwargs)
 
 
-def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%04d.jpg', **kwargs):
+def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%04d.jpg',
+                           clean=False, **kwargs):
     """
     Enumerates frames from a video.
     Itère sur des images depuis une vidéo.
@@ -384,6 +385,7 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
     @param      folder          where to exports the images or returns arrays if None
     @param      pattern         image names
     @param      fps             frames per seconds
+    @param      clean           clean open processes after it is done
     @param      kwargs          arguments to `iter_frames <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=frames#moviepy.audio.AudioClip.AudioClip.iter_frames>`_
     @return                     iterator on arrays or files (see parameter *folder*)
 
@@ -396,11 +398,16 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
         for frame in video_enumerate_frames(vid, folder=temp):
             # ...
 
+    If *clean* is true, it calls @see fn clean_video.
     """
+    if clean is None:
+        raise ValueError('cannot be None')
     with VideoContext(video_or_file) as video:
         if folder is None:
             for frame in video.iter_frames(fps=fps, **kwargs):
                 yield frame
+            if clean:
+                clean_video(video)
         else:
             if 'dtype' in kwargs:
                 if kwargs['dtype'] != 'uint8':
@@ -413,6 +420,8 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
                 name = os.path.join(folder, pattern % i)
                 imsave(name, frame)
                 yield name
+            if clean:
+                clean_video(video)
 
 
 def video_replace_audio(video_or_file, new_sound, loop=True):
@@ -606,7 +615,7 @@ def video_concatenate(video_or_files, **kwargs):
     @return                     :epkg:`VideoClip`
     """
     ctx = [VideoContext(_).__enter__() for _ in video_or_files]
-    res = concatenate_videoclips([_.video for _ in ctx], **kwargs)
+    res = concatenate_videoclips([get_wrapped(_) for _ in ctx], **kwargs)
     for _ in ctx:
         _.__exit__()
     return res

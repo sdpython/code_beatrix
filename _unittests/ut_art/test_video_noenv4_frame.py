@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.art.video import video_save, video_frame
+from src.code_beatrix.art.video import video_save, video_frame, clean_video
 
 
 class TestVideoImage(ExtTestCase):
@@ -71,6 +71,7 @@ class TestVideoImage(ExtTestCase):
         exp = os.path.join(temp, "courte.gif")
         video_save(vid, exp, fps=20, duration=2)
         self.assertExists(exp)
+        clean_video(vid)
 
     def test_video_frame_sequence(self):
         fLOG(
@@ -83,6 +84,7 @@ class TestVideoImage(ExtTestCase):
         exp = os.path.join(temp, "courte.gif")
         video_save(vid, exp)
         self.assertExists(exp)
+        clean_video(vid)
 
 
 if __name__ == "__main__":

@@ -46,7 +46,8 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.art.video import video_save, video_modification, video_replace_audio, video_extract_audio, video_concatenate, audio_concatenate
+from src.code_beatrix.art.video import video_save, video_modification, video_replace_audio, video_extract_audio
+from src.code_beatrix.art.video import video_concatenate, audio_concatenate, clean_video
 
 
 class TestVideoAudioBug(ExtTestCase):
@@ -67,6 +68,7 @@ class TestVideoAudioBug(ExtTestCase):
         exp = os.path.join(temp, "courte2x.mp4")
         video_save(vid4, exp)
         self.assertExists(exp)
+        clean_video(vid4)
 
 
 if __name__ == "__main__":

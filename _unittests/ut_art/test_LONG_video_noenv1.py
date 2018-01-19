@@ -59,7 +59,7 @@ class TestLONGVideo(ExtTestCase):
             OutputPrint=__name__ == "__main__")
         temp = get_temp_folder(__file__, "temp_video_extract_frames_img")
         vid = os.path.join(temp, '..', 'data', 'videxa.mp4')
-        fns = list(video_enumerate_frames(vid, folder=temp))
+        fns = list(video_enumerate_frames(vid, folder=temp, clean=True))
         self.assertEqual(len(fns), 78)
         subprocess._cleanup()
 

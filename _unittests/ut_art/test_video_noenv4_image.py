@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.art.video import video_save, video_image, video_position, video_resize
+from src.code_beatrix.art.video import video_save, video_image, video_position, video_resize, clean_video
 
 
 class TestVideoImage(ExtTestCase):
@@ -62,21 +62,25 @@ class TestVideoImage(ExtTestCase):
         exp = os.path.join(temp, "courte.mp4")
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
+        clean_video(vid)
 
         exp = os.path.join(temp, "courte05.mp4")
         vid = video_position(img, (0.5, 0.5), relative=True)
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
+        clean_video(vid)
 
         exp = os.path.join(temp, "courtecb.mp4")
         vid = video_position(img, ('center', 'bottom'), relative=True)
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
+        clean_video(vid)
 
         exp = os.path.join(temp, "courtefct.mp4")
         vid = video_position(img, lambda t: (t * 0.1, t * 0.2), relative=True)
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
+        clean_video(vid)
 
     def test_video_image_resize(self):
         fLOG(
@@ -89,16 +93,19 @@ class TestVideoImage(ExtTestCase):
         exp = os.path.join(temp, "courte.mp4")
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
+        clean_video(vid)
 
         exp = os.path.join(temp, "courtecb.mp4")
         vid = video_resize(img, 0.5)
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
+        clean_video(vid)
 
         exp = os.path.join(temp, "courtefct.mp4")
         vid = video_resize(img, lambda t: max(0.1, 1 - 0.1 * t))
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
+        clean_video(vid)
 
 
 if __name__ == "__main__":

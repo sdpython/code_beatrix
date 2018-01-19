@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.art.video import video_save, video_text, video_position, video_compose, video_image
+from src.code_beatrix.art.video import video_save, video_text, video_position, video_compose, video_image, clean_video
 
 
 class TestVideoText(ExtTestCase):
@@ -61,11 +61,13 @@ class TestVideoText(ExtTestCase):
         exp = os.path.join(temp, "courte.mp4")
         video_save(vid, exp, fps=20, duration=3)
         self.assertExists(exp)
+        clean_video(vid)
 
         exp = os.path.join(temp, "courtefct.mp4")
         vid = video_position(img, lambda t: (t * 0.1, t * 0.2), relative=True)
         video_save(vid, exp, fps=20, duration=4)
         self.assertExists(exp)
+        clean_video(vid)
 
     def test_video_text_image(self):
         fLOG(
@@ -90,6 +92,8 @@ class TestVideoText(ExtTestCase):
         video_save(comb, exp2, fps=20, duration=5)
         self.assertExists(exp1)
         self.assertExists(exp2)
+        clean_video(text)
+        clean_video(comb)
 
 
 if __name__ == "__main__":

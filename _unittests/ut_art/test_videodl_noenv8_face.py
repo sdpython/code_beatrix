@@ -52,7 +52,7 @@ from src.code_beatrix.art.video import video_save, video_extract_video, video_sa
 
 class TestVideoDLFace(ExtTestCase):
 
-    def test_modify_avideo_blur(self):
+    def _test_modify_avideo_blur(self):
         fLOG(
             __file__,
             self._testMethodName,
@@ -65,6 +65,7 @@ class TestVideoDLFace(ExtTestCase):
         exp = os.path.join(temp, "face.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
+        vid2.cbclean()
 
     def test_modify_avideo(self):
         fLOG(
@@ -83,6 +84,7 @@ class TestVideoDLFace(ExtTestCase):
         im.save(os.path.join(temp, "img2.png"))
         video_save(vid2, exp, verbose=__name__ == "__main__")
         self.assertExists(exp)
+        # vid2.cbclean()
 
 
 if __name__ == "__main__":

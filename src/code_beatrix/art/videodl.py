@@ -108,7 +108,6 @@ def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
         around the character.
 
         .. video:: videodl.mp4
-
     """
     if isinstance(class_to_keep, int):
         def local_mask(img, pred):
@@ -132,7 +131,7 @@ def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
         fLOG('[video_map_images_people] loads deep learning model')
     model = DLImageSegmentation(fLOG=fLOG, **kwargs)
     iter = video_enumerate_frames(video_or_file, fps=fps, with_times=with_times,
-                                  progress_bar=progress_bar, dtype=dtype)
+                                  progress_bar=progress_bar, dtype=dtype, clean=False)
     if fLOG is not None:
         if fps is not None:
             every = max(fps, 1)
@@ -212,7 +211,6 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
             exp = os.path.join(temp, "people.mp4")
             video_save(vid2, exp, fps=10)
 
-
         The following video is taken from
         `Charlie Chaplin's movies <source: https://www.youtube.com/watch?v=n_1apYo6-Ow>`_.
 
@@ -223,7 +221,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
 
     def fl_blur(gf, t, rects):
         im = gf(t)
-        ti = max(int(t * fps), len(rects))
+        ti = min(int(t * fps), len(rects))
         rects = all_rects[ti]
         for rect in rects:
             x1, y1, dx, dy = rect
@@ -232,7 +230,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
 
     def fl_rect(gf, t, rects):
         im = gf(t)
-        ti = max(int(t * fps), len(rects))
+        ti = min(int(t * fps), len(rects))
         rects = all_rects[ti]
         for rect in rects:
             x1, y1, dx, dy = rect
@@ -260,7 +258,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
     cascade = CascadeClassifier(cascade_fn)
 
     iter = video_enumerate_frames(video_or_file, fps=fps, with_times=with_times,
-                                  progress_bar=progress_bar, dtype=dtype)
+                                  progress_bar=progress_bar, dtype=dtype, clean=False)
 
     if fLOG:
         fLOG("[video_map_images_people] starts detecting and burring faces with: {0}".format(

@@ -2,7 +2,7 @@
 """
 @brief      test log(time=1000s)
 
-Duraction is around a few seconds but the test needs to be run
+Duration is around a few seconds but the test needs to be run
 at the end of the series of unitests as it interferes
 with the notebook unittesting (it uses Popen too).
 """
@@ -57,7 +57,7 @@ class TestVideoOpenProcess(ExtTestCase):
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
         vid = os.path.join(os.path.dirname(__file__), 'data', 'videxa.mp4')
-        fra = list(video_enumerate_frames(vid))
+        fra = list(video_enumerate_frames(vid, clean=True))
         self.assertEqual(len(fra), 78)
         self.assertEqual(fra[0].shape, (720, 404, 3))
 

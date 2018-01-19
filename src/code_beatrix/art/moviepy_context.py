@@ -21,7 +21,10 @@ class VideoContext:
         """
         @param      video_or_file   string or :epkg:`VideoClip`
         """
-        self.video_or_file = video_or_file
+        if isinstance(video_or_file, VideoContext):
+            self.video_or_file = video_or_file.video
+        else:
+            self.video_or_file = video_or_file
 
     def __enter__(self):
         """
@@ -35,6 +38,8 @@ class VideoContext:
         elif isinstance(self.video_or_file, VideoClip):
             video = self.video_or_file
             self.close = False
+        elif isinstance(self.video_or_file, VideoContext):
+            raise TypeError("Video cannot be a VideoContext")
         else:
             raise TypeError(
                 'Unable to use type {0}'.format(type(self.video_or_file)))
@@ -60,7 +65,7 @@ class VideoContext:
         """
         if not hasattr(self.video, fct):
             raise AttributeError(
-                "Unable to find function '{0}' in {1}".format(fct, type(self.video)))
+                "Unable to find method '{0}' in {1}".format(fct, type(self.video)))
         return getattr(self.video, fct)
 
 
@@ -75,7 +80,10 @@ class AudioContext:
         """
         @param      audio_or_file   string or :epkg:`AudioClip`
         """
-        self.audio_or_file = audio_or_file
+        if isinstance(audio_or_file, AudioContext):
+            self.audio_or_file = audio_or_file.audio
+        else:
+            self.audio_or_file = audio_or_file
 
     def __enter__(self):
         """
@@ -89,6 +97,8 @@ class AudioContext:
         elif isinstance(self.audio_or_file, AudioClip):
             audio = self.audio_or_file
             self.close = False
+        elif isinstance(self.audio_or_file, AudioContext):
+            raise TypeError("Audio cannot be a VideoContext")
         else:
             raise TypeError(
                 'Unable to use type {0}'.format(type(self.audio_or_file)))
@@ -112,5 +122,33 @@ class AudioContext:
         """
         if not hasattr(self.audio, fct):
             raise AttributeError(
-                "Unable to find function '{0}' in {1}".format(fct, type(self.audio)))
+                "Unable to find method '{0}' in {1}".format(fct, type(self.audio)))
         return getattr(self.audio, fct)
+
+
+def get_wrapped(obj):
+    """
+    Retrives the video or the audio wrapped or not wrapped into obj.
+
+    @param      obj     @see cl WrappedObject, @see cl AudioContext, @see cl VideoContext
+    @return             wrapped object
+    """
+    if isinstance(obj, VideoContext):
+        return obj.video
+    elif isinstance(obj, AudioContext):
+        return obj.audio
+    else:
+        return obj
+
+
+def clean_video(video):
+    """
+    Cleans residual open streams.
+    It is related to the following issues:
+
+    * `The handle is invalid - Windows Only <https://github.com/Zulko/moviepy/issues/697>`_
+    """
+    if hasattr(video, 'reader'):
+        video.reader.close()
+    if hasattr(video.audio, 'reader'):
+        video.audio.reader.close_proc()
