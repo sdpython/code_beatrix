@@ -2,12 +2,10 @@
 @file
 @brief Draws objects on videos.
 """
-import numpy
 from cv2 import blur as cv_blur, rectangle as cv_rectangle
-from cv2 import LINE_AA
 
 
-def blur(img, p1, p2, kernel_size=(5, 5)):
+def blur(img, p1, p2, frac=0.333, kernel_size=None):
     """
     Blurs a part of a picture.
     Uses `blur <https://docs.opencv.org/2.4/modules/imgproc/doc/filtering.html?highlight=blur#blur>`_.
@@ -15,7 +13,9 @@ def blur(img, p1, p2, kernel_size=(5, 5)):
     @param      img         image (:epkg:`numpy:array`)
     @param      p1          (x1,y1)
     @param      p2          (x2, y2)
-    @param      kernel_size kernel size for the bluring.
+    @param      frac        if not None, if *kernel_size* is equal to this fraction
+                            of the original frame
+    @param      kernel_size kernel size for the bluring (wins over *frac*)
 
     It modifies the original picture.
     """
@@ -26,14 +26,13 @@ def blur(img, p1, p2, kernel_size=(5, 5)):
     y1, y2 = max(0, y1), min(y2, h)
     dx, dy = x2 - x1, y2 - y1
 
-    region_size = dy, dx
-    r_blur = max(min(region_size) * 2 // 3, 5)
-    mask = numpy.zeros(region_size).astype('uint8')
-    cv_rectangle(mask, (y1, x1), (y2, x2), 255, -1, lineType=LINE_AA)
-    mask = numpy.dstack(3 * [(1.0 / 255) * mask])
+    if kernel_size is not None:
+        blur_size = kernel_size
+    else:
+        blur_size = (int(frac * dx), int(frac * dy))
     orig = img[y1:y2, x1:x2]
-    zone = cv_blur(orig, (r_blur, r_blur))
-    img[y1:y2, x1:x2] = mask * zone + (1 - mask) * orig
+    zone = cv_blur(orig, blur_size)
+    img[y1:y2, x1:x2] = zone
 
 
 def rectangle(img, p1, p2, color=(255, 255, 0)):

@@ -47,7 +47,7 @@ except ImportError:
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
 from src.code_beatrix.art.videodl import video_map_images
-from src.code_beatrix.art.video import video_save, video_extract_video, video_save_image
+from src.code_beatrix.art.video import video_save, video_extract_video, video_save_image, clean_video
 
 
 class TestVideoDLFace(ExtTestCase):
@@ -58,14 +58,14 @@ class TestVideoDLFace(ExtTestCase):
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
         temp = get_temp_folder(__file__, "temp_videodl_face_blur")
-        vid = os.path.join(temp, '..', 'data', 'mary.mp4')
+        vid = os.path.join(temp, '..', 'data', 'charlie.mp4')
         vide = video_extract_video(vid, 0, 5 if __name__ == "__main__" else 1)
         vid2 = video_map_images(
             vide, fps=10, name="detect", progress_bar=__name__ == "__main__", fLOG=fLOG)
         exp = os.path.join(temp, "face.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
-        vid2.cbclean()
+        clean_video(vid2)
 
     def test_modify_avideo(self):
         fLOG(
@@ -74,7 +74,7 @@ class TestVideoDLFace(ExtTestCase):
             OutputPrint=__name__ == "__main__")
         temp = get_temp_folder(__file__, "temp_videodl_face_rect")
         vid = os.path.join(temp, '..', 'data', 'charlie.mp4')
-        vide = video_extract_video(vid, 0, 5 if __name__ == "__main__" else 1)
+        vide = video_extract_video(vid, 0, 10 if __name__ == "__main__" else 1)
         vid2 = video_map_images(
             vide, fps=10, name="detect", action="rect", progress_bar=__name__ == "__main__", fLOG=fLOG)
         exp = os.path.join(temp, "face.mp4")
@@ -84,7 +84,7 @@ class TestVideoDLFace(ExtTestCase):
         im.save(os.path.join(temp, "img2.png"))
         video_save(vid2, exp, verbose=__name__ == "__main__")
         self.assertExists(exp)
-        # vid2.cbclean()
+        clean_video(vid2)
 
 
 if __name__ == "__main__":

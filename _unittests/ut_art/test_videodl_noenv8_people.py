@@ -47,7 +47,7 @@ except ImportError:
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
 from src.code_beatrix.art.videodl import video_map_images
-from src.code_beatrix.art.video import video_save, video_extract_video
+from src.code_beatrix.art.video import video_save, video_extract_video, clean_video
 
 
 class TestVideoDLPeople(ExtTestCase):
@@ -65,7 +65,7 @@ class TestVideoDLPeople(ExtTestCase):
         exp = os.path.join(temp, "people.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
-        vid2.cbclean()
+        clean_video(vid2)
 
 
 if __name__ == "__main__":

@@ -291,4 +291,4 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
             non, len(all_rects)))
 
     with VideoContext(video_or_file) as video:
-        return video.video.fl(lambda im, t: fcts[action](im, t, rects), keep_duration=True)
+        return video.video.fl(lambda im, t: fcts[action](im, t, all_rects), keep_duration=True)
