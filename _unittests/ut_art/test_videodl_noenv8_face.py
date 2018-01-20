@@ -52,7 +52,7 @@ from src.code_beatrix.art.video import video_save, video_extract_video, video_sa
 
 class TestVideoDLFace(ExtTestCase):
 
-    def _test_modify_avideo_blur(self):
+    def test_modify_avideo_blur(self):
         fLOG(
             __file__,
             self._testMethodName,
