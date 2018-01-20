@@ -150,7 +150,23 @@ def clean_video(video):
     """
     if isinstance(video, str):
         raise TypeError("Unexpected type (string)")
-    if hasattr(video, 'reader'):
-        video.reader.close()
-    if hasattr(video.audio, 'reader'):
-        video.audio.reader.close_proc()
+    if isinstance(video, list):
+        for v in video:
+            clean_video(v)
+    else:
+        if not hasattr(video, 'close'):
+            if video.reader:
+                video.reader.close()
+                video.reader = None
+            try:
+                if video.audio:
+                    video.audio.close()
+                    video.audio = None
+            except AttributeError:
+                pass
+        else:
+            video.close()
+            #~ if hasattr(video, 'reader'):
+            #~ video.reader.close()
+            #~ if hasattr(video.audio, 'reader'):
+            #~ video.audio.reader.close_proc()

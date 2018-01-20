@@ -65,7 +65,7 @@ class TestVideoDLPeople(ExtTestCase):
         exp = os.path.join(temp, "people.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
-        clean_video(vid2)
+        clean_video([vid2, vid, vide])
 
 
 if __name__ == "__main__":

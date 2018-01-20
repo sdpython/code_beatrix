@@ -65,8 +65,7 @@ class TestVideoDLFace(ExtTestCase):
         exp = os.path.join(temp, "face.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
-        clean_video(vid2)
-        clean_video(vid)
+        clean_video([vid2, vid, vide])
 
     def test_modify_avideo(self):
         fLOG(
@@ -85,8 +84,7 @@ class TestVideoDLFace(ExtTestCase):
         im.save(os.path.join(temp, "img2.png"))
         video_save(vid2, exp, verbose=__name__ == "__main__")
         self.assertExists(exp)
-        clean_video(vid2)
-        clean_video(vid)
+        clean_video([vid2, vid, vide])
 
 
 if __name__ == "__main__":
