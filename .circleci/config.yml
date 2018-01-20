@@ -98,7 +98,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python setup.py unittests
+            python setup.py unittests -g ".*noenv4_people.*"
 
       - run:
           name: wheel
