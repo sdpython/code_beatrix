@@ -419,7 +419,7 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
             for frame in video.iter_frames(fps=fps, **kwargs):
                 yield frame
             if clean:
-                clean_video(video)
+                clean_video(video.video)
         else:
             if 'dtype' in kwargs:
                 if kwargs['dtype'] != 'uint8':
@@ -433,7 +433,7 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
                 imsave(name, frame)
                 yield name
             if clean:
-                clean_video(video)
+                clean_video(video.video)
 
 
 def video_replace_audio(video_or_file, new_sound, loop=True):

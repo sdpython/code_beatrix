@@ -221,7 +221,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
 
     def fl_blur(gf, t, rects):
         im = gf(t)
-        ti = min(int(t * fps), len(rects))
+        ti = min(int(t * fps), len(rects) - 1)
         rects = all_rects[ti]
         for rect in rects:
             x1, y1, dx, dy = rect
@@ -230,7 +230,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
 
     def fl_rect(gf, t, rects):
         im = gf(t)
-        ti = min(int(t * fps), len(rects))
+        ti = min(int(t * fps), len(rects) - 1)
         rects = all_rects[ti]
         for rect in rects:
             x1, y1, dx, dy = rect

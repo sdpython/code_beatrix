@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import ExtTestCase
-from src.code_beatrix.art.video import video_enumerate_frames
+from src.code_beatrix.art.video import video_enumerate_frames, video_load, video_clean
 
 
 class TestVideoOpenProcess(ExtTestCase):
@@ -56,10 +56,12 @@ class TestVideoOpenProcess(ExtTestCase):
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-        vid = os.path.join(os.path.dirname(__file__), 'data', 'videxa.mp4')
+        vid = video_load(os.path.join(
+            os.path.dirname(__file__), 'data', 'videxa.mp4'))
         fra = list(video_enumerate_frames(vid, clean=True))
         self.assertEqual(len(fra), 78)
         self.assertEqual(fra[0].shape, (720, 404, 3))
+        video_clean(vid)
 
 
 if __name__ == "__main__":
