@@ -297,6 +297,18 @@ def video_extract_video(video_or_file, ta=0, tb=None):
         return video.subclip(ta, tb)
 
 
+def video_load(video_or_file):
+    """
+    Loads a video.
+    Charge une vidéo.
+
+    @param      video_or_file   string or :epkg:`VideoClip`
+    @return                     :epkg:`VideoClip`
+    """
+    with VideoContext(video_or_file) as video:
+        return video.video
+
+
 def video_save_image(video_or_file, t=None, filename=None, **kwargs):
     """
     Saves one image from a video.
