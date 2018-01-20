@@ -564,7 +564,7 @@ def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, place=None, *
                 v1, v2 = video_or_file1
                 t1, t2 = t1
             else:
-                if len(video_or_file2) is None:
+                if video_or_file2 is None:
                     raise ValueError("Expecting two videos not less")
                 v1, v2 = video_or_file1, video_or_file2
             vc1 = VideoContext(v1).__enter__()
