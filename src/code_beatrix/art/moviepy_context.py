@@ -148,14 +148,14 @@ def clean_video(video):
 
     * `The handle is invalid - Windows Only <https://github.com/Zulko/moviepy/issues/697>`_
     """
-    if isinstance(video, str):
-        raise TypeError("Unexpected type (string)")
+    if isinstance(video, (str, bool, int, float)):
+        raise TypeError("Unexpected type ({0})".format(type(video)))
     if isinstance(video, list):
         for v in video:
             clean_video(v)
     else:
         if not hasattr(video, 'close'):
-            if video.reader:
+            if hasattr(video, 'reader') and video.reader:
                 video.reader.close()
                 video.reader = None
             try:
