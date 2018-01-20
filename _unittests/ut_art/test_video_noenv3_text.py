@@ -92,8 +92,7 @@ class TestVideoText(ExtTestCase):
         video_save(comb, exp2, fps=20, duration=5)
         self.assertExists(exp1)
         self.assertExists(exp2)
-        clean_video(text)
-        clean_video(comb)
+        clean_video([text, comb, vidimg])
 
 
 if __name__ == "__main__":

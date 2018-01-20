@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.art.video import video_save, video_modification, clean_video
+from src.code_beatrix.art.video import video_save, video_modification, clean_video, video_load
 
 
 class TestVideoModif(ExtTestCase):
@@ -57,12 +57,12 @@ class TestVideoModif(ExtTestCase):
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
         temp = get_temp_folder(__file__, "temp_video_modification")
-        vid = os.path.join(temp, '..', 'data', 'videxa.mp4')
+        vid = video_load(os.path.join(temp, '..', 'data', 'videxa.mp4'))
         vid2 = video_modification(vid, speed=2., mirrory=True, mirrorx=True)
         exp = os.path.join(temp, "courte2x.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
-        clean_video(vid2)
+        clean_video([vid2, vid])
 
 
 if __name__ == "__main__":
