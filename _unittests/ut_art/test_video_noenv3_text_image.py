@@ -49,25 +49,7 @@ from pyquickhelper.pycode import get_temp_folder, ExtTestCase
 from src.code_beatrix.art.video import video_save, video_text, video_position, video_compose, video_image, clean_video
 
 
-class TestVideoText(ExtTestCase):
-
-    def test_video_text(self):
-        fLOG(
-            __file__,
-            self._testMethodName,
-            OutputPrint=__name__ == "__main__")
-        temp = get_temp_folder(__file__, "temp_video_text")
-        vid = img = video_text('boule')
-        exp = os.path.join(temp, "courte.mp4")
-        video_save(vid, exp, fps=20, duration=3)
-        self.assertExists(exp)
-        clean_video(vid)
-
-        exp = os.path.join(temp, "courtefct.mp4")
-        vid = video_position(img, lambda t: (t * 0.1, t * 0.2), relative=True)
-        video_save(vid, exp, fps=20, duration=4)
-        self.assertExists(exp)
-        clean_video(vid)
+class TestVideoTextImage(ExtTestCase):
 
     def test_video_text_image(self):
         fLOG(
@@ -88,8 +70,10 @@ class TestVideoText(ExtTestCase):
         comb = video_compose([vidimg, text], t1=[0, 1])
         exp1 = os.path.join(temp, "courte_text.mp4")
         exp2 = os.path.join(temp, "courte_laga.mp4")
-        video_save(text, exp1, fps=20, duration=5)
-        video_save(comb, exp2, fps=20, duration=5)
+        video_save(text, exp1, fps=20, duration=5,
+                   verbose=__name__ == "__main__")
+        video_save(comb, exp2, fps=20, duration=5,
+                   verbose=__name__ == "__main__")
         self.assertExists(exp1)
         self.assertExists(exp2)
         clean_video([text, text0, comb, vidimg, vidimg0])
