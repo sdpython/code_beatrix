@@ -68,7 +68,7 @@ class TestVideoAudioBug(ExtTestCase):
         exp = os.path.join(temp, "courte2x.mp4")
         video_save(vid4, exp)
         self.assertExists(exp)
-        clean_video([vid4, vid2, vid3])
+        clean_video([vid4, vid2, vid3, audio, audio1, audio3])
 
 
 if __name__ == "__main__":

@@ -156,8 +156,11 @@ def clean_video(video):
     else:
         if not hasattr(video, 'close'):
             if hasattr(video, 'reader') and video.reader:
-                video.reader.close()
-                video.reader = None
+                try:
+                    video.reader.close()
+                    video.reader = None
+                except AttributeError:
+                    pass
             try:
                 if video.audio:
                     video.audio.close()

@@ -80,7 +80,7 @@ class TestVideoImage(ExtTestCase):
         vid = video_position(img, lambda t: (t * 0.1, t * 0.2), relative=True)
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
-        clean_video(vid)
+        clean_video([vid, img])
 
     def test_video_image_resize(self):
         fLOG(
@@ -105,7 +105,7 @@ class TestVideoImage(ExtTestCase):
         vid = video_resize(img, lambda t: max(0.1, 1 - 0.1 * t))
         video_save(vid, exp, fps=20)
         self.assertExists(exp)
-        clean_video(vid)
+        clean_video([vid, img])
 
 
 if __name__ == "__main__":
