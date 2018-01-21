@@ -46,7 +46,7 @@ except ImportError:
 
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-from src.code_beatrix.art.video import video_save, video_image, video_position, video_resize, clean_video
+from src.code_beatrix.art.video import video_save, video_image, video_position, clean_video
 
 
 class TestVideoImagePosition(ExtTestCase):

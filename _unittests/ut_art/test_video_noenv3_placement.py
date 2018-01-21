@@ -63,14 +63,16 @@ class TestVideoPlacement(ExtTestCase):
         exp = os.path.join(temp, "h2.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
-        clean_video(vid2)
+        clean_video([vid2, vid])
 
+        vid = video_load(os.path.join(temp, '..', 'data', 'videxa.mp4'))
         vid2 = video_compose(vid, vid, t2=1, place='v2')
         exp = os.path.join(temp, "v2.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
-        clean_video(vid2)
+        clean_video([vid2, vid])
 
+        vid = video_load(os.path.join(temp, '..', 'data', 'videxa.mp4'))
         vid2 = video_compose(vid, vid, t2=1, place='br', zoom=0.2)
         exp = os.path.join(temp, "br.mp4")
         video_save(vid2, exp)
