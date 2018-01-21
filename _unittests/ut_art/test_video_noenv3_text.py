@@ -77,12 +77,12 @@ class TestVideoText(ExtTestCase):
 
         temp = get_temp_folder(__file__, "temp_video_text_image")
         img = os.path.join(temp, '..', 'data', 'GastonLagaffe_1121.jpg')
-        vidimg = video_image(img, duration=5, opacity=200)
-        vidimg = video_position(vidimg, lambda t: (0, 0), relative=True)
+        vidimg0 = video_image(img, duration=5, opacity=200)
+        vidimg = video_position(vidimg0, lambda t: (0, 0), relative=True)
 
-        text = video_text('boule', size=2., color=(
+        text0 = video_text('boule', size=2., color=(
             255, 0, 0, 128), background=(0, 255, 0, 100))
-        text = video_position(text, lambda t: (
+        text = video_position(text0, lambda t: (
             t * 0.1, t * 0.2), relative=True)
 
         comb = video_compose([vidimg, text], t1=[0, 1])
@@ -92,7 +92,7 @@ class TestVideoText(ExtTestCase):
         video_save(comb, exp2, fps=20, duration=5)
         self.assertExists(exp1)
         self.assertExists(exp2)
-        clean_video([text, comb, vidimg])
+        clean_video([text, text0, comb, vidimg, vidimg0])
 
 
 if __name__ == "__main__":
