@@ -34,7 +34,13 @@
     pas forcément très précis non plus. Vous verrez également une façon
     originale de cuire un steack.
 
-    .. youtube:: https://www.youtube.com/watch?v=dX_Tx5DJsBc
+    .. only:: latex
+
+        .. youtube:: https://www.youtube.com/watch?v=dX\_Tx5DJsBc
+
+    .. only:: not latex
+
+        .. youtube:: https://www.youtube.com/watch?v=dX_Tx5DJsBc
 
     La suivante démontre que la quantité de sucre optimal dans le sorbet
     est une tassé à café. Trop, il ressemble à une soupe, pas assez, la
