@@ -1,0 +1,58 @@
+
+.. blogpost::
+    :title: Cuisine et mathématiques
+    :keywords: cuisine, mathématiques
+    :date: 2018-01-29
+    :categories: mathématiques
+    :lid: b-cuisine-maths
+
+    Il est indéniable que la cuisine fait partie de
+    la culture française et c'est tellement plus apétissant
+    que d'apprendre les mathématiques qui d'une certaine façon
+    font aussi partie de la tradition française.
+    `Cédric Villani <https://fr.wikipedia.org/wiki/C%C3%A9dric_Villani>`_
+    a reçu récemment
+    la `médaille Fields <https://fr.wikipedia.org/wiki/M%C3%A9daille_Fields>`_
+    qui consacre le travail d'un chercheur avant qu'il n'atteigne quarante ans.
+
+    Quoi de mieux que de mélanger les plaisirs et parler des mathématiques
+    dans la cuisine, que ce mot désigne le lieu où les plats sont préparés
+    ou le fait de réaliser une recette. Des professeurs se sont penchés sur
+    la question et ont donné quelques exposés sur le sujet comme
+    `Mathématiques et cuisine <http://lille1tv.univ-lille1.fr/tags/video.aspx?id=6843fc3c-1e45-429b-8df5-229f48f29ca0>`_
+    qui se concentre plus sur la géométrie et les proportions.
+    Elle s'intéresse à des problèmes comme la
+    `disposition des oranges sur un étal <http://www2.cnrs.fr/presse/communique/2575.htm>`_,
+    l'`emballage optimal <http://www.les-mathematiques.net/phorum/read.php?4,752343,752390>`_
+    les volumes `homéomorphes <https://fr.wikipedia.org/wiki/Hom%C3%A9omorphisme>`_,
+    ou encore les `pavages <https://fr.wikipedia.org/wiki/Pavage>`_.
+
+    Les anglais ont aussi investi le sujet avec des exposés
+    très vivants sur la disposition des oranges encore mais aussi
+    l'émulsion des blancs en neige, la calibration des fours,
+    tous les fours mentent de 20 degrés environ, les verres mesureurs
+    pas forcément très précis non plus. Vous verrez également une façon
+    originale de cuire un steack.
+
+    .. youtube:: https://www.youtube.com/watch?v=dX_Tx5DJsBc
+
+    La suivante démontre que la quantité de sucre optimal dans le sorbet
+    est une tassé à café. Trop, il ressemble à une soupe, pas assez, la
+    cuillère dérape dessus.
+
+    .. youtube:: https://www.youtube.com/watch?v=DOabtB-P-lk
+
+    Un peu moins mathématique mais captivant aussi sur
+    la fermentation :
+
+    .. youtube:: https://www.youtube.com/watch?v=H1mMg91YJHc
+
+    Les mathématiques reviennent avec la cuisine moléculaire
+    décrite dans ce livre
+    `Cours de gastronomie moléculaire <https://www.belin-editeur.com/cours-de-gastronomie-moleculaire-ndeg1#anchor1>`_.
+
+    .. youtube:: https://www.youtube.com/watch?v=Vh6jKvzP7bg
+
+    Appliquée à la mayonnaise :
+
+    .. youtube:: https://www.youtube.com/watch?v=D65ZEtdwoQ0
