@@ -22,7 +22,7 @@ pymmails
 pymyinstall
 pyquickhelper>=1.6.2369
 pyshp
-pytube>=8.0.0
+pytube!=9.0.4
 qgrid
 semantic_version
 shapely
