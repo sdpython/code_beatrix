@@ -34,7 +34,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install ensae_projects"
   - "%PYTHON%\\Scripts\\pip install pygame"
   - "%PYTHON%\\Scripts\\pip install moviepy"
-  - "%PYTHON%\\Scripts\\pip install pytube"
+  - "%PYTHON%\\Scripts\\pip install pytube!=9.0.4"
   - "%PYTHON%\\Scripts\\pymy_install3 basemap"
   - "%PYTHON%\\Scripts\\pymy_install3 opencv_python fastrlock cupy cairocffi"
   - "%PYTHON%\\Scripts\\pymy_install3 yaml pyproj scikit-image opencv-python"
