@@ -10,6 +10,7 @@ jyquickhelper
 moviepy
 opencv-python
 pyensae
+pymmails
 pyquickhelper>=1.7.2438
 pyshp
 pytube>=9.0.6
