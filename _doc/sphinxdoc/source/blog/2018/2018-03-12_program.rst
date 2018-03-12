@@ -1,0 +1,38 @@
+
+.. blogpost::
+    :title: Programmation sans écran ou presque
+    :keywords: programmation
+    :date: 2018-03-12
+    :categories: programmation
+
+    Il est difficile de programmar sans écran,
+    c'est tellement facile mais tellement abstrait.
+    Pas facile de lancer l'imagination devant un écran
+    alors que c'est si facile avec des objets physiques.
+    Et puis les enfants ne devraient pas être exposés
+    trop tôt aux écrans. Pour ma part, j'ai commencé
+    la programmaiton à 10 ans. Je n'ai pas eu d'ordinateur
+    avant cet âge. Je ne pense pas qu'il y ait un âge
+    pour commencer à partir du moment où l'enfant est
+    curieux et aime poser des questions. Apprendre à jouer
+    aux échecs est à mon avis plus utile à six ans que
+    la programmation elle-même. C'est un jeu sans écran.
+
+    Néanmoins, j'ai quand même cherché quelques approches
+    pour apprendre la programmation et qui s'éloignent des écrans.
+    La première est sans écran :
+    `torino <https://www.microsoft.com/en-us/research/project/project-torino/>`_
+    (lire aussi `With Project Torino, Microsoft creates a physical programming language inclusive of visually impaired children <https://blogs.microsoft.com/ai/project-torino-microsoft-creates-physical-programming-language-inclusive-visually-impaired-children/>`_).
+    Je ne suis pas persuadé qu'il faille à tout pris amener
+    les enfants à sacvoir programmer très jeune,
+    mais à réfléchir, à construire un raisonnement complexe,
+    résoudre un énigme, certainement.
+
+    Le second projet, `osmo <https://www.playosmo.com/>`_
+    allie tablette et objet physique. L'enfant ne touche pas la tablette,
+    il ne fait que manipuler des objets physiques reliés à celle-ci.
+    Le concept est assez abouti et se décline en plusieurs application.
+    Celle sur la programmation ressemble beaucoup à :epkg:`Scratch`
+    mais on ne déplace plus les éléments à la souris mais avec ses mains.
+    Je pense que ce type d'approche favorise le passage à
+    une représentation abstraite de problèmes plus complexes.
