@@ -1,0 +1,30 @@
+
+.. blogpost::
+    :title: Castor informatique et histoires
+    :keywords: Castor Informatique, Modulard
+    :date: 2018-03-21
+    :categories: programmation, histoire
+
+    Je suis tombé récemment sur le site du
+    `Castor Informatique <http://castor-informatique.fr/>`_
+    qui est très bien pour exercer sa logique.
+    Je me permets de faire une copie d'écran sur un
+    exercice où il faut déplacer les boîtes pour obtenir
+    la configuration désirée.
+
+    .. image:: castor.png
+
+    Comme l'exercice est minuté, il faut choisir une
+    stratégie qui minimise le nombre de déplacements.
+    Cela se rapproche du problème des
+    `tours de Hanoï <https://fr.wikipedia.org/wiki/Tours_de_Hano%C3%AF>`_
+    ou celui du `Taquin <https://fr.wikipedia.org/wiki/Taquin`>`_.
+    On tombe rapidement sur la page du mathématicien
+    `Edouard Lucas <https://fr.wikipedia.org/wiki/%C3%89douard_Lucas>`_
+    et d'un jeu qu'il a inventé :
+    `La pipolinette <https://fr.wikipedia.org/wiki/La_Pipopipette>`_.
+
+    Pour finir, une histoire que j'ai écrite il y a plus de dix ans
+    mais qui rappelle un peu les problèmes liés au réchauffement
+    climatiques comme la disparition des insectes et des oiseaux :
+    :ref:`l-modulard`.

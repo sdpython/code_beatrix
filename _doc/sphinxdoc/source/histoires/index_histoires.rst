@@ -12,6 +12,7 @@ pour les petits
 
     la_poule_a_change
     le_vin_de_pepe
+    modulard
 
 histoires interactives
 ++++++++++++++++++++++
