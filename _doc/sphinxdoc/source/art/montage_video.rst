@@ -26,9 +26,16 @@ celui de passer à travers un mur, de changer sa voix,
 ou courir à toute allure. Ce jeu se joue à deux ou trois,
 un metteur en scène, un ou deux acteurs.
 
-.. video:: mur.mp4
-    :width: 200
-    :height: 150
+.. only:: html
+
+    .. video:: mur.mp4
+        :width: 200
+        :height: 150
+
+.. only:: latex
+
+    .. image:: mur.jpg
+        :width: 200
 
 Ce petit notebook pour vous aider tout au long
 de l'atelier : :ref:`exemplevideodevoxx2018rst`.

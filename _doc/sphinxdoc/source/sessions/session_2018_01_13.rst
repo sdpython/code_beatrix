@@ -24,8 +24,15 @@ en évident avec cet atelier qui se déroulait dans un labyrinthe
 tracé avec un rouleau de 30 mètres de carton découpés en quelques
 tronçons.
 
-.. video:: images/rapide.mp4
-    :width: 400
+.. only:: html
+
+    .. video:: images/rapide.mp4
+        :width: 400
+
+.. only:: latex
+
+    .. image:: images/rapide.jpg
+        :width: 200
 
 Un labyrinthe beaucoup plus grand, des murs plus haut,
 auraient sans doute sollicité un peu plus l'imagination
@@ -55,8 +62,16 @@ mais c'est toujours plus facile en film.
     assemblage = video_concatenate([extrait1, extrait2])
     video_save(assemblage, 'mur.mp4', verbose=True)
 
-.. video:: images/mur.mp4
-    :width: 400
+.. only:: html
+
+    .. video:: images/mur.mp4
+        :width: 200
+        :height: 150
+
+.. only:: latex
+
+    .. image:: images/mur.jpg
+        :width: 200
 
 Le notebook qui a servi d'exemple :ref:`exemplevideodevoxx2018rst`.
 La suite ici... :ref:`l-montage_video`.
