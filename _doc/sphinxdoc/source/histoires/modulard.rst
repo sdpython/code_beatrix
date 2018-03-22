@@ -285,15 +285,3 @@ le premier ver à savoir nager mais la légende veut qu'il ait
 succombé aux charmes d'une néréide. On l'oublia jusqu'à la
 découverte des premiers vers informatique. Il se serait lié
 d'amitié avec une torpille électrique un peu trop gourmande.
-
-\begin{tabular}{lll}
-\includegraphics[width=6cm]{../../../illustration/2010_secouter_grandir/modu1.JPG}  & &
-\includegraphics[width=8cm]{../../../illustration/2010_secouter_grandir/modurond.JPG} \\
-\begin{minipage}{6cm}
-Modulard au naturel en chapeau et ses arceau préhensiles.
-\end{minipage}
-&&
-\begin{minipage}{8cm}
-Modulard était très taquin. Il jouait à cache-cache avec ses nombreux petits-enfants. Ici, il est caché.
-\end{minipage}
-\end{tabular}
