@@ -77,6 +77,8 @@ def import_pyquickhelper():
 
 
 def is_local():
+    if "moviepy-setup" in sys.argv:
+        return True
     file = os.path.abspath(__file__).replace("\\", "/").lower()
     if "/temp/" in file and "pip-" in file:
         return False
