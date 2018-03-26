@@ -72,7 +72,7 @@ comportement est inimaginable, on n'a jamais vu aucun ver de terre
 penser moins vite qu'il ne bouge !
 
 .. image:: modurond2.jpg
-    :height: 300
+    :width: 400
 
 Après avoir mûrement réfléchi, Modulard décida qu'il avait des droits
 en tant que voisin et qu'il subissait des tapages nocturnes désastreux

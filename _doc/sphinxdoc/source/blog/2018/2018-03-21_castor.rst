@@ -13,12 +13,13 @@
     la configuration désirée.
 
     .. image:: castor.png
+        :width: 500
 
     Comme l'exercice est minuté, il faut choisir une
     stratégie qui minimise le nombre de déplacements.
     Cela se rapproche du problème des
     `tours de Hanoï <https://fr.wikipedia.org/wiki/Tours_de_Hano%C3%AF>`_
-    ou celui du `Taquin <https://fr.wikipedia.org/wiki/Taquin`>`_.
+    ou celui du `Taquin <https://fr.wikipedia.org/wiki/Taquin>`_.
     On tombe rapidement sur la page du mathématicien
     `Edouard Lucas <https://fr.wikipedia.org/wiki/%C3%89douard_Lucas>`_
     et d'un jeu qu'il a inventé :
