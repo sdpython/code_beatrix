@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import sys
 import os
 import datetime
@@ -67,7 +67,7 @@ custom_preamble = """\n
 \\newcommand{\\abs}[1]{\\left|#1\\right|}
 \\usepackage{movie15}
 """
-#\\usepackage{eepic}
+# \\usepackage{eepic}
 
 imgmath_latex_preamble += custom_preamble
 latex_elements['preamble'] += custom_preamble

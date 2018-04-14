@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 @file
 @brief Notebooks uses javacript which is not run when using automation, this file contains some constant to be used

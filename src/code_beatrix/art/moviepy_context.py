@@ -169,7 +169,7 @@ def clean_video(video):
                 pass
         else:
             video.close()
-            #~ if hasattr(video, 'reader'):
+            # ~ if hasattr(video, 'reader'):
             #~ video.reader.close()
-            #~ if hasattr(video.audio, 'reader'):
+            # ~ if hasattr(video.audio, 'reader'):
             #~ video.audio.reader.close_proc()
