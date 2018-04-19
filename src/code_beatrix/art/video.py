@@ -149,6 +149,9 @@ def audio_save(audio_or_file, filename, verbose=False, **kwargs):
         if verbose:
             audio.write_audiofile(filename, verbose=verbose, **kwargs)
         else:
+            if not hasattr(audio_or_file, 'fps'):
+                raise AttributeError(
+                    "audio_or_file does not have attribute fps")
             f = io.StringIO()
             with redirect_stdout(f):
                 with redirect_stderr(f):
@@ -244,7 +247,16 @@ def audio_compose(audio_or_file1, audio_or_file2, t1=0, t2=None):
                 add.append(audio2.set_start(audio1.duration + t1))
             else:
                 add.append(audio2.set_start(t2))
-            return CompositeAudioClip(add)
+            comp = CompositeAudioClip(add)
+            fps1 = audio1.fps if hasattr(audio1, 'fps') else None
+            fps2 = audio2.fps if hasattr(audio2, 'fps') else None
+            if fps1 is not None and fps2 is not None:
+                fps = max(fps1, fps2)
+                return comp.set_fps(fps)
+            elif fps1 is None and fps2 is None:
+                return comp
+            else:
+                return comp.set_fps(fps1 or fps2)
 
 
 def audio_concatenate(audio_or_files, **kwargs):
