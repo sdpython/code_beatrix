@@ -149,9 +149,6 @@ def audio_save(audio_or_file, filename, verbose=False, **kwargs):
         if verbose:
             audio.write_audiofile(filename, verbose=verbose, **kwargs)
         else:
-            if not hasattr(audio_or_file, 'fps'):
-                raise AttributeError(
-                    "audio_or_file does not have attribute fps")
             f = io.StringIO()
             with redirect_stdout(f):
                 with redirect_stderr(f):
