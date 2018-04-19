@@ -1,0 +1,10 @@
+
+.. blogpost::
+    :title: Histoire de téléphone
+    :keywords: histoire, facebook, téléphone
+    :date: 2018-04-19
+    :categories: histoire
+
+    Ecrite avant l'histoire que Facebook traverse en ce moment
+    avec les données récoltées par Cambridge Analytica.
+    :ref:`l-mouchard`.
