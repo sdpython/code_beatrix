@@ -36,11 +36,13 @@ install:
   - "%PYTHON%\\Scripts\\pip install moviepy"
   - "%PYTHON%\\Scripts\\pip install pytube!=9.0.4"
   - "%PYTHON%\\Scripts\\pymy_install3 basemap"
-  - "%PYTHON%\\Scripts\\pymy_install3 opencv_python fastrlock cupy cairocffi"
+  - "%PYTHON%\\Scripts\\pymy_install3 opencv_python fastrlock cairocffi"
+  - "%PYTHON%\\Scripts\\pymy_install3 cupy"
   - "%PYTHON%\\Scripts\\pymy_install3 yaml pyproj scikit-image opencv-python"
   - "%PYTHON%\\Scripts\\pip install tutormagic"
   - "%PYTHON%\\Scripts\\pip install pycodestyle"
-  - "%PYTHON%\\Scripts\\pip install chainer gdown fcn gizeh"
+  - "%PYTHON%\\Scripts\\pip install chainer --no-deps"
+  - "%PYTHON%\\Scripts\\pip install gdown fcn gizeh"
   - "%PYTHON%\\python setup.py moviepy-setup"
 
 build: off
