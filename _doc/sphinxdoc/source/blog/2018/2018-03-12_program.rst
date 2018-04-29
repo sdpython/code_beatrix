@@ -18,6 +18,8 @@
     aux échecs est à mon avis plus utile à six ans que
     la programmation elle-même. C'est un jeu sans écran.
 
+    .. index:: torino
+
     Néanmoins, j'ai quand même cherché quelques approches
     pour apprendre la programmation et qui s'éloignent des écrans.
     La première est sans écran :
@@ -28,6 +30,8 @@
     mais à réfléchir, à construire un raisonnement complexe,
     résoudre un énigme, certainement.
 
+    .. index:: playosmo
+
     Le second projet, `osmo <https://www.playosmo.com/>`_
     allie tablette et objet physique. L'enfant ne touche pas la tablette,
     il ne fait que manipuler des objets physiques reliés à celle-ci.
@@ -36,3 +40,21 @@
     mais on ne déplace plus les éléments à la souris mais avec ses mains.
     Je pense que ce type d'approche favorise le passage à
     une représentation abstraite de problèmes plus complexes.
+
+    .. index:: Nintendo Labo
+
+    **04/29**
+
+    Un dernier jeu que j'ai découvert et qui a l'air prometteur :
+    `On a testé... Nintendo Labo, un retour en enfance aussi jubilatoire que fugace <http://www.lemonde.fr/pixels/article/2018/04/27/on-a-teste-nintendo-labo-un-retour-en-enfance-aussi-jubilatoire-que-fugace_5291404_4408996.html>`_.
+    Les auteurs ont eu l'air de s'ennuyer après avoir
+    essayé les différentes maquettes mais ils oublient de
+    de dire que la partie la plus intéressante vient
+    après, quand on a une idée pour assembler et créer
+    son propre jeu à partir des briques proposées.
+    Comme aux Lego ! J'ai passé plus de temps à construire
+    mes propres vaisseaux spatiaux qu'à assembler ceux
+    qu'on me proposait. C'est d'ailleurs ce que je n'aimais
+    pas dans les légos StarWars où sortir du cadre proposé
+    paraissait plus difficile tant l'imaginaire de la guerre
+    des étoiles s'imposait à l'esprit.

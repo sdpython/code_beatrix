@@ -10,8 +10,7 @@
     `Python for Feature Film <http://pyvideo.org/pycascades-2018/python-for-feature-film.html>`_.
     Et quelques modules :
     `pyblish <https://github.com/pyblish/pyblish-base>`_,
-    `blender <https://docs.blender.org/manual/fr/dev/rigging/introduction.html>`_,
-
+    `blender <https://docs.blender.org/manual/fr/dev/rigging/introduction.html>`_.
     Une autre vidéo sur un sujet que j'aimerais
     avoir le temps d'investir :
     `Can you please pass the data? IoT communication with MicroPython <http://pyvideo.org/pycascades-2018/can-you-please-pass-the-data-iot-communication-with-micropython.html>`_.
