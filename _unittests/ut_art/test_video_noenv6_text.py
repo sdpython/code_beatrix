@@ -1,33 +1,14 @@
 # -*- coding: utf-8 -*-
 """
 @brief      test log(time=1000s)
-
-Duraction is around a few seconds but the test needs to be run
-at the end of the series of unitests as it interferes
-with the notebook unittesting (it uses Popen too).
 """
 
 
 import sys
 import os
 import unittest
-
-
-try:
-    import pyquickhelper
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..",
-                "..",
-                "pyquickhelper",
-                "src")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import pyquickhelper
+from pyquickhelper.loghelper import fLOG
+from pyquickhelper.pycode import get_temp_folder, ExtTestCase
 
 
 try:
@@ -44,8 +25,6 @@ except ImportError:
     import src
 
 
-from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder, ExtTestCase
 from src.code_beatrix.art.video import video_save, video_text, video_position, clean_video
 
 

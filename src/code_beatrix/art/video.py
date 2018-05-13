@@ -7,9 +7,9 @@ from contextlib import redirect_stdout, redirect_stderr
 import io
 import os
 import sys
-import numpy
 import tempfile
 import time
+import numpy
 from pytube import YouTube
 from imageio import imsave
 import moviepy.audio.fx.all as afx
@@ -138,12 +138,15 @@ def audio_save(audio_or_file, filename, verbose=False, **kwargs):
     """
     Saves as a sound.
     Enregistre un son dans un fichier.
-    Uses `write_audiofile <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=audioclip#moviepy.audio.AudioClip.AudioClip.write_audiofile>`_.
+    Uses `write_audiofile <https://zulko.github.io/moviepy/ref/AudioClip.html?
+    highlight=audioclip#moviepy.audio.AudioClip.AudioClip.write_audiofile>`_.
 
     @param      audio_or_file   string or :epkg:`AudioClip`
     @param      filename        save into this filename
     @param      verbose         logging or not
-    @param      kwargs          see `write_audiofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
+    @param      kwargs          see `write_audiofile <https://zulko.github.io/moviepy/ref/
+                                VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.
+                                io.VideoFileClip.VideoFileClip.write_videofile>`_
     """
     with AudioContext(audio_or_file) as audio:
         if verbose:
@@ -171,27 +174,28 @@ def audio_modification(audio, loop_duration=None, volumex=1.,
     @param      t_end           shorten the audio
     @param      speed           speed of the sound
     @param      keep_duration   parameter to
-                                `ft_time <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=fl_time#moviepy.audio.AudioClip.AudioClip.fl_time>`_
+                                `ft_time <https://zulko.github.io/moviepy/ref/AudioClip.html?
+                                highlight=fl_time#moviepy.audio.AudioClip.AudioClip.fl_time>`_
     @return                     new sound
     """
-    with AudioContext(audio) as audio:
+    with AudioContext(audio) as audio_:
         if loop_duration:
-            if audio.duration is None:
+            if audio_.duration is None:
                 raise ValueError(
                     "The duration is unknown, maybe you should apply the loop first.")
-            audio = afx.audio_loop(audio, duration=loop_duration)
+            audio_ = afx.audio_loop(audio_, duration=loop_duration)
         if volumex != 1.:
-            audio = audio.fx(afx.volumex, volumex)
+            audio_ = audio_.fx(afx.volumex, volumex)
         if speed != 1.:
-            audio = audio.fl_time(lambda t: t * speed,
-                                  keep_duration=keep_duration)
+            audio_ = audio_.fl_time(lambda t: t * speed,
+                                    keep_duration=keep_duration)
         if fadein:
-            audio = audio.fx(afx.audio_fadein, 1.0)
+            audio_ = audio_.fx(afx.audio_fadein, 1.0)
         if fadeout:
-            audio = audio.fx(afx.audio_fadeout, 1.0)
+            audio_ = audio_.fx(afx.audio_fadeout, 1.0)
         if t_start != 0 or t_end is not None:
-            audio = audio.subclip(t_start=t_start, t_end=t_end)
-        return audio
+            audio_ = audio_.subclip(t_start=t_start, t_end=t_end)
+        return audio_
 
 
 def audio2wav(audio, duration=None, **kwargs):
@@ -202,14 +206,15 @@ def audio2wav(audio, duration=None, **kwargs):
 
     @param      audio           sound
     @param      duration        change the duration of the sound before converting it
-    @param      kwargs          see `to_soundarray <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=to_soundarray#moviepy.audio.AudioClip.AudioClip.to_soundarray>`_
+    @param      kwargs          see `to_soundarray <https://zulko.github.io/moviepy/ref/AudioClip.html?
+                                highlight=to_soundarray#moviepy.audio.AudioClip.AudioClip.to_soundarray>`_
     @return                     :epkg:`AudioArrayClip`
     """
-    with AudioContext(audio) as audio:
+    with AudioContext(audio) as audio_:
         if duration is not None:
-            audio = audio.set_duration(duration)
-        wav = audio.to_soundarray(**kwargs)
-        fps = kwargs.get('fps', audio.fps if hasattr(audio, 'fps') else None)
+            audio_ = audio_.set_duration(duration)
+        wav = audio_.to_soundarray(**kwargs)
+        fps = kwargs.get('fps', audio_.fps if hasattr(audio_, 'fps') else None)
         if fps is None:
             raise ValueError("fps cannot be None, 44100 is a proper value")
         return AudioArrayClip(wav, fps=fps)
@@ -288,7 +293,8 @@ def video_extract_video(video_or_file, ta=0, tb=None):
     """
     Extracts a part of a video.
     Extrait une partie de la vidéo.
-    Uses `subclip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.VideoClip.VideoClip.subclip>`_.
+    Uses `subclip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?
+    highlight=videofileclip#moviepy.video.VideoClip.VideoClip.subclip>`_.
 
     @param      video_or_file   string or :epkg:`VideoClip`
     @param      ta              beginning
@@ -326,7 +332,8 @@ def video_save_image(video_or_file, t=None, filename=None, **kwargs):
 
     @param      video_or_file   string or :epkg:`VideoClip`
     @param      filename        if not None, saves the image into this file
-    @param      kwargs          see `save_frame <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=save_frame#moviepy.video.io.VideoFileClip.VideoFileClip.save_frame>`_
+    @param      kwargs          see `save_frame <https://zulko.github.io/moviepy/ref/VideoClip/
+                                VideoClip.html?highlight=save_frame#moviepy.video.io.VideoFileClip.VideoFileClip.save_frame>`_
     @return                     one image if *filename* is None
 
     Example:
@@ -340,6 +347,7 @@ def video_save_image(video_or_file, t=None, filename=None, **kwargs):
     with VideoContext(video_or_file) as video:
         if filename is not None:
             video.save_frame(filename, t=t, **kwargs)
+            return filename
         else:
             im = video.get_frame(t)
             if kwargs.get('withmask', True) and video.mask is not None:
@@ -354,14 +362,18 @@ def video_save(video_or_file, filename, verbose=False, duration=None, **kwargs):
     """
     Saves as a video or as a :epkg:`gif`.
     Enregistre une vidéo dans un fichier.
-    Uses `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_.
+    Uses `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?
+    highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_.
 
     @param      video_or_file   string or :epkg:`VideoClip`
     @param      filename        video saved into this filename
     @param      duration        overwrite duration,
-                                see method `set_duration <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videoclip#moviepy.video.VideoClip.VideoClip.set_duration>`_
+                                see method `set_duration <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?
+                                highlight=videoclip#moviepy.video.VideoClip.VideoClip.set_duration>`_
     @param      verbose         logging or not
-    @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.VideoFileClip.VideoFileClip.write_videofile>`_
+    @param      kwargs          see `write_videofile <https://zulko.github.io/moviepy/ref/
+                                VideoClip/VideoClip.html?highlight=videofileclip#moviepy.video.io.
+                                VideoFileClip.VideoFileClip.write_videofile>`_
 
     Example:
 
@@ -407,7 +419,8 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
     @param      pattern         image names
     @param      fps             frames per seconds
     @param      clean           clean open processes after it is done
-    @param      kwargs          arguments to `iter_frames <https://zulko.github.io/moviepy/ref/AudioClip.html?highlight=frames#moviepy.audio.AudioClip.AudioClip.iter_frames>`_
+    @param      kwargs          arguments to `iter_frames <https://zulko.github.io/moviepy/ref/
+                                AudioClip.html?highlight=frames#moviepy.audio.AudioClip.AudioClip.iter_frames>`_
     @return                     iterator on arrays or files (see parameter *folder*)
 
     Example:
@@ -514,7 +527,8 @@ def video_compose(video_or_file1, video_or_file2=None, t1=0, t2=0, place=None, *
     @param      t2                  start of the second sound (or None to add it ad
     @param      place               predefined placements
     @param      kwargs              additional parameters,
-                                    sent to `CompositeVideoClip <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=compositevideoclip#compositevideoclip>`_
+                                    sent to `CompositeVideoClip <https://zulko.github.io/moviepy/ref/
+                                    VideoClip/VideoClip.html?highlight=compositevideoclip#compositevideoclip>`_
     @return                         :epkg:`VideoClip`
 
     Example:
@@ -632,7 +646,8 @@ def video_concatenate(video_or_files, **kwargs):
 
     @param      video_or_files  list of videos or filenames
     @param      kwargs          additional parameters for
-                                `concatenate_videoclips <https://github.com/Zulko/moviepy/blob/master/moviepy/video/compositing/concatenate.py#L15>`_
+                                `concatenate_videoclips <https://github.com/Zulko/moviepy/blob/master/
+                                moviepy/video/compositing/concatenate.py#L15>`_
     @return                     :epkg:`VideoClip`
     """
     ctx = [VideoContext(_).__enter__() for _ in video_or_files]
@@ -740,11 +755,14 @@ def video_position(video_or_file, pos, relative=False):
     Modifies the position of a position.
     Modifie la position d'une video.
     Relies on function
-    `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_.
+    `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?
+    highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_.
 
     @param      video_or_file   string or :epkg:`VideoClip`
-    @param      pos             see `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_
-    @param      relative        see `set_position <https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_
+    @param      pos             see `set_position <https://zulko.github.io/moviepy/ref/VideoClip/
+                                VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_
+    @param      relative        see `set_position <https://zulko.github.io/moviepy/ref/VideoClip/
+                                VideoClip.html?highlight=imageclip#moviepy.video.VideoClip.VideoClip.set_position>`_
     @return                     :epkg:`VideoClip`
 
     This function moves the video inside another one.
@@ -781,7 +799,8 @@ def video_resize(video_or_file, newsize):
     `resize <https://zulko.github.io/moviepy/ref/videofx/moviepy.video.fx.all.resize.html#moviepy.video.fx.all.resize>`_.
 
     @param      video_or_file   string or :epkg:`VideoClip`
-    @param      newsize         `resize <https://zulko.github.io/moviepy/ref/videofx/moviepy.video.fx.all.resize.html#moviepy.video.fx.all.resize>`_
+    @param      newsize         `resize <https://zulko.github.io/moviepy/ref/videofx/
+                                moviepy.video.fx.all.resize.html#moviepy.video.fx.all.resize>`_
     @return                     :epkg:`VideoClip`
     """
     with VideoContext(video_or_file) as video:

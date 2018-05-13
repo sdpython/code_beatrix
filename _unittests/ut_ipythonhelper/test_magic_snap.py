@@ -6,23 +6,7 @@
 import sys
 import os
 import unittest
-
-
-try:
-    import pyquickhelper
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..",
-                "..",
-                "pyquickhelper",
-                "src")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import pyquickhelper
+from pyquickhelper.loghelper import fLOG
 
 
 try:
@@ -39,7 +23,6 @@ except ImportError:
     import src
 
 
-from pyquickhelper.loghelper import fLOG
 from src.code_beatrix.ipythonhelper.magic_scratch import MagicScratch
 from src.code_beatrix.jsscripts.nbsnap import RenderSnap
 

@@ -11,7 +11,7 @@ moviepy
 opencv-python
 pyensae
 pymmails
-pyquickhelper>=1.7.2569
+pyquickhelper>=1.8
 pyshp
 pytube>=9.0.6
 shapely

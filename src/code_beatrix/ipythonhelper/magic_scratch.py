@@ -53,8 +53,8 @@ class MagicScratch(MagicClassWithHelpers):
     @line_magic
     def snap(self, line):
         """
-        defines ``%snap``
-        which inserts a snap window inside a notebook
+        Defines ``%snap``
+        which inserts a :epkg:`snap` window inside a notebook.
         """
         parser = self.get_parser(MagicScratch.snap_parser, "snap")
         args = self.get_args(line, parser)
@@ -70,6 +70,7 @@ class MagicScratch(MagicClassWithHelpers):
             h = str(args.height)
             w = str(args.width)
             return RenderSnap(h, w, iddiv)
+        return None
 
 
 def register_scratch_magics(ip):

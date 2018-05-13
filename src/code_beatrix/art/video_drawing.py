@@ -19,7 +19,7 @@ def blur(img, p1, p2, frac=0.333, kernel_size=None):
 
     It modifies the original picture.
     """
-    h, w, d = img.shape
+    h, w, _ = img.shape
     x1, y1 = p1
     x2, y2 = p2
     x1, x2 = max(0, x1), min(x2, w)
@@ -47,7 +47,7 @@ def rectangle(img, p1, p2, color=(255, 255, 0)):
 
     It modifies the original picture.
     """
-    h, w, d = img.shape
+    h, w, _ = img.shape
     x1, y1 = p1
     x2, y2 = p2
     x1, x2 = max(0, x1), min(x2, w)

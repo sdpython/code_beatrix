@@ -165,7 +165,8 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
                             action='blur', color=(255, 255, 0), haar=None, fLOG=None):
     """
     Blurs people faces.
-    Uses function `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_.
+    Uses function `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/
+    doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_.
     Relies on :epkg:`opencv`.
     Floute les visages.
 
@@ -177,9 +178,12 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
     @param      progress_bar    see @see fn video_enumerate_frames
     @param      dtype           see @see fn video_enumerate_frames
     @param      fLOG            logging function
-    @param      scaleFactor     see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_
-    @param      minNeighbors    see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_
-    @param      minSize         see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html#cascadeclassifier-detectmultiscale>`_
+    @param      scaleFactor     see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/
+                                cascade_classification.html#cascadeclassifier-detectmultiscale>`_
+    @param      minNeighbors    see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/
+                                cascade_classification.html#cascadeclassifier-detectmultiscale>`_
+    @param      minSize         see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/
+                                cascade_classification.html#cascadeclassifier-detectmultiscale>`_
     @param      haar            shape classifier to load, face by default, see below
     @param      action          to blur, to put a rectangle around the detected zone... see below
     @param      color           rectangle color if *action* is ``'rect'``

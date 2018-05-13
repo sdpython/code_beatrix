@@ -7,9 +7,9 @@ import io
 import os
 import chainer
 import fcn
-import skimage
 import numpy
 from PIL import Image
+import skimage
 from skimage.io._plugins.pil_plugin import pil_to_ndarray
 from .dlbase import DeepLearningImage
 

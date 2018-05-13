@@ -33,7 +33,7 @@ def ls_notebooks(subfolder):
                 _)) for _ in os.listdir(docnote)]
 
     keepnote = []
-    for i, note in enumerate(notes):
+    for note in notes:
         ext = os.path.splitext(note)[-1]
         if ext != ".ipynb":
             continue

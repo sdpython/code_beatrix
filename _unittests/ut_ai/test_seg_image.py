@@ -7,6 +7,8 @@ import sys
 import os
 import unittest
 import skimage
+from pyquickhelper.loghelper import fLOG
+from pyquickhelper.pycode import get_temp_folder, ExtTestCase
 
 
 try:
@@ -22,24 +24,7 @@ except ImportError:
         sys.path.append(path)
     import src
 
-try:
-    import pyquickhelper as skip_
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..",
-                "..",
-                "pyquickhelper",
-                "src")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import pyquickhelper as skip_
 
-from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder, ExtTestCase
 from src.code_beatrix.ai import DLImageSegmentation
 
 
@@ -59,7 +44,7 @@ class TestSegImage(ExtTestCase):
         dl = DLImageSegmentation(fLOG=fLOG)
 
         for i, img in enumerate(imgs):
-            feat, res = dl.predict(img)
+            _, res = dl.predict(img)
             viz = dl.plot(img, res)
 
             out_file = os.path.join(temp, "out_img%d.png" % i)

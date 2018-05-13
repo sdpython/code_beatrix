@@ -64,11 +64,11 @@ def check(log=False, kind=None, fLOG=None):
     """
     r = True
     if kind is None or kind == "scratch":
-        from .scratchs import check
-        r &= check()
+        from .scratchs import check as check_sc
+        r &= check_sc()
     if kind is None or kind == "video":
-        from .art.video import check
-        r &= check(fLOG=fLOG)
+        from .art.video import check as check_vid
+        r &= check_vid(fLOG=fLOG)
     return r
 
 
