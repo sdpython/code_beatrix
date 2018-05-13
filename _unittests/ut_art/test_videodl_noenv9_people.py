@@ -35,7 +35,7 @@ from src.code_beatrix.art.video import video_save, video_extract_video, clean_vi
 
 class TestVideoDLPeople(ExtTestCase):
 
-    @skipif_circleci('Received 'killed' signal')
+    @skipif_circleci("Received 'killed' signal")
     def test_modify_avideo(self):
         fLOG(
             __file__,
