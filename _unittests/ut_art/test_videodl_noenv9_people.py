@@ -12,7 +12,7 @@ import sys
 import os
 import unittest
 from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder, ExtTestCase
+from pyquickhelper.pycode import get_temp_folder, ExtTestCase, skipif_circleci
 
 
 try:
@@ -35,6 +35,7 @@ from src.code_beatrix.art.video import video_save, video_extract_video, clean_vi
 
 class TestVideoDLPeople(ExtTestCase):
 
+    @skipif_circleci('Received 'killed' signal')
     def test_modify_avideo(self):
         fLOG(
             __file__,
