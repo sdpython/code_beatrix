@@ -25,7 +25,6 @@ install:
   - "%PYTHON%\\Scripts\\pymy_install3 yaml pyproj scikit-image opencv-python"
   - "%PYTHON%\\Scripts\\pymy_install3 protobuf"
   - "%PYTHON%\\Scripts\\pip install pytube!=9.0.4"
-  - "%PYTHON%\\Scripts\\pip install chainer --no-deps"  
   - "%PYTHON%\\python setup.py moviepy-setup"
   - "%PYTHON%\\python -r requirements_conda.txt"
   - "%PYTHON%\\python -r requirements.txt"

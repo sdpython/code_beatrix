@@ -5,8 +5,8 @@ Cython
 jupyter
 matplotlib
 networkx
-numpy>=1.11.0
-pandas>=0.20.0
+numpy>=1.14.0
+pandas>=0.22.0
 pillow
 pyproj
 pyzmq

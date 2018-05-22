@@ -6,6 +6,7 @@ folium
 gdown
 gizeh
 hachibee_sphinx_theme
+imageio
 jyquickhelper
 moviepy
 opencv-python
