@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@brief      test log(time=10s)
+@brief      test log(time=13s)
 """
 
 import sys
@@ -30,18 +30,18 @@ from src.code_beatrix.automation.notebook_test_helper import ls_notebooks, execu
 import src.code_beatrix
 
 
-class TestNotebookExample (unittest.TestCase):
+class TestNotebookExampleVideo (unittest.TestCase):
 
     def setUp(self):
         add_missing_development_version(
             ["pyensae", "jyquickhelper", "ensae_projects"], __file__)
 
-    def test_notebook_example(self):
+    def test_notebook_example_video(self):
         fLOG(
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-        temp = get_temp_folder(__file__, "temp_exemples")
+        temp = get_temp_folder(__file__, "temp_exemples_video")
         keepnote = ls_notebooks("exemples")
         self.assertTrue(len(keepnote) > 0)
 
@@ -62,7 +62,7 @@ class TestNotebookExample (unittest.TestCase):
             clean = clean_function_notebook
 
         res = execute_notebooks(temp, keepnote,
-                                lambda i, n: "poppins" not in n and "video" not in n,
+                                lambda i, n: "video" in n,
                                 fLOG=fLOG, clean_function=clean)
         execute_notebook_list_finalize_ut(
             res, fLOG=fLOG, dump=src.code_beatrix)
