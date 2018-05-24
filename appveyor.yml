@@ -26,8 +26,8 @@ install:
   - "%PYTHON%\\Scripts\\pymy_install3 protobuf"
   - "%PYTHON%\\Scripts\\pip install pytube!=9.0.4"
   - "%PYTHON%\\python setup.py moviepy-setup"
-  - "%PYTHON%\\python -r requirements_conda.txt"
-  - "%PYTHON%\\python -r requirements.txt"
+  - "%PYTHON%\\Scripts\\pip -r requirements_conda.txt"
+  - "%PYTHON%\\Scripts\\pip -r requirements.txt"
 
 build: off
 
