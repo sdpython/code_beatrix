@@ -11,8 +11,10 @@ virtualenv:
 install:
   - pip install --no-cache-dir --no-deps --index http://localhost:8067/simple/ pyquickhelper pyensae pymmails pymyinstall pyrsslocal ensae_projects
   - pip install -r requirements.txt
+  # no cuda
+  - pip uninstall cupy
   - pip freeze
-  - pip freeze > pip_freeze.txt
+  - pip freeze > pip_freeze.txt  
 script:
   - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -g \".*((noenv)|(LONG)|(SKIP)).*\"", NAME: "UT" }
   - { CMD: "python -u setup.py unittests -e \".*noenv1.*\" -g .*LONG.*", NAME: "UT_NOENV1" }
