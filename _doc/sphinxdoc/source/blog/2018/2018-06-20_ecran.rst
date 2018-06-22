@@ -1,0 +1,23 @@
+
+.. blogpost::
+    :title: Pas d'écran pour les petits enfants
+    :keywords: écran, téléphone, intelligence, tablette
+    :date: 2018-06-20
+    :categories: éducation
+
+    Pour ceux qui en douteraient encore, les écrans sont
+    de très mauvais amis des tout petits.
+    D'après Boris Cyrulnik, émission La Grande Table, 20 juin,
+    `Boris Cyrulnik dans la tête de nos enfants <https://www.franceculture.fr/emissions/la-grande-table-2eme-partie/boris-cyrulnik-dans-la-tete-de-nos-enfants>`_,
+    les enfants de moins de trois ans ne doivent pas approcher
+    un écran, jamais. Pour construire son intelligence,
+    les connexions de son cerveau, l'enfant a besoin d'intéragir
+    avec l'environnement extérieur, il faut un environnement qui lui
+    réponde. L'écran qui agit comme une sorte de drogue ne réagit
+    pas à un enfant. La vidéo réagit mais pas aux signaux que l'enfant
+    lui envoie et ceci est néfaste pour sa propre construction.
+    Boris Cyrulnik préconise de ne jamais exposer un enfant aux
+    écrans avant l'âge de trois ans, avant que la parole ne se forme.
+    Ils doivent ensuite être utilisés très parcimonieusement
+    juque six ans. Internet ne doit pas arriver avant neuf ans.
+
