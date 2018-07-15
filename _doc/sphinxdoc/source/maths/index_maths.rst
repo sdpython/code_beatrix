@@ -36,6 +36,7 @@ Sujets
 .. toctree::
     :maxdepth: 1
 
+    nombres_premiers
     solide_regulier
     compter_reel
     fractales
@@ -46,6 +47,7 @@ Indices et solutions
 .. toctree::
     :maxdepth: 1
 
+    nombres_premiers_correction
     solide_regulier_correction
     compter_reel_correction
     fractales_correction
