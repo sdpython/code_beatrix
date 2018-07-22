@@ -8,7 +8,7 @@ import glob
 from .snap import __file__ as location_js_snap
 
 
-class RenderSnapRaw(object):
+class RenderSnapRaw:
     """
     Renders `Snap <https://snap.berkeley.edu/>`_ using javascript.
     """
