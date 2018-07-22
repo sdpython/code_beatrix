@@ -61,6 +61,14 @@ jobs:
             . venv/bin/activate
             pip install numpy
 
+      # cartopy setup.py requires it
+      - run:
+          name: install cython
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install cython
+
       - run:
           name: install dependencies 1
           command: |
