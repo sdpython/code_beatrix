@@ -2,6 +2,7 @@ version: 2
 jobs:
   build:
     docker:
+      # pyproj does not work on Python 3.7 on linux
       - image: circleci/python:3.6.5
     
     working_directory: ~/repo
@@ -49,6 +50,20 @@ jobs:
                     sudo apt-get install -y graphviz
           
       - run:
+          name: Install geos, proj for cartopy
+          command: |
+            sudo apt-get -qq update
+            sudo apt-get install -y libproj-dev proj-bin proj-data
+            sudo apt-get install -y python-pyproj
+            sudo apt-get install -y libc6
+            sudo apt-get install libgeos-dev
+            sudo apt-get install python-gdal gdal-bin
+            wget http://es.archive.ubuntu.com/ubuntu/pool/universe/p/proj/libproj9_4.9.2-2_amd64.deb 
+            sudo dpkg -i libproj9_4.9.2-2_amd64.deb 
+            wget http://es.archive.ubuntu.com/ubuntu/pool/universe/p/proj/libproj-dev_4.9.2-2_amd64.deb
+            sudo dpkg -i libproj-dev_4.9.2-2_amd64.deb
+
+      - run:
           name: install avconv (ffmpeg)
           command: |
                     sudo apt-get install libav-tools
@@ -70,21 +85,21 @@ jobs:
             pip install cython
 
       - run:
-          name: install dependencies 1
+          name: install dependencies (1)
           command: |
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements_conda.txt
             
       - run:
-          name: install dependencies 2
+          name: install dependencies (2)
           command: |
             python3 -m venv venv
             . venv/bin/activate
             pip install -r requirements.txt
             
       - run:
-          name: install dependencies 3
+          name: install dependencies (3)
           command: |
             python3 -m venv venv
             . venv/bin/activate
