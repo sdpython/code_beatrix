@@ -12,6 +12,7 @@ moviepy
 opencv-python
 pyensae
 pymmails
+pyproj
 pyquickhelper>=1.8
 pyshp
 pytube>=9.0.6
