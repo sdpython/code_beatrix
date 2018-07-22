@@ -1,3 +1,4 @@
+cartopy
 chainer
 bokeh
 Cython
