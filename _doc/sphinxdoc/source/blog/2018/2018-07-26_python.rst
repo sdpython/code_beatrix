@@ -1,0 +1,19 @@
+
+.. blogpost::
+    :title: Python et l'enseignement
+    :keywords: python, Guido Van Rossum
+    :date: 2018-07-26
+    :categories: programmation
+
+    `Je n'imaginais pas que le langage informatique Python connaîtrait un tel succès <https://www.lemonde.fr/pixels/article/2018/07/25/je-n-imaginais-pas-que-python-connaitrait-un-tel-succes_5335917_4408996.html>`_
+    Quand j'y repense, j'ai commencé à enseigner le langage Python en 2005 
+    avec la version 2.5 sur les conseils d'un ancien élève 
+    autrefois mon étudiant qui me disait qu'un des objectifs du 
+    langage était sa simplicité, d'où une plus grande facilité 
+    d'apprentissage comparé à d'autres langages. Sa grammaire était 
+    l'une des plus courtes. Je suis parti avec un livre en vacances 
+    et que j'ai potassé tranquillement sur la plage pendant une 
+    semaine, trois semaines avant de préparer mes premiers cours. 
+    13 ans plus tard, le langage est enseigné quasiment partout, 
+    il est présent sur nombre d'offre d'emplois et est un des 
+    langages les plus utilisés pour faire de la datascience.
