@@ -11,7 +11,7 @@
     Si on n'apprend effictement peu comme le dit un des commentaires
     sur la page de l'exposition, c'est avant une mise en scène d'exercices
     plutôt logiques, un peu mathématiques et scientifiques plutôt
-    bien pensées. Je donne un exemple, un éléphant et un lion 
+    bien pensées. Je donne un exemple, un éléphant et un lion
     sont éclairées par trois lumières rouge, vert et bleu.
     Le publique voit le résultat de ces trois expériences
     et doit en déduire la couleur des deux animaux.

@@ -1,11 +1,14 @@
 
+.. _l-HISTORY:
+
 =======
 History
 =======
 
-current - 2018-03-25 - 0.00Mb
+current - 2018-07-27 - 0.00Mb
 =============================
 
+* `6`: remove use of basemap, replaces it by cartopy (2018-07-27)
 * `2`: add function to manipulate frames (2018-01-17)
 
 0.5.475 - 2018-01-16 - 29.14Mb
