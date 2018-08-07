@@ -10,7 +10,7 @@ imageio
 jyquickhelper
 moviepy
 opencv-python
-pyensae
+pyensae>=1.2.788
 pymmails
 pyproj
 pyquickhelper>=1.8

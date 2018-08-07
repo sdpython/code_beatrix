@@ -5,7 +5,7 @@
 """
 import os
 from pyquickhelper.loghelper import noLOG
-from pyquickhelper.ipythonhelper.notebook_helper import install_python_kernel_for_unittest
+from pyquickhelper.ipythonhelper.notebookhelper import install_python_kernel_for_unittest
 from pyquickhelper.ipythonhelper import execute_notebook_list
 from pyquickhelper.pycode import is_travis_or_appveyor
 
