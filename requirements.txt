@@ -1,5 +1,5 @@
 coverage
-ensae_projects>=0.1.419
+ensae_projects>=0.1.427
 fastrlock
 fcn
 folium
