@@ -1,0 +1,38 @@
+
+language: python
+
+python:
+  - { PATH: "{{Python37}}", VERSION: 3.7, DIST: std, PYINT: python3.7 }
+  
+virtualenv:
+  - path: {{ospathjoin(root_path, pickname("$NAME_JENKINS", project_name + "_$VERSION_$DIST_$NAME"), "_venv")}}
+  
+install:
+  - $PYINT -c "from pip._internal import main;main(\"install --no-cache-dir --no-deps --index http://localhost:8067/simple/ pyquickhelper pyensae pymmails pymyinstall pyrsslocal ensae_projects --extra-index-url=https://pypi.python.org/simple/\".split())"
+  - $PYINT -c "from pip._internal import main;main(\"install -r requirements.txt\".split())"
+  - $PYINT --version
+  - $PYINT -c "from pip._internal import main;main([\"freeze\"])"
+
+script:
+  - { CMD: "$PYINT -u setup.py unittests -g \".*((noenv)|(LONG)|(SKIP)).*\"", NAME: "UT" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv1.*\" -g .*LONG.*", NAME: "UT_NOENV1" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv2.*\"", NAME: "UT_NOENV2" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv3.*\"", NAME: "UT_NOENV3" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv4.*\"", NAME: "UT_NOENV4" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv5.*\"", NAME: "UT_NOENV5" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv6.*\"", NAME: "UT_NOENV6" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv7.*\"", NAME: "UT_NOENV7" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv8.*\"", NAME: "UT_NOENV8" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv9.*\"", NAME: "UT_NOENV9" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenvA.*\"", NAME: "UT_NOENVA" }
+  - { CMD: "$PYINT -u setup.py unittests_LONG", NAME: "UT_LONG" }
+  - { CMD: "$PYINT -u setup.py unittests_SKIP", NAME: "UT_SKIP" }
+
+after_script:
+  - $PYINT -u setup.py bdist_wheel
+  - if [ ${VERSION} == "3.7" and ${DIST} != "conda" and ${NAME} == "UT" ] then cp dist/*.whl {{root_path}}/../local_pypi/local_pypi_server fi
+
+documentation:
+  - if [ ${NAME} == "UT" ] then $PYINT -u setup.py build_sphinx fi
+  - if [ ${NAME} == "UT" ] then cp -R -f _doc/sphinxdoc/build/html dist/html fi
+  - if [ ${NAME} == "UT" ] then cp -R -f _doc/sphinxdoc/build/latex/*.pdf dist/html fi
