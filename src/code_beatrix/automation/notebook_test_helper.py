@@ -5,14 +5,13 @@
 """
 import os
 from pyquickhelper.loghelper import noLOG
-from pyquickhelper.ipythonhelper.notebook_helper import install_python_kernel_for_unittest
 from pyquickhelper.ipythonhelper import execute_notebook_list
 from pyquickhelper.pycode import is_travis_or_appveyor
 
 
 def ls_notebooks(subfolder):
     """
-    list the notebooks in a particular subfolder
+    Returns the list of notebooks in a particular subfolder.
 
     @param      subfolder   subfolder (related to this module)
     @return                 list of files
@@ -43,8 +42,8 @@ def ls_notebooks(subfolder):
 
 def get_additional_paths():
     """
-    returns a list of paths to add before running the notebooks,
-    paths to pyquickhelper, pyensae, pymmails
+    Returns a list of paths to add before running the notebooks,
+    paths to :epkg:`pyquickhelper`, ...
 
     @return             list of paths
     """
@@ -64,7 +63,7 @@ def get_additional_paths():
 
 def clean_function_notebook(code):
     """
-    function which clean cells when unittesting notebooks 1A
+    Cleans cells when unittesting notebooks.
 
     @param      code        cell content
     @return                 modified code
@@ -114,7 +113,7 @@ def clean_function_notebook(code):
 def execute_notebooks(folder, notebooks, filter, clean_function=None,
                       fLOG=noLOG, deepfLOG=noLOG):
     """
-    execute a list of notebooks
+    Executes a list of notebooks.
 
     @param      folder          folder
     @param      notebooks       list of notebooks
@@ -139,8 +138,6 @@ def execute_notebooks(folder, notebooks, filter, clean_function=None,
             return False
         return True
 
-    kernel_name = None if is_travis_or_appveyor() else install_python_kernel_for_unittest(
-        "code_beatrix")
     addpaths = get_additional_paths()
     if filter:
         notebooks = [_ for i, _ in enumerate(notebooks) if filter(i, _)]
@@ -148,4 +145,4 @@ def execute_notebooks(folder, notebooks, filter, clean_function=None,
         raise ValueError("Empty list of notebooks.")
     return execute_notebook_list(
         folder, notebooks, fLOG=fLOG, valid=valid_cell, additional_path=addpaths,
-        kernel_name=kernel_name, clean_function=clean_function)
+        clean_function=clean_function)
