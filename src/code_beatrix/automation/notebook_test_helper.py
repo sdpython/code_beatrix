@@ -6,7 +6,6 @@
 import os
 from pyquickhelper.loghelper import noLOG
 from pyquickhelper.ipythonhelper import execute_notebook_list
-from pyquickhelper.pycode import is_travis_or_appveyor
 
 
 def ls_notebooks(subfolder):

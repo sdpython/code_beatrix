@@ -39,7 +39,11 @@ class TestCopyTools(unittest.TestCase):
                 "travis, unable to test TestCopyTools.test_copy_tools")
             return
 
-        res = copy_jstool2notebook("snap")
+        try:
+            res = copy_jstool2notebook("snap")
+        except PermissionError as e:
+            warnings.warn("Cannot copy, user has no permission to modify python distribution {0}".format(e))
+            return
         assert isinstance(res, list)
 
 
