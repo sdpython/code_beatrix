@@ -176,6 +176,7 @@ if not r:
         packages=packages,
         package_dir=package_dir,
         package_data=package_data,
+        setup_requires=["pyquickhelper"],
         install_requires=["pyquickhelper>=1.8"],
         extras_require={
             'faq': ['pytube'],
