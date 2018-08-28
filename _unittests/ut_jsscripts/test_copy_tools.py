@@ -6,7 +6,7 @@ import sys
 import os
 import unittest
 import warnings
-from pyquickhelper.loghelper import fLOG
+from pyquickhelper.pycode import skipif_travis, ExtTestCase
 
 
 try:
@@ -26,26 +26,17 @@ except ImportError:
 from src.code_beatrix.jsscripts import copy_jstool2notebook
 
 
-class TestCopyTools(unittest.TestCase):
+class TestCopyTools(ExtTestCase):
 
+    @skipif_travis("travis, unable to test TestCopyTools.test_copy_tools")
     def test_copy_tools(self):
-        fLOG(
-            __file__,
-            self._testMethodName,
-            OutputPrint=__name__ == "__main__")
-
-        if "travis" in sys.executable:
-            warnings.warn(
-                "travis, unable to test TestCopyTools.test_copy_tools")
-            return
-
         try:
             res = copy_jstool2notebook("snap")
         except PermissionError as e:
             warnings.warn(
                 "Cannot copy, user has no permission to modify python distribution {0}".format(e))
             return
-        assert isinstance(res, list)
+        self.assertIsInstance(res, list)
 
 
 if __name__ == "__main__":

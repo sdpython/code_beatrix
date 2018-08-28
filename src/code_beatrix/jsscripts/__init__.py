@@ -1,17 +1,18 @@
 """
 @file
-@brief Copy files to the proper location.
+@brief Copies files to the proper location.
 """
 
 import os
 from pyquickhelper.filehelper import synchronize_folder
 
 
-def copy_jstool2notebook(tool):
+def copy_jstool2notebook(tool, force=False):
     """
-    copy a tool to ipython folder
+    Copies a tool to :epkg:`notebook` folder.
 
     @param      tool        tool name (snap for example)
+    @param      force       do the copy even if the destination folder exists
     @return                 list of copied files
     """
     import notebook
@@ -22,4 +23,8 @@ def copy_jstool2notebook(tool):
     dest = os.path.join(dest, tool)
     if not os.path.exists(dest):
         os.mkdir(dest)
-    return synchronize_folder(src, dest)
+        return synchronize_folder(src, dest)
+    elif force:
+        return synchronize_folder(src, dest)
+    else:
+        return None
