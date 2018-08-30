@@ -36,7 +36,8 @@ class TestCopyTools(ExtTestCase):
             warnings.warn(
                 "Cannot copy, user has no permission to modify python distribution {0}".format(e))
             return
-        self.assertIsInstance(res, list)
+        if res is not None:
+            self.assertIsInstance(res, list)
 
 
 if __name__ == "__main__":
