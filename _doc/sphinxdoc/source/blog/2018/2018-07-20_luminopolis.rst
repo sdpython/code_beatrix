@@ -8,12 +8,12 @@
     J'ai visité l'exposition
     `Luminopolis <http://www.cap-sciences.net/au-programme/exposition/luminopolis.html>`_
     au `Cap de Science <http://www.cap-sciences.net/>`_ de Bordeaux.
-    Si on n'apprend effictement peu comme le dit un des commentaires
+    Si on en apprend effectivement peu comme le dit un des commentaires
     sur la page de l'exposition, c'est avant une mise en scène d'exercices
     plutôt logiques, un peu mathématiques et scientifiques plutôt
-    bien pensées. Je donne un exemple, un éléphant et un lion
-    sont éclairées par trois lumières rouge, vert et bleu.
-    Le publique voit le résultat de ces trois expériences
+    bien pensés. Je donne un exemple, un éléphant et un lion
+    sont éclairés par trois lumières rouge, vert et bleu.
+    Le public voit le résultat de ces trois expériences
     et doit en déduire la couleur des deux animaux.
     La réponse est validée si les deux couleurs sont valides.
     Pourquoi deux et pas un ? Parce que chaque équipe a une heure
@@ -28,7 +28,8 @@
     qu'on retient peu de choses. Savez-vous que le premier
     feu d'artifice a eu lieu en 1617 et je ne sais plus combien
     la France dépend en énergie pour alimenter tous ses lampadaires
-    bien que j'ai dû trouver la réponse. Beaucoup d'expositions
-    mettent en valeur sur la connaissance, celle-ci met clairement
+    bien que j'ai dû trouver la réponse comme une correspondance probable
+    entre des ordres de grandeur et des consommations. Beaucoup d'expositions
+    mettent en valeur la connaissance, celle-ci met clairement
     l'accent sur la réflexion. J'aimerais bien voir une exposition
     similaire sur des sujets la pollution ou le réchauffement climatique.
