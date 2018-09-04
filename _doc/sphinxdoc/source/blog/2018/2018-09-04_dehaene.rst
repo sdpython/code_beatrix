@@ -1,0 +1,23 @@
+
+.. blogpost::
+    :title: Les écrans et autres apprentissages avec les enfants
+    :keywords: écran, lecture
+    :date: 2018-09-04
+    :categories: éducation
+
+    `Stanislas Dehaene <https://fr.wikipedia.org/wiki/Stanislas_Dehaene>`_
+    était l'invité de la
+    `matinale de France Inter <https://www.franceinter.fr/emissions/le-7-9/le-7-9-04-septembre-2018>`_
+    ce matin en seconde partie.
+    Il rappelle que l'enfant apprend tout le temps, que les écrans
+    sont tout autant positif avec les jeux vidéos pour maintenir l'attention
+    que négatifs avec Facebook ou twitter qui deviennent des activités 
+    addictives. Il met également l'accent sur les erreurs qui avant
+    tout un processus d'apprentissage. Les enfants ne font pas des erreurs,
+    ils font des expériences. Les notes ne sont pas autant informatives
+    que l'appréciation de la maîtrise d'une vingtaine de notions 
+    qu'un enfant devrait maîtriser.
+    On peut regarder aussi son cours au
+    `Collège de France <https://www.college-de-france.fr/site/stanislas-dehaene/_course.htm>`_
+    ou son dernier livre
+    `Apprendre ! Les talents du cerveau, le défi des machines <https://www.odilejacob.fr/catalogue/sciences/neurosciences/apprendre-_9782738145420.php>`_.
