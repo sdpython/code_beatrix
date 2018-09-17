@@ -1,0 +1,17 @@
+
+.. blogpost::
+    :title: Méthode globale ou syllabique
+    :keywords: lecture
+    :date: 2018-09-18
+    :categories: éducation
+
+    La méthode syllabique est préférable à la méthode globale,
+    chacune a eu ses partisans mais la science a tranché,
+    la méthode syllabique est préférable lorsqu'il
+    s'agit d'apprendre car cette méthode va localiser la lecture
+    dans une partie différente du cerveau capable notemment de faire la
+    différence entre le *p* et le *q*, le cauchemar des dyslexique.
+    Ce n'est pas le seul sujet que ce documentaire aborde mais beaucoup 
+    d'expérience de pédagogie qui vont redessiner l'école de demain :
+    `Demain école 1/2 <https://www.arte.tv/fr/videos/075778-002-A/demain-l-ecole-1-2/>`_,
+    `Demain école 2/2 <https://www.arte.tv/fr/videos/075778-001-A/demain-l-ecole-2-2/>`_.
