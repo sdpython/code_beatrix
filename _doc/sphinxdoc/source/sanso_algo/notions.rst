@@ -70,14 +70,14 @@ rapides* qui produisent des *solutions approchées* mais tout-à-fait satsifaisa
   sera combien sera combien de fois plus lent ?
 
 Par exemple, le tri le plus rapide est en :math:`O(n \log n)`
-où :math:`n` est le nombre d'éléments à trier.
-La fonction :math:`\log(n)` ou `logarithme <http://fr.wikipedia.org/wiki/Logarithme>`_
+où *n* est le nombre d'éléments à trier.
+La fonction *log(n)* ou `logarithme <http://fr.wikipedia.org/wiki/Logarithme>`_
 détermine le nombre de fois qu'il a fallu multiplier 10 pour obtenir :math:`n`.
-Par exemple, :math:`1000=10*10*10` donc :math:`\log(1000)=3`.
+Par exemple, *1000=10*10*10* donc *log(1000)=3*.
 
-Donc, pour trier :math:`n=100` éléments, il faut environ
-:math:`100 \log(100) = 100 * 2 = 200`. Pour trier 10 fois plus
-d'éléments, il faut : :math:`1000 \log(1000) = 3000`.
+Donc, pour trier *n=100* éléments, il faut environ
+*100 log(100) = 100 * 2 = 200*. Pour trier 10 fois plus
+d'éléments, il faut : *1000 log(1000) = 3000*.
 Trier 1000 éléments est 15 fois plus lent que trier 100 éléments.
 
 **Vocabulaire**
