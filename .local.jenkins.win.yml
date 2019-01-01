@@ -26,7 +26,8 @@ script:
   - { CMD: "python -u setup.py unittests -e \".*noenv8.*\"", NAME: "UT_NOENV8" }
   - { CMD: "python -u setup.py unittests -e \".*noenv9.*\"", NAME: "UT_NOENV9" }
   - { CMD: "python -u setup.py unittests -e \".*noenvA.*\"", NAME: "UT_NOENVA" }
-  - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests_LONG", NAME: "UT_LONG" }
+  - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -e .*LONG.* -g .*youtube.*", NAME: "UT_LONG" }
+  - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests -e .*youtube.*", NAME: "UT_YOUTUBE" }
   - { CMD: "python -X faulthandler -X showrefcount -u setup.py unittests_SKIP", NAME: "UT_SKIP" }
 after_script:
   - python -u setup.py bdist_wheel
