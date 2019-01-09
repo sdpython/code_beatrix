@@ -25,9 +25,6 @@ except ImportError:
     import src
 
 
-from src.code_beatrix.ai import DLImageSegmentation
-
-
 class TestSegImage1(ExtTestCase):
 
     def test_seg_image1(self):
@@ -41,6 +38,7 @@ class TestSegImage1(ExtTestCase):
         img2 = os.path.join(temp, "..", "data", "Tesla_circa_1890c.jpg")
         imgs = [img1, img2]
 
+        from src.code_beatrix.ai import DLImageSegmentation
         dl = DLImageSegmentation(fLOG=fLOG)
 
         for i, img in enumerate(imgs):

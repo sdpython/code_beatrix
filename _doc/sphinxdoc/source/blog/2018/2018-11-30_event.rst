@@ -8,13 +8,13 @@
     `Les Maths en Scène <https://lesmathsenscene.fr/>`_
     organise la troisième édition du
     *Festival International Les Maths dans tous leurs Etats*.
-    Parmi les intervenants 
+    Parmi les intervenants
     `CosmosNote <http://www.cosmonote.org/>`_,
     `MMACA <https://mmaca.cat/>`_,
     `Combustible <http://combustible.fr/>`_,
     `FabLab Toulouse <https://artilect.fr/>`_,
     `La Maison de Fermat <https://www.fermat-science.com/>`_.
-    
+
     Et je ne suis pas comment je suis tombé là-dessus :
     `C'est le jeu <http://www.cestlejeu.com/>`_
     mais ce pourrait être intéressant avant Noël.
