@@ -1,0 +1,30 @@
+
+.. blogpost::
+    :title: Erreur de téléchargement ds vidéo youtube
+    :keywords: youtube, python
+    :date: 2019-01-10
+    :categories: programmation
+
+    Il faut de temps en temps mettre les mains dans le cambouis.
+    Le notebook :ref:`imagemarypoppinsrst` commence par le
+    téléchargement d'une vidéo youtube et celui ne marchait pas.
+    Il produisait l'erreur :
+
+    ::
+
+        RegexMatchError: regex pattern (yt\.akamaized\.net/\)\s*\|\|\s*.*?\s*c\s*&&\s*d\.set\([^,]+\s*,\s*(?P<sig>[a-zA-Z0-9$]+)\() had zero matches
+
+    Après quelques recherches sur Internet, je suis
+    tombé sur cette série d'articles
+    `getting regex error <https://github.com/nficano/pytube/issues/333>`_,
+    `pytube.exceptions.RegexMatchError: regex pattern ((?:v=|\/)([0-9A-Za-z_-]{11}).*) had zero matches <https://github.com/nficano/pytube/issues/312>`_,
+    `Cómo descargar vídeos de Youtube con Pytube <http://www.electrogeekshop.com/como-descargar-videos-de-youtube-con-pytube/>`_,
+    qui proposent d'ajouter quelques expressions régulières pour
+    corriger le problème. Après quelques essais,
+    j'ai abouti à la correction suivante :
+    `Additional regular expressions to solve issues nficano#333, nficano#312 <https://github.com/sdpython/pytube/commit/9a4acfd432f1e5d79c54442941d9bb372d50424c>`_.
+    Pour installer la correction :
+
+    ::
+
+        pip install git+https://github.com/sdpython/pytube.git
