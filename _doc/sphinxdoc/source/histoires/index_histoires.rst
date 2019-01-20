@@ -15,6 +15,8 @@ pour les petits
     modulard
     chat_princesse
     le_petit_basque
+    ratatin
+    demenagement
 
 histoires interactives
 ++++++++++++++++++++++

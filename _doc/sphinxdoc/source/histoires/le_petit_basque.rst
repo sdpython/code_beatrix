@@ -29,7 +29,7 @@ tout rouge parce que tous les voisins ont téléphoné : au lit sans
 manger, c'est la punition préférée de papa. Papa, il aime pas 
 les fessées car il dit toujours : je suis non violent comme Gandhi.
  
-Demain, la mer.
+*Demain, la mer.*
  
 Les coups de soleil du premier jour, c'est les meilleurs car 
 c'est les plus durs à éviter. Toute la journée, maman passe 
@@ -75,3 +75,37 @@ comment on n'avait pu faire des trous aussi gros, tellement gros
 qu'il avait l'impression que ça avait fondu). Enfin, on a décidé 
 avec Fricky que ce soir, ce serait encore maman qui mettrait 
 la pommade.
+
+*Papa travaille*
+
+Aujourd'hui Papa travaille sur un dossier. Il est pas drôle Papa 
+quand il travaille en vacances. Il est tout sérieux sur la 
+plage et quand il perd son portable, c'est toujours de notre 
+faute parce qu'on a joué avec comme on fait d'habitude. 
+C'est normal qu'on joue avec, Papa veut pas qu'on emmène 
+les consoles de jeux en vacances. Même pour la télé, il est pas 
+d'accord. Pourtant, comme dit Maman, on est fatiguant sans télé. 
+Aujourd'hui, la cible, c'était Papa. On a tout fait, on lui a 
+chatouillé les pieds, on lui a jeté du sable sur ses papiers, 
+on a creusé plein de tunnels pour le faire bouger, on a couru 
+avec maman derrière nous tout autour de lui, on a crié sans arrêt, 
+on s'est secoué près de lui, on a fait tomber des miettes sur 
+son dos, on s'est bagarré près de lui exprès pour pas faire 
+exprès de tomber sur ses jambes, on a joué au ballon, on a 
+fait tomber le parasol, on a secoué les serviettes avec le 
+vent dans sa direction, on a oublié nos chaussures sur la plage. 
+Papa c'est un chouette Papa, il a pas bougé une seule fois, 
+il est pas rentré à la maison qu'on a loué pour travailler, 
+il est toujours resté pour nous gronder. Il est gentil au 
+fond Papa. Sauf le soir, on a vu qu'il lisait une pub pour 
+les colonies de vacances alors après on a été tout sage. 
+Enfin, le lendemain seulement, après, on a tout oublié 
+et on a recommencé.
+
+*Papa ne se rase plus*
+
+Papa ne se rase plus. Moi, j'adore, il a l'air d'un cowboy. 
+Ticky aime pas trop parce que quand Papa l'embrasse, ça pique fort. 
+Moi, je supporte, je suis un homme, j'ai la peau plus dure 
+alors ça fait moins mal.
+
