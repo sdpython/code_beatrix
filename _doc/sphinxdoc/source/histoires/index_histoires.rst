@@ -14,6 +14,7 @@ pour les petits
     le_vin_de_pepe
     modulard
     chat_princesse
+    le_petit_basque
 
 histoires interactives
 ++++++++++++++++++++++
