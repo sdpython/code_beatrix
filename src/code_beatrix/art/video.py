@@ -446,8 +446,7 @@ def video_enumerate_frames(video_or_file, folder=None, fps=10, pattern='images_%
             if 'dtype' in kwargs:
                 if kwargs['dtype'] != 'uint8':
                     raise ValueError("dtype must be uint8")
-                else:
-                    del kwargs['dtype']
+                del kwargs['dtype']
 
             for i, frame in enumerate(video.iter_frames(fps=fps, dtype='uint8', **kwargs)):
                 # saves as image

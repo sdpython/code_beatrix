@@ -25,8 +25,7 @@ class DeepLearningBase:
                 raise FileNotFoundError("Unable to find '{0}'".format(model))
             raise NotImplementedError(
                 "Unable to load model '{0}'".format(model))
-        else:
-            self._model = model
+        self._model = model
         self._fLOG = fLOG
 
     def log(self, *l, **p):
