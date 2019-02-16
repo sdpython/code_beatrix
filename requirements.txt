@@ -7,6 +7,7 @@ gdown
 gizeh
 hachibee_sphinx_theme
 imageio
+imageio-ffmpeg
 jyquickhelper
 moviepy
 opencv-python
