@@ -1,9 +1,4 @@
 
-.. _l-README:
-
-README
-======
-
 .. image:: https://travis-ci.org/sdpython/code_beatrix.svg?branch=master
     :target: https://travis-ci.org/sdpython/code_beatrix
     :alt: Build status
@@ -37,14 +32,10 @@ README
     :target: http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/all_notebooks_coverage.html
     :alt: Notebook Coverage
 
-**Links:**
+.. _l-README:
 
-* `GitHub/code_beatrix <https://github.com/sdpython/code_beatrix/>`_
-* `site <http://lesenfantscodaient.fr/>`_
-* `Blog <http://lesenfantscodaient.fr/blog/main_0000.html#ap-main-0>`_
-
-Description
------------
+code_beatrix
+============
 
 Exercices pour découvrir la programmation et les algorithmes.
 Ceux-ci peuvent servir de base pour organiser un
@@ -54,9 +45,9 @@ pour `codingandbricks <https://www.codingandbricks.com/>`_
 ou `digigirlz <https://www.microsoft.com/en-us/diversity/programs/digigirlz>`_
 avec *Microsoft*.
 
-Language: French.
+* `GitHub/code_beatrix <https://github.com/sdpython/code_beatrix/>`_
+* `site <http://lesenfantscodaient.fr/>`_
+* `Blog <http://lesenfantscodaient.fr/blog/main_0000.html#ap-main-0>`_
 
-Contributions
--------------
-
-Démarré en mars 2015.
+Le site est conçu comme la documentation d'un module
+*Python* qui sert à préparer et à illustrer les exercices.
