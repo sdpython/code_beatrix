@@ -53,7 +53,7 @@ def video_map_images(video_or_file, name, fLOG=None, **kwargs):
 
 
 def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
-                            with_times=False, progress_bar=False, dtype=None,
+                            with_times=False, logger=None, dtype=None,
                             class_to_keep=15, fLOG=None, **kwargs):
     """
     Extracts characters from a movie.
@@ -68,7 +68,7 @@ def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
     @param      resize          see :meth:`predict <code_beatrix.ai.image_segmentation.DLImageSegmentation.predict>`
     @param      fps             see @see fn video_enumerate_frames
     @param      with_times      see @see fn video_enumerate_frames
-    @param      progress_bar    see @see fn video_enumerate_frames
+    @param      logger          see @see fn video_enumerate_frames
     @param      dtype           see @see fn video_enumerate_frames
     @param      class_to_keep   class to keep from the image, it can
                                 a number (15 for the background, a list of classes,
@@ -99,7 +99,7 @@ def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
             from code_beatrix.art.videodl import video_map_images
 
             vide = video_extract_video("something.mp4", 0, 5)
-            vid2 = video_map_images(vide, fps=10, name="people", progress_bar=True)
+            vid2 = video_map_images(vide, fps=10, name="people", logger='bar')
             video_save(vid2, "people.mp4")
 
         The function returns something like the the following.
@@ -131,7 +131,7 @@ def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
         fLOG('[video_map_images_people] loads deep learning model')
     model = DLImageSegmentation(fLOG=fLOG, **kwargs)
     iter = video_enumerate_frames(video_or_file, fps=fps, with_times=with_times,
-                                  progress_bar=progress_bar, dtype=dtype, clean=False)
+                                  logger=logger, dtype=dtype, clean=False)
     if fLOG is not None:
         if fps is not None:
             every = max(fps, 1)
@@ -144,7 +144,7 @@ def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
         fLOG('[video_map_images_people] starts extracting characters')
     seq = []
     for i, img in enumerate(iter):
-        if not progress_bar and fLOG is not None and i % every == 0:
+        if not logger and fLOG is not None and i % every == 0:
             fLOG('[video_map_images_people] process %d%s images' % (i, unit))
         if resize is not None and isinstance(resize[0], str):
             if len(img.shape) == 2:
@@ -160,7 +160,7 @@ def video_map_images_people(video_or_file, resize=('max2', 400), fps=None,
     return ImageSequenceClip(seq, fps=fps)
 
 
-def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_bar=False, dtype=None,
+def video_map_images_detect(video_or_file, fps=None, with_times=False, logger=None, dtype=None,
                             scaleFactor=1.3, minNeighbors=4, minSize=(30, 30),
                             action='blur', color=(255, 255, 0), haar=None, fLOG=None):
     """
@@ -175,7 +175,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
                                 faces are detected in each frame returned by
                                 @see fn video_enumerate_frames
     @param      with_times      see @see fn video_enumerate_frames
-    @param      progress_bar    see @see fn video_enumerate_frames
+    @param      logger          see @see fn video_enumerate_frames
     @param      dtype           see @see fn video_enumerate_frames
     @param      fLOG            logging function
     @param      scaleFactor     see `detectmultiscale <https://docs.opencv.org/2.4/modules/objdetect/doc/
@@ -211,7 +211,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
             vide = video_extract_video(vid, 0, 5 if __name__ == "__main__" else 1)
             vid2 = video_map_images(
                 vide, fps=10, name='detect', action='rect',
-                progress_bar=True, fLOG=fLOG)
+                logger='bar', fLOG=fLOG)
             exp = os.path.join(temp, "people.mp4")
             video_save(vid2, exp, fps=10)
 
@@ -224,7 +224,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
     from .video_drawing import blur, rectangle
 
     def fl_blur(gf, t, rects):
-        im = gf(t)
+        im = gf(t).copy()
         ti = min(int(t * fps), len(rects) - 1)
         rects = all_rects[ti]
         for rect in rects:
@@ -233,7 +233,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
         return im
 
     def fl_rect(gf, t, rects):
-        im = gf(t)
+        im = gf(t).copy()
         ti = min(int(t * fps), len(rects) - 1)
         rects = all_rects[ti]
         for rect in rects:
@@ -262,7 +262,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
     cascade = CascadeClassifier(cascade_fn)
 
     iter = video_enumerate_frames(video_or_file, fps=fps, with_times=with_times,
-                                  progress_bar=progress_bar, dtype=dtype, clean=False)
+                                  logger=logger, dtype=dtype, clean=False)
 
     if fLOG:
         fLOG("[video_map_images_people] starts detecting and burring faces with: {0}".format(
@@ -276,7 +276,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, progress_
 
     all_rects = []
     for i, img in enumerate(iter):
-        if not progress_bar and fLOG is not None and i % every == 0:
+        if not logger and fLOG is not None and i % every == 0:
             fLOG('[video_map_images_face] process %d%s images' % (i, unit))
 
         try:

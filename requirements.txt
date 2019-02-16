@@ -9,7 +9,7 @@ hachibee_sphinx_theme
 imageio
 imageio-ffmpeg
 jyquickhelper
-moviepy
+moviepy>=1.0
 opencv-python
 pyensae>=1.2.788
 pymmails

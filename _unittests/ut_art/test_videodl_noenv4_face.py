@@ -44,7 +44,8 @@ class TestVideoDLFace(ExtTestCase):
         vid = video_load(os.path.join(temp, '..', 'data', 'charlie.mp4'))
         vide = video_extract_video(vid, 0, 5 if __name__ == "__main__" else 1)
         vid2 = video_map_images(
-            vide, fps=10, name="detect", progress_bar=__name__ == "__main__", fLOG=fLOG)
+            vide, fps=10, name="detect",
+            logger='bar' if __name__ == "__main__" else None, fLOG=fLOG)
         exp = os.path.join(temp, "face.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
@@ -59,7 +60,8 @@ class TestVideoDLFace(ExtTestCase):
         vid = video_load(os.path.join(temp, '..', 'data', 'charlie.mp4'))
         vide = video_extract_video(vid, 0, 10 if __name__ == "__main__" else 1)
         vid2 = video_map_images(
-            vide, fps=10, name="detect", action="rect", progress_bar=__name__ == "__main__", fLOG=fLOG)
+            vide, fps=10, name="detect", action="rect",
+            logger='bar' if __name__ == "__main__" else None, fLOG=fLOG)
         exp = os.path.join(temp, "face.mp4")
         self.assertTrue(vid2.make_frame is not None)
         video_save_image(vid2, t=1, filename=os.path.join(temp, "img1.jpg"))
