@@ -45,7 +45,7 @@ class TestVideoDLPeople(ExtTestCase):
         vid = video_load(os.path.join(temp, '..', 'data', 'mur.mp4'))
         vide = video_extract_video(vid, 0, 5 if __name__ == "__main__" else 1)
         vid2 = video_map_images(
-            vide, fps=10, name="people", 
+            vide, fps=10, name="people",
             logger='bar' if __name__ == "__main__" else None, fLOG=fLOG)
         exp = os.path.join(temp, "people.mp4")
         video_save(vid2, exp)
