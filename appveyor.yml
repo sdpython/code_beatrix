@@ -24,7 +24,7 @@ install:
   - "%PYTHON%\\Scripts\\pymy_install3 cupy"
   - "%PYTHON%\\Scripts\\pymy_install3 yaml pyproj scikit-image opencv-python"
   - "%PYTHON%\\Scripts\\pymy_install3 protobuf cartopy shapely pyproj"
-  - "%PYTHON%\\Scripts\\pip install imageio"
+  - "%PYTHON%\\Scripts\\pip install imageio imageio-ffmpeg"
   - "%PYTHON%\\Scripts\\pip install pytube!=9.0.4"
   - "%PYTHON%\\python setup.py moviepy-setup"
   - "%PYTHON%\\Scripts\\pip install -r requirements_conda.txt"
