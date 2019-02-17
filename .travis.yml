@@ -29,6 +29,5 @@ install:
   #- conda build build_tools/conda-recipe --quiet
   - conda install -q --file=requirements_conda.txt
   - pip install -r requirements.txt
-  - python setup.py moviepy-setup
 script:
   - python setup.py unittests

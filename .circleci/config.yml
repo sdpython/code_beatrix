@@ -111,12 +111,6 @@ jobs:
             . venv/bin/activate
             pip install git+https://github.com/bokeh/datashader.git --upgrade --no-deps
             
-      - run:
-          name: setup moviepy and ffmpeg
-          command: |
-            . venv/bin/activate
-            python setup.py moviepy-setup
-
       - save_cache:
           paths:
             - ./venv
