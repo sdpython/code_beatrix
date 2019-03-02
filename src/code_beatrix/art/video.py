@@ -21,7 +21,6 @@ from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
 from moviepy.audio.AudioClip import concatenate_audioclips, AudioArrayClip
 from PIL import Image, ImageFont, ImageDraw
-from skimage.io._plugins.pil_plugin import pil_to_ndarray
 from skimage.transform import rescale
 from .moviepy_context import AudioContext, VideoContext, get_wrapped, clean_video
 
@@ -726,6 +725,7 @@ def video_image(image_or_file, duration=None, zoom=None, opacity=None, **kwargs)
                 raise ValueError(
                     "Image is not RGB or RGBA shape={0}".format(img.shape))
             if img.shape[2] == 3:
+                from skimage.io._plugins.pil_plugin import pil_to_ndarray
                 pilimg = Image.fromarray(img).convert('RGBA')
                 img = pil_to_ndarray(pilimg)
                 if opacity is None:
@@ -738,6 +738,7 @@ def video_image(image_or_file, duration=None, zoom=None, opacity=None, **kwargs)
                 raise TypeError("opacity should be int or float or None")
             return ImageClip(img, duration=duration, transparent=True, **kwargs)
     elif isinstance(image_or_file, Image.Image):
+        from skimage.io._plugins.pil_plugin import pil_to_ndarray
         if image_or_file.mode != 'RGBA':
             image_or_file = image_or_file.convert('RGBA')
         if zoom is not None:

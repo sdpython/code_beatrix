@@ -7,8 +7,7 @@
 import sys
 import os
 import unittest
-from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import get_temp_folder, ExtTestCase, is_travis_or_appveyor
+from pyquickhelper.pycode import get_temp_folder, ExtTestCase, is_travis_or_appveyor, skipif_circleci
 
 
 try:
@@ -30,15 +29,8 @@ from src.code_beatrix.art.video import download_youtube_video
 
 class TestVideoDownload(ExtTestCase):
 
+    @skipif_circleci("unexpected error: KeyError: 'url_encoded_fmt_stream_map'")
     def test_video_download(self):
-        fLOG(
-            __file__,
-            self._testMethodName,
-            OutputPrint=__name__ == "__main__")
-
-        if is_travis_or_appveyor() == "circleci":
-            # unexpected error: KeyError: 'url_encoded_fmt_stream_map'
-            return
         temp = get_temp_folder(__file__, "temp_video_download")
         download_youtube_video('vHcfbOqYztU', output_path=temp)
         exp = os.path.join(temp, "vidéo tres courte.mp4")
