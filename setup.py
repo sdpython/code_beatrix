@@ -129,15 +129,15 @@ if is_local():
         sys.argv, __file__, project_var_name,
         unittest_modules=["pyquickhelper"],
         additional_notebook_path=["jyquickhelper", "pyquickhelper", "pyensae",
-                                    "pyrsslocal", "pymyinstall", "pymmails", "ensae_projects"],
+                                  "pyrsslocal", "pymyinstall", "pymmails", "ensae_projects"],
         requirements=["pyquickhelper", "jyquickhelper", ],
         blog_list=os.path.abspath(os.path.join(
             "src", project_var_name, package_data[project_var_name][0])),
         fLOG=logging_function, github_owner=project_owner,
         covtoken=("4326eb4c-78b5-4ff3-9317-9329fdb20f43", "'_UT_37_std' in outfile"))
     if not r and not ({"bdist_msi", "sdist",
-                        "bdist_wheel", "publish", "publish_doc", "register",
-                        "upload_docs", "bdist_wininst", "build_ext"} & set(sys.argv)):
+                       "bdist_wheel", "publish", "publish_doc", "register",
+                       "upload_docs", "bdist_wininst", "build_ext"} & set(sys.argv)):
         raise Exception(
             "unable to interpret command line: " + str(sys.argv))
 else:

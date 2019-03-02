@@ -11,7 +11,6 @@ with the notebook unittesting (it uses Popen too).
 import sys
 import os
 import unittest
-from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase, skipif_circleci
 
 
@@ -37,16 +36,12 @@ class TestVideoDLPeople(ExtTestCase):
 
     @skipif_circleci("Received 'killed' signal")
     def test_modify_avideo(self):
-        fLOG(
-            __file__,
-            self._testMethodName,
-            OutputPrint=__name__ == "__main__")
         temp = get_temp_folder(__file__, "temp_videodl_people")
         vid = video_load(os.path.join(temp, '..', 'data', 'mur.mp4'))
         vide = video_extract_video(vid, 0, 5 if __name__ == "__main__" else 1)
         vid2 = video_map_images(
             vide, fps=10, name="people",
-            logger='bar' if __name__ == "__main__" else None, fLOG=fLOG)
+            logger='bar' if __name__ == "__main__" else None)
         exp = os.path.join(temp, "people.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)
