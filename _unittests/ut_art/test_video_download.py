@@ -7,7 +7,7 @@
 import sys
 import os
 import unittest
-from pyquickhelper.pycode import get_temp_folder, ExtTestCase, is_travis_or_appveyor, skipif_circleci
+from pyquickhelper.pycode import get_temp_folder, ExtTestCase, skipif_circleci
 
 
 try:
