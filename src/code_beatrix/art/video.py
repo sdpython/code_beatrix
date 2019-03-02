@@ -21,7 +21,6 @@ from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
 from moviepy.video.compositing.concatenate import concatenate_videoclips
 from moviepy.audio.AudioClip import concatenate_audioclips, AudioArrayClip
 from PIL import Image, ImageFont, ImageDraw
-from skimage.transform import rescale
 from .moviepy_context import AudioContext, VideoContext, get_wrapped, clean_video
 
 
@@ -717,6 +716,7 @@ def video_image(image_or_file, duration=None, zoom=None, opacity=None, **kwargs)
         return video_image(img, duration=duration, zoom=zoom, opacity=opacity, **kwargs)
     elif isinstance(image_or_file, numpy.ndarray):
         if zoom is not None:
+            from skimage.transform import rescale
             img = rescale(image_or_file, zoom)
             return video_image(img, duration=duration, opacity=opacity, **kwargs)
         else:
