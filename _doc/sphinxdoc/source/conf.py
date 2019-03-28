@@ -2,6 +2,7 @@
 import sys
 import os
 from pyquickhelper.helpgen.default_conf import set_sphinx_variables, get_default_stylesheet
+from code_beatrix import __version__ as sversion
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.split(__file__)[0])))
 import my_hachibee_sphinx_theme as hachibee_sphinx_theme
@@ -13,7 +14,7 @@ set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2019,
                      custom_style='custom_style.css',
                      extlinks=dict(
                          issue=('https://github.com/sdpython/code_beatrix/issues/%s', 'issue')),
-                     book=True, nblayout='table')
+                     book=True, nblayout='table', doc_version=sversion)
 
 html_show_copyright = False
 html_title = "lesenfantcodaient.fr"

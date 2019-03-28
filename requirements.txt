@@ -14,7 +14,7 @@ opencv-python
 pyensae>=1.2.788
 pymmails
 pyproj
-pyquickhelper>=1.8.2814
+pyquickhelper>=1.9
 pyshp
 pytube>=9.0.6
 shapely

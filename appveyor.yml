@@ -28,6 +28,7 @@ install:
   - "%PYTHON%\\Scripts\\pip install pytube!=9.0.4"
   - "%PYTHON%\\Scripts\\pip install -r requirements_conda.txt"
   - "%PYTHON%\\Scripts\\pip install -r requirements.txt"
+  - set PYTHONPATH=src
   
 build: off
 

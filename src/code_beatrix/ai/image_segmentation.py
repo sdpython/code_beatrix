@@ -5,8 +5,8 @@
 from contextlib import redirect_stdout
 import io
 import os
-import chainer
-import fcn
+import chainer  # pylint: disable=E0401
+import fcn  # pylint: disable=E0401
 import numpy
 from PIL import Image
 import skimage

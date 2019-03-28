@@ -2,7 +2,7 @@
 @file
 @brief Draws objects on videos.
 """
-from cv2 import blur as cv_blur, rectangle as cv_rectangle
+from cv2 import blur as cv_blur, rectangle as cv_rectangle  # pylint: disable=E0401
 
 
 def blur(img, p1, p2, frac=0.333, kernel_size=None):

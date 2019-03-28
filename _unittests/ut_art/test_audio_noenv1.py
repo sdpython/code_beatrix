@@ -7,30 +7,11 @@ at the end of the series of unitests as it interferes
 with the notebook unittesting (it uses Popen too).
 This is true for similar unit tests.
 """
-
-
-import sys
 import os
 import unittest
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-
-
-try:
-    import src
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import src
-
-
-from src.code_beatrix.art.video import audio_compose, audio_save, audio_extract_audio, audio_concatenate
+from code_beatrix.art.video import audio_compose, audio_save, audio_extract_audio, audio_concatenate
 
 
 class TestAudio(ExtTestCase):

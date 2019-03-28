@@ -2,27 +2,11 @@
 """
 @brief      test log(time=14s)
 """
-
-import sys
 import os
 import unittest
 import skimage
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
-
-
-try:
-    import src
-except ImportError:
-    path = os.path.normpath(
-        os.path.abspath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                "..",
-                "..")))
-    if path not in sys.path:
-        sys.path.append(path)
-    import src
 
 
 class TestSegImage2(ExtTestCase):
@@ -37,7 +21,7 @@ class TestSegImage2(ExtTestCase):
         img1 = os.path.join(temp, "..", "data", "Mona_elephant.jpg")
         imgs = [img1]
 
-        from src.code_beatrix.ai import DLImageSegmentation
+        from code_beatrix.ai import DLImageSegmentation
         dl = DLImageSegmentation(fLOG=fLOG)
 
         for i, img in enumerate(imgs):

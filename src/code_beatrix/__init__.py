@@ -27,7 +27,7 @@
 """
 import os
 
-__version__ = "0.5"
+__version__ = "0.6"
 __author__ = "Xavier Dupré"
 __github__ = "https://github.com/sdpython/code_beatrix"
 __url__ = "http://lesenfantscodaient/"

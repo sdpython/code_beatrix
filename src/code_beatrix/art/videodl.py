@@ -220,7 +220,7 @@ def video_map_images_detect(video_or_file, fps=None, with_times=False, logger=No
 
         .. video:: face.mp4
     """
-    from cv2 import CascadeClassifier, CASCADE_SCALE_IMAGE
+    from cv2 import CascadeClassifier, CASCADE_SCALE_IMAGE  # pylint: disable=E0401
     from .video_drawing import blur, rectangle
 
     def fl_blur(gf, t, rects):

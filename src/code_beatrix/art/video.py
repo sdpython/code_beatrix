@@ -10,7 +10,7 @@ import sys
 import tempfile
 import time
 import numpy
-from pytube import YouTube
+from pytube import YouTube  # pylint: disable=E0401
 from imageio import imsave
 import moviepy.audio.fx.all as afx
 import moviepy.video.fx.all as vfx
