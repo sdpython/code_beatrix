@@ -5,7 +5,7 @@ Cython
 jupyter
 matplotlib
 networkx
-numpy==1.15.3
+numpy>=1.16
 pandas>=0.22.0
 pillow
 pyproj
