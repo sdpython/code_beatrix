@@ -1,8 +1,8 @@
 
 .. blogpost::
-    :title: Un nez de clown en classe
+    :title: Compter les cartes un soir d'école
     :keywords: classe
-    :date: 2019-01-20
+    :date: 2019-02-28
     :categories: enseignement
 
     Babysitting en urgence...
