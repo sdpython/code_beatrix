@@ -57,3 +57,4 @@ et quelques histoires courtes
     :maxdepth: 2
 
     short_stories_2016
+    glyph
