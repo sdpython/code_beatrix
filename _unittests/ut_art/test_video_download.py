@@ -18,8 +18,9 @@ class TestVideoDownload(ExtTestCase):
         try:
             download_youtube_video('vHcfbOqYztU', output_path=temp)
         except RegexMatchError as e:
-            warnings.warn(
-                "Issue with video '{}' - {}".format('vHcfbOqYztU', e))
+            if "zero match" not in str(e):
+                raise e
+            warnings.warn("pytube issue: {}".format(e))
             return
         exp = os.path.join(temp, "vidéo tres courte.mp4")
         self.assertExists(exp)

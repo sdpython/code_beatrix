@@ -5,6 +5,7 @@
 import os
 import unittest
 import shutil
+import warnings
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, add_missing_development_version
 from pyquickhelper.ipythonhelper import execute_notebook_list_finalize_ut
@@ -33,12 +34,18 @@ class TestLONGNotebookExample (unittest.TestCase):
         for img in os.listdir(source):
             shutil.copy(os.path.join(source, img), data)
 
-        res = execute_notebooks(temp, keepnote,
-                                lambda i, n: "poppins" in n,
-                                fLOG=fLOG,
-                                clean_function=clean_function_notebook)
-        execute_notebook_list_finalize_ut(
-            res, fLOG=fLOG, dump=code_beatrix)
+        try:
+            res = execute_notebooks(temp, keepnote,
+                                    lambda i, n: "poppins" in n,
+                                    fLOG=fLOG,
+                                    clean_function=clean_function_notebook)
+            execute_notebook_list_finalize_ut(
+                res, fLOG=fLOG, dump=code_beatrix)
+        except Exception as e:  # pylint: disable=W0703
+            if "RegexMatchError" not in str(e):
+                raise e
+            warnings.warn("pytube issue: {}".format(e))
+            return
 
 
 if __name__ == "__main__":
