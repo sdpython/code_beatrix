@@ -1,0 +1,11 @@
+
+.. blogpost::
+    :title: Compter les cartes un soir d'école
+    :keywords: classe
+    :date: 2019-02-28
+    :categories: enseignement
+
+    :epkg:`pytube` déraille encore, c'est le même
+    genre d'erreur que celle décrite dans l'article    
+    :ref:`Erreur de téléchargement des vidéos youtube <blog-2019-download-error-pytube>`.
+    J'ai la flemme de corriger.

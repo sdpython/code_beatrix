@@ -1,13 +1,14 @@
 
 .. blogpost::
-    :title: Erreur de téléchargement ds vidéo youtube
+    :title: Erreur de téléchargement des vidéos youtube
     :keywords: youtube, python
     :date: 2019-01-10
     :categories: programmation
+    :lid: blog-2019-download-error-pytube
 
     Il faut de temps en temps mettre les mains dans le cambouis.
     Le notebook :ref:`imagemarypoppinsrst` commence par le
-    téléchargement d'une vidéo youtube et celui ne marchait pas.
+    téléchargement d'une vidéo *youtube* et celui ne marchait pas.
     Il produisait l'erreur :
 
     ::
