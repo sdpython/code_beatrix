@@ -6,6 +6,6 @@
     :categories: enseignement
 
     :epkg:`pytube` déraille encore, c'est le même
-    genre d'erreur que celle décrite dans l'article    
+    genre d'erreur que celle décrite dans l'article
     :ref:`Erreur de téléchargement des vidéos youtube <blog-2019-download-error-pytube>`.
     J'ai la flemme de corriger.

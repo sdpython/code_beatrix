@@ -6,9 +6,8 @@ import os
 import unittest
 import warnings
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase, skipif_circleci
-from pytube.exceptions import RegexMatchError
+from pytube.exceptions import RegexMatchError  # pylint: disable=C0411
 from code_beatrix.art.video import download_youtube_video
-
 
 
 class TestVideoDownload(ExtTestCase):
@@ -19,7 +18,8 @@ class TestVideoDownload(ExtTestCase):
         try:
             download_youtube_video('vHcfbOqYztU', output_path=temp)
         except RegexMatchError as e:
-            warnings.warn("Issue with video '{}' - {}".format('vHcfbOqYztU', e))
+            warnings.warn(
+                "Issue with video '{}' - {}".format('vHcfbOqYztU', e))
             return
         exp = os.path.join(temp, "vidéo tres courte.mp4")
         self.assertExists(exp)

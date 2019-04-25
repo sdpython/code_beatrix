@@ -69,12 +69,12 @@ La contamination avait commencé à la cafétéria de leur entreprise
 qui servaient des mets qui bouleversaient leurs gènes.
 Elle avait perduré des années. Certains ont verdi rapidement
 après avoir quitté leur entreprise, d'autres ont contaminé leurs enfants,
-mais tous ont vu leur taux de cancer décroître. Il est trop tôt 
+mais tous ont vu leur taux de cancer décroître. Il est trop tôt
 encore pour dire si leur espérance de vie dépassera celle de
 l'homme biologique.
 
-Malédiction ou super-pouvoirs... Les visages alternent 
-la colère et la consternation. Il existe dans ce monde des 
+Malédiction ou super-pouvoirs... Les visages alternent
+la colère et la consternation. Il existe dans ce monde des
 hommes et femmes modifiés génétiquement
 qui ont besoin pour leur survie d'ingérer des aliments
 aspergés de pesticides. Il existe parmi nous des hommes
