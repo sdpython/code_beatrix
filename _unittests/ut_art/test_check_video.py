@@ -19,9 +19,15 @@ class TestCheckVideo(unittest.TestCase):
         try:
             check(kind="video", fLOG=fLOG)
         except RegexMatchError as e:
+            import pytube
             if "zero match" not in str(e):
                 raise e
-            warnings.warn("pytube issue: {}".format(e))
+            warnings.warn("RegexMatchError: pytube version {} - pytube issue: {}".format(
+                pytube.__version__, e))
+        except KeyError as e:
+            import pytube
+            warnings.warn("KeyError: pytube version {} - pytube issue: {}".format(
+                pytube.__version__, e))
 
 
 if __name__ == "__main__":
