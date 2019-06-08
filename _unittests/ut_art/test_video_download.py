@@ -20,7 +20,14 @@ class TestVideoDownload(ExtTestCase):
         except RegexMatchError as e:
             if "zero match" not in str(e):
                 raise e
-            warnings.warn("pytube issue: {}".format(e))
+            import pytube
+            warnings.warn("RegexMatchError: pytube version {} - pytube issue: {}".format(
+                pytube.__version__, e))
+            return
+        except KeyError as e:
+            import pytube
+            warnings.warn("KeyError: pytube version {} - pytube issue: {}".format(
+                pytube.__version__, e))
             return
         exp = os.path.join(temp, "vidéo tres courte.mp4")
         self.assertExists(exp)
