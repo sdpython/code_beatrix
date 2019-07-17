@@ -17,6 +17,7 @@ pour les petits
     le_petit_basque
     ratatin
     demenagement
+    deon
 
 histoires interactives
 ++++++++++++++++++++++
