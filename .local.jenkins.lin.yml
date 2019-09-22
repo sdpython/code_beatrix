@@ -26,7 +26,7 @@ script:
   - { CMD: "$PYINT -u setup.py unittests -e \".*noenv8.*\"", NAME: "UT_NOENV8" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*noenv9.*\"", NAME: "UT_NOENV9" }
   - { CMD: "$PYINT -u setup.py unittests -e \".*noenvA.*\"", NAME: "UT_NOENVA" }
-  - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*LONG.*\" -g \".*youtube.*\"", NAME: "UT_LONG" }
+  - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*scratch.*\" -g \".*youtube.*\"", NAME: "UT_SCRATCH" }
   - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*youtube.*\"", NAME: "UT_YOUTUBE" }
   - { CMD: "$PYINT -u setup.py unittests_SKIP", NAME: "UT_SKIP" }
 

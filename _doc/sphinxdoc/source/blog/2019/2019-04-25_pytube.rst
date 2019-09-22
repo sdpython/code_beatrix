@@ -1,7 +1,7 @@
 
 .. blogpost::
-    :title: Compter les cartes un soir d'école
-    :keywords: classe
+    :title: Télécharger les vidéos youtube...
+    :keywords: youtube, pytube
     :date: 2019-02-28
     :categories: enseignement
 

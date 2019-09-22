@@ -1,8 +1,8 @@
 
 .. blogpost::
-    :title: Méthode globale ou syllabique
+    :title: Maths en scène
     :keywords: lecture
-    :date: 2018-09-18
+    :date: 2018-11-30
     :categories: éducation
 
     `Les Maths en Scène <https://lesmathsenscene.fr/>`_

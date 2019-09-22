@@ -46,7 +46,8 @@ class DLImageSegmentation(DeepLearningImage):
             model_class = fcn.models.FCN8s
             model = model_class(n_class=n_class)
             self.log("[DLImageSegmentation] load_npz '{0}'".format(model_file))
-            chainer.serializers.load_npz(model_file, model)
+            chainer.serializers.load_npz(  # pylint: disable=E1101
+                model_file, model)  # pylint: disable=E1101
         else:
             raise NotImplementedError(
                 "Unable to interpret '{0}'".format(model))
@@ -61,7 +62,7 @@ class DLImageSegmentation(DeepLearningImage):
 
         if gpu:
             self.log("[DLImageSegmentation] gpu")
-            chainer.cuda.get_device(self._gpu).use()
+            chainer.cuda.get_device(self._gpu).use()  # pylint: disable=E1101
             model.to_gpu()
         else:
             self.log("[DLImageSegmentation] cpu")
@@ -174,15 +175,16 @@ class DLImageSegmentation(DeepLearningImage):
         feat = self._load_image(img, resize=resize)
         input = self._preprocess(feat, preprocess=True)
         if self._gpu:
-            input = chainer.cuda.to_gpu(input)
+            input = chainer.cuda.to_gpu(input)  # pylint: disable=E1101
 
-        with chainer.no_backprop_mode():
-            input = chainer.Variable(input)
-            with chainer.using_config('train', False):
+        with chainer.no_backprop_mode():  # pylint: disable=E1101
+            input = chainer.Variable(input)  # pylint: disable=E1101
+            with chainer.using_config('train', False):  # pylint: disable=E1101
                 self._model(input)
-                lbl_pred = chainer.functions.argmax(
+                lbl_pred = chainer.functions.argmax(  # pylint: disable=E1101
                     self._model.score, axis=1)[0]
-                lbl_pred = chainer.cuda.to_cpu(lbl_pred.data)
+                lbl_pred = chainer.cuda.to_cpu(  # pylint: disable=E1101
+                    lbl_pred.data)  # pylint: disable=E1101
 
         return feat, lbl_pred
 
