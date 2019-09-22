@@ -10,7 +10,7 @@ from code_beatrix import check
 
 class TestCheckVideo(unittest.TestCase):
 
-    def test_check(self):
+    def test_check_youtube(self):
         fLOG(
             __file__,
             self._testMethodName,
