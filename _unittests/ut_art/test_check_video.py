@@ -18,6 +18,12 @@ class TestCheckVideo(unittest.TestCase):
 
         try:
             check(kind="video", fLOG=fLOG)
+        except AttributeError as e:
+            import pytube
+            if "'NoneType' object has no attribute 'stdout'" not in str(e):
+                raise e
+            warnings.warn("AttributeError: pytube version {} - pytube issue: {}".format(
+                pytube.__version__, e))
         except RegexMatchError as e:
             import pytube
             if "zero match" not in str(e):
