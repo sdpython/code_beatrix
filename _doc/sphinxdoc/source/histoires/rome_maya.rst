@@ -228,7 +228,9 @@ l'autres les prédateurs. C'est un système chaotique avec deux équations diff�
 
 .. math::
 
-    \begin{array}{rcl} \frac{dx(t)}{dt} &=& x(t) \left( \alpha - \beta y(t) \right) \\ \frac{dy(t)}{dt} &=& - y(t) \left( \gamma - \delta x(t) \right) \end{array}
+    \frac{dx(t)}{dt} = x(t) (\alpha - \beta y(t))
+    
+    \frac{dy(t)}{dt} = - y(t) \gamma - \delta x(t))
 
 :math:`x(t)` est la population des proies, :math:`y(t)` celle des prédateurs.
 La population des proies croît naturellement avec un taux de fécondité constant

@@ -51,7 +51,7 @@ custom_preamble = """\n
 \\newcommand{\\loimultinomiale}[1]{{\\cal M}\\pa{#1}}
 \\newcommand{\\trace}[1]{tr\\pa{#1}}
 \\newcommand{\\abs}[1]{\\left|#1\\right|}
-\\usepackage{movie15}
+\\usepackage{media9}
 """
 # \\usepackage{eepic}
 
