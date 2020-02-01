@@ -16,7 +16,7 @@ pymmails
 pyproj
 pyquickhelper>=1.9
 pyshp
-pytube>=9.0.6
+pytube3
 shapely
 tutormagic
 wheel

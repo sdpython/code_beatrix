@@ -18,6 +18,7 @@ set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2019,
 
 html_show_copyright = False
 html_title = "lesenfantcodaient.fr"
+html_logo = "phdoc_static/project_ico_small.png"
 language = "fr"
 
 blog_root = "http://lesenfantscodaient.fr/"
