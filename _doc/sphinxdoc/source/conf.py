@@ -61,24 +61,25 @@ latex_elements['preamble'] += custom_preamble
 mathdef_link_only = True
 html_split_index = True
 
-epkg_dictionary['AudioClip'] = 'https://zulko.github.io/moviepy/ref/AudioClip/AudioClip.html'
-epkg_dictionary['AudioArrayClip'] = 'https://zulko.github.io/moviepy/ref/AudioClip/AudioClip.html'
-epkg_dictionary['deep learning'] = 'https://en.wikipedia.org/wiki/Deep_learning'
-epkg_dictionary['fcn'] = 'https://github.com/wkentaro/fcn'
-epkg_dictionary['gif'] = 'https://fr.wikipedia.org/wiki/Graphics_Interchange_Format'
-epkg_dictionary['ImageClip'] = 'https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#imageclip'
-epkg_dictionary[
-    'Mary Poppins'] = 'https://fr.wikipedia.org/wiki/Mary_Poppins_(film,_1964)'
-epkg_dictionary['moviepy'] = 'https://zulko.github.io/moviepy/'
-epkg_dictionary['opencv'] = 'https://opencv.org/'
-epkg_dictionary['OpenShot'] = 'https://www.openshot.org/'
-epkg_dictionary['pytube'] = 'https://github.com/nficano/pytube'
-epkg_dictionary['SciTe'] = 'http://www.scintilla.org/SciTE.html'
-epkg_dictionary['scratch'] = "https://scratch.mit.edu/"
-epkg_dictionary['Scratch'] = 'https://scratch.mit.edu/'
-epkg_dictionary['ShotCut'] = 'https://www.shotcut.org/'
-epkg_dictionary['VideoClip'] = 'https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html'
-epkg_dictionary['VLC'] = 'https://www.videolan.org/vlc/index.html'
-epkg_dictionary['YouTube'] = "https://www.youtube.com/"
-epkg_dictionary['youtube'] = "https://www.youtube.com/"
-epkg_dictionary['wav'] = "https://fr.wikipedia.org/wiki/Waveform_Audio_File_Format"
+epkg_dictionary.update({
+    'AudioClip': 'https://zulko.github.io/moviepy/ref/AudioClip/AudioClip.html',
+    'AudioArrayClip': 'https://zulko.github.io/moviepy/ref/AudioClip/AudioClip.html',
+    'deep learning': 'https://en.wikipedia.org/wiki/Deep_learning',
+    'fcn': 'https://github.com/wkentaro/fcn',
+    'gif': 'https://fr.wikipedia.org/wiki/Graphics_Interchange_Format',
+    'ImageClip': 'https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html?highlight=imageclip#imageclip',
+    'Mary Poppins': 'https://fr.wikipedia.org/wiki/Mary_Poppins_(film,_1964)',
+    'moviepy': 'https://zulko.github.io/moviepy/',
+    'opencv': 'https://opencv.org/',
+    'OpenShot': 'https://www.openshot.org/',
+    'pytube': 'https://github.com/nficano/pytube',
+    'SciTe': 'http://www.scintilla.org/SciTE.html',
+    'scratch': "https://scratch.mit.edu/",
+    'Scratch': 'https://scratch.mit.edu/',
+    'ShotCut': 'https://www.shotcut.org/',
+    'VideoClip': 'https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html',
+    'VLC': 'https://www.videolan.org/vlc/index.html',
+    'YouTube': "https://www.youtube.com/",
+    'youtube': "https://www.youtube.com/",
+    'wav': "https://fr.wikipedia.org/wiki/Waveform_Audio_File_Format",
+})

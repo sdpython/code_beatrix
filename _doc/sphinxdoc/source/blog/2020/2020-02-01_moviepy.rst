@@ -1,0 +1,11 @@
+
+.. blogpost::
+    :title: Problèmes avec moviepy 
+    :keywords: moviepy
+    :date: 2020-02-01
+    :categories: programmation
+
+    La version 1.0.1 de :epkg:`moviepy` fait planter quelques
+    tests unitaires. J'ai la flemme de regarder si c'est le module
+    est est buggé ou si mon code doit être mise à jour.
+    En attendant, je reste à la version 1.0.0.
