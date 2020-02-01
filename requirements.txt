@@ -9,14 +9,15 @@ hachibee_sphinx_theme
 imageio
 imageio-ffmpeg
 jyquickhelper
-moviepy>=1.0
+moviepy==1.0.0
 opencv-python
 pyensae>=1.2.788
+pydicom
 pymmails
 pyproj
 pyquickhelper>=1.9
 pyshp
-pytube>=9.0.6
+pytube3
 shapely
 tutormagic
 wheel
