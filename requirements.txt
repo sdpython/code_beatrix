@@ -12,6 +12,7 @@ jyquickhelper
 moviepy>=1.0
 opencv-python
 pyensae>=1.2.788
+pydicom
 pymmails
 pyproj
 pyquickhelper>=1.9
