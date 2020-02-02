@@ -70,7 +70,7 @@ Exercice 3 - changer la musique
 -------------------------------
 
 #. Choisir une musique pour en faire une bande son,
-   sur :epkg:`youtube` par exemple, avec le module :epkg:`pytube`
+   sur :epkg:`youtube` par exemple, avec le module :epkg:`pytube3`
    ou la fonction :func:`download_youtube_video <code_beatrix.art.video.download_youtube_video>`.
 #. Extraire la bande de la vidéo précédente avec la fonction
    :func:`video_extract_audio <code_beatrix.art.video.video_extract_audio>`.

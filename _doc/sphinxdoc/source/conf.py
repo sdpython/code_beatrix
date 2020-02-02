@@ -73,6 +73,7 @@ epkg_dictionary.update({
     'opencv': 'https://opencv.org/',
     'OpenShot': 'https://www.openshot.org/',
     'pytube': 'https://github.com/nficano/pytube',
+    'pytube3': 'https://github.com/hbmartin/pytube3',
     'SciTe': 'http://www.scintilla.org/SciTE.html',
     'scratch': "https://scratch.mit.edu/",
     'Scratch': 'https://scratch.mit.edu/',

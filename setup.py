@@ -172,7 +172,7 @@ if not r:
         setup_requires=["pyquickhelper"],
         install_requires=["pyquickhelper>=1.9"],
         extras_require={
-            'art': ['pytube', 'moviepy==1.0.0'],
-            'faq': ['pytube'],
+            'art': ['pytube3', 'moviepy==1.0.0'],
+            'faq': ['pytube3'],
         }
     )
