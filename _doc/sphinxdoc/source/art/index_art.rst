@@ -42,4 +42,4 @@ Modules Python
 --------------
 
 * :epkg:`moviepy`
-* :epkg:`pytube`
+* :epkg:`pytube3`
