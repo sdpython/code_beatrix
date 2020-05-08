@@ -18,6 +18,6 @@ pyproj
 pyquickhelper>=1.9
 pyshp
 pytube3
-shapely==1.6.4
+shapely
 tutormagic
 wheel
