@@ -5,7 +5,8 @@
 import os
 import unittest
 import warnings
-from pyquickhelper.pycode import get_temp_folder, ExtTestCase, skipif_circleci
+from pyquickhelper.pycode import (
+    get_temp_folder, ExtTestCase, skipif_circleci, skipif_appveyor)
 from pytube.exceptions import RegexMatchError  # pylint: disable=C0411
 from code_beatrix.art.video import download_youtube_video
 
@@ -13,6 +14,7 @@ from code_beatrix.art.video import download_youtube_video
 class TestVideoDownload(ExtTestCase):
 
     @skipif_circleci("unexpected error: KeyError: 'url_encoded_fmt_stream_map'")
+    @skipif_appveyor("connectivity issues")
     def test_video_download(self):
         temp = get_temp_folder(__file__, "temp_video_download")
         try:
