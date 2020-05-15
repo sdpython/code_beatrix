@@ -1,6 +1,6 @@
 
 .. blogpost::
-    :title: Problèmes avec moviepy 
+    :title: Problèmes avec moviepy
     :keywords: moviepy
     :date: 2020-02-01
     :categories: programmation

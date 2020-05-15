@@ -5,12 +5,12 @@
 from contextlib import redirect_stdout
 import io
 import os
-import chainer  # pylint: disable=E0401
-import fcn  # pylint: disable=E0401
 import numpy
 from PIL import Image
 import skimage
 from skimage.io._plugins.pil_plugin import pil_to_ndarray
+import chainer  # pylint: disable=E0401
+import fcn  # pylint: disable=E0401
 from .dlbase import DeepLearningImage
 
 
@@ -157,7 +157,8 @@ class DLImageSegmentation(DeepLearningImage):
         @return                 preprocessed image
         """
         if preprocess:
-            input, = fcn.datasets.transform_lsvrc2012_vgg16((feat,))  # pylint: disable=W0632
+            input, = fcn.datasets.transform_lsvrc2012_vgg16(
+                (feat,))  # pylint: disable=W0632
             input = input[numpy.newaxis, :, :, :]
             return input
         else:

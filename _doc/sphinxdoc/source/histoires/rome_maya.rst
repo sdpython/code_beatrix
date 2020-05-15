@@ -229,7 +229,7 @@ l'autres les prédateurs. C'est un système chaotique avec deux équations diff�
 .. math::
 
     \frac{dx(t)}{dt} = x(t) (\alpha - \beta y(t))
-    
+
     \frac{dy(t)}{dt} = - y(t) \gamma - \delta x(t))
 
 :math:`x(t)` est la population des proies, :math:`y(t)` celle des prédateurs.
