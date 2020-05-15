@@ -69,8 +69,8 @@ class RenderSnapRaw:
                      window.setTimeout(start_snap__DIV__,500);
                      </script>
                      """.replace("__DIV__", divid)
-        libs = [
-            '<script type="text/javascript" src="{0}"></script>'.format(l) for l in js_libs]
+        libs = ['<script type="text/javascript" src="{0}"></script>'.format(le)
+                for le in js_libs]
         libs = "\n".join(libs)
 
         return html_src, libs + "\n" + test_js

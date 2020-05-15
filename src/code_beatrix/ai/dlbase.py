@@ -28,12 +28,12 @@ class DeepLearningBase:
         self._model = model
         self._fLOG = fLOG
 
-    def log(self, *l, **p):
+    def log(self, *args, **kwargs):
         """
         Log something.
         """
         if self._fLOG:
-            self._fLOG(*l, **p)
+            self._fLOG(*args, **kwargs)
 
     def predict(self, X):
         """
