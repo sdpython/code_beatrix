@@ -122,6 +122,10 @@ Contacts
         :target: http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/all_notebooks_coverage.html
         :alt: Notebook Coverage
 
+    .. image:: https://img.shields.io/github/repo-size/sdpython/code_beatrix
+        :target: https://github.com/sdpython/code_beatrix/
+        :alt: size
+
 Annexes
 -------
 
