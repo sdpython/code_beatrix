@@ -2,6 +2,7 @@ cartopy
 chainer
 bokeh
 Cython
+gdown
 jupyter
 matplotlib
 networkx

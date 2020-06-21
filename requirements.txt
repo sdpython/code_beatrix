@@ -3,7 +3,6 @@ ensae_projects>=0.1.427
 fastrlock
 fcn
 folium
-gdown
 gizeh
 hachibee_sphinx_theme
 imageio
