@@ -11,13 +11,16 @@ imageio-ffmpeg
 jyquickhelper
 moviepy==1.0.0
 opencv-python
+pcodestyle
 pyensae>=1.2.788
 pydicom
 pymmails
+pylint
 pyproj
 pyquickhelper>=1.9
 pyshp
 pytube3
 shapely
+sphinx_gallery
 tutormagic
 wheel
