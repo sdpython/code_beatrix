@@ -1,3 +1,4 @@
+autopep8
 coverage
 ensae_projects>=0.1.427
 fastrlock
@@ -7,10 +8,11 @@ gizeh
 hachibee_sphinx_theme
 imageio
 imageio-ffmpeg
+jupyter_sphinx
 jyquickhelper
 moviepy==1.0.0
 opencv-python
-pcodestyle
+pycodestyle
 pyensae>=1.2.788
 pydicom
 pymmails
