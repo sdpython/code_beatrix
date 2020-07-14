@@ -8,7 +8,7 @@ import warnings
 from pyquickhelper.pycode import (
     get_temp_folder, ExtTestCase, skipif_circleci,
     skipif_appveyor, skipif_travis)
-from pytube.exceptions import RegexMatchError  # pylint: disable=C0411
+from pytube.exceptions import RegexMatchError, VideoUnavailable  # pylint: disable=C0411
 from code_beatrix.art.video import download_youtube_video
 
 
@@ -28,13 +28,21 @@ class TestVideoDownload(ExtTestCase):
             warnings.warn("RegexMatchError: pytube version {} - pytube issue: {}".format(
                 pytube.__version__, e))
             return
+        except VideoUnavailable as e:
+            import pytube
+            warnings.warn("VideoUnavailable: pytube version {} - pytube issue: {}".format(
+                pytube.__version__, e))
+            return
         except KeyError as e:
             import pytube
             warnings.warn("KeyError: pytube version {} - pytube issue: {}".format(
                 pytube.__version__, e))
             return
         exp = os.path.join(temp, "vidéo tres courte.mp4")
-        self.assertExists(exp)
+        if __name__ == "__main___":
+            self.assertExists(exp)
+        if not os.path.exists(exp):
+            warnings.warn("Unable to find '{}'.".format(exp))
 
 
 if __name__ == "__main__":
