@@ -39,13 +39,13 @@ def check(fLOG=None):
 
     @param      logging function
     """
-    t1 = time.clock()
+    t1 = time.perf_counter()
     with tempfile.TemporaryDirectory() as temp:
         if fLOG:
             fLOG('[check] download_youtube_video')
         vid = download_youtube_video("4o5baMYWdtQ", temp, res=None)
         vid = os.path.join(temp, vid)
-        t2 = time.clock()
+        t2 = time.perf_counter()
         if fLOG:
             fLOG('[check] video_compose')
         ext = video_compose(vid, vid, t2=2, place="h2")
@@ -54,8 +54,8 @@ def check(fLOG=None):
             fLOG('[check] video_save')
         video_save(ext, dest)
         res = os.path.exists(dest)
-    delta1 = time.clock() - t1
-    delta2 = time.clock() - t2
+    delta1 = time.perf_counter() - t1
+    delta2 = time.perf_counter() - t2
     if fLOG:
         fLOG("[check] video time={0} - video={1}".format(delta1, delta2))
     return res
