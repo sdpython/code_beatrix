@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.split(__file__)[0])))
 import my_hachibee_sphinx_theme as hachibee_sphinx_theme
 
 
-set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2019,
+set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2021,
                      "hachibee", hachibee_sphinx_theme.get_html_themes_path(),
                      locals(), add_extensions=['hachibee_sphinx_theme'],
                      custom_style='custom_style.css',
