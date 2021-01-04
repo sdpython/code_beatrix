@@ -1,9 +1,9 @@
 astroid
-cairo
 importlib_metadata
 isort
 matplotlib
 numpy
+pycairo
 pylint
 pymyinstall
 pyshp
