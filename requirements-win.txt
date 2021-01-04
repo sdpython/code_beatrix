@@ -1,4 +1,5 @@
 astroid
+cairo
 importlib_metadata
 isort
 matplotlib
