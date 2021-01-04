@@ -10,8 +10,11 @@ init:
 
 install:
   - "%PYTHON%\\python -m pip install --upgrade pip"
-  - "%PYTHON%\\Scripts\\pip install pymyinstall"
+  # for many packages
+  - "%PYTHON%\\Scripts\\pip install -r requirements-win.txt"
+  # custom packages
   - "%PYTHON%\\Scripts\\pymy_install3 pyproj cartopy cairocffi shapely llvmlite numba"
+  # dependencies
   - "%PYTHON%\\Scripts\\pip install -r requirements.txt"
   - set PYTHONPATH=src
   
