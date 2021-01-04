@@ -23,4 +23,4 @@ install:
     - export PYTHONPATH=src
 
 script:
-    - python ./setup.py unittests
+    - python setup.py unittests
