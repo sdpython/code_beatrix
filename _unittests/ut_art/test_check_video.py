@@ -4,7 +4,7 @@
 import unittest
 import warnings
 from pyquickhelper.loghelper import fLOG
-from pyquickhelper.pycode import skipif_travis
+from pyquickhelper.pycode import skipif_travis, skipif_appveyor
 from pytube.exceptions import RegexMatchError  # pylint: disable=C0411
 from code_beatrix import check
 
@@ -12,6 +12,7 @@ from code_beatrix import check
 class TestCheckVideo(unittest.TestCase):
 
     @skipif_travis("connectivity issues")
+    @skipif_appveyor("regex issue")
     def test_check_youtube(self):
         fLOG(
             __file__,

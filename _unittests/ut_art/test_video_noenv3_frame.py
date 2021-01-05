@@ -8,6 +8,7 @@ with the notebook unittesting (it uses Popen too).
 """
 import os
 import unittest
+import warnings
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
 from code_beatrix.art.video import video_save, video_frame, clean_video
@@ -20,7 +21,11 @@ class TestVideoImage(ExtTestCase):
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
-        import gizeh
+        try:
+            import gizeh
+        except ImportError as e:
+            warnings.warn('requires Graphviz 2.44 on Windows %r' % e)
+            return
         temp = get_temp_folder(__file__, "temp_video_frame")
 
         def make_frame(t):

@@ -5,6 +5,7 @@
 import os
 import unittest
 import shutil
+import warnings
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, add_missing_development_version, is_travis_or_appveyor
 from pyquickhelper.ipythonhelper import execute_notebook_list_finalize_ut
@@ -23,6 +24,13 @@ class TestNotebookExampleVideo (unittest.TestCase):
             __file__,
             self._testMethodName,
             OutputPrint=__name__ == "__main__")
+
+        try:
+            import gizeh
+        except ImportError as e:
+            warnings.warn('requires Graphviz 2.44 on Windows %r' % e)
+            return
+
         temp = get_temp_folder(__file__, "temp_exemples_video")
         keepnote = ls_notebooks("exemples")
         self.assertTrue(len(keepnote) > 0)
