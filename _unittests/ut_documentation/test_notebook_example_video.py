@@ -26,7 +26,7 @@ class TestNotebookExampleVideo (unittest.TestCase):
             OutputPrint=__name__ == "__main__")
 
         try:
-            import gizeh
+            import gizeh  # pylint: disable=W0611
         except ImportError as e:
             warnings.warn('requires Graphviz 2.44 on Windows %r' % e)
             return
