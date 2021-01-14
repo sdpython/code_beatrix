@@ -27,9 +27,9 @@ class TestCheckVideo(unittest.TestCase):
                 raise e
             warnings.warn("AttributeError: pytube version {} - pytube issue: {}".format(
                 pytube.__version__, e))
-        except RegexMatchError as e:
+        except (RegexMatchError, RuntimeError) as e:
             import pytube
-            if "zero match" not in str(e):
+            if ("zero match" not in str(e) and "Unable to process tag" not in str(e)):
                 raise e
             warnings.warn("RegexMatchError: pytube version {} - pytube issue: {}".format(
                 pytube.__version__, e))

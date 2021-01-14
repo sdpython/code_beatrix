@@ -11,6 +11,7 @@ import tempfile
 import time
 import numpy
 from pytube import YouTube  # pylint: disable=E0401
+from pytube.exceptions import RegexMatchError  # pylint: disable=E0401
 from imageio import imsave
 import moviepy.audio.fx.all as afx
 import moviepy.video.fx.all as vfx
@@ -95,13 +96,19 @@ def download_youtube_video(tag, output_path=None, res='720p', mime_type="video/m
             fil.first().download()
 
     """
-    yt = YouTube('https://www.youtube.com/watch?v={0}'.format(tag))
+    url = 'https://www.youtube.com/watch?v={0}'.format(tag)
+    try:
+        yt = YouTube(url)
+    except RegexMatchError as e:
+        raise RuntimeError(
+            "Unable to process tag=%r (url=%r)" % (tag, url)) from e
     st = yt.streams.filter(mime_type=mime_type, res=res, **kwargs)
     fi = st.first()
     if fi is None:
-        raise ValueError("By default the function downloads a video with resolution = 720, " +
-                         "if it is not available, switch to res=None " +
-                         "to choose the first one available.")
+        raise ValueError(
+            "By default the function downloads a video with resolution = 720, "
+            "if it is not available, switch to res=None "
+            "to choose the first one available [tag=%r url=%r]" % (tag, url))
     fi.download(output_path=output_path)
     return fi.default_filename
 
