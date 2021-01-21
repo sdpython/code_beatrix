@@ -17,19 +17,19 @@ install:
 
 script:
   - { CMD: "$PYINT -u setup.py unittests -g \".*((noenv)|(LONG)|(SKIP)).*\"", NAME: "UT" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv1.*\" -g .*LONG.*", NAME: "UT_NOENV1" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv2.*\"", NAME: "UT_NOENV2" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv3.*\"", NAME: "UT_NOENV3" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv4.*\"", NAME: "UT_NOENV4" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv5.*\"", NAME: "UT_NOENV5" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv6.*\"", NAME: "UT_NOENV6" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv7.*\"", NAME: "UT_NOENV7" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv8.*\"", NAME: "UT_NOENV8" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv9.*\"", NAME: "UT_NOENV9" }
-  - { CMD: "$PYINT -u setup.py unittests -e \".*noenvA.*\"", NAME: "UT_NOENVA" }
-  - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*scratch.*\" -g \".*youtube.*\"", NAME: "UT_SCRATCH" }
-  - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*youtube.*\"", NAME: "UT_YOUTUBE" }
-  - { CMD: "$PYINT -u setup.py unittests_SKIP", NAME: "UT_SKIP" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv1.*\" -g .*LONG.*", NAME: "UT_NOENV1", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv2.*\"", NAME: "UT_NOENV2", SCHEDULER: "H H(1-2) 19 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv3.*\"", NAME: "UT_NOENV3", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv4.*\"", NAME: "UT_NOENV4", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv5.*\"", NAME: "UT_NOENV5", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv6.*\"", NAME: "UT_NOENV6", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv7.*\"", NAME: "UT_NOENV7", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv8.*\"", NAME: "UT_NOENV8", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenv9.*\"", NAME: "UT_NOENV9", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests -e \".*noenvA.*\"", NAME: "UT_NOENVA", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*scratch.*\" -g \".*youtube.*\"", NAME: "UT_SCRATCH", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*youtube.*\"", NAME: "UT_YOUTUBE", SCHEDULER: "H H(1-2) 23 * *" }
+  - { CMD: "$PYINT -u setup.py unittests_SKIP", NAME: "UT_SKIP", SCHEDULER: "H H(1-2) 23 * *" }
 
 after_script:
   - $PYINT -u setup.py bdist_wheel
