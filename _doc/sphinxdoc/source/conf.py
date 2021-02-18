@@ -24,7 +24,9 @@ language = "fr"
 blog_root = "http://lesenfantscodaient.fr/"
 
 html_context = {
-    'css_files': get_default_stylesheet() + ['_static/my-styles.css', '_static/custom_style.css', '_static/style_notebook_snippet.css'],
+    'css_files': get_default_stylesheet(
+        ['_static/my-styles.css', '_static/custom_style.css',
+         '_static/style_notebook_snippet.css']),
 }
 
 
