@@ -14,7 +14,7 @@ scratch
 python
 ^^^^^^
 
-Voir `Getting Started <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/index.html#getting-started-demarrer>`_.
+Voir `Getting Started <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/index.html#getting-started-demarrer>`_.
 
 ::
 

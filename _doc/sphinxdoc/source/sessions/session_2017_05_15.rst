@@ -45,7 +45,7 @@ est malade dans un coin ?
 
 De fil en fil en aiguille, nous serions bien capables d'arriver jusqu'aux réseaux sociaux.
 
-`Evolution d’un voisinage, d’une population <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx3/specials/voisinage.html>`_.
+`Evolution d’un voisinage, d’une population <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/specials/voisinage.html>`_.
 
 Un arbre de décision
 ++++++++++++++++++++
