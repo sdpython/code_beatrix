@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-from distutils.core import setup
-from setuptools import find_packages
+from setuptools import find_packages, setup
+from pyquicksetup import read_version, read_readme, default_cmdclass
+
 
 #########
 # settings
@@ -55,9 +56,9 @@ setup(
     license="MIT",
     url="http://lesenfantscodaient.fr/",
     download_url="https://github.com/sdpython/code_beatrix/",
+    description=DESCRIPTION,
     long_description=read_readme(__file__),
     cmdclass=default_cmdclass(),
-    long_description=long_description,
     keywords=KEYWORDS,
     classifiers=CLASSIFIERS,
     packages=packages,
