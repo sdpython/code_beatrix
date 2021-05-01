@@ -8,6 +8,7 @@ with the notebook unittesting (it uses Popen too).
 """
 import os
 import unittest
+import warnings
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase, skipif_circleci
 from code_beatrix.art.videodl import video_map_images
 from code_beatrix.art.video import video_save, video_extract_video, clean_video, video_load
@@ -20,9 +21,13 @@ class TestVideoDLPeople(ExtTestCase):
         temp = get_temp_folder(__file__, "temp_videodl_people")
         vid = video_load(os.path.join(temp, '..', 'data', 'mur.mp4'))
         vide = video_extract_video(vid, 0, 5 if __name__ == "__main__" else 1)
-        vid2 = video_map_images(
-            vide, fps=10, name="people",
-            logger='bar' if __name__ == "__main__" else None)
+        try:
+            vid2 = video_map_images(
+                vide, fps=10, name="people",
+                logger='bar' if __name__ == "__main__" else None)
+        except FileNotFoundError as e:
+            warnings.warn(str(e))
+            return
         exp = os.path.join(temp, "people.mp4")
         video_save(vid2, exp)
         self.assertExists(exp)

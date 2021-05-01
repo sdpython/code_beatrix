@@ -4,6 +4,7 @@
 """
 import os
 import unittest
+import warnings
 import skimage
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import get_temp_folder, ExtTestCase
@@ -23,7 +24,11 @@ class TestSegImage1(ExtTestCase):
         imgs = [img1, img2]
 
         from code_beatrix.ai import DLImageSegmentation
-        dl = DLImageSegmentation(fLOG=fLOG)
+        try:
+            dl = DLImageSegmentation(fLOG=fLOG)
+        except FileNotFoundError as e:
+            warnings.warn(str(e))
+            return
 
         for i, img in enumerate(imgs):
             _, res = dl.predict(img)
