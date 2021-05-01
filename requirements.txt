@@ -34,12 +34,13 @@ mlinsights>=0.3
 moviepy==1.0.0
 opencv-python
 pycodestyle
-pyensae>=1.2.788
+pyensae>=1.3
 pydicom
 pymmails
 pylint
 pyproj
-pyquickhelper>=1.9
+pyquickhelper>=1.10
+pyquicksetup
 pyshp
 pytube3
 shapely
