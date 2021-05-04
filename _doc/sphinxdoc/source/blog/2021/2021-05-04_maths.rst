@@ -1,0 +1,13 @@
+
+.. blogpost::
+    :title: Croquons les maths
+    :keywords: moviepy
+    :date: 2021-05-04
+    :categories: programmation
+
+    Quelques liens pour trouver des contenus, des jeux, pour
+    découvrir les maths et la programmation
+
+    * `Croquons les Maths <https://salon-math.fr/>`_
+    * `Code Code Codec <https://codecodecodec.com/>`_
+    * `Art of Games <https://www.artofgames.com/nos-jeux/>`_
