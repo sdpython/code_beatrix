@@ -4,7 +4,7 @@
 La tournée du camion poubelle (solution)
 ========================================
 
-Voir `Le postier chinois <http://lesenfantscodaient.fr/notebooks/postier_chinois.html>`_.
+Voir `Le postier chinois <http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/notebooks/postier_chinois.html>`_.
 
 La solution est rédigée sous forme de notebook. Les fragments de code servent principalement
 pour contruires les illustrations qui émaillent la solution.

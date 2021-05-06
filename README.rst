@@ -46,8 +46,8 @@ ou `digigirlz <https://www.microsoft.com/en-us/diversity/programs/digigirlz>`_
 avec *Microsoft*.
 
 * `GitHub/code_beatrix <https://github.com/sdpython/code_beatrix/>`_
-* `site <http://lesenfantscodaient.fr/>`_
-* `Blog <http://lesenfantscodaient.fr/blog/main_0000.html#ap-main-0>`_
+* `site <http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/index.html>`_
+* `Blog <http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/blog/main_0000.html#ap-main-0>`_
 
 Le site est conçu comme la documentation d'un module
 *Python* qui sert à préparer et à illustrer les exercices.

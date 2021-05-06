@@ -15,7 +15,7 @@ Comment l'ordinateur corrige-t-il les fautes d'orthographes ?
 Comment choisir l'itinéraire le plus court pour livrer des meubles ?
 On commence avec un dessin, on s'amuse à déplacer les meubles,
 on déroule une pelote de laine, on trébuche, on se prend les pieds dedans
-mais on finit par trouver la solution. *lesenfantscodaient.fr* propose
+mais on finit par trouver la solution. Ce site propose
 de découvrir ce qu'est un algorithme, ce que sont les données au
 travers de jeux et d'histoires pour des petits groupes d'enfants.
 

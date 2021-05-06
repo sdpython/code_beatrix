@@ -21,7 +21,7 @@ html_title = "lesenfantcodaient.fr"
 html_logo = "phdoc_static/project_ico_small.png"
 language = "fr"
 
-blog_root = "http://lesenfantscodaient.fr/"
+blog_root = "http://www.xavierdupre.fr/app/code_beatrix/helpsphinx//blog/main_0000.html"
 
 html_context = {
     'css_files': get_default_stylesheet(
@@ -80,6 +80,7 @@ epkg_dictionary.update({
     'scratch': "https://scratch.mit.edu/",
     'Scratch': 'https://scratch.mit.edu/',
     'ShotCut': 'https://www.shotcut.org/',
+    'snap': 'https://github.com/jmoenig/Snap',
     'VideoClip': 'https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html',
     'VLC': 'https://www.videolan.org/vlc/index.html',
     'YouTube': "https://www.youtube.com/",

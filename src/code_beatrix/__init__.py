@@ -30,7 +30,7 @@ import os
 __version__ = "0.6.674"
 __author__ = "Xavier Dupré"
 __github__ = "https://github.com/sdpython/code_beatrix"
-__url__ = "http://lesenfantscodaient/"
+__url__ = "http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/"
 __license__ = "MIT License"
 __blog__ = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "rss_blog_list.xml"))

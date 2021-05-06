@@ -54,7 +54,7 @@ setup(
     author='Xavier Dupré',
     author_email='xavier.dupre@gmail.com',
     license="MIT",
-    url="http://lesenfantscodaient.fr/",
+    url="http://www.xavierdupre.fr/app/code_beatrix/helpsphinx/",
     download_url="https://github.com/sdpython/code_beatrix/",
     description=DESCRIPTION,
     long_description=read_readme(__file__),
