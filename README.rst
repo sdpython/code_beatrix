@@ -1,6 +1,6 @@
 
-.. image:: https://travis-ci.org/sdpython/code_beatrix.svg?branch=master
-    :target: https://travis-ci.org/sdpython/code_beatrix
+.. image:: https://travis-ci.com/sdpython/code_beatrix.svg?branch=master
+    :target: https://travis-ci.com/sdpython/code_beatrix
     :alt: Build status
 
 .. image:: https://ci.appveyor.com/api/projects/status/g7065ubabg7xxpm6?svg=true
