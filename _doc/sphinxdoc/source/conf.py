@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-from pyquickhelper.helpgen.default_conf import set_sphinx_variables, get_default_stylesheet
+from pyquickhelper.helpgen.default_conf import set_sphinx_variables
 from code_beatrix import __version__ as sversion
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.split(__file__)[0])))
@@ -20,14 +20,8 @@ html_show_copyright = False
 html_title = "lesenfantcodaient.fr"
 html_logo = "phdoc_static/project_ico_small.png"
 language = "fr"
-
 blog_root = "http://www.xavierdupre.fr/app/code_beatrix/helpsphinx//blog/main_0000.html"
-
-html_context = {
-    'css_files': get_default_stylesheet(
-        ['_static/my-styles.css', '_static/custom_style.css',
-         '_static/style_notebook_snippet.css']),
-}
+html_css_files = ['my-styles.css', 'custom_style.css']
 
 
 custom_preamble = """\n
