@@ -5,6 +5,7 @@
 import os
 import unittest
 import warnings
+import urllib.error
 from pyquickhelper.pycode import (
     get_temp_folder, ExtTestCase, skipif_circleci,
     skipif_appveyor, skipif_travis)
@@ -37,6 +38,9 @@ class TestVideoDownload(ExtTestCase):
             import pytube
             warnings.warn("KeyError: pytube version {} - pytube issue: {}".format(
                 pytube.__version__, e))
+            return
+        except urllib.error.HTTPError as e:
+            warnings.warn("HTTP issue: {}".format(e))
             return
         exp = os.path.join(temp, "vidéo tres courte.mp4")
         if __name__ == "__main___":
