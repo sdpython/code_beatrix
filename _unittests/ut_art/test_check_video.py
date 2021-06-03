@@ -3,6 +3,7 @@
 """
 import unittest
 import warnings
+import urllib.error
 from pyquickhelper.loghelper import fLOG
 from pyquickhelper.pycode import skipif_travis, skipif_appveyor
 from pytube.exceptions import RegexMatchError  # pylint: disable=C0411
@@ -37,6 +38,8 @@ class TestCheckVideo(unittest.TestCase):
             import pytube
             warnings.warn("KeyError: pytube version {} - pytube issue: {}".format(
                 pytube.__version__, e))
+        except urllib.error.HTTPError as e:
+            warnings.warn("HTTP issue: {}".format(e))
 
 
 if __name__ == "__main__":
