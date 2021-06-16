@@ -1,0 +1,12 @@
+
+.. blogpost::
+    :title: Des échecs en une dimension
+    :keywords: échecs
+    :date: 2021-06-16
+    :categories: jeux
+
+    Les enfants n'aiment pas perdre et perdent parfois
+    tout intérêt pour un jeu quand c'est trop dur...
+    Quand c'est le cas, ceci devrait vous plaire :
+    `1DChess <https://gumroad.com/l/1DChess>`_.
+    Des échecs en une dimension.
