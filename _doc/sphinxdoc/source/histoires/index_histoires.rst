@@ -18,6 +18,7 @@ pour les petits
     ratatin
     demenagement
     deon
+    peau_peinture
 
 histoires interactives
 ++++++++++++++++++++++
