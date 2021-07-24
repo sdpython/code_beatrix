@@ -29,7 +29,6 @@ script:
   - { CMD: "$PYINT -u setup.py unittests -e \".*noenvA.*\"", NAME: "UT_NOENVA", SCHEDULER: "H H(1-2) 23 * *" }
   - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*scratch.*\" -g \".*youtube.*\"", NAME: "UT_SCRATCH", SCHEDULER: "H H(1-2) 23 * *" }
   - { CMD: "$PYINT -X faulthandler -X showrefcount -u setup.py unittests -e \".*youtube.*\"", NAME: "UT_YOUTUBE", SCHEDULER: "H H(1-2) 23 * *" }
-  - { CMD: "$PYINT -u setup.py unittests_SKIP", NAME: "UT_SKIP", SCHEDULER: "H H(1-2) 23 * *" }
 
 after_script:
   - $PYINT -u setup.py bdist_wheel
