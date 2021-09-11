@@ -18,7 +18,7 @@ class TestWriteScript(unittest.TestCase):
         self.assertTrue(len(res) > 1)
         for c in res:
             self.assertTrue(os.path.exists(c))
-            with open(c, "r") as f:
+            with open(c, "r", encoding="ascii") as f:
                 content = f.read()
             if "__" in content:
                 for line in content.split("\n"):
