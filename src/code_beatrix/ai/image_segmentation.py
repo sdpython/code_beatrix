@@ -157,7 +157,7 @@ class DLImageSegmentation(DeepLearningImage):
         @return                 preprocessed image
         """
         if preprocess:
-            input, = fcn.datasets.transform_lsvrc2012_vgg16(  # pylint: dissable=W0632
+            input, = fcn.datasets.transform_lsvrc2012_vgg16(  # pylint: disable=W0632
                 (feat,))  # pylint: disable=W0632
             input = input[numpy.newaxis, :, :, :]  # pylint: disable=E0401,E1126
             return input
