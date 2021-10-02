@@ -17,7 +17,7 @@ class TestCodeStyle(ExtTestCase):
                    pylint_ignore=('C0103', 'C1801', 'R0201', 'R1705', 'W0108', 'W0613',
                                   'C0111', 'W0212', 'W0622', 'W0703', 'W0201',
                                   'W0221', 'W0223', 'W0107',
-                                  'C0415'),
+                                  'C0415', 'C0209'),
                    skip=["No name 'rectangle' in module 'cv2'",
                          "No name 'blur' in module 'cv2'",
                          "No name 'CascadeClassifier' in module 'cv2'",
@@ -35,7 +35,7 @@ class TestCodeStyle(ExtTestCase):
         check_pep8(test, fLOG=fLOG, neg_pattern="((temp_.*)|(.*test_videodl_noenv4_face.*))",
                    pylint_ignore=('C0103', 'C1801', 'R0201', 'R1705', 'W0108', 'W0613',
                                   'C0111', 'W0212', 'W0622', 'W0107',
-                                  'C0415'),
+                                  'C0415', 'C0209'),
                    skip=[])
 
 
