@@ -19,6 +19,7 @@ pour les petits
     demenagement
     deon
     peau_peinture
+    education
 
 histoires interactives
 ++++++++++++++++++++++

@@ -8,7 +8,7 @@ La naissance de D'où
 
 **+6 ans**
 
-*Le style est parfois très imagée.*
+*Le style est parfois très imagé.*
 
 :sharenet:`facebook-twitter-linkedin-20-body`
 
