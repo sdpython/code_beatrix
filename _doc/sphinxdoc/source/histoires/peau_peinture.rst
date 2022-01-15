@@ -73,7 +73,7 @@ de son immeuble avait lui aussi pris des coups de soleil et que sa
 peinture pelait tout plein. Anatole gratta le mur avec ses ongles.
 Il avait l'explication.
 
-Et lorsque son père haussa le ton pour le réprimander car il était nu 
+Et lorsque son père haussa le ton pour le réprimander car il était nu
 sur le balcon, et que son père avait légèrement glissé sur une de ses
 empreinte mouillée, c'est à peine qu'il le remarqua. Il dit simplement
 à son père : "j'ai compris !" Ce message plein d'allant eut l'air
@@ -84,11 +84,11 @@ Toute la ville pelait de partout, les murs, les rouillures d'escalier,
 la peinture des ponts, le béton des façades, le caoutchouc des pneus,
 la semelle des chaussures, sans compter tous les emballages qui échappaient
 aux poubelles, les masques victimes d'un gros éternuement, les vêtements
-qui s'usent. Tout ça, c'était du plastique. La peinture cachait 
-les mêmes ingrédients que le plastique, la rouille cachait de l'anti-rouille, 
-les pneus, et les semelles, les mégots aussi, tout ça c'était des petits bouts 
-de riens du tout qui partaient dans le vent comme des pétales de pissenlits. 
-Tout ça finissait broyé par le vent, plaqué au sol par la pluie, et le plus 
+qui s'usent. Tout ça, c'était du plastique. La peinture cachait
+les mêmes ingrédients que le plastique, la rouille cachait de l'anti-rouille,
+les pneus, et les semelles, les mégots aussi, tout ça c'était des petits bouts
+de riens du tout qui partaient dans le vent comme des pétales de pissenlits.
+Tout ça finissait broyé par le vent, plaqué au sol par la pluie, et le plus
 souvent quelque part loin, dans la forêt, dans un champ ou dans la rivière.
 
 Pas étonnant qu'on en retrouve dans tout ce qu'on mange alors.
@@ -109,12 +109,8 @@ Là dessus, il dormit. Pas longtemps. Trop de choses à penser.
 Le lendemain, au dîner, il leur dit solennellement,
 "Chers parents, chaque jour je m'empoisonne en buvant.
 Tout ça à cause de vous. Donc vous allez m'aider à réparer.
-Je veux devenir biologiste." Ses parents ne comprenaient plus 
+Je veux devenir biologiste." Ses parents ne comprenaient plus
 comment d'un bout de peinture dans un pot de fleur, Anatole en
 était à devenir biologiste. Il répondit gravement : "Maman, tu es médecin
 pour guérir les gens. Aujourd'hui le plus grand malade, c'est la nature.
 Alors je vais devenir médecin de la nature."
-
-
-
-

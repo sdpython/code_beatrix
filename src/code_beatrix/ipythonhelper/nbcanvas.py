@@ -2,7 +2,6 @@
 @file
 @brief Drawing from a canvas
 """
-import IPython
 import IPython.core.display as ipydisplay
 from IPython.display import display_html, display_javascript, Javascript, HTML
 from .path_helper import local_d3js

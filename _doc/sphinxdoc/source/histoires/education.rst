@@ -39,7 +39,7 @@ jouent au ballon avec des petits cochons.
 C'est étrange que mon père ne soit toujours pas rentré.
 
 Mon père était assez étrange. Il s'est mis en tête que nous devions
-tout apprendre. De l'agriculture à l'électronique, en passage par la 
+tout apprendre. De l'agriculture à l'électronique, en passage par la
 fabrication de sa propre électricté. Chaque année depuis que j'ai six
 ans, nous partions un mois dans une ferme pour découvrir et apprendre.
 Le matin dans les champs, l'après-midi dans les livres, le soir dans
@@ -56,7 +56,7 @@ les jardins suspendus.
 Il commence à se faire tard. Mais où est-il passé ?
 
 Mon père est parti manifester pour la proportionnelle,
-un débat plutôt récent qui a pour but de réviser l'élection 
+un débat plutôt récent qui a pour but de réviser l'élection
 des députés. Il croit fermement que le vote de chacun devrait
 être proportionnel à l'espérance de vie de chacun. Mon père
 ne cesse de me répéter que comme il a deux fois moins de temps
@@ -79,7 +79,7 @@ Il n'est toujours pas là. Il a dû se passer quelque chose.
 
 La France est coupée en deux, au sud de la Loire,
 de grandes villes, une agriculture souvent chimique,
-au nord, une population plus rurale, une agriculture 
+au nord, une population plus rurale, une agriculture
 exclusivement biologique. Les rendements sont moindres
 mais cette partie du territoire est autosuffisante
 à condition de garder la population constante.
@@ -110,7 +110,7 @@ du sable. Pour le plastique, il est conseillé de se servir
 dans la décharge un peu plus loin. Là-bas, un mille-feuilles
 regorge de matières en tout genre. Il serait dommage
 de s'en priver. Je suis rarement allé au-delà de ce périmètre
-sauf quand j'étais plus petit. 
+sauf quand j'étais plus petit.
 
 Le téléphone sonne. C'est sans doute lui.
 
@@ -135,7 +135,7 @@ Une voiture arrive. Ce doit être l'ambulance.
 C'est la seule dans le coin. Je file les acceuillir.
 Je vois mon père. Il saigne. Il sourit.
 Les égratinures sont à proportion de ses exigences.
-Je sais qu'il fait cela pour moi. Il rouspète que je 
+Je sais qu'il fait cela pour moi. Il rouspète que je
 le traite de collectionneur quand il veut restaurer
 le monde tel qu'il était au siècle dernier.
 Certaines choses sont amusantes, les poissons
