@@ -17,7 +17,8 @@ readme = 'README.rst'
 history = "HISTORY.rst"
 requirements = None
 
-KEYWORDS = project_var_name + ', coding goûter'
+KEYWORDS = [project_var_name, 'Xavier Dupré', 'teaching', 'coding goûter',
+            'kids']
 DESCRIPTION = """Exercices pour apprendre la programmation, les algorithmes, et faire des coding goûters."""
 CLASSIFIERS = [
     'Programming Language :: Python :: %d' % sys.version_info[0],
