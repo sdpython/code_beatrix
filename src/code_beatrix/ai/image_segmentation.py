@@ -162,10 +162,9 @@ class DLImageSegmentation(DeepLearningImage):
             input = input[numpy.newaxis, :, :,
                           :]  # pylint: disable=E0401,E1126
             return input
-        else:
-            return feat
+        return feat
 
-    def predict(self, img, resize=None):
+    def predict(self, img, resize=None):  # pylint: disable=W0237
         """
         Applies the model on features *X*.
 

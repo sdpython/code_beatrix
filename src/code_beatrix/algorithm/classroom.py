@@ -201,7 +201,7 @@ def optimize_positions(positions, edges, max_iter=100, fLOG=noLOG,
         return name
 
     list_positions = {pos: 0 for _, pos in positions.items()}
-    for k, v in positions.items():
+    for _, v in positions.items():
         list_positions[v] += 1
     if max(list_positions.values()) > 1:
         raise ValueError("duplicated position:\n{0}".format(
