@@ -27,8 +27,8 @@ class TestNotebookExampleVideo (unittest.TestCase):
 
         try:
             import gizeh  # pylint: disable=W0611
-        except ImportError as e:
-            warnings.warn('requires Graphviz 2.44 on Windows %r' % e)
+        except (ImportError, OSError) as e:
+            warnings.warn('requires Graphviz 2.44 on Windows %r or libcairo is missing' % e)
             return
 
         temp = get_temp_folder(__file__, "temp_exemples_video")
