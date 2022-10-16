@@ -20,6 +20,7 @@ pour les petits
     deon
     peau_peinture
     education
+    tinquiete
 
 histoires interactives
 ++++++++++++++++++++++
