@@ -12,8 +12,9 @@ set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2021,
                      "hachibee", hachibee_sphinx_theme.get_html_themes_path(),
                      locals(), add_extensions=['hachibee_sphinx_theme'],
                      custom_style='custom_style.css',
-                     extlinks=dict(
-                         issue=('https://github.com/sdpython/code_beatrix/issues/%s', 'issue')),
+                     extlinks=dict(issue=(
+                        'https://github.com/sdpython/code_beatrix/issues/%s',
+                        'issue %s')),
                      book=True, nblayout='table', doc_version=sversion)
 
 html_show_copyright = False
