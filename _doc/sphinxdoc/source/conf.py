@@ -19,7 +19,7 @@ set_sphinx_variables(__file__, "Les enfants codaient", "Xavier Dupré", 2023,
 
 html_show_copyright = False
 html_title = "lesenfantcodaient.fr"
-html_logo = "phdoc_static/project_ico_small.png"
+html_logo = "_static/project_ico_small.png"
 language = "fr"
 blog_root = "http://www.xavierdupre.fr/app/code_beatrix/helpsphinx//blog/main_0000.html"
 html_css_files = ['my-styles.css', 'custom_style.css']
